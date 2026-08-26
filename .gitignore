@@ -43,3 +43,7 @@ Thumbs.db
 secrets.json
 *.pem
 *.key
+credentials/
+client_secret*.json
+token.json
+oauth_client.json
