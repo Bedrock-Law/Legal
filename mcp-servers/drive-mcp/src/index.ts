@@ -14,8 +14,8 @@ import path from "node:path";
 import { Readable } from "node:stream";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const CREDENTIALS_PATH = path.join(__dirname, "..", "credentials", "oauth_client.json");
-const TOKEN_PATH = path.join(__dirname, "..", "credentials", "token.json");
+const CREDENTIALS_PATH = path.join(__dirname, "..", "..", "credentials", "oauth_client.json");
+const TOKEN_PATH = path.join(__dirname, "..", "..", "credentials", "token.json");
 
 interface DriveFile {
   id: string;

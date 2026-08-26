@@ -1,7 +1,8 @@
 #!/usr/bin/env node
-// Autorización OAuth de uso único: abre el navegador, el usuario acepta el
-// scope de Drive completo, y guarda el token (con refresh_token) en
-// credentials/token.json para que drive-mcp lo reutilice sin volver a pedir login.
+// Autorización OAuth de uso único: abre el navegador, el usuario acepta los
+// scopes de Google Workspace, y guarda el token (con refresh_token) en
+// credentials/token.json para que los MCP servers de Bedrock lo reutilicen
+// sin volver a pedir login. Un solo token cubre todos los servicios.
 
 import { OAuth2Client } from "google-auth-library";
 import http from "node:http";
@@ -11,9 +12,16 @@ import path from "node:path";
 import { exec } from "node:child_process";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const CREDENTIALS_PATH = path.join(__dirname, "..", "credentials", "oauth_client.json");
-const TOKEN_PATH = path.join(__dirname, "..", "credentials", "token.json");
-const SCOPES = ["https://www.googleapis.com/auth/drive"];
+const CREDENTIALS_PATH = path.join(__dirname, "..", "..", "credentials", "oauth_client.json");
+const TOKEN_PATH = path.join(__dirname, "..", "..", "credentials", "token.json");
+const SCOPES = [
+  "https://www.googleapis.com/auth/drive",
+  "https://www.googleapis.com/auth/gmail.modify",
+  "https://www.googleapis.com/auth/calendar",
+  "https://www.googleapis.com/auth/documents",
+  "https://www.googleapis.com/auth/spreadsheets",
+  "https://www.googleapis.com/auth/tasks",
+];
 const PORT = 3000;
 const REDIRECT_URI = `http://localhost:${PORT}`;
 
@@ -34,7 +42,7 @@ async function main() {
     scope: SCOPES,
   });
 
-  console.log("\nAbriendo el navegador para autorizar acceso a Google Drive...");
+  console.log("\nAbriendo el navegador para autorizar acceso a Google Workspace...");
   console.log("Si no se abre solo, copia esta URL en el navegador:\n");
   console.log(authUrl, "\n");
   exec(`open "${authUrl}"`);
