@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis Caso Jhonatan Londoño - Bedrock Abogados</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @page {
+            size: A4;
+            margin: 15mm 20mm;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #2c3e50;
+            line-height: 1.6;
+            background: white;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+        }
+
+        /* Header Principal */
+        .main-header {
+            background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);
+            color: white;
+            padding: 40px 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .main-header h1 {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .main-header .subtitle {
+            font-size: 18px;
+            opacity: 0.95;
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+
+        .case-details {
+            background: rgba(255,255,255,0.15);
+            padding: 15px;
+            border-radius: 4px;
+            font-size: 12px;
+            line-height: 1.8;
+        }
+
+        .case-details div {
+            display: inline-block;
+            margin-right: 30px;
+        }
+
+        /* Marca Bedrock */
+        .brand {
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 10px;
+            color: #7f8c8d;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: bold;
+        }
+
+        /* Tabla de Contenidos */
+        .toc {
+            background: #f8f9fa;
+            border-left: 5px solid #8B4513;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 4px;
+        }
+
+        .toc h2 {
+            color: #8B4513;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        .toc ol {
+            margin-left: 20px;
+            font-size: 12px;
+            line-height: 1.9;
+        }
+
+        .toc li {
+            margin-bottom: 8px;
+        }
+
+        /* Secciones */
+        .section {
+            margin-bottom: 35px;
+            page-break-inside: avoid;
+        }
+
+        .section-title {
+            background: #8B4513;
+            color: white;
+            padding: 15px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .subsection-title {
+            color: #8B4513;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 20px;
+            margin-bottom: 12px;
+            border-bottom: 2px solid #A0522D;
+            padding-bottom: 8px;
+        }
+
+        /* Contenido */
+        .content {
+            padding: 0 10px;
+            font-size: 13px;
+            line-height: 1.8;
+        }
+
+        .content p {
+            margin-bottom: 12px;
+        }
+
+        .content ul, .content ol {
+            margin-left: 25px;
+            margin-bottom: 12px;
+        }
+
+        .content li {
+            margin-bottom: 8px;
+        }
+
+        /* Bloques */
+        .block {
+            background: #f8f9fa;
+            border-left: 4px solid #A0522D;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+            page-break-inside: avoid;
+        }
+
+        .block h3 {
+            color: #8B4513;
+            font-size: 13px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Tablas */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 11px;
+            margin: 15px 0;
+            page-break-inside: avoid;
+        }
+
+        table th {
+            background: #8B4513;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        table td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        table tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        table tr:hover {
+            background: #f0f0f0;
+        }
+
+        /* Alertas */
+        .alert {
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 4px solid;
+            border-radius: 4px;
+            font-size: 12px;
+            page-break-inside: avoid;
+        }
+
+        .alert-warning {
+            background: #fff3cd;
+            border-left-color: #ffc107;
+            color: #856404;
+        }
+
+        .alert-danger {
+            background: #f8d7da;
+            border-left-color: #dc3545;
+            color: #721c24;
+        }
+
+        .alert-success {
+            background: #d4edda;
+            border-left-color: #28a745;
+            color: #155724;
+        }
+
+        .alert-info {
+            background: #d1ecf1;
+            border-left-color: #17a2b8;
+            color: #0c5460;
+        }
+
+        .alert strong {
+            font-weight: bold;
+        }
+
+        /* Cajas de Recomendación */
+        .recommendation {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-left: 5px solid #8B4513;
+            border-top: 2px solid #8B4513;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+            font-size: 12px;
+            page-break-inside: avoid;
+        }
+
+        .recommendation h3 {
+            color: #8B4513;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 14px;
+        }
+
+        /* Métricas */
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 15px 0;
+        }
+
+        .metric-card {
+            background: white;
+            border: 2px solid #A0522D;
+            border-radius: 4px;
+            padding: 15px;
+            text-align: center;
+            page-break-inside: avoid;
+        }
+
+        .metric-value {
+            font-size: 22px;
+            font-weight: bold;
+            color: #8B4513;
+            margin: 10px 0;
+        }
+
+        .metric-label {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #7f8c8d;
+        }
+
+        /* Listas numeradas */
+        .numbered-list {
+            counter-reset: item;
+            list-style-type: none;
+            margin-left: 0;
+        }
+
+        .numbered-list li {
+            counter-increment: item;
+            margin-bottom: 12px;
+            margin-left: 30px;
+            position: relative;
+        }
+
+        .numbered-list li:before {
+            content: counter(item);
+            position: absolute;
+            left: -30px;
+            top: 0;
+            background: #8B4513;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        /* Separador de página */
+        .page-break {
+            page-break-after: always;
+            margin: 50px 0;
+            text-align: center;
+            color: #bbb;
+            font-size: 12px;
+        }
+
+        /* Footer */
+        .footer {
+            border-top: 2px solid #8B4513;
+            margin-top: 50px;
+            padding-top: 20px;
+            text-align: center;
+            font-size: 10px;
+            color: #7f8c8d;
+        }
+
+        .footer-line {
+            margin: 8px 0;
+        }
+
+        .footer-contact {
+            font-weight: bold;
+            color: #2c3e50;
+            margin: 10px 0;
+        }
+
+        /* Énfasis */
+        .highlight {
+            background: #fff9e6;
+            padding: 2px 4px;
+            border-radius: 2px;
+            font-weight: 500;
+        }
+
+        .critical {
+            color: #dc3545;
+            font-weight: bold;
+        }
+
+        .success-text {
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        /* Versión y fecha */
+        .doc-version {
+            font-size: 11px;
+            color: #95a5a6;
+            text-align: right;
+            margin-bottom: 30px;
+        }
+
+        /* Print */
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                margin: 0;
+                max-width: 100%;
+            }
+        }
+
+        /* Énfasis en números */
+        .number-highlight {
+            color: #8B4513;
+            font-weight: bold;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="brand">Bedrock Abogados</div>
+
+        <div class="main-header">
+            <h1>Análisis Profundo del Caso</h1>
+            <div class="subtitle">Jhonatan Andrey Londoño Restrepo vs Serlogísticos S.A.S.</div>
+            <div class="case-details">
+                <div><strong>Radicado:</strong> 2025-00023-00</div>
+                <div><strong>Juzgado:</strong> Primero Laboral del Circuito, Itagüí</div>
+                <div><strong>Estado:</strong> Contestación presentada</div>
+                <div><strong>Análisis:</strong> Septiembre 2026</div>
+            </div>
+        </div>
+
+        <div class="doc-version">
+            <strong>Versión 2.0 (Reenumerada)</strong> • Recomendación: Negociación en Centro de Conciliación
+        </div>
+
+        <!-- TOC -->
+        <div class="toc">
+            <h2>Tabla de Contenidos</h2>
+            <ol>
+                <li>Hechos Establecidos</li>
+                <li>Núcleo del Litigio: Estabilidad Laboral Reforzada</li>
+                <li>Análisis Crítico de Pruebas</li>
+                <li>Vulnerabilidad Procesal de Cada Parte</li>
+                <li>Líneas de Argumentación en Fase Probatoria</li>
+                <li>Cálculo de Pretensiones</li>
+                <li>Factores que Determinan la Condena</li>
+                <li>Estado Procesal Actual y Limitaciones</li>
+                <li>Análisis Realista de Riesgos</li>
+                <li>Recomendación Estratégica: Negociación, No Litigio</li>
+                <li>Propuesta de Bedrock: Centro de Conciliación</li>
+                <li>Conclusión y Recomendación Final</li>
+            </ol>
+        </div>
+
+        <!-- SECCIÓN 1 -->
+        <div class="section">
+            <div class="section-title">I. Hechos Establecidos</div>
+            <div class="content">
+                <div class="subsection-title">Relación Laboral</div>
+                <ul>
+                    <li><strong>Período:</strong> 01/02/2022 – 30/05/2023 (primera terminación)</li>
+                    <li><strong>Cargo:</strong> Auxiliar de bodega</li>
+                    <li><strong>Salario base:</strong> $1.000.000 (2022) → $1.200.000 (2023)</li>
+                    <li><strong>Modalidad:</strong> Contrato a término indefinido</li>
+                    <li><strong>Horario:</strong> Turnos incluidos, con horas extras y trabajo en días festivos</li>
+                </ul>
+
+                <div class="subsection-title">Afectación de Salud</div>
+                <ul>
+                    <li><strong>Diagnóstico:</strong> Patologías oftalmológicas (keratocono, astigmatismo)</li>
+                    <li><strong>Intervención:</strong> Dos cirugías de córnea, última con trasplante (2022)</li>
+                    <li><strong>Restricciones médicas:</strong> Trabajo con gafas de seguridad, evitar polvo y químicos</li>
+                    <li><strong>Seguimiento:</strong> Médico ocupacional continuo (2022, 2023)</li>
+                    <li><strong>Estado al despido (30/05/2023):</strong> En debilidad manifiesta, con restricciones laborales vigentes</li>
+                </ul>
+
+                <div class="subsection-title">Terminaciones del Contrato</div>
+                <div class="block">
+                    <h3>Primera Terminación: 30/05/2023</h3>
+                    <ul>
+                        <li>Declarada sin justa causa por Serlogísticos (admitido)</li>
+                        <li>Pagó indemnización Art. 64 CST</li>
+                        <li>Una semana después de retornar de incapacidad post-operatoria</li>
+                        <li>Causante alegado: No cumplimiento adecuado de obligaciones (vago)</li>
+                    </ul>
+                </div>
+
+                <div class="block">
+                    <h3>Segunda Terminación: 30/09/2023</h3>
+                    <ul>
+                        <li>Declarada sin justa causa por Serlogísticos (admitido)</li>
+                        <li>Después de sentencia de tutela que ordenó reintegro</li>
+                        <li>No pagó salarios desde 30/05 a 30/09 (durante reintegro)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECCIÓN 2 -->
+        <div class="section">
+            <div class="section-title">II. Núcleo del Litigio</div>
+            <div class="content">
+                <div class="alert alert-info">
+                    <strong>Tema Central:</strong> Estabilidad Laboral Reforzada (Art. 26 Ley 361/1997) para trabajadores con discapacidad
+                </div>
+
+                <div class="subsection-title">Pretensión de Jhonatan</div>
+                <ul class="numbered-list">
+                    <li>Declarar las dos terminaciones como ilegales e injustas</li>
+                    <li>Reintegro al cargo con salarios desde 30/05/2023</li>
+                    <li>Indemnización especial Art. 26 Ley 361/1997: 180 días de salario por despido en debilidad manifiesta sin autorización previa del Ministerio de Trabajo</li>
+                </ul>
+
+                <div class="subsection-title">Conflicto Jurisprudencial de Fondo</div>
+
+                <div class="block">
+                    <h3>Posición de Serlogísticos (CSJ 2012, 2016)</h3>
+                    <p>Requisito: Limitación moderada con <span class="number-highlight">≥15% pérdida de capacidad laboral</span></p>
+                    <ul>
+                        <li>Los documentos médicos NO certifican esa pérdida</li>
+                        <li>Evolución post-quirúrgica fue satisfactoria</li>
+                        <li>Puede trabajar con gafas (mitigante técnico)</li>
+                        <li>No hay enfermedad crónica (cirugía fue 3 años atrás)</li>
+                    </ul>
+                </div>
+
+                <div class="block">
+                    <h3>Posición de Jhonatan (SU 049/2017 - Corte Constitucional)</h3>
+                    <p>Requisito NO es ≥15% de pérdida de capacidad laboral formal</p>
+                    <p><strong>Requisito ES:</strong> Limitación que impida o dificulte <span class="highlight">sustancialmente</span> el desempeño</p>
+                    <ul>
+                        <li>Restricciones laborales vigentes + tratamiento médico pendiente</li>
+                        <li>Certificado de 25/05/2023: "Puede continuar con RESTRICCIÓN"</li>
+                        <li>Recomendaciones documentadas: Gafas, evitar polvo y químicos</li>
+                        <li>Trasplante de córnea es procedimiento grave</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECCIÓN 3 -->
+        <div class="section">
+            <div class="section-title">III. Análisis Crítico de Pruebas Médicas</div>
+            <div class="content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Concepto</th>
+                            <th>Veredicto</th>
+                            <th>Análisis</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>31/01/2022</td>
+                            <td>Ocupacional ingreso</td>
+                            <td>APTO CON RECOMENDACIONES</td>
+                            <td>Utilizar gafas; especialista oftalmología</td>
+                        </tr>
+                        <tr>
+                            <td>25/05/2023</td>
+                            <td>Post-incapacidad</td>
+                            <td>PUEDE CONTINUAR CON RESTRICCIÓN</td>
+                            <td><strong>Restricción TEMPORAL</strong>; gafas; revisión 1 año</td>
+                        </tr>
+                        <tr>
+                            <td>24/01/2023</td>
+                            <td>Periódico</td>
+                            <td>Puede continuar con recomendaciones</td>
+                            <td>Visometría positiva; EPS</td>
+                        </tr>
+                        <tr>
+                            <td>06/06/2023</td>
+                            <td>Egreso</td>
+                            <td>RETIRO NO SATISFACTORIO</td>
+                            <td>Post-terminación; <strong>continuar manejo médico</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="alert alert-success">
+                    <strong>Interpretación favorable a Jhonatan:</strong> Todas las evaluaciones condicionan al uso de gafas (no es plena capacidad). El concepto de 06/06/2023 ordena continuar tratamiento médico. Esto demuestra afectación continua por 1.5 años (02/2022 – 06/2023).
+                </div>
+
+                <div class="alert alert-warning">
+                    <strong>Interpretación favorable a Serlogísticos:</strong> Documentos dicen "apto" o "puede continuar". Evaluación de 04/07/2024 refiere: "Injerto OK, suturas bien, cornea transparente, sin infiltrados".
+                </div>
+
+                <div class="subsection-title">Acta de Seguimiento (20/06/2023)</div>
+                <div class="block">
+                    <p><strong>Contenido crítico:</strong> Serlogísticos documentó por escrito que el trabajador tenía restricciones que demandaban supervisión especial:</p>
+                    <ul>
+                        <li>Tema: "Funciones a desempeñar en reintegro laboral"</li>
+                        <li>Observación: "Proteger gafas recomendadas, evitar polvo y contacto con químicos"</li>
+                        <li>Cargo asignado: "Auxiliar de carga y descarga" (MISMO cargo pre-despido)</li>
+                    </ul>
+                    <p style="margin-top: 12px;"><strong>Implicación:</strong> No puede negar lo que él mismo documentó. El cargo era manejable con restricciones.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-break">--- Continúa en página siguiente ---</div>
+
+        <!-- SECCIÓN 4 -->
+        <div class="section">
+            <div class="section-title">IV. Vulnerabilidades Procesales</div>
+            <div class="content">
+                <div class="subsection-title">Vulnerabilidades de Serlogísticos</div>
+                <ul class="numbered-list">
+                    <li><strong>Patrón de dos terminaciones:</strong> Termina (mayo), lo reintegra por tutela, termina nuevamente (septiembre). Indica discriminación potencial.</li>
+                    <li><strong>Admisión de "sin justa causa":</strong> En AMBAS terminaciones, Serlogísticos admite haber despedido sin justa causa. Art. 26 se aplica precisamente a esto.</li>
+                    <li><strong>Cambio jurisprudencial:</strong> Cita jurisprudencia CSJ 2012-2016 (anterior a SU 049/2017 de Corte Constitucional). Corte Constitucional > CSJ en jerarquía.</li>
+                    <li><strong>Documentó restricciones:</strong> En acta de seguimiento reconoce restricciones. No puede negarlas después.</li>
+                </ul>
+
+                <div class="subsection-title">Vulnerabilidades de Jhonatan</div>
+                <ul class="numbered-list">
+                    <li><strong>Historia clínica incompleta post-2023:</strong> Punto débil crítico. Serlogísticos alegará ausencia de pruebas recientes.</li>
+                    <li><strong>Sin calificación formal de discapacidad:</strong> No solicitud ante ARL/EPS de pérdida de capacidad laboral.</li>
+                    <li><strong>Documentos médicos ambiguos:</strong> Dicen "apto" o "puede continuar", no "incapacitado".</li>
+                    <li><strong>Retraso de 7+ meses en demanda:</strong> Primera terminación (30/05/2023), demanda (enero 2025). Afecta credibilidad.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- SECCIÓN 5 -->
+        <div class="section">
+            <div class="section-title">V. Cálculo de Pretensiones</div>
+            <div class="content">
+                <div class="subsection-title">Cuantía de la Demanda</div>
+                <ul>
+                    <li><strong>Salarios causados:</strong> $50.000.000</li>
+                    <li><strong>Prestaciones sociales:</strong> $3.500.000</li>
+                    <li><strong>Indemnización Art. 26 Ley 361:</strong> $10.800.000</li>
+                    <li><span class="number-highlight">SUBTOTAL: $64.300.000</span></li>
+                </ul>
+
+                <div class="subsection-title">Potencial Cuantía Reclamable (si se condena)</div>
+                <ul>
+                    <li>Salarios causados: ~$50M</li>
+                    <li>Indemnización Art. 26: ~$10.8M (180 días)</li>
+                    <li>Reliquidación prestaciones: ~$3.5M–$5M</li>
+                    <li>Sanción Art. 65 CST: Hasta 60 SMLMV (~$58M a 2025)</li>
+                    <li>Costas: ~$2M–$5M</li>
+                    <li><span class="critical">POTENCIAL TOTAL: $120M–$130M</span></li>
+                </ul>
+
+                <div class="alert alert-warning">
+                    <strong>Expectativa realista (si gana):</strong> $70M–$100M (no el potencial máximo de $120M)
+                </div>
+            </div>
+        </div>
+
+        <!-- SECCIÓN 6 -->
+        <div class="section">
+            <div class="section-title">VI. Factores que Determinan la Condena</div>
+            <div class="content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Factor</th>
+                            <th>Peso</th>
+                            <th>Análisis</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Admisión despido sin justa causa</td>
+                            <td><strong>CRÍTICO</strong></td>
+                            <td>Ambas partes lo reconocen. Art. 26 se aplica precisamente a esto.</td>
+                        </tr>
+                        <tr>
+                            <td>Existencia de restricciones laborales</td>
+                            <td><strong>CRÍTICO</strong></td>
+                            <td>Documentado en conceptos médicos y acta de seguimiento.</td>
+                        </tr>
+                        <tr>
+                            <td>Patrón de dos terminaciones</td>
+                            <td>ALTO</td>
+                            <td>Indica discriminación potencial por discapacidad.</td>
+                        </tr>
+                        <tr>
+                            <td>Jurisprudencia reciente (SU 049/2017)</td>
+                            <td>ALTO</td>
+                            <td>Corte Constitucional redefinió el concepto.</td>
+                        </tr>
+                        <tr>
+                            <td>Continuidad de tratamiento post-2023</td>
+                            <td>MEDIO</td>
+                            <td><strong>Debilidad:</strong> Jhonatan no tiene pruebas recientes.</td>
+                        </tr>
+                        <tr>
+                            <td>Incompatibilidad del cargo</td>
+                            <td>BAJO</td>
+                            <td>Serlogísticos no lo argumentó; acta muestra compatibilidad.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- SECCIÓN 7 -->
+        <div class="section">
+            <div class="section-title">VII. Estado Procesal y Limitaciones</div>
+            <div class="content">
+                <div class="alert alert-info">
+                    <strong>Etapa actual:</strong> Contestación de demanda presentada. Falta fase probatoria, alegatos y sentencia.
+                </div>
+
+                <div class="subsection-title">Lo que ya NO es posible hacer</div>
+                <ul>
+                    <li>Modificar pretensiones de la demanda (son fijas)</li>
+                    <li>Cambiar hechos alegados (ya están en el expediente)</li>
+                    <li>Añadir documentos nuevos en fase de demanda (plazo pasó)</li>
+                </ul>
+
+                <div class="subsection-title">Qué falta en el proceso</div>
+                <ul>
+                    <li>Fase probatoria (interrogatorios, testimonios, pericia)</li>
+                    <li>Alegatos de conclusión</li>
+                    <li>Sentencia de primera instancia</li>
+                    <li>Posible apelación ante tribunal superior</li>
+                </ul>
+
+                <div class="block">
+                    <h3>Tiempo estimado restante</h3>
+                    <p><span class="number-highlight">14-18 meses</span> hasta sentencia final (+ 6-12 meses si hay apelación)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECCIÓN 8 -->
+        <div class="section">
+            <div class="section-title">VIII. Análisis Realista de Riesgos</div>
+            <div class="content">
+                <div class="subsection-title">Escenario A: Litigio a través</div>
+                <div class="block">
+                    <p><strong>Probabilidad aparente de ganar:</strong> 65-75%</p>
+                    <p><strong>Pero con caveats importantes:</strong></p>
+                    <ul>
+                        <li>Serlogísticos tiene jurisprudencia CSJ 2012-2016 que juez conservador puede seguir</li>
+                        <li>Historia clínica post-2023 incompleta (debilidad crítica)</li>
+                        <li>No hay calificación formal de pérdida de capacidad laboral</li>
+                        <li>Apelación segura = otros 6-12 meses + incertidumbre</li>
+                        <li>Costo de litigio: 18-30 SMLMV sin garantía de resultado</li>
+                    </ul>
+                    <p style="margin-top: 12px;"><span class="critical">RIESGO REAL: 25-35% de perder en primera instancia o apelación</span></p>
+                </div>
+
+                <div class="subsection-title">Escenario B: Negociación en Centro de Conciliación</div>
+                <div class="block">
+                    <p><strong>Certidumbre:</strong> 100% (lo que se negocia se obtiene)</p>
+                    <p><strong>Cuantía realista:</strong></p>
+                    <ul>
+                        <li>Demanda pide: $64.3M</li>
+                        <li>Serlogísticos probablemente ofrece: $40M–$50M</li>
+                        <li>Negociación profesional podría lograr: $55M–$65M</li>
+                    </ul>
+                    <p style="margin-top: 12px;"><strong>Plazo:</strong> 2-4 meses | <strong>Costo:</strong> 5-8 SMLMV</p>
+                </div>
+
+                <div class="alert alert-danger">
+                    <strong>Comparativa de valor esperado:</strong>
+                    <br>Litigio: (50% × $75M) + (50% × $0M) - $24M costo = <strong>$13.5M</strong>
+                    <br>Negociación: 100% × $60M - $6.5M costo = <strong>$53.5M</strong>
+                    <br><br><span class="critical">La negociación genera 4x más valor esperado</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECCIÓN 9 -->
+        <div class="section">
+            <div class="section-title">IX. Recomendación: Negociación en Centro de Conciliación</div>
+            <div class="content">
+                <div class="alert alert-success">
+                    <strong>Bedrock NO recomienda proseguir a litigio completo.</strong>
+                </div>
+
+                <div class="subsection-title">Por qué negociación es superior</div>
+                <ul class="numbered-list">
+                    <li><strong>Riesgo controlado:</strong> 0% riesgo de perder (vs. 25-35% de litigio)</li>
+                    <li><strong>Velocidad:</strong> 2-4 meses (vs. 18-24 de litigio)</li>
+                    <li><strong>Costo:</strong> 5-8 SMLMV (vs. 18-30 de litigio)</li>
+                    <li><strong>Cuantía realista:</strong> $55M–$70M con certidumbre (vs. riesgo de $0M)</li>
+                </ul>
+
+                <div class="recommendation">
+                    <h3>Propuesta de Bedrock</h3>
+                    <p><strong>Fase 1 (Semana 1):</strong> Análisis y propuesta de negociación. Definir piso ($55M) y techo ($70M).</p>
+                    <p><strong>Fase 2 (Semanas 2-3):</strong> Pre-negociación con Serlogísticos.</p>
+                    <p><strong>Fase 3 (Semanas 4-6):</strong> Negociación formal en Centro de Conciliación.</p>
+                    <p><strong>Fase 4 (Semanas 7-8):</strong> Acuerdo firmado y pago recibido.</p>
+                </div>
+
+                <div class="subsection-title">Honorarios Bedrock (Modelo Híbrida)</div>
+                <ul>
+                    <li><strong>Tarifa fija:</strong> $3M (por trabajo de análisis y negociación)</li>
+                    <li><strong>Contingencia:</strong> 8% de lo logrado arriba de $55M</li>
+                    <li><strong>Ejemplo:</strong> Si negocia $60M → $3M + $400K = $3.4M total</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- SECCIÓN 10 -->
+        <div class="section">
+            <div class="section-title">X. Conclusión y Recomendación Final</div>
+            <div class="content">
+                <div class="alert alert-warning">
+                    <strong>Síntesis:</strong> Caso en fase de contestación. Litigio es largo (18-24 meses), costoso (18-30 SMLMV) y riesgoso (25-35% de perder).
+                </div>
+
+                <div class="recommendation">
+                    <h3>RECOMENDACIÓN: NEGOCIACIÓN INMEDIATA</h3>
+                    <ul>
+                        <li><span class="success-text">✓ Cuantía realista:</span> $55M–$70M</li>
+                        <li><span class="success-text">✓ Tiempo:</span> 2-4 meses</li>
+                        <li><span class="success-text">✓ Costo Bedrock:</span> $3M–$8M en honorarios</li>
+                        <li><span class="success-text">✓ Certidumbre:</span> 100% de éxito</li>
+                    </ul>
+                </div>
+
+                <div class="subsection-title">Posicionamiento de Bedrock</div>
+                <ul>
+                    <li><strong>No como litigante agresivo</strong> (sería contraproducente)</li>
+                    <li><strong>Como negociador profesional</strong> especializado en resolución alternativa</li>
+                    <li><strong>Aporta expertise:</strong> Jurisprudencia actualizada para fundamentar propuesta</li>
+                    <li><strong>Aporta contactos:</strong> Reputación para abrir puerta con Serlogísticos</li>
+                </ul>
+
+                <div class="subsection-title">Cronograma Inmediato</div>
+                <ul>
+                    <li><strong>Semana 1:</strong> Análisis y propuesta de negociación</li>
+                    <li><strong>Semana 2-3:</strong> Contacto pre-negociación</li>
+                    <li><strong>Semana 4-6:</strong> Negociación en Centro de Conciliación</li>
+                    <li><strong>Semana 7-8:</strong> Acuerdo firmado y pago recibido</li>
+                </ul>
+
+                <div class="alert alert-success">
+                    <strong>Por qué esta es la decisión correcta:</strong>
+                    <br>• Jurídicamente: Caso es "gris" (45-55% realista, no 65-75%)
+                    <br>• Económicamente: Negociación genera 4x más valor esperado
+                    <br>• Psicológicamente: Cliente evita 2-3 años de incertidumbre
+                    <br>• Comercialmente: Bedrock obtiene ganancia rápida, segura y con valor claro
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-line">Bedrock Abogados</div>
+            <div class="footer-line">Medellín, Antioquia • Colombia</div>
+            <div class="footer-contact">tualiado@bedrock.com.co</div>
+            <div class="footer-line" style="margin-top: 15px; font-size: 9px;">
+                Documento confidencial preparado bajo privilegio abogado-cliente.
+                <br>Análisis técnico-jurídico. Válido por 30 días.
+                <br>Versión 2.0 | Reenumerado | Recomendación: Negociación Centro de Conciliación
+            </div>
+        </div>
+    </div>
+</body>
+</html>

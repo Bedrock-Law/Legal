@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Propuesta Libe Legal</title>
+<meta name="description" content="Propuesta de servicios profesionales de Bedrock para Libe Legal: diagnóstico, adaptación técnica y capacitación en Claude Code.">
+<style>
+:root{
+  --primario:#1B1D36;
+  --secundario:#224D6E;
+  --acento:#E9CDA5;
+  --texto:#000000;
+  --fondo:#FFFFFF;
+  --gris:#6B6F7A;
+  --linea:#E2E6EB;
+  --tenue:#F7F8FA;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,Roboto,sans-serif;
+  --serif:Tinos,Georgia,"Times New Roman",serif;
+  --maxw:1080px;
+  --r:4px;
+  --logo-oscuro:url(data:image/png;base64,__LOGO_OSCURO__);
+  --logo-claro:url(data:image/png;base64,__LOGO_BLANCO__);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--fondo);color:var(--texto);
+  font-family:var(--serif);font-size:14px;line-height:1.72;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:var(--sans);font-weight:700;color:var(--primario);letter-spacing:-.01em}
+h1{font-size:36px;line-height:1.12;margin:0}
+h2{font-size:28px;line-height:1.2;margin:0}
+h3{font-size:18px;line-height:1.3;margin:0}
+p{margin:0 0 14px}
+a{color:var(--secundario)}
+
+.logo{display:block;background-repeat:no-repeat;background-position:left center;background-size:contain}
+.logo-oscuro{background-image:var(--logo-oscuro)}
+.logo-claro{background-image:var(--logo-claro)}
+.duo{display:flex;align-items:center;gap:13px}
+#progreso{position:fixed;top:0;left:0;height:3px;width:0;background:var(--secundario);z-index:60;transition:width .1s linear}
+
+header{
+  position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--linea);
+}
+.barra{max-width:var(--maxw);margin:0 auto;padding:12px 24px;display:flex;align-items:center;gap:24px;position:relative}
+.barra .logo{height:22px;width:114px;flex:0 0 auto}
+nav{margin-left:auto;display:flex;gap:22px;align-items:center}
+nav a{
+  font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.02em;
+  color:var(--gris);text-decoration:none;padding:6px 0;border-bottom:2px solid transparent;
+  transition:color .18s,border-color .18s;
+}
+nav a:not(.btn):hover{color:var(--primario)}
+nav a.activo:not(.btn){color:var(--primario);border-bottom-color:var(--acento)}
+.btn{
+  font-family:var(--sans);font-size:12px;font-weight:700;letter-spacing:.02em;
+  background:var(--primario);color:#fff;text-decoration:none;
+  padding:9px 16px;border-radius:var(--r);border:1px solid var(--primario);
+  transition:background .18s,border-color .18s;display:inline-block;
+}
+nav a.btn,nav a.btn.activo{color:#fff;border-bottom:1px solid var(--primario)}
+.btn:hover{background:var(--secundario);border-color:var(--secundario)}
+.btn.sobre-oscuro{background:var(--acento);color:var(--primario);border-color:var(--acento)}
+.btn.sobre-oscuro:hover{background:#fff;border-color:#fff}
+.btn.fantasma{background:transparent;color:#fff;border-color:rgba(255,255,255,.45)}
+.btn.fantasma:hover{background:rgba(255,255,255,.12);border-color:#fff}
+#menu-movil{
+  display:none;background:none;border:0;margin-left:auto;cursor:pointer;color:var(--primario);
+  padding:9px 7px;margin-right:-7px;line-height:0;
+}
+#menu-movil svg{display:block}
+
+.hero{background:var(--primario);color:#fff;padding:76px 24px 68px;position:relative;overflow:hidden}
+.hero::after{
+  content:"";position:absolute;right:-160px;top:-160px;width:520px;height:520px;border-radius:50%;
+  background:radial-gradient(circle,rgba(233,205,165,.16),transparent 68%);pointer-events:none;
+}
+.hero-in{max-width:var(--maxw);margin:0 auto;position:relative}
+.hero .duo{margin-bottom:52px}
+.hero .logo{height:34px;width:176px}
+.hero .eyebrow{
+  font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--acento);margin:0 0 14px;
+}
+.hero h1{color:#fff;max-width:22ch;font-size:clamp(30px,4.4vw,38px)}
+.regla-hero{width:64px;height:3px;background:var(--acento);margin:26px 0}
+.lede{font-size:17px;line-height:1.62;color:rgba(255,255,255,.88);max-width:62ch;margin:0}
+.meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:22px;margin:44px 0 22px;max-width:820px}
+.meta dt{font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:5px}
+.meta dd{margin:0;font-family:var(--sans);font-size:17px;font-weight:700;color:#fff}
+.meta dd small{display:block;font-family:var(--serif);font-size:13px;font-weight:400;color:rgba(255,255,255,.7);margin-top:3px}
+.destinatario{font-size:13.5px;color:rgba(255,255,255,.72);margin:0 0 30px}
+.acciones{display:flex;gap:12px;flex-wrap:wrap}
+
+section{padding:64px 24px;scroll-margin-top:64px}
+section.alterna{background:var(--tenue)}
+.in{max-width:var(--maxw);margin:0 auto}
+.num{
+  font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:.16em;
+  color:var(--secundario);text-transform:uppercase;margin:0 0 10px;
+}
+.regla{width:52px;height:3px;background:var(--acento);margin:14px 0 26px}
+h3+.espacio{height:14px}
+.intro{font-size:15px;max-width:70ch}
+
+.rejilla{display:grid;gap:16px;margin-top:26px}
+.r2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+@media(min-width:820px){.par{grid-template-columns:repeat(2,1fr)}}
+.tarjeta{background:#fff;border:1px solid var(--linea);border-radius:var(--r);padding:22px;transition:border-color .2s}
+.tarjeta:hover{border-color:var(--secundario)}
+.tarjeta .ico{
+  font-family:var(--sans);font-size:11.5px;font-weight:700;color:#fff;background:var(--secundario);
+  width:26px;height:26px;border-radius:50%;display:grid;place-items:center;margin-bottom:14px;
+}
+.tarjeta h3{margin-bottom:7px;font-size:15px}
+.tarjeta p{margin:0;font-size:13.5px;color:#2a2a2a}
+
+.tabla-envoltura{overflow-x:auto;margin-top:24px;border:1px solid var(--linea);border-radius:var(--r);background:#fff}
+.tabla-envoltura:focus-visible,.gantt:focus-visible{outline:2px solid var(--secundario);outline-offset:2px}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+table.ancha{min-width:560px}
+th{
+  font-family:var(--sans);font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--gris);text-align:left;padding:13px 16px;border-bottom:1.5px solid var(--linea);background:var(--tenue);
+}
+thead th{white-space:nowrap}
+tbody th{
+  white-space:normal;font-size:12px;letter-spacing:.06em;color:var(--primario);
+  background:#fff;border-bottom:1px solid var(--linea);vertical-align:top;
+}
+td{padding:13px 16px;border-bottom:1px solid var(--linea);vertical-align:top}
+tbody tr:last-child td,tbody tr:last-child th{border-bottom:0}
+.der{text-align:right;white-space:nowrap;font-family:var(--sans);font-variant-numeric:tabular-nums}
+tr.total th,tr.total td{font-family:var(--sans);font-weight:700;color:var(--primario);background:var(--tenue)}
+
+.pestanas{display:flex;gap:6px;margin:26px 0 0;border-bottom:1px solid var(--linea)}
+.pestanas button{
+  font-family:var(--sans);font-size:12.5px;font-weight:600;white-space:nowrap;
+  background:none;border:0;border-bottom:2px solid transparent;color:var(--gris);
+  padding:11px 14px;cursor:pointer;transition:color .18s,border-color .18s;
+}
+.pestanas button:hover{color:var(--primario)}
+.pestanas button[aria-selected="true"]{color:var(--primario);border-bottom-color:var(--acento)}
+.panel{padding-top:24px}
+.etiqueta{
+  display:inline-block;font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:.04em;
+  background:var(--tenue);color:var(--primario);border-left:3px solid var(--secundario);
+  padding:6px 12px;margin-bottom:14px;
+}
+
+.hitos{margin-top:28px;border-top:1px solid var(--linea)}
+.hito{border-bottom:1px solid var(--linea)}
+.hito-h{margin:0;font-size:inherit;font-weight:400}
+.hito-cab{
+  width:100%;background:none;border:0;text-align:left;cursor:pointer;
+  padding:20px 4px;display:flex;align-items:center;gap:18px;font-family:var(--serif);
+  transition:background .15s;
+}
+.hito-cab:hover{background:#FCFAF6}
+.hito-n{
+  flex:0 0 auto;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;
+  font-family:var(--sans);font-size:13px;font-weight:700;
+  background:var(--tenue);color:var(--secundario);border:1.5px solid var(--linea);transition:.2s;
+}
+.hito[data-abierto="1"] .hito-n{background:var(--secundario);color:#fff;border-color:var(--secundario)}
+.hito-t{flex:1}
+.hito-t .t{font-family:var(--sans);font-weight:700;font-size:15px;color:var(--primario);display:block}
+.hito-t .s{font-size:12.5px;color:var(--gris)}
+.hito-v{font-family:var(--sans);font-weight:700;font-size:12.5px;color:var(--secundario);white-space:nowrap;font-variant-numeric:tabular-nums}
+.hito-flecha{color:var(--gris);transition:transform .25s;flex:0 0 auto;line-height:0}
+.hito[data-abierto="1"] .hito-flecha{transform:rotate(180deg)}
+.hito-cuerpo-in{padding:0 4px 24px 56px}
+.hito-cuerpo p{font-size:13.5px}
+.entregable{border-left:3px solid var(--acento);padding:10px 0 10px 14px;margin-top:12px;font-size:13px}
+.entregable span{font-family:var(--sans);font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--secundario);display:block;margin-bottom:3px}
+
+.gantt{overflow-x:auto;margin-top:26px}
+.gantt table{min-width:560px}
+.gantt td.celda{padding:8px 6px;text-align:center}
+.barra-g{display:inline-block;height:11px;width:100%;border-radius:99px;background:var(--linea)}
+.barra-g.on{background:var(--secundario)}
+.aviso-desliza{font-size:12px;color:var(--gris);margin:8px 0 0;display:none}
+
+.pasos{counter-reset:p;list-style:none;padding:0;margin:26px 0 0;display:grid;gap:12px}
+.pasos li{
+  counter-increment:p;background:#fff;border:1px solid var(--linea);border-radius:var(--r);
+  padding:18px 20px 18px 58px;position:relative;font-size:14px;
+}
+.pasos li::before{
+  content:counter(p);position:absolute;left:18px;top:16px;
+  width:26px;height:26px;border-radius:50%;background:var(--tenue);color:var(--secundario);
+  border:1.5px solid var(--linea);
+  font-family:var(--sans);font-weight:700;font-size:12.5px;display:grid;place-items:center;
+}
+
+section.cierre{background:var(--primario);color:#fff;text-align:center}
+section.cierre h2{color:#fff;font-size:clamp(24px,3.6vw,30px);max-width:34ch;margin:0 auto}
+section.cierre .regla{margin:22px auto 26px}
+.hechos{display:grid;gap:12px;max-width:660px;margin:30px auto 34px;text-align:left}
+.hechos div{border:1px solid rgba(255,255,255,.2);border-radius:var(--r);padding:15px 18px;font-size:14px;color:rgba(255,255,255,.92)}
+.hechos b{color:var(--acento);font-family:var(--sans);font-weight:700}
+
+footer{background:var(--primario);border-top:1px solid var(--secundario);color:rgba(255,255,255,.7);padding:40px 24px;font-size:12.5px}
+.pie{max-width:var(--maxw);margin:0 auto;display:flex;gap:26px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+.pie .logo{height:20px;width:104px;opacity:.85}
+.pie a{color:var(--acento);text-decoration:none}
+.pie a:hover{text-decoration:underline}
+.pie .reserva{flex:1 1 100%;color:rgba(255,255,255,.55);font-size:11.5px;line-height:1.6;border-top:1px solid rgba(255,255,255,.14);padding-top:18px;margin-top:6px}
+
+.nota{border-left:3px solid var(--acento);background:#FDFAF4;padding:16px 18px;border-radius:var(--r);font-size:13.5px;margin-top:24px}
+.nota b{font-family:var(--sans);color:var(--primario)}
+.abierto{
+  background:#FFF8E1;border:1px dashed #B08A3E;color:#6B5218;padding:2px 7px;border-radius:3px;
+  font-family:var(--sans);font-size:11.5px;font-weight:700;white-space:nowrap;
+}
+
+.rev{transition:opacity .55s ease,transform .55s ease}
+html.js .rev{opacity:0;transform:translateY(14px)}
+html.js .rev.vis{opacity:1;transform:none}
+
+html.js .hito-cuerpo{max-height:0;overflow:hidden;visibility:hidden;transition:max-height .32s ease,visibility 0s .32s}
+html.js .hito[data-abierto="1"] .hito-cuerpo{visibility:visible;transition:max-height .32s ease,visibility 0s 0s}
+html.js .panel{display:none;animation:entra .3s ease}
+html.js .panel.visible{display:block}
+@keyframes entra{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+@media (max-width:820px){
+  nav{display:none}
+  nav.abierta{display:flex;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;gap:0;padding:8px 24px 16px;border-bottom:1px solid var(--linea)}
+  nav.abierta a{padding:11px 0;border-bottom:1px solid var(--linea)}
+  nav.abierta a.btn{margin-top:10px;text-align:center;border:1px solid var(--primario)}
+  #menu-movil{display:block}
+  .hero{padding:52px 20px 48px}
+  .hero .logo{margin-bottom:34px}
+  section{padding:48px 20px}
+  .hito-cuerpo-in{padding-left:20px}
+  .hito-cab{gap:12px;flex-wrap:wrap}
+  .hito-v{order:3;flex:1 1 100%;padding-left:46px}
+  .pestanas{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .aviso-desliza{display:block}
+}
+
+@media print{
+  header,#progreso,.acciones,#menu-movil,.aviso-desliza{display:none}
+  .hero::after{display:none}
+  .in,.hero-in{max-width:none;width:auto}
+  section{padding:20px 12px;break-inside:auto}
+  .hero{padding:16px 12px;background:#fff;color:#000}
+  .rejilla{grid-template-columns:repeat(2,1fr)}
+  table,table.ancha,.gantt table{min-width:0}
+  .meta{max-width:none;margin:22px 0 14px}
+  .hero h1,section.cierre h2{color:var(--primario)}
+  .lede,.meta dd,.meta dt,.destinatario,.hechos div{color:#000}
+  .eyebrow,.hechos b,.pie a{color:var(--secundario)}
+  .hero .logo-claro,.pie .logo-claro{filter:invert(1)}
+  section.cierre,footer{background:#fff;color:#000}
+  footer{border-top:1px solid var(--linea)}
+  .pie .reserva{color:#000;border-top-color:var(--linea)}
+  .hechos div{border-color:var(--linea)}
+  .barra-g{print-color-adjust:exact;-webkit-print-color-adjust:exact}
+  .barra-g:not(.on){border:1px solid var(--linea);background:#fff}
+  .barra-g.on{border:5px solid var(--primario);border-radius:99px;background:#fff;height:1px}
+  html.js .panel,.panel{display:block!important}
+  html.js .hito-cuerpo,.hito-cuerpo{max-height:none!important;visibility:visible!important;overflow:visible!important}
+  .rev{opacity:1!important;transform:none!important;transition:none!important}
+  .tarjeta,.hito,.nota,.pasos li,.tabla-envoltura,.entregable{break-inside:avoid}
+}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    animation-duration:.01ms!important;animation-iteration-count:1!important;
+    transition-duration:.01ms!important;scroll-behavior:auto!important;
+  }
+  html.js .rev{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div id="progreso" aria-hidden="true"></div>
+
+<header>
+  <div class="barra">
+    <span class="logo logo-oscuro" role="img" aria-label="Bedrock Abogados"></span>
+    <button id="menu-movil" aria-label="Abrir menú de secciones" aria-expanded="false" aria-controls="nav">
+      <svg width="22" height="16" viewBox="0 0 22 16" fill="none" aria-hidden="true"><path d="M0 1h22M0 8h22M0 15h22" stroke="currentColor" stroke-width="1.8"/></svg>
+    </button>
+    <nav id="nav" aria-label="Secciones del documento">
+      <a href="#seccion-1">Alcance</a>
+      <a href="#seccion-2">Qué se instala</a>
+      <a href="#seccion-3">Cronograma</a>
+      <a class="btn" href="#cierre">Agendar inicio</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-in">
+    <span class="logo logo-claro" role="img" aria-label="Bedrock Abogados"></span>
+    <p class="eyebrow">Propuesta de servicios profesionales · Ref. BED-LIBE-2026-01</p>
+    <h1>Adecuación de los procesos de Libe Legal a un entorno de trabajo en Claude Code</h1>
+    <div class="regla-hero"></div>
+    <p class="lede">Diagnóstico, adaptación técnica y capacitación para que el equipo de Libe Legal opere sus actividades de firma de abogados desde tres terminales de Claude Code.</p>
+    <dl class="meta">
+      <div><dt>Equipo cubierto</dt><dd>3 terminales<small>una por integrante</small></dd></div>
+      <div><dt>Plazo</dt><dd>6 semanas<small>desde el inicio acordado</small></dd></div>
+      <div><dt>Honorarios</dt><dd>$8.334.308<small>cuatro SMMLV + IVA</small></dd></div>
+      <div><dt>Vigencia</dt><dd>15 días<small>hasta el 17 de sept. 2026</small></dd></div>
+    </dl>
+    <p class="destinatario">Para Lina Lineros, socia de Libe Legal · De Bedrock Abogados · 2 de septiembre de 2026</p>
+    <div class="acciones">
+      <a class="btn sobre-oscuro" href="#seccion-1">Ver el alcance</a>
+      <a class="btn fantasma" href="#seccion-3">Ver el cronograma</a>
+    </div>
+  </div>
+</div>
+
+<section id="seccion-1">
+  <div class="in">
+    <p class="num">01 · Alcance del servicio</p>
+    <h2>Qué entra en el servicio</h2>
+    <div class="regla"></div>
+    <p class="intro">Al cierre de las seis semanas, Libe Legal queda con tres terminales de Claude Code operando sobre sus propias cuentas de correo, calendario y almacenamiento, un repositorio en GitHub con sus plantillas y su configuración, un proyecto en Linear para sus asuntos, y el equipo capacitado en el uso diario.</p>
+    <div class="rejilla r2 par rev">
+      <div class="tarjeta"><div class="ico" aria-hidden="true">1</div><h3>Entendimiento de procesos</h3><p>Bedrock releva cómo Libe Legal redacta, hace seguimiento a sus asuntos y gestiona su correspondencia, antes de tocar cualquier configuración.</p></div>
+      <div class="tarjeta"><div class="ico" aria-hidden="true">2</div><h3>Entorno compartido en GitHub</h3><p>El trabajo de las tres terminales se sincroniza en un repositorio con historial de cambios y control de quién modificó qué.</p></div>
+      <div class="tarjeta"><div class="ico" aria-hidden="true">3</div><h3>Gestión de tareas en Linear</h3><p>Los asuntos y las tareas de la firma quedan registrados con los mismos criterios de trazabilidad que usa Bedrock.</p></div>
+      <div class="tarjeta"><div class="ico" aria-hidden="true">4</div><h3>Correo electrónico y MCP</h3><p>Se instalan y configuran, sobre las cuentas propias de Libe Legal, los servidores MCP que permiten trabajar sobre correo, calendario, Drive y documentos.</p></div>
+    </div>
+    <div class="nota rev"><b>Fuera de alcance.</b> La licencia de uso de Claude, y cualquier MCP server o skill distinto de los que se describen en la sección siguiente.</div>
+  </div>
+</section>
+
+<section id="seccion-2" class="alterna">
+  <div class="in">
+    <p class="num">02 · Diagnóstico técnico</p>
+    <h2>Qué necesita una firma como Libe Legal</h2>
+    <div class="regla"></div>
+    <p class="intro">Una firma boutique de derecho financiero, mercado de valores y seguros tiene necesidades concretas y bien documentadas. Esto es lo que se instala para cubrir cada una, apuntado a las cuentas y a la identidad propias de Libe Legal.</p>
+
+    <div class="hitos rev" id="hitos-necesidades">
+      <div class="hito" data-abierto="1">
+        <h3 class="hito-h"><button class="hito-cab" aria-expanded="true">
+          <span class="hito-n" aria-hidden="true">1</span>
+          <span class="hito-t"><span class="t">Trazabilidad de trámites regulatorios</span><span class="s">Correo, calendario y Linear</span></span>
+          <span class="hito-flecha" aria-hidden="true"><svg width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+        </button></h3>
+        <div class="hito-cuerpo"><div class="hito-cuerpo-in">
+          <p>Una solicitud de autorización ante la Superintendencia Financiera pasa por su Grupo de Autorizaciones, con radicados numerados y notificación electrónica de cada acto administrativo en PDF. Perder de vista un radicado o la fecha en que vence un término tiene un costo real para el cliente.</p>
+          <div class="entregable"><span>Se instala</span>Correo y calendario conectados a las cuentas propias de Libe Legal; cada trámite queda como un asunto en Linear, con responsable y fecha.</div>
+        </div></div>
+      </div>
+      <div class="hito">
+        <h3 class="hito-h"><button class="hito-cab" aria-expanded="false">
+          <span class="hito-n" aria-hidden="true">2</span>
+          <span class="hito-t"><span class="t">Debida diligencia en M&amp;A y licenciamiento</span><span class="s">Servidor de debida diligencia</span></span>
+          <span class="hito-flecha" aria-hidden="true"><svg width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+        </button></h3>
+        <div class="hito-cuerpo"><div class="hito-cuerpo-in">
+          <p>Un due diligence legal estándar cubre gobierno corporativo, tabla de capitalización y sus instrumentos asociados (opciones, warrants, notas convertibles, pactos de accionistas), litigios y cumplimiento regulatorio, en procesos que suelen tomar entre cuatro y ocho semanas.</p>
+          <div class="entregable"><span>Se instala</span>Cuatro herramientas que siguen ese mismo orden: analizan la tabla de capitalización, verifican antecedentes, evalúan riesgo legal y consolidan el informe.</div>
+        </div></div>
+      </div>
+      <div class="hito">
+        <h3 class="hito-h"><button class="hito-cab" aria-expanded="false">
+          <span class="hito-n" aria-hidden="true">3</span>
+          <span class="hito-t"><span class="t">Conocimiento del cliente, bajo SARLAFT y SAGRILAFT</span><span class="s">Verificación de antecedentes</span></span>
+          <span class="hito-flecha" aria-hidden="true"><svg width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+        </button></h3>
+        <div class="hito-cuerpo"><div class="hito-cuerpo-in">
+          <p>Las entidades vigiladas por la Superintendencia Financiera operan bajo SARLAFT; las que no, bajo SAGRILAFT, a cargo de la Superintendencia de Sociedades. Ambos exigen verificar identidad, cotejar contra listas de sanciones y clasificar el riesgo desde el ingreso del cliente o la contraparte.</p>
+          <div class="entregable"><span>Se instala</span>La herramienta de verificación de antecedentes cubre ese primer filtro, antes de que el abogado dedique tiempo al análisis de fondo.</div>
+        </div></div>
+      </div>
+      <div class="hito">
+        <h3 class="hito-h"><button class="hito-cab" aria-expanded="false">
+          <span class="hito-n" aria-hidden="true">4</span>
+          <span class="hito-t"><span class="t">Control de versiones en negociaciones</span><span class="s">GitHub y edición de Word</span></span>
+          <span class="hito-flecha" aria-hidden="true"><svg width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+        </button></h3>
+        <div class="hito-cuerpo"><div class="hito-cuerpo-in">
+          <p>Una financiación o una emisión se negocia a punta de borradores que cambian de mano varias veces entre la firma, el cliente y la contraparte.</p>
+          <div class="entregable"><span>Se instala</span>El repositorio en GitHub deja cada versión con su historial y con quién la modificó; el skill de edición de Word con control de cambios cubre el ida y vuelta de comentarios con la contraparte.</div>
+        </div></div>
+      </div>
+      <div class="hito">
+        <h3 class="hito-h"><button class="hito-cab" aria-expanded="false">
+          <span class="hito-n" aria-hidden="true">5</span>
+          <span class="hito-t"><span class="t">Documentos con identidad propia</span><span class="s">Generador de documentos, reconfigurado</span></span>
+          <span class="hito-flecha" aria-hidden="true"><svg width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+        </button></h3>
+        <div class="hito-cuerpo"><div class="hito-cuerpo-in">
+          <p>Los reglamentos de emisión, los prospectos, los conceptos jurídicos y los informes de debida diligencia de Libe Legal no deben verse como de Bedrock ni de ningún tercero.</p>
+          <div class="entregable"><span>Se instala</span>Durante la adaptación, el generador de documentos se reconfigura con el logo, los colores y el membrete propios de Libe Legal.</div>
+        </div></div>
+      </div>
+      <div class="hito">
+        <h3 class="hito-h"><button class="hito-cab" aria-expanded="false">
+          <span class="hito-n" aria-hidden="true">6</span>
+          <span class="hito-t"><span class="t">Redacción defendible ante el regulador</span><span class="s">Depuración de redacción</span></span>
+          <span class="hito-flecha" aria-hidden="true"><svg width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+        </button></h3>
+        <div class="hito-cuerpo"><div class="hito-cuerpo-in">
+          <p>Un concepto jurídico o una respuesta a un requerimiento se lee distinto si tiene señales de redacción generada sin verificar; en materia financiera y regulatoria esa diferencia pesa.</p>
+          <div class="entregable"><span>Se instala</span>El skill de depuración de redacción revisa cada documento contra ese estándar antes de entregarlo.</div>
+        </div></div>
+      </div>
+      <div class="hito">
+        <h3 class="hito-h"><button class="hito-cab" aria-expanded="false">
+          <span class="hito-n" aria-hidden="true">7</span>
+          <span class="hito-t"><span class="t">Segunda opinión en preguntas normativas</span><span class="s">Panel de segunda opinión</span></span>
+          <span class="hito-flecha" aria-hidden="true"><svg width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+        </button></h3>
+        <div class="hito-cuerpo"><div class="hito-cuerpo-in">
+          <p>La interpretación de una norma financiera o de mercado de valores no siempre tiene una sola lectura correcta.</p>
+          <div class="entregable"><span>Se instala</span>El panel somete la pregunta a varios modelos antes de que el abogado se apoye en la respuesta.</div>
+        </div></div>
+      </div>
+    </div>
+    <p class="intro" style="margin-top:24px">Sobre esta misma base operan, además, el manejo de PDF (para las notificaciones y radicados que llegan de la Superintendencia), el manejo de hojas de cálculo y de presentaciones para las salidas de trabajo del día a día, y la gestión de tareas en Linear con las reglas de estado y etiquetas propias de la firma.</p>
+
+    <h3 style="margin-top:44px">Honorarios</h3>
+    <div class="espacio"></div>
+    <div class="tabla-envoltura rev" style="margin-top:0" tabindex="0" role="region" aria-label="Honorarios del servicio">
+      <table>
+        <tbody>
+          <tr><th scope="row" style="width:280px">Cuatro SMMLV vigentes (2026)</th><td class="der">$7.003.620</td></tr>
+          <tr><th scope="row">Impuesto sobre las ventas (19%)</th><td class="der">$1.330.688</td></tr>
+          <tr class="total"><th scope="row">Total</th><td class="der">$8.334.308</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px;font-size:13.5px;color:var(--gris)">Pago: cincuenta por ciento a la firma de la propuesta ($4.167.154) y cincuenta por ciento contra entrega, al cierre de la semana seis ($4.167.154).</p>
+  </div>
+</section>
+
+<section id="seccion-3">
+  <div class="in">
+    <p class="num">03 · Cronograma y modalidad</p>
+    <h2>Cómo se ejecuta en seis semanas</h2>
+    <div class="regla"></div>
+
+    <div class="pestanas" role="tablist" aria-label="Modalidad de trabajo">
+      <button role="tab" id="tab-a" aria-controls="a" aria-selected="true" tabindex="0" data-p="a">Remoto</button>
+      <button role="tab" id="tab-b" aria-controls="b" aria-selected="false" tabindex="-1" data-p="b">Presencial</button>
+    </div>
+    <div class="panel visible" id="a" role="tabpanel" aria-labelledby="tab-a" tabindex="0">
+      <p class="etiqueta">Modalidad principal</p>
+      <p>Las capacitaciones y las instalaciones se hacen de forma remota, con sesiones guiadas desde la terminal de cada integrante del equipo.</p>
+    </div>
+    <div class="panel" id="b" role="tabpanel" aria-labelledby="tab-b" tabindex="0">
+      <p class="etiqueta">Primera sesión sin costo de viáticos</p>
+      <p>La primera sesión comercial presencial, en las oficinas de Libe Legal en Bogotá, no genera cobro adicional por viáticos. Cualquier otra sesión de trabajo presencial que se acuerde durante la ejecución del servicio sí se factura aparte, sobre soporte, por los gastos de desplazamiento que genere.</p>
+    </div>
+
+    <h3 style="margin-top:48px">Cronograma</h3>
+    <div class="espacio"></div>
+    <p class="intro" style="margin-top:0">La fecha de inicio queda para acordar con Libe Legal una vez firmada la propuesta.</p>
+    <div class="gantt rev" tabindex="0" role="region" aria-label="Cronograma de seis semanas por fase">
+      <table>
+        <thead><tr><th scope="col">Fase</th><th scope="col" class="celda">S1</th><th scope="col" class="celda">S2</th><th scope="col" class="celda">S3</th><th scope="col" class="celda">S4</th><th scope="col" class="celda">S5</th><th scope="col" class="celda">S6</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">1. Entendimiento</th><td class="celda"><span class="barra-g on"></span></td><td class="celda"><span class="barra-g on"></span></td><td class="celda"><span class="barra-g"></span></td><td class="celda"><span class="barra-g"></span></td><td class="celda"><span class="barra-g"></span></td><td class="celda"><span class="barra-g"></span></td></tr>
+          <tr><th scope="row">2. Diseño de la adaptación</th><td class="celda"><span class="barra-g"></span></td><td class="celda"><span class="barra-g on"></span></td><td class="celda"><span class="barra-g on"></span></td><td class="celda"><span class="barra-g"></span></td><td class="celda"><span class="barra-g"></span></td><td class="celda"><span class="barra-g"></span></td></tr>
+          <tr><th scope="row">3. Instalación</th><td class="celda"><span class="barra-g"></span></td><td class="celda"><span class="barra-g"></span></td><td class="celda"><span class="barra-g on"></span></td><td class="celda"><span class="barra-g on"></span></td><td class="celda"><span class="barra-g"></span></td><td class="celda"><span class="barra-g"></span></td></tr>
+          <tr><th scope="row">4. Capacitación</th><td class="celda"><span class="barra-g"></span></td><td class="celda"><span class="barra-g"></span></td><td class="celda"><span class="barra-g"></span></td><td class="celda"><span class="barra-g on"></span></td><td class="celda"><span class="barra-g on"></span></td><td class="celda"><span class="barra-g"></span></td></tr>
+          <tr><th scope="row">5. Cierre</th><td class="celda"><span class="barra-g"></span></td><td class="celda"><span class="barra-g"></span></td><td class="celda"><span class="barra-g"></span></td><td class="celda"><span class="barra-g"></span></td><td class="celda"><span class="barra-g on"></span></td><td class="celda"><span class="barra-g on"></span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="aviso-desliza">Desliza para ver las seis semanas.</p>
+
+    <h3 style="margin-top:48px">Detalle por fase</h3>
+    <div class="espacio"></div>
+    <div class="hitos" id="hitos">
+      <div class="hito" data-abierto="1">
+        <h3 class="hito-h"><button class="hito-cab" aria-expanded="true">
+          <span class="hito-n" aria-hidden="true">1</span>
+          <span class="hito-t"><span class="t">Entendimiento de procesos</span><span class="s">Semana 1 y 2</span></span>
+          <span class="hito-v">Fase 1</span>
+          <span class="hito-flecha" aria-hidden="true"><svg width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+        </button></h3>
+        <div class="hito-cuerpo"><div class="hito-cuerpo-in">
+          <p>Entrevistas con los tres integrantes del equipo, revisión de plantillas y precedentes propios, mapeo de los flujos de trabajo que hoy sigue la firma.</p>
+          <div class="entregable"><span>Entregable</span>Mapeo de procesos y plantillas de Libe Legal</div>
+        </div></div>
+      </div>
+      <div class="hito">
+        <h3 class="hito-h"><button class="hito-cab" aria-expanded="false">
+          <span class="hito-n" aria-hidden="true">2</span>
+          <span class="hito-t"><span class="t">Diseño de la adaptación</span><span class="s">Semana 2 y 3</span></span>
+          <span class="hito-v">Fase 2</span>
+          <span class="hito-flecha" aria-hidden="true"><svg width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+        </button></h3>
+        <div class="hito-cuerpo"><div class="hito-cuerpo-in">
+          <p>Definición de la estructura del repositorio en GitHub, del flujo de trabajo en Linear y de la configuración de cada MCP server sobre las cuentas propias de Libe Legal.</p>
+          <div class="entregable"><span>Entregable</span>Estructura de repositorio y de proyecto en Linear</div>
+        </div></div>
+      </div>
+      <div class="hito">
+        <h3 class="hito-h"><button class="hito-cab" aria-expanded="false">
+          <span class="hito-n" aria-hidden="true">3</span>
+          <span class="hito-t"><span class="t">Instalación y configuración</span><span class="s">Semana 3 y 4</span></span>
+          <span class="hito-v">Fase 3</span>
+          <span class="hito-flecha" aria-hidden="true"><svg width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+        </button></h3>
+        <div class="hito-cuerpo"><div class="hito-cuerpo-in">
+          <p>Instalación de Claude Code en los tres equipos, configuración de credenciales y de los MCP servers, migración de las plantillas propias de Libe Legal al nuevo entorno.</p>
+          <div class="entregable"><span>Entregable</span>Tres terminales instaladas y configuradas</div>
+        </div></div>
+      </div>
+      <div class="hito">
+        <h3 class="hito-h"><button class="hito-cab" aria-expanded="false">
+          <span class="hito-n" aria-hidden="true">4</span>
+          <span class="hito-t"><span class="t">Capacitación</span><span class="s">Semana 4 y 5</span></span>
+          <span class="hito-v">Fase 4</span>
+          <span class="hito-flecha" aria-hidden="true"><svg width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+        </button></h3>
+        <div class="hito-cuerpo"><div class="hito-cuerpo-in">
+          <p>Sesiones de uso de la terminal para los tres integrantes del equipo, con los casos de uso reales relevados en la fase uno.</p>
+          <div class="entregable"><span>Entregable</span>Equipo capacitado en el uso diario</div>
+        </div></div>
+      </div>
+      <div class="hito">
+        <h3 class="hito-h"><button class="hito-cab" aria-expanded="false">
+          <span class="hito-n" aria-hidden="true">5</span>
+          <span class="hito-t"><span class="t">Acompañamiento y cierre</span><span class="s">Semana 5 y 6</span></span>
+          <span class="hito-v">Fase 5</span>
+          <span class="hito-flecha" aria-hidden="true"><svg width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+        </button></h3>
+        <div class="hito-cuerpo"><div class="hito-cuerpo-in">
+          <p>Resolución de dudas sobre el uso diario, ajustes finales a la configuración según el uso real de la primera semana de operación, y entrega de la documentación de cierre.</p>
+          <div class="entregable"><span>Entregable</span>Documentación de cierre entregada</div>
+        </div></div>
+      </div>
+    </div>
+
+    <ol class="pasos rev" style="margin-top:40px">
+      <li>Confirmar por escrito la aceptación de esta propuesta, antes del 17 de septiembre de 2026.</li>
+      <li>Acordar la fecha de inicio de las seis semanas.</li>
+      <li>Agendar la primera entrevista de entendimiento de procesos con los tres integrantes del equipo.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="cierre" id="cierre">
+  <div class="in">
+    <h2>La adaptación parte de cómo Libe Legal ya trabaja, no de un flujo genérico</h2>
+    <div class="regla"></div>
+    <div class="hechos">
+      <div><b>Equipo cubierto.</b> Tres terminales de Claude Code, una por integrante del equipo actual de Libe Legal.</div>
+      <div><b>Vigencia.</b> Esta propuesta es válida hasta el 17 de septiembre de 2026.</div>
+    </div>
+    <div class="acciones" style="justify-content:center">
+      <a class="btn sobre-oscuro" href="mailto:tualiado@bedrock.com.co?subject=Propuesta%20Bedrock%20-%20Libe%20Legal">Confirmar por correo</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="pie">
+    <span class="logo logo-claro" role="img" aria-label="Bedrock Abogados"></span>
+    <div>Derecho para empresas en movimiento · Bogotá · Medellín</div>
+    <div><a href="mailto:tualiado@bedrock.com.co">tualiado@bedrock.com.co</a> · <a href="https://www.bedrock.com.co">www.bedrock.com.co</a></div>
+    <div class="reserva">Ref. BED-LIBE-2026-01 · Documento confidencial, de uso exclusivo de Libe Legal y de Bedrock.</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  var raiz = document.documentElement;
+  raiz.classList.add("js");
+
+  var barra = document.getElementById("progreso");
+  function progreso(){
+    var max = raiz.scrollHeight - raiz.clientHeight;
+    barra.style.width = (max > 0 ? (raiz.scrollTop / max) * 100 : 0) + "%";
+  }
+  addEventListener("scroll", progreso, {passive:true});
+  progreso();
+
+  var bm = document.getElementById("menu-movil"), nav = document.getElementById("nav");
+  function cerrarMenu(devolverFoco){
+    nav.classList.remove("abierta");
+    bm.setAttribute("aria-expanded","false");
+    if(devolverFoco) bm.focus();
+  }
+  bm.addEventListener("click", function(){
+    var abierta = nav.classList.toggle("abierta");
+    bm.setAttribute("aria-expanded", abierta ? "true" : "false");
+  });
+  nav.addEventListener("click", function(e){ if(e.target.tagName === "A") cerrarMenu(false); });
+  addEventListener("keydown", function(e){
+    if(e.key === "Escape" && nav.classList.contains("abierta")) cerrarMenu(true);
+  });
+
+  var enlaces = Array.prototype.slice.call(nav.querySelectorAll('a[href^="#"]:not(.btn)'));
+  var secciones = enlaces.map(function(a){ return document.querySelector(a.getAttribute("href")); });
+  var obsNav = new IntersectionObserver(function(entradas){
+    entradas.forEach(function(en){
+      if(!en.isIntersecting) return;
+      enlaces.forEach(function(a,i){ a.classList.toggle("activo", secciones[i] === en.target); });
+    });
+  }, {rootMargin:"-45% 0px -50% 0px"});
+  secciones.forEach(function(s){ if(s) obsNav.observe(s); });
+
+  var obsRev = new IntersectionObserver(function(entradas, obs){
+    entradas.forEach(function(en){
+      if(en.isIntersecting){ en.target.classList.add("vis"); obs.unobserve(en.target); }
+    });
+  }, {threshold:.08});
+  document.querySelectorAll(".rev").forEach(function(el){ obsRev.observe(el); });
+
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.pestanas button[role="tab"]'));
+  function activar(i, mueveFoco){
+    tabs.forEach(function(t, j){
+      var sel = i === j;
+      t.setAttribute("aria-selected", sel ? "true" : "false");
+      t.setAttribute("tabindex", sel ? "0" : "-1");
+      document.getElementById(t.dataset.p).classList.toggle("visible", sel);
+    });
+    if(mueveFoco) tabs[i].focus();
+  }
+  tabs.forEach(function(t, i){
+    t.addEventListener("click", function(){ activar(i, false); });
+    t.addEventListener("keydown", function(e){
+      var n = null;
+      if(e.key === "ArrowRight") n = (i + 1) % tabs.length;
+      else if(e.key === "ArrowLeft") n = (i - 1 + tabs.length) % tabs.length;
+      else if(e.key === "Home") n = 0;
+      else if(e.key === "End") n = tabs.length - 1;
+      if(n !== null){ e.preventDefault(); activar(n, true); }
+    });
+  });
+
+  function medir(h){
+    var c = h.querySelector(".hito-cuerpo");
+    c.style.maxHeight = h.dataset.abierto === "1" ? (c.firstElementChild.offsetHeight + "px") : "0px";
+  }
+  var gruposHitos = Array.prototype.slice.call(document.querySelectorAll(".hitos"));
+  gruposHitos.forEach(function(grupo){
+    var hitos = Array.prototype.slice.call(grupo.querySelectorAll(".hito"));
+    hitos.forEach(function(h){
+      var cab = h.querySelector(".hito-cab");
+      medir(h);
+      cab.addEventListener("click", function(){
+        var abrir = h.dataset.abierto !== "1";
+        hitos.forEach(function(o){
+          o.dataset.abierto = "0";
+          o.querySelector(".hito-cab").setAttribute("aria-expanded","false");
+          medir(o);
+        });
+        if(abrir){
+          h.dataset.abierto = "1";
+          cab.setAttribute("aria-expanded","true");
+          medir(h);
+        }
+      });
+    });
+    addEventListener("resize", function(){ hitos.forEach(medir); });
+  });
+})();
+</script>
+</body>
+</html>

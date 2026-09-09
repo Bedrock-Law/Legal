@@ -1,0 +1,228 @@
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                    CÓMO IMPRIMIR A PDF - DOCUMENTOS BEDROCK                    ║
+║                         Caso Jhonatan Londoño vs Serlogísticos                 ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+
+📄 DOCUMENTOS HTML LISTOS PARA PDF
+═══════════════════════════════════════════════════════════════════════════════
+
+1. PROPUESTA_BEDROCK_JHONATAN.html (18 KB)
+   └─ Propuesta ejecutiva profesional
+   └─ 6 secciones
+   └─ Ideal para: Reunión inicial con cliente
+
+2. ANALISIS_BEDROCK_JHONATAN_LONDONO.html (33 KB)
+   └─ Análisis jurídico completo
+   └─ 10 secciones
+   └─ Ideal para: Análisis técnico profundo
+
+
+🖥️ INSTRUCCIONES POR NAVEGADOR
+═══════════════════════════════════════════════════════════════════════════════
+
+OPCIÓN 1: MACBOOK / MAC (Recomendado)
+┌────────────────────────────────────────────────────────────────────────────┐
+│ 1. Abre el archivo HTML en Safari, Chrome o Firefox                        │
+│ 2. Presiona: Cmd + P                                                       │
+│ 3. En la ventana de impresión:                                             │
+│    - Cambiar a "PDF" (arriba a la derecha)                                 │
+│    - Seleccionar "Guardar como PDF"                                        │
+│ 4. Elige ubicación y nombre                                                │
+│ 5. Click en "Guardar"                                                      │
+│                                                                             │
+│ ✓ Tu PDF está listo en la carpeta que elegiste                             │
+└────────────────────────────────────────────────────────────────────────────┘
+
+OPCIÓN 2: WINDOWS (Recomendado)
+┌────────────────────────────────────────────────────────────────────────────┐
+│ 1. Abre el archivo HTML en Chrome, Edge o Firefox                          │
+│ 2. Presiona: Ctrl + P                                                      │
+│ 3. En la ventana de impresión:                                             │
+│    - Impresora: Cambiar a "Guardar como PDF"                               │
+│ 4. Elige ubicación y nombre                                                │
+│ 5. Click en "Guardar"                                                      │
+│                                                                             │
+│ ✓ Tu PDF está listo en la carpeta que elegiste                             │
+└────────────────────────────────────────────────────────────────────────────┘
+
+OPCIÓN 3: LINUX
+┌────────────────────────────────────────────────────────────────────────────┐
+│ 1. Abre el archivo HTML en Firefox o Chrome                                │
+│ 2. Presiona: Ctrl + P                                                      │
+│ 3. Selecciona "Imprimir a archivo"                                         │
+│ 4. Elige PDF como formato                                                  │
+│ 5. Elige ubicación y nombre                                                │
+│                                                                             │
+│ ✓ Tu PDF está listo                                                        │
+└────────────────────────────────────────────────────────────────────────────┘
+
+
+📋 CONFIGURACIÓN RECOMENDADA
+═══════════════════════════════════════════════════════════════════════════════
+
+Cuando veas la ventana de impresión, asegúrate de:
+
+✓ Orientación:           VERTICAL (Portrait)
+✓ Papel:                 A4
+✓ Márgenes:              Normales o Pequeños (ambos ven bien)
+✓ Encabezados/Pies:      DESACTIVADO (sin "Encabezados y pies de página")
+✓ Color:                 A COLOR (se ve mejor)
+✓ Fondo:                 ACTIVADO (para que se vea la marca Bedrock)
+
+Opciones en la ventana de impresión:
+• Arriba a la izquierda: Formato = A4
+• Arriba a la derecha: Orientación = Vertical
+• Arriba a la derecha: Márgenes = Normal
+
+
+📱 DESDE MÓVIL (iOS/Android)
+═══════════════════════════════════════════════════════════════════════════════
+
+iOS (iPhone/iPad):
+1. Abre el archivo HTML en Safari
+2. Click en el icono de Compartir (flecha hacia arriba)
+3. Scroll hacia abajo → "Imprimir"
+4. Zoom in (hacer grande)
+5. Cambiar a "PDF" si es necesario
+6. Guardar en Archivos
+
+Android:
+1. Abre el archivo HTML en Chrome
+2. Click en menú (3 líneas)
+3. Selecciona "Imprimir"
+4. Cambiar impresora a "Guardar como PDF"
+5. Elige dónde guardar
+
+
+🎨 VISTA PREVIA
+═══════════════════════════════════════════════════════════════════════════════
+
+Antes de imprimir, en la ventana de impresión verás:
+• Header marrón oscuro con logo Bedrock
+• Texto profesional y bien formateado
+• Tablas con estilos
+• Recuadros de alertas (amarillo, rojo, verde)
+• Números circulares en listas
+• Footer con datos de contacto
+
+Si se ve mal, intenta:
+- Reducir márgenes
+- Cambiar escala a 95%
+- Desactivar fondo
+
+
+✅ VERIFICACIÓN FINAL
+═══════════════════════════════════════════════════════════════════════════════
+
+Después de guardar como PDF, verifica:
+✓ El archivo se guardó en la ubicación que elegiste
+✓ El archivo tiene tamaño > 100 KB (significa que incluye estilos)
+✓ Se abre correctamente en Adobe Reader o Preview
+✓ Se ve profesional y completo
+
+
+🔗 DOCUMENTOS INCLUIDOS
+═══════════════════════════════════════════════════════════════════════════════
+
+Dentro de PROPUESTA_BEDROCK_JHONATAN.html encontrarás:
+• Portada profesional
+• Síntesis del caso
+• Evaluación de fortalezas/debilidades
+• Escenarios: Litigio vs. Negociación
+• Propuesta de Bedrock
+• Ventajas de la propuesta
+• Recomendación final
+• Footer con contacto
+
+Dentro de ANALISIS_BEDROCK_JHONATAN_LONDONO.html encontrarás:
+• Portada profesional
+• Tabla de contenidos
+• I. Hechos establecidos
+• II. Núcleo del litigio
+• III. Análisis crítico de pruebas
+• IV. Vulnerabilidades procesales
+• V. Cálculo de pretensiones
+• VI. Factores que determinan la condena
+• VII. Estado procesal actual
+• VIII. Análisis realista de riesgos
+• IX. Recomendación: Negociación
+• X. Conclusión y recomendación final
+• Footer con confidencialidad
+
+
+🎓 TIPS PROFESIONALES
+═══════════════════════════════════════════════════════════════════════════════
+
+1. IMPRESIÓN EN COLOR:
+   El documento tiene colores (marrón Bedrock, alertas amarillas, verdes, rojas)
+   Se ve mejor en COLOR. Si imprimes en B/N, sigue siendo legible pero pierde impacto.
+
+2. PAPEL RECOMENDADO:
+   A4 blanco (80-90 gramos)
+   Si quieres impresionar: A4 marfil o crema (más premium)
+
+3. ENCUADERNACIÓN:
+   • Sin encuadernación (hojas sueltas) = informal
+   • Clip o grapas = semiprofesional
+   • Encuadernación térmica/espiral = muy profesional
+
+4. PRESENTACIÓN:
+   Si vas a entregar físicamente:
+   • Usa carpeta transparente (deja ver la portada)
+   • O carpeta de cartón marrón (juega con los colores Bedrock)
+
+5. DIGITAL:
+   Si envías por email:
+   • Envía como PDF (no como HTML)
+   • Asunto descriptivo: "Análisis Caso Jhonatan - Serlogísticos"
+   • Mensaje breve explicando qué es el PDF
+
+
+🔒 CONFIDENCIALIDAD
+═══════════════════════════════════════════════════════════════════════════════
+
+El PDF incluye marcas de confidencialidad:
+"Documento confidencial preparado bajo privilegio abogado-cliente"
+
+Si imprimes para:
+✓ Presentación interna a Bedrock = OK (es confidencial)
+✓ Presentación al cliente = OK (es su caso)
+✓ Terceros = NO (marcar como confidencial si compartes)
+
+
+🚀 LISTO PARA USAR
+═══════════════════════════════════════════════════════════════════════════════
+
+Los documentos están diseñados para:
+• Verse profesionales en pantalla
+• Imprimirse perfectamente a PDF
+• Leerse cómodamente en la mayoría de dispositivos
+• Mantener la identidad visual de Bedrock
+
+¡El PDF está listo ahora mismo!
+
+Siguiente paso: Abre el HTML en tu navegador e imprime a PDF.
+
+
+Preguntas frecuentes:
+═══════════════════════════════════════════════════════════════════════════════
+
+P: ¿Se ve igual en PDF que en pantalla?
+R: 95% igual. A veces el salto de página puede mover bloques, pero es mínimo.
+
+P: ¿Cuántas páginas va a tener?
+R: PROPUESTA_BEDROCK: ~8-10 páginas
+   ANALISIS_BEDROCK: ~15-18 páginas
+
+P: ¿Puedo editar el PDF después?
+R: Los PDF de este tipo son de lectura (no editables). Edita el HTML si necesitas cambios.
+
+P: ¿Qué si imprime mal?
+R: Intenta en otro navegador o dispositivo. Si persiste, avisa (puede ser un navegador desactualizado).
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Documentos creados: 2026-09-04
+Versión: 1.0
+Marca: Bedrock Abogados

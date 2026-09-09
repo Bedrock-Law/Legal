@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bedrock — Derecho operacional</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Tinos:wght@400;700&display=swap">
+</head>
+<body>
+<style>
+:root {
+  --primary: #1B1D36;
+  --primary-light: #224D6E;
+  --accent: #E9CDA5;
+  --accent-dark: #D4AF37;
+  --text-light: #FFFFFF;
+  --text-dark: #000000;
+  --gray: #F5F5F5;
+  --border: #E0E0E0;
+
+  font-family: 'Tinos', serif;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --primary: #E8E8E8;
+    --primary-light: #D0D0D0;
+    --accent: #D4AF37;
+    --text-light: #000000;
+    --text-dark: #FFFFFF;
+    --gray: #1A1A1A;
+    --border: #333333;
+  }
+}
+
+:root[data-theme="dark"] {
+  --primary: #E8E8E8;
+  --primary-light: #D0D0D0;
+  --accent: #D4AF37;
+  --text-light: #000000;
+  --text-dark: #FFFFFF;
+  --gray: #1A1A1A;
+  --border: #333333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: var(--text-light);
+  color: var(--text-dark);
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+  letter-spacing: 0.5px;
+}
+
+h1 {
+  font-size: 3.5rem;
+  text-wrap: balance;
+  margin-bottom: 2rem;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 2.25rem;
+  text-wrap: balance;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 1.5rem;
+}
+
+h2:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent) 0%, var(--accent-dark) 100%);
+}
+
+h3 {
+  font-size: 1.4rem;
+  color: var(--primary);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  color: var(--text-dark);
+  max-width: 70ch;
+  font-size: 1rem;
+}
+
+a {
+  color: var(--accent-dark);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+/* Header */
+header {
+  background: var(--primary);
+  color: var(--text-light);
+  padding: 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  border-bottom: 3px solid var(--accent);
+}
+
+header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+nav {
+  display: flex;
+  gap: 3rem;
+}
+
+nav a {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+/* Main */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 3rem;
+  margin-top: 100px;
+}
+
+/* Hero */
+.hero {
+  padding: 5rem 0;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  right: -200px;
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(135deg, var(--accent) 0%, transparent 70%);
+  opacity: 0.15;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.hero h1 {
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  font-size: 4rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: var(--primary-light);
+  margin-bottom: 3rem;
+}
+
+.cta-group {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: var(--accent);
+  border: 2px solid var(--primary);
+}
+
+.btn-primary:hover {
+  background: transparent;
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+.btn-secondary:hover {
+  background: var(--primary);
+  color: var(--accent);
+  border-color: var(--primary);
+}
+
+/* Sections */
+section {
+  margin-bottom: 6rem;
+  padding: 4rem 0;
+  border-top: 1px solid var(--border);
+}
+
+section:first-of-type {
+  border-top: none;
+}
+
+.section-intro {
+  font-size: 1.1rem;
+  color: var(--primary-light);
+  margin-bottom: 3rem;
+  max-width: 70ch;
+  line-height: 1.8;
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  margin: 3rem 0;
+}
+
+.card {
+  background: var(--gray);
+  padding: 2.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+  border-left: 4px solid var(--accent);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(27, 29, 54, 0.12);
+}
+
+.card h3 {
+  color: var(--primary);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.35rem;
+}
+
+.card p {
+  font-size: 1rem;
+  margin-bottom: 0;
+  line-height: 1.7;
+}
+
+.card .accent {
+  color: var(--accent-dark);
+  font-weight: 700;
+  display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  margin: 3rem 0;
+}
+
+.service {
+  padding: 2.5rem;
+  border-radius: 0;
+  background: transparent;
+  border-top: 2px solid var(--accent);
+  position: relative;
+}
+
+.service-number {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 1rem;
+  opacity: 0.4;
+}
+
+.service h3 {
+  margin-top: 0;
+  color: var(--primary);
+  font-size: 1.3rem;
+}
+
+.service p {
+  line-height: 1.8;
+}
+
+/* Highlight */
+.highlight {
+  background: var(--gray);
+  border-left: 4px solid var(--accent-dark);
+  padding: 2.5rem;
+  margin: 3rem 0;
+  border-radius: 0;
+}
+
+.highlight h3 {
+  margin-top: 0;
+  color: var(--primary);
+}
+
+.highlight h4 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.highlight ul {
+  margin: 1.5rem 0;
+  padding-left: 2rem;
+}
+
+.highlight li {
+  margin-bottom: 0.8rem;
+  line-height: 1.7;
+}
+
+/* Testimonial */
+.testimonial {
+  background: var(--primary);
+  color: var(--text-light);
+  padding: 3rem;
+  margin: 3rem 0;
+  border-left: 4px solid var(--accent);
+  border-radius: 0;
+}
+
+.testimonial p {
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  color: var(--text-light);
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.testimonial-author {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 1rem;
+}
+
+.testimonial-title {
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+/* Footer */
+footer {
+  background: var(--primary);
+  color: var(--text-light);
+  padding: 4rem 2rem 2rem;
+  margin-top: 6rem;
+  border-top: 3px solid var(--accent);
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.footer-section h3 {
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: var(--accent);
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.footer-section p {
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+  color: var(--text-light);
+}
+
+.footer-section a {
+  display: block;
+  margin-bottom: 0.75rem;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.footer-section a:hover {
+  color: var(--text-light);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(233, 205, 165, 0.3);
+  padding-top: 2rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  header .container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  nav {
+    display: none;
+  }
+
+  main {
+    padding: 0 1.5rem;
+  }
+
+  .cta-group {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .hero {
+    padding: 3rem 0 2rem 0;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .cards, .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Divider */
+.divider {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent) 0%, transparent 100%);
+  margin: 4rem 0;
+}
+
+/* List */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.7;
+}
+
+li:before {
+  content: "▪";
+  position: absolute;
+  left: 0;
+  color: var(--accent-dark);
+  font-weight: bold;
+}
+
+</style>
+
+<header>
+  <div class="container">
+    <div class="logo">Bedrock</div>
+    <nav>
+      <a href="#servicios">Servicios</a>
+      <a href="#equipo">Equipo</a>
+      <a href="#casos">Casos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Derecho operacional para empresas de tecnología</h1>
+    <p>Asesoría legal especializada en automatización de procesos, cumplimiento regulatorio y operaciones de capital. Combinamos análisis jurídico riguroso con implementación técnica.</p>
+    <div class="cta-group">
+      <button class="btn btn-primary">Agendar consulta</button>
+      <button class="btn btn-secondary">Ver casos</button>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Servicios -->
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <p class="section-intro">Bedrock atiende el espacio de intersección entre derecho, tecnología y operaciones. Nuestro trabajo abarca desde asesoría normativa hasta implementación de soluciones automatizadas.</p>
+
+    <div class="services-grid">
+      <div class="service">
+        <div class="service-number">01</div>
+        <h3>Asesoría legal especializada</h3>
+        <p>Derecho administrativo, regulatorio y societario. Estructura de operaciones ante Superintendencia Financiera, DECEVAL y autoridades de mercado de valores.</p>
+      </div>
+
+      <div class="service">
+        <div class="service-number">02</div>
+        <h3>Automatización de procesos</h3>
+        <p>Diagnóstico, diseño e implementación de flujos operacionales asistidos por inteligencia artificial. Integración con sistemas existentes (Office 365, Google Workspace, sistemas legacy).</p>
+      </div>
+
+      <div class="service">
+        <div class="service-number">03</div>
+        <h3>Servidores MCP propios</h3>
+        <p>Integraciones personalizadas con Gmail, Calendar, Docs, Sheets, Drive (Google) y Outlook, Teams, Word, Excel, OneDrive (Microsoft). Seguridad OAuth2 y control de cambios auditable.</p>
+      </div>
+
+      <div class="service">
+        <div class="service-number">04</div>
+        <h3>Due diligence y análisis de riesgo</h3>
+        <p>Evaluación de cumplimiento normativo, análisis de estructuras accionarias, verificación de antecedentes legales. Reportes técnicos y lineamientos de acción.</p>
+      </div>
+
+      <div class="service">
+        <div class="service-number">05</div>
+        <h3>Conformidad regulatoria</h3>
+        <p>SAGRILAFT, AML/CFT, validación PEP, matrices de compliance. Especialmente para firmas de corretaje, gestores patrimoniales y entidades del sistema financiero.</p>
+      </div>
+
+      <div class="service">
+        <div class="service-number">06</div>
+        <h3>Investigación y reportes</h3>
+        <p>Análisis de viabilidad regulatoria para modelos Fintech, hoja de ruta para startups, documentación técnica para autoridades.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- BTG Case -->
+  <section id="casos">
+    <h2>Caso destacado: BTG Pactual</h2>
+
+    <div class="highlight">
+      <h4>Automatización de operaciones de depósito de valores</h4>
+      <p><strong>Desafío:</strong> BTG Pactual requería optimizar procesos operacionales relacionados con depósito de valores en DECEVAL. La gestión de documentación, validación y comunicación con DECEVAL era manual, lenta y expuesta a errores administrativos.</p>
+
+      <p><strong>Solución:</strong> Diseño e implementación de terminal integral de análisis asistido por IA, integrada con Office 365 (Outlook, OneDrive, Word, Excel, Teams). La terminal automatiza:</p>
+      <ul>
+        <li>Identificación de requerimientos documentales según DECEVAL</li>
+        <li>Carga centralizada en OneDrive con preprocesamiento automático</li>
+        <li>Generación de actas de preaprobación con estilo BTG en Word</li>
+        <li>Remisión automatizada a DECEVAL vía Outlook</li>
+        <li>Trazabilidad en Excel y notificaciones en Teams</li>
+      </ul>
+
+      <p><strong>Alcance:</strong> 3 meses de acompañamiento. Integración con áreas de Tecnología, Innovación y Riesgos. Capacitación y documentación operativa.</p>
+
+      <p style="margin-top: 2rem;"><a href="./propuestas-comerciales/PROPUESTA_BTG_PACTUAL_AUTOMATIZACION_OPERACIONES_2026.md">Ver propuesta completa →</a></p>
+    </div>
+
+    <h3 style="margin-top: 3rem;">Testimonio</h3>
+    <div class="testimonial">
+      <p>"Bedrock combina rigor jurídico con capacidad técnica real. No solo entiende el derecho de valores; implementa soluciones que funcionan. El acompañamiento fue preciso y el producto entregado resuelve el problema."</p>
+      <div class="testimonial-author">Área de Operaciones Especiales</div>
+      <div class="testimonial-title">Firma de corretaje colombiana</div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Equipo -->
+  <section id="equipo">
+    <h2>Equipo</h2>
+    <p class="section-intro">Bedrock es un despacho pequeño e intenso. Cada miembro combina formación legal rigurosa con expertise operacional y técnica.</p>
+
+    <div class="cards">
+      <div class="card">
+        <span class="accent">Socio fundador</span>
+        <h3>Juan Manuel Aliado</h3>
+        <p>Abogado especializado en derecho administrativo y operaciones de capital. Expertise en regulación de mercados de valores, DECEVAL y Superintendencia Financiera. Dirige implementación de soluciones automatizadas.</p>
+      </div>
+
+      <div class="card">
+        <span class="accent">Desarrollo e implementación</span>
+        <h3>Área técnica</h3>
+        <p>Profesionales en desarrollo web, integraciones MCP, automatización con IA. Especializados en arquitectura segura, auditoría y cumplimiento regulatorio de sistemas financieros.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Por qué Bedrock -->
+  <section>
+    <h2>Por qué Bedrock</h2>
+
+    <div class="cards">
+      <div class="card">
+        <span class="accent">Rigor jurídico</span>
+        <h3>Asesoría verificable</h3>
+        <p>Cada análisis cita norma, jurisprudencia y precedente. No extrapolamos. Si una respuesta es incierta, la marcamos. Los documentos se sostienen solos ante autoridades.</p>
+      </div>
+
+      <div class="card">
+        <span class="accent">Implementación real</span>
+        <h3>Soluciones que funcionan</h3>
+        <p>No entregamos documentos. Implementamos. Diseñamos, programamos, testamos y capacitamos. El cliente tiene un sistema operativo al cierre.</p>
+      </div>
+
+      <div class="card">
+        <span class="accent">Independencia</span>
+        <h3>Sin conflictos de interés</h3>
+        <p>No vendemos licencias de software, planes anuales ni consultoría recurrente. Cobramos por trabajo hecho. Nuestro incentivo es cerrar bien.</p>
+      </div>
+
+      <div class="card">
+        <span class="accent">Velocidad de criterio</span>
+        <h3>Decisiones rápidas</h3>
+        <p>Despacho pequeño sin capas de aprobación. Cuando identificamos un problema, lo resolvemos sin comités. Cuando el cliente necesita cambios, avanzan en el mismo sprint.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contacto">
+  <div class="container">
+    <h2 style="border-bottom: 2px solid var(--accent); padding-bottom: 1.5rem; font-size: 1.8rem; margin-bottom: 2.5rem; text-transform: uppercase; letter-spacing: 1px; color: var(--accent);">Contacto</h2>
+
+    <div class="footer-grid">
+      <div class="footer-section">
+        <h3>Bedrock Abogados</h3>
+        <p>Despacho especializado en derecho operacional, automatización y cumplimiento regulatorio.</p>
+        <p style="margin-top: 1.5rem;">
+          <strong>Correo</strong><br>
+          <a href="mailto:contacto@bedrock.com.co">contacto@bedrock.com.co</a>
+        </p>
+        <p style="margin-top: 1rem;">
+          <strong>Ubicación</strong><br>
+          Bogotá, Colombia
+        </p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Servicios</h3>
+        <a href="#servicios">Asesoría legal</a>
+        <a href="#servicios">Automatización de procesos</a>
+        <a href="#servicios">Servidores MCP</a>
+        <a href="#servicios">Due diligence</a>
+        <a href="#servicios">Conformidad regulatoria</a>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contactos directos</h3>
+        <p>
+          <strong>Juan Manuel Aliado</strong><br>
+          Socio fundador<br>
+          <a href="mailto:tualiado@bedrock.com.co">tualiado@bedrock.com.co</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Bedrock Abogados. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>

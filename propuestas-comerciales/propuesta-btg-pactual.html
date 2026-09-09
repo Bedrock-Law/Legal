@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Propuesta BTG Pactual — Automatización de Operaciones</title>
+<meta name="description" content="Propuesta de Bedrock: automatización de operaciones de depósito de valores para BTG Pactual. 3 meses de acompañamiento con integraciones Office 365.">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --primario:#1B1D36;
+  --secundario:#224D6E;
+  --acento:#E9CDA5;
+  --texto:#000000;
+  --fondo:#FFFFFF;
+  --gris:#F5F5F5;
+  --linea:#E0E0E0;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --serif:"Tinos","Georgia","Times New Roman",serif;
+  --logo-oscuro:url(data:image/png;base64,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);
+}
+
+@media(prefers-color-scheme:dark){
+  :root{
+    --primario:#E8E8E8;
+    --texto:#FFFFFF;
+    --fondo:#0F0F0F;
+    --gris:#1A1A1A;
+    --linea:#333;
+  }
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%}
+body{background:var(--fondo);color:var(--texto);font-family:var(--serif);line-height:1.6;font-size:16px}
+h1,h2,h3,h4{font-family:var(--sans);font-weight:700;line-height:1.2;color:var(--primario);margin-bottom:1rem}
+h1{font-size:2.5rem;margin-bottom:1.5rem}
+h2{font-size:2rem;margin-top:2rem;margin-bottom:1.25rem;padding-bottom:0.75rem;border-bottom:3px solid var(--acento)}
+h3{font-size:1.25rem;margin-top:1.5rem;margin-bottom:0.75rem}
+p{margin-bottom:1rem;color:var(--texto);max-width:65ch}
+a{color:var(--primario);text-decoration:none;font-weight:500}
+a:hover{text-decoration:underline}
+
+header{background:var(--primario);color:var(--fondo);padding:1.5rem 2rem;border-bottom:3px solid var(--acento);position:sticky;top:0;z-index:100}
+header .container{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center}
+.logo{width:100px;height:50px;background:var(--logo-oscuro);background-size:contain;background-repeat:no-repeat;background-position:center;margin:0}
+nav a{color:var(--fondo);margin-left:2rem;font-size:0.95rem}
+nav a:hover{color:var(--acento)}
+
+main{max-width:1200px;margin:0 auto;padding:0 2rem}
+.hero{padding:3rem 0;margin-bottom:3rem}
+.hero h1{color:var(--primario);margin-bottom:1rem}
+.hero p{font-size:1.1rem;margin-bottom:2rem}
+
+.cta-group{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:0.75rem 1.5rem;border-radius:4px;font-weight:600;cursor:pointer;border:none;font-size:1rem;text-decoration:none;transition:all 0.3s ease;font-family:var(--sans)}
+.btn-primary{background:var(--primario);color:var(--fondo)}
+.btn-primary:hover{background:var(--acento);color:var(--primario)}
+.btn-secondary{background:transparent;color:var(--primario);border:2px solid var(--primario)}
+.btn-secondary:hover{background:var(--primario);color:var(--fondo)}
+
+section{margin-bottom:3rem;padding:2rem 0;border-top:1px solid var(--linea)}
+section:first-of-type{border-top:none}
+.section-intro{font-size:1.1rem;color:var(--texto);margin-bottom:2rem;max-width:65ch}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin:2rem 0}
+.card{background:var(--gris);border:1px solid var(--linea);border-radius:6px;padding:1.5rem;transition:all 0.3s ease}
+.card:hover{box-shadow:0 4px 12px rgba(27,29,54,0.1);border-color:var(--primario)}
+.card h3{margin-top:0;margin-bottom:0.75rem;font-size:1.1rem}
+.card p{font-size:0.95rem;margin-bottom:0}
+
+.timeline{position:relative;padding:2rem 0}
+.timeline-item{display:grid;grid-template-columns:120px 1fr;gap:2rem;margin-bottom:2rem;padding-bottom:2rem;border-bottom:1px solid var(--linea)}
+.timeline-item:last-child{border-bottom:none}
+.timeline-label{font-weight:600;color:var(--primario);font-size:0.95rem}
+.timeline-content h3{margin-top:0;margin-bottom:0.5rem}
+.timeline-content ul{list-style:none;margin:1rem 0 0 0;padding:0}
+.timeline-content li{margin-bottom:0.5rem;padding-left:1.5rem;position:relative;color:var(--texto);font-size:0.95rem}
+.timeline-content li:before{content:"▪";position:absolute;left:0;color:var(--acento);font-weight:bold}
+
+table{width:100%;border-collapse:collapse;margin:2rem 0;font-size:0.95rem}
+thead{background:var(--primario);color:var(--fondo)}
+th{padding:1rem;text-align:left;font-weight:600}
+td{padding:0.75rem 1rem;border-bottom:1px solid var(--linea)}
+tbody tr:hover{background:var(--gris)}
+
+ul{margin:1.5rem 0;padding-left:2rem}
+li{margin-bottom:0.75rem;color:var(--texto)}
+
+.highlight{background:var(--gris);border-left:4px solid var(--acento);padding:1rem 1.5rem;margin:1.5rem 0;border-radius:2px}
+.highlight h4{color:var(--primario);margin-top:0;margin-bottom:0.5rem}
+
+footer{background:var(--primario);color:var(--fondo);border-top:1px solid var(--linea);padding:3rem 2rem 2rem;margin-top:4rem}
+footer .container{max-width:1200px;margin:0 auto}
+.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;margin-bottom:2rem}
+.footer-section h3{color:var(--acento);font-size:1rem;margin-top:0;margin-bottom:1rem}
+.footer-section p{font-size:0.95rem;margin-bottom:0.5rem;color:var(--fondo)}
+.footer-section a{color:var(--acento);display:block;margin-bottom:0.5rem}
+.footer-section a:hover{color:var(--fondo)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.2);padding-top:1.5rem;text-align:center;color:rgba(255,255,255,0.7);font-size:0.9rem}
+
+@media(max-width:768px){
+  h1{font-size:2rem}
+  h2{font-size:1.5rem}
+  header .container{flex-direction:column;gap:1rem}
+  nav{display:none}
+  main{padding:0 1.5rem}
+  .cta-group{flex-direction:column}
+  .btn{width:100%}
+  .timeline-item{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="logo"></div>
+    <nav>
+      <a href="#servicios">Servicios</a>
+      <a href="#entregables">Entregables</a>
+      <a href="#cronograma">Cronograma</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>Automatización de operaciones de depósito de valores</h1>
+    <p>Acompañamiento de 3 meses para BTG Pactual. Diseño e implementación de terminal integral de análisis, carga de documentos y generación automatizada de actas de preaprobación, integrada con DECEVAL y Office 365.</p>
+    <div class="cta-group">
+      <button class="btn btn-primary">Descargar propuesta (PDF)</button>
+      <button class="btn btn-secondary">Solicitar información</button>
+    </div>
+  </section>
+
+  <section id="servicios">
+    <h2>El desafío</h2>
+    <p class="section-intro">BTG Pactual gestiona operaciones de depósito de valores en DECEVAL con procesos operacionales que demandan recursos manuales y están expuestos a errores administrativos en documentación y validación.</p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Documentación manual</h3>
+        <p>Gestión de requisitos y documentos sin sistematización, expuesta a inconsistencias.</p>
+      </div>
+      <div class="card">
+        <h3>Validación lenta</h3>
+        <p>Revisión de documentación realizada manualmente sin trazabilidad clara de errores.</p>
+      </div>
+      <div class="card">
+        <h3>Comunicación con DECEVAL</h3>
+        <p>Procesos de remisión y seguimiento descoordinados entre áreas operacionales.</p>
+      </div>
+      <div class="card">
+        <h3>Escalabilidad limitada</h3>
+        <p>Incremento de operaciones especiales requiere proporcional incremento de recurso humano.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Solución</h2>
+    <p class="section-intro">Terminal integral de análisis asistido por inteligencia artificial que automatiza el flujo completo: desde identificación de requisitos hasta remisión a DECEVAL.</p>
+
+    <h3>Módulos de la terminal</h3>
+    <div class="cards">
+      <div class="card">
+        <h3>Identificación de requerimientos</h3>
+        <p>Motor de consulta que clasifica la operación y señala documentación obligatoria según requisitos DECEVAL.</p>
+      </div>
+      <div class="card">
+        <h3>Carga de documentos</h3>
+        <p>Interfaz integrada con OneDrive/SharePoint. Almacenamiento centralizado, preprocesamiento automático.</p>
+      </div>
+      <div class="card">
+        <h3>Generación de actas</h3>
+        <p>Sistema que genera acta de preaprobación indicando: documentos recibidos, faltantes, errores detectados.</p>
+      </div>
+      <div class="card">
+        <h3>Análisis final</h3>
+        <p>Consolidación de revisión documentaria con conclusión de completitud. Generación en estilo BTG mediante Word.</p>
+      </div>
+    </div>
+
+    <div class="highlight">
+      <h4>Integraciones Office 365</h4>
+      <p>La solución se integra con infraestructura Microsoft que opera en BTG:</p>
+      <ul>
+        <li><strong>Outlook:</strong> Gestión de correos a DECEVAL. Envío automatizado de análisis, seguimiento de respuestas.</li>
+        <li><strong>OneDrive/SharePoint:</strong> Almacenamiento centralizado. Respaldo, versionado, acceso granular por rol.</li>
+        <li><strong>Word:</strong> Generación dinámica de documentos con estilos BTG. Edición colaborativa nativa.</li>
+        <li><strong>Excel:</strong> Registro de operaciones procesadas, trazabilidad de flujo, métricas de desempeño.</li>
+        <li><strong>Teams:</strong> Programación de hitos y alertas. Notificaciones a equipos de operaciones y riesgos.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="cronograma">
+    <h2>Cronograma: 12 semanas</h2>
+    <p class="section-intro">Estructura de fases con dedicación continua de un profesional de Bedrock (30-40 horas/semana).</p>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-label">Semanas 1–3</div>
+        <div class="timeline-content">
+          <h3>Fase 1: Inmersión</h3>
+          <ul>
+            <li>Entrevistas con Tecnología, Innovación y Riesgos</li>
+            <li>Revisión de documentación operativa interna y normativa DECEVAL</li>
+            <li>Mapeo de flujo actual (as-is) y definición de flujo objetivo (to-be)</li>
+            <li>Sesión de alineación con stakeholders</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-label">Semanas 4–8</div>
+        <div class="timeline-content">
+          <h3>Fase 2: Construcción</h3>
+          <ul>
+            <li>Desarrollo de terminal web con módulos de análisis, carga y generación de actas</li>
+            <li>Integración con aplicativos internos y Office 365</li>
+            <li>Diseño de reglas de negocio y validación de documentos</li>
+            <li>Pruebas internas e iteraciones</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-label">Semanas 9–12</div>
+        <div class="timeline-content">
+          <h3>Fase 3: Piloto y cierre</h3>
+          <ul>
+            <li>Ejecución de operación de prueba end-to-end</li>
+            <li>Correcciones derivadas del piloto</li>
+            <li>Capacitación del equipo operacional</li>
+            <li>Documentación de procesos y handoff a operaciones</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="entregables">
+    <h2>Entregables</h2>
+    <p class="section-intro">Especificación técnica completa, herramientas funcionales, documentación y capacitación.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Entregable</th>
+          <th>Descripción</th>
+          <th>Fase</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Especificación técnica</strong></td>
+          <td>Requisitos DECEVAL, flujo de operaciones, integraciones Office 365, controles regulatorios</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td><strong>Terminal web</strong></td>
+          <td>Interfaz funcional con módulos de análisis, carga, generación de actas</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td><strong>Plantillas de documento</strong></td>
+          <td>Actas de preaprobación y análisis final con estilo BTG en Word</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td><strong>Configuración Office 365</strong></td>
+          <td>Outlook, OneDrive, Word, Excel, Teams integrados con permisos Azure AD</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td><strong>Documentación operativa</strong></td>
+          <td>Manual de usuario, guía de procedimientos, manual técnico</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td><strong>Capacitación</strong></td>
+          <td>Sesión presencial o remota con equipo operacional</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td><strong>Acta de cierre</strong></td>
+          <td>Estado de sistemas, plan de mantenimiento, escalamiento futuro</td>
+          <td>3</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Conformidad regulatoria y seguridad</h2>
+    <p class="section-intro">Controles y estándares aplicables a custodia de valores y operaciones especializadas.</p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Acceso seguro</h3>
+        <p>Controles Azure AD/OAuth2 con scopes limitados. Conditional Access y MFA. Principio de menor privilegio.</p>
+      </div>
+      <div class="card">
+        <h3>Trazabilidad</h3>
+        <p>Auditoría completa de acceso y cambios. Logs en Security &amp; Compliance Center y Excel.</p>
+      </div>
+      <div class="card">
+        <h3>Custodia de documentación</h3>
+        <p>Respaldo, retención y versionado. Cumplimiento de normas Superintendencia Financiera.</p>
+      </div>
+      <div class="card">
+        <h3>Encriptación</h3>
+        <p>En tránsito y en reposo mediante infraestructura Microsoft Azure. Cumplimiento ISO 27001.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Condiciones y requerimientos</h2>
+
+    <div class="highlight">
+      <h4>De Bedrock</h4>
+      <ul>
+        <li>Dedicación: Un profesional en jornada de 30–40 horas semanales durante 12 semanas</li>
+        <li>Comunicación: Sesiones semanales (2h) con stakeholders más sesiones ad-hoc según necesidad</li>
+        <li>Respaldo técnico: Equipo de Bedrock para resolución de bloqueadores arquitectónicos</li>
+      </ul>
+
+      <h4>De BTG Pactual</h4>
+      <ul>
+        <li>Acceso técnico: Sistemas internos, APIs, bases de datos, credenciales para integración</li>
+        <li>Acceso administrativo: Office 365 (Outlook, OneDrive, Word, Excel, Teams, Azure AD)</li>
+        <li>Acceso informativo: Documentación normativa interna, manual de procesos, requisitos DECEVAL validados</li>
+        <li>Equipo de referencia: Contactos en Tecnología, Innovación, Riesgos y Operaciones (4h/sem disponibilidad)</li>
+        <li>Infraestructura: Servidor de desarrollo y ambiente de staging para pruebas. Tenant de pruebas en Office 365 (opcional)</li>
+      </ul>
+
+      <h4>Modelo de facturación</h4>
+      <p>Acompañamiento de dedicación mensual durante 3 meses + horas adicionales de soporte técnico post-implementación. Valores a detallar en propuesta económica separada tras confirmación de alcance con BTG.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Notas</h2>
+    <ul>
+      <li>Esta propuesta se basa en normativa DECEVAL de acceso público y procesos de depósito documentados. Requisitos específicos de BTG serán confirmados en fase de inmersión.</li>
+      <li>El alcance de integración técnica con aplicativos internos se precisará tras revisión de arquitectura actual en sesión de alineación.</li>
+      <li>Los servidores MCP de Bedrock operan con seguridad Azure AD/OAuth2 e integración nativa con Office 365.</li>
+      <li>La terminal web es independiente del stack tecnológico actual de BTG (compatible con REST, webhooks, SSO corporativo vía Azure AD).</li>
+      <li>Cambios de alcance durante ejecución serán facturados adicionalmente.</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer id="contacto">
+  <div class="container">
+    <h2 style="border-bottom:2px solid var(--acento);padding-bottom:0.75rem;font-size:1.5rem;color:var(--acento);margin-bottom:2rem;text-transform:uppercase;letter-spacing:1px;font-family:var(--sans)">Contacto</h2>
+
+    <div class="footer-grid">
+      <div class="footer-section">
+        <h3>Bedrock Abogados</h3>
+        <p>Despacho especializado en tecnología, derecho administrativo y operaciones de capital.</p>
+        <p style="margin-top:1rem"><strong>Correo:</strong><br><a href="mailto:contacto@bedrock.com.co">contacto@bedrock.com.co</a></p>
+      </div>
+      <div class="footer-section">
+        <h3>Para esta propuesta</h3>
+        <p>Juan Manuel Aliado</p>
+        <p><a href="mailto:tualiado@bedrock.com.co">tualiado@bedrock.com.co</a></p>
+      </div>
+      <div class="footer-section">
+        <h3>Documentos</h3>
+        <p><a href="#">Propuesta completa (Markdown)</a></p>
+        <p><a href="#">Especificación técnica</a></p>
+        <p><a href="#">Referencias de integración</a></p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Propuesta válida por 30 días. Última actualización: 8 de septiembre de 2026.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

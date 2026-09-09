@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Propuesta Conjunto Residencial Mississippi</title>
+<meta name="description" content="Propuesta de servicios profesionales de Bedrock: acciones civiles frente al sistema de impermeabilización de la zona húmeda del Conjunto Residencial Mississippi.">
+<style>
+:root{
+  --primario:#1B1D36;
+  --secundario:#224D6E;
+  --acento:#E9CDA5;
+  --texto:#000000;
+  --fondo:#FFFFFF;
+  --gris:#6B6F7A;
+  --linea:#E2E6EB;
+  --tenue:#F7F8FA;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,Roboto,sans-serif;
+  --serif:Tinos,Georgia,"Times New Roman",serif;
+  --maxw:1080px;
+  --r:4px;
+  --logo-oscuro:url(data:image/png;base64,__LOGO_OSCURO__);
+  --logo-claro:url(data:image/png;base64,__LOGO_BLANCO__);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--fondo);color:var(--texto);
+  font-family:var(--serif);font-size:14px;line-height:1.72;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:var(--sans);font-weight:700;color:var(--primario);letter-spacing:-.01em}
+h1{font-size:36px;line-height:1.12;margin:0}
+h2{font-size:28px;line-height:1.2;margin:0}
+h3{font-size:18px;line-height:1.3;margin:0}
+p{margin:0 0 14px}
+a{color:var(--secundario)}
+
+.logo{display:block;background-repeat:no-repeat;background-position:left center;background-size:contain}
+.logo-oscuro{background-image:var(--logo-oscuro)}
+.logo-claro{background-image:var(--logo-claro)}
+.duo{display:flex;align-items:center;gap:13px}
+#progreso{position:fixed;top:0;left:0;height:3px;width:0;background:var(--secundario);z-index:60;transition:width .1s linear}
+
+header{
+  position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--linea);
+}
+.barra{max-width:var(--maxw);margin:0 auto;padding:12px 24px;display:flex;align-items:center;gap:24px;position:relative}
+.barra .logo{height:22px;width:114px;flex:0 0 auto}
+nav{margin-left:auto;display:flex;gap:22px;align-items:center}
+nav a{
+  font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.02em;
+  color:var(--gris);text-decoration:none;padding:6px 0;border-bottom:2px solid transparent;
+  transition:color .18s,border-color .18s;
+}
+nav a:not(.btn):hover{color:var(--primario)}
+nav a.activo:not(.btn){color:var(--primario);border-bottom-color:var(--acento)}
+.btn{
+  font-family:var(--sans);font-size:12px;font-weight:700;letter-spacing:.02em;
+  background:var(--primario);color:#fff;text-decoration:none;
+  padding:9px 16px;border-radius:var(--r);border:1px solid var(--primario);
+  transition:background .18s,border-color .18s;display:inline-block;
+}
+nav a.btn,nav a.btn.activo{color:#fff;border-bottom:1px solid var(--primario)}
+.btn:hover{background:var(--secundario);border-color:var(--secundario)}
+.btn.sobre-oscuro{background:var(--acento);color:var(--primario);border-color:var(--acento)}
+.btn.sobre-oscuro:hover{background:#fff;border-color:#fff}
+.btn.fantasma{background:transparent;color:#fff;border-color:rgba(255,255,255,.45)}
+.btn.fantasma:hover{background:rgba(255,255,255,.12);border-color:#fff}
+#menu-movil{
+  display:none;background:none;border:0;margin-left:auto;cursor:pointer;color:var(--primario);
+  padding:9px 7px;margin-right:-7px;line-height:0;
+}
+#menu-movil svg{display:block}
+
+.hero{background:var(--primario);color:#fff;padding:76px 24px 68px;position:relative;overflow:hidden}
+.hero::after{
+  content:"";position:absolute;right:-160px;top:-160px;width:520px;height:520px;border-radius:50%;
+  background:radial-gradient(circle,rgba(233,205,165,.16),transparent 68%);pointer-events:none;
+}
+.hero-in{max-width:var(--maxw);margin:0 auto;position:relative}
+.hero .duo{margin-bottom:52px}
+.hero .logo{height:34px;width:176px}
+.hero .eyebrow{
+  font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--acento);margin:0 0 14px;
+}
+.hero h1{color:#fff;max-width:24ch;font-size:clamp(30px,4.4vw,38px)}
+.regla-hero{width:64px;height:3px;background:var(--acento);margin:26px 0}
+.lede{font-size:17px;line-height:1.62;color:rgba(255,255,255,.88);max-width:62ch;margin:0}
+.meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:22px;margin:44px 0 22px;max-width:820px}
+.meta dt{font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:5px}
+.meta dd{margin:0;font-family:var(--sans);font-size:17px;font-weight:700;color:#fff}
+.meta dd small{display:block;font-family:var(--serif);font-size:13px;font-weight:400;color:rgba(255,255,255,.7);margin-top:3px}
+.destinatario{font-size:13.5px;color:rgba(255,255,255,.72);margin:0 0 30px}
+.acciones{display:flex;gap:12px;flex-wrap:wrap}
+
+section{padding:64px 24px;scroll-margin-top:64px}
+section.alterna{background:var(--tenue)}
+.in{max-width:var(--maxw);margin:0 auto}
+.num{
+  font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:.16em;
+  color:var(--secundario);text-transform:uppercase;margin:0 0 10px;
+}
+.regla{width:52px;height:3px;background:var(--acento);margin:14px 0 26px}
+h3+.espacio{height:14px}
+.intro{font-size:15px;max-width:70ch}
+
+.rejilla{display:grid;gap:16px;margin-top:26px}
+.r2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+@media(min-width:820px){.par{grid-template-columns:repeat(2,1fr)}}
+.tarjeta{background:#fff;border:1px solid var(--linea);border-radius:var(--r);padding:22px;transition:border-color .2s}
+.tarjeta:hover{border-color:var(--secundario)}
+.tarjeta .ico{
+  font-family:var(--sans);font-size:11.5px;font-weight:700;color:#fff;background:var(--secundario);
+  width:26px;height:26px;border-radius:50%;display:grid;place-items:center;margin-bottom:14px;
+}
+.tarjeta h3{margin-bottom:7px;font-size:15px}
+.tarjeta p{margin:0;font-size:13.5px;color:#2a2a2a}
+
+.tabla-envoltura{overflow-x:auto;margin-top:24px;border:1px solid var(--linea);border-radius:var(--r);background:#fff}
+.tabla-envoltura:focus-visible{outline:2px solid var(--secundario);outline-offset:2px}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+table.ancha{min-width:560px}
+th{
+  font-family:var(--sans);font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--gris);text-align:left;padding:13px 16px;border-bottom:1.5px solid var(--linea);background:var(--tenue);
+}
+thead th{white-space:nowrap}
+tbody th{
+  white-space:normal;font-size:12px;letter-spacing:.06em;color:var(--primario);
+  background:#fff;border-bottom:1px solid var(--linea);vertical-align:top;
+}
+td{padding:13px 16px;border-bottom:1px solid var(--linea);vertical-align:top}
+tbody tr:last-child td,tbody tr:last-child th{border-bottom:0}
+.der{text-align:right;white-space:nowrap;font-family:var(--sans);font-variant-numeric:tabular-nums}
+tr.total th,tr.total td{font-family:var(--sans);font-weight:700;color:var(--primario);background:var(--tenue)}
+
+.pestanas{display:flex;gap:6px;margin:26px 0 0;border-bottom:1px solid var(--linea)}
+.pestanas button{
+  font-family:var(--sans);font-size:12.5px;font-weight:600;white-space:nowrap;
+  background:none;border:0;border-bottom:2px solid transparent;color:var(--gris);
+  padding:11px 14px;cursor:pointer;transition:color .18s,border-color .18s;
+}
+.pestanas button:hover{color:var(--primario)}
+.pestanas button[aria-selected="true"]{color:var(--primario);border-bottom-color:var(--acento)}
+.panel{padding-top:24px}
+.etiqueta{
+  display:inline-block;font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:.04em;
+  background:var(--tenue);color:var(--primario);border-left:3px solid var(--secundario);
+  padding:6px 12px;margin-bottom:14px;
+}
+
+section.cierre{background:var(--primario);color:#fff;text-align:center}
+section.cierre h2{color:#fff;font-size:clamp(24px,3.6vw,30px);max-width:38ch;margin:0 auto}
+section.cierre .regla{margin:22px auto 26px}
+.hechos{display:grid;gap:12px;max-width:660px;margin:30px auto 34px;text-align:left}
+.hechos div{border:1px solid rgba(255,255,255,.2);border-radius:var(--r);padding:15px 18px;font-size:14px;color:rgba(255,255,255,.92)}
+.hechos b{color:var(--acento);font-family:var(--sans);font-weight:700}
+
+footer{background:var(--primario);border-top:1px solid var(--secundario);color:rgba(255,255,255,.7);padding:40px 24px;font-size:12.5px}
+.pie{max-width:var(--maxw);margin:0 auto;display:flex;gap:26px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+.pie .logo{height:20px;width:104px;opacity:.85}
+.pie a{color:var(--acento);text-decoration:none}
+.pie a:hover{text-decoration:underline}
+.pie .reserva{flex:1 1 100%;color:rgba(255,255,255,.55);font-size:11.5px;line-height:1.6;border-top:1px solid rgba(255,255,255,.14);padding-top:18px;margin-top:6px}
+
+.nota{border-left:3px solid var(--acento);background:#FDFAF4;padding:16px 18px;border-radius:var(--r);font-size:13.5px;margin-top:24px}
+.nota b{font-family:var(--sans);color:var(--primario)}
+
+.rev{transition:opacity .55s ease,transform .55s ease}
+html.js .rev{opacity:0;transform:translateY(14px)}
+html.js .rev.vis{opacity:1;transform:none}
+html.js .panel{display:none;animation:entra .3s ease}
+html.js .panel.visible{display:block}
+@keyframes entra{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+@media (max-width:820px){
+  nav{display:none}
+  nav.abierta{display:flex;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;gap:0;padding:8px 24px 16px;border-bottom:1px solid var(--linea)}
+  nav.abierta a{padding:11px 0;border-bottom:1px solid var(--linea)}
+  nav.abierta a.btn{margin-top:10px;text-align:center;border:1px solid var(--primario)}
+  #menu-movil{display:block}
+  .hero{padding:52px 20px 48px}
+  .hero .logo{margin-bottom:34px}
+  section{padding:48px 20px}
+  .pestanas{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch}
+}
+
+@media print{
+  header,#progreso,.acciones,#menu-movil{display:none}
+  .hero::after{display:none}
+  .in,.hero-in{max-width:none;width:auto}
+  section{padding:20px 12px;break-inside:auto}
+  .hero{padding:16px 12px;background:#fff;color:#000}
+  .rejilla{grid-template-columns:repeat(2,1fr)}
+  table,table.ancha{min-width:0}
+  .meta{max-width:none;margin:22px 0 14px}
+  .hero h1,section.cierre h2{color:var(--primario)}
+  .lede,.meta dd,.meta dt,.destinatario,.hechos div{color:#000}
+  .eyebrow,.hechos b,.pie a{color:var(--secundario)}
+  .hero .logo-claro,.pie .logo-claro{filter:invert(1)}
+  section.cierre,footer{background:#fff;color:#000}
+  footer{border-top:1px solid var(--linea)}
+  .pie .reserva{color:#000;border-top-color:var(--linea)}
+  .hechos div{border-color:var(--linea)}
+  html.js .panel,.panel{display:block!important}
+  .rev{opacity:1!important;transform:none!important;transition:none!important}
+  .tarjeta,.nota,.tabla-envoltura{break-inside:avoid}
+}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    animation-duration:.01ms!important;animation-iteration-count:1!important;
+    transition-duration:.01ms!important;scroll-behavior:auto!important;
+  }
+  html.js .rev{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div id="progreso" aria-hidden="true"></div>
+
+<header>
+  <div class="barra">
+    <span class="logo logo-oscuro" role="img" aria-label="Bedrock Abogados"></span>
+    <button id="menu-movil" aria-label="Abrir menú de secciones" aria-expanded="false" aria-controls="nav">
+      <svg width="22" height="16" viewBox="0 0 22 16" fill="none" aria-hidden="true"><path d="M0 1h22M0 8h22M0 15h22" stroke="currentColor" stroke-width="1.8"/></svg>
+    </button>
+    <nav id="nav" aria-label="Secciones del documento">
+      <a href="#seccion-1">Contexto</a>
+      <a href="#seccion-2">Frente civil</a>
+      <a href="#seccion-3">Rendición de cuentas</a>
+      <a href="#seccion-4">Honorarios</a>
+      <a class="btn" href="#cierre">Confirmar</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-in">
+    <span class="logo logo-claro" role="img" aria-label="Bedrock Abogados"></span>
+    <p class="eyebrow">Propuesta de servicios profesionales · Ref. BED-MISS-2026-01</p>
+    <h1>Acciones civiles frente al sistema de impermeabilización de la zona húmeda</h1>
+    <div class="regla-hero"></div>
+    <p class="lede">Estrategia de recuperación económica frente al proveedor y al aplicador del sistema, con una recomendación concomitante de rendición de cuentas sobre la administración del proyecto.</p>
+    <dl class="meta">
+      <div><dt>Demandados</dt><dd>3<small>proceso civil contractual</small></dd></div>
+      <div><dt>Procesos</dt><dd>2<small>civil y rendición de cuentas</small></dd></div>
+      <div><dt>Prima de éxito</dt><dd>20%<small>solo en el frente civil</small></dd></div>
+      <div><dt>Vigencia</dt><dd>15 días<small>hasta el 19 de sept. 2026</small></dd></div>
+    </dl>
+    <p class="destinatario">Para los miembros del consejo del Conjunto Residencial Mississippi · De Bedrock Abogados · 4 de septiembre de 2026</p>
+    <div class="acciones">
+      <a class="btn sobre-oscuro" href="#seccion-2">Ver los demandados</a>
+      <a class="btn fantasma" href="#seccion-4">Ver honorarios</a>
+    </div>
+  </div>
+</div>
+
+<section id="seccion-1">
+  <div class="in">
+    <p class="num">01 · Contexto</p>
+    <h2>Qué originó este proceso</h2>
+    <div class="regla"></div>
+    <p class="intro">El conjunto contrató, mediante dos actos separados, el suministro de un sistema de microcemento autonivelante para la renovación de la capa de rodadura, la impermeabilización y el acabado de la zona húmeda de la unidad, y la mano de obra para su aplicación e instalación. Antes de terminar la aplicación, el sistema presentó desprendimientos, un cambio de color no autorizado ni sustentado y falta de resistencia a la radiación ultravioleta, lo que llevó a la suspensión de los pagos pendientes y a la necesidad de desmontar lo ya ejecutado para volver a empezar.</p>
+    <p class="intro">Esta propuesta cubre las acciones civiles frente a quienes intervinieron en el suministro y la aplicación del sistema, y la recomendación de un proceso adicional sobre la administración de los recursos del proyecto.</p>
+    <div class="rejilla r2 par rev">
+      <div class="tarjeta"><div class="ico" aria-hidden="true">1</div><h3>Compraventa o suministro</h3><p>Imprimante APX-100BV, microcemento Escarifino hidrorrepelente en masa de alto tráfico, revestimiento protector Translux UV y sellante acrílico. No se cuenta con soporte documental que permita establecer con certeza la tipología contractual.</p></div>
+      <div class="tarjeta"><div class="ico" aria-hidden="true">2</div><h3>Mano de obra</h3><p>Aplicación e instalación de ese mismo material sobre la zona húmeda de la unidad.</p></div>
+    </div>
+    <div class="nota rev"><b>Pendiente de definir.</b> La tipología contractual exacta del primer objeto —compraventa o suministro— queda por establecer con la documentación del caso.</div>
+  </div>
+</section>
+
+<section id="seccion-2" class="alterna">
+  <div class="in">
+    <p class="num">02 · Frente civil</p>
+    <h2>Proceso verbal de responsabilidad civil contractual</h2>
+    <div class="regla"></div>
+    <p class="intro">Las pretensiones frente a Creando e Innovando CEI S.A.S. y Apolocryl S.A.S. pueden acumularse en el mismo proceso: ambas intervinieron en el mismo proyecto de impermeabilización y recubrimiento de la zona húmeda, y la causa fáctica del litigio es la misma. Creando e Innovando CEI S.A.S. actuó como contratista de aplicación e instalación; Apolocryl S.A.S., como fabricante, comercializador y certificador del producto empleado. Hay indicios de que los daños provienen tanto de errores de ejecución como de deficiencias técnicas del producto, lo que hace necesario analizar en conjunto las obligaciones de ambas para establecer el origen de las fallas y evitar decisiones contradictorias entre procesos separados.</p>
+
+    <h3 style="margin-top:36px">Demandados</h3>
+    <div class="espacio"></div>
+    <div class="tabla-envoltura rev" tabindex="0" role="region" aria-label="Demandados del proceso civil contractual">
+      <table>
+        <thead><tr><th scope="col">Demandado</th><th scope="col">Rol en el proyecto</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Apolocryl S.A.S.</th><td>Fabricante, comercializador y certificador del producto</td></tr>
+          <tr><th scope="row">Creando e Innovando CEI S.A.S.<br>NIT 901.949.894</th><td>Contratista de aplicación e instalación del sistema</td></tr>
+          <tr><th scope="row">Aseguradora Solidaria de Colombia</th><td>Aseguradora de la póliza que ampara actos dolosos de la copropiedad</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 style="margin-top:44px">Etapas del proceso</h3>
+    <div class="espacio"></div>
+    <div class="tabla-envoltura rev" tabindex="0" role="region" aria-label="Etapas y honorarios del proceso civil contractual">
+      <table>
+        <tbody>
+          <tr><th scope="row">Reclamación ante la aseguradora</th><td class="der">2 SMLMV</td></tr>
+          <tr><th scope="row">Conciliación prejudicial</th><td class="der">2 SMLMV</td></tr>
+          <tr><th scope="row">Presentación de la demanda</th><td class="der">3 SMLMV</td></tr>
+          <tr><th scope="row">Cada audiencia</th><td class="der">2 SMLMV</td></tr>
+          <tr class="total"><th scope="row">Prima de éxito</th><td class="der">20% de lo recuperado</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px;font-size:13.5px;color:var(--gris)">La prima de éxito se liquida al momento de la recuperación efectiva y se descuentan los honorarios ya pagados por etapas en este mismo proceso.</p>
+  </div>
+</section>
+
+<section id="seccion-3">
+  <div class="in">
+    <p class="num">03 · Recomendación concomitante</p>
+    <h2>Proceso de rendición de cuentas</h2>
+    <div class="regla"></div>
+    <p class="intro">El artículo 379 del Código General del Proceso permite obligar judicialmente a quien administra bienes o negocios ajenos a informar, de manera detallada, documentada y comprobada, sobre su gestión, para establecer un saldo a favor de la copropiedad. Esta vía es útil en este caso: la administradora, Adriana Guevara, retuvo aparentemente los pagos que dieron lugar a la suspensión de las labores de impermeabilización, y hay indicios de que negoció con el fabricante y comercializador del producto sin autorización del consejo.</p>
+
+    <p class="etiqueta">Demandada</p>
+    <p>Adriana Guevara, en su calidad de administradora de la copropiedad durante la ejecución del proyecto.</p>
+
+    <h3 style="margin-top:36px">Etapas del proceso</h3>
+    <div class="espacio"></div>
+    <div class="tabla-envoltura rev" tabindex="0" role="region" aria-label="Etapas y honorarios del proceso de rendición de cuentas">
+      <table>
+        <tbody>
+          <tr><th scope="row">Conciliación prejudicial</th><td class="der">2 SMLMV</td></tr>
+          <tr><th scope="row">Presentación de la demanda</th><td class="der">3 SMLMV</td></tr>
+          <tr><th scope="row">Audiencia, si la demandada se opone y objeta la estimación</th><td class="der">2 SMLMV por audiencia</td></tr>
+          <tr><th scope="row">Proceso ejecutivo, si la demandada no se opone</th><td class="der">2 SMLMV</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px;font-size:13.5px;color:var(--gris)">Notificada la demanda, la administradora puede oponerse y objetar la estimación —el proceso pasa a audiencia— o no oponerse —se emite una providencia que presta mérito ejecutivo y da lugar a un proceso ejecutivo. Este proceso no lleva prima de éxito: se cobra únicamente por etapa.</p>
+
+    <div class="nota rev"><b>Proceso futuro condicionado al resultado.</b> Con el resultado de la rendición de cuentas puede evaluarse un tercer proceso, de responsabilidad civil contractual contra Adriana Guevara en su calidad de administradora. No está incluido en esta propuesta ni tiene honorarios definidos; se cotiza aparte si el resultado lo justifica.</div>
+  </div>
+</section>
+
+<section id="seccion-4" class="alterna">
+  <div class="in">
+    <p class="num">04 · Honorarios</p>
+    <h2>Honorarios consolidados y vigencia</h2>
+    <div class="regla"></div>
+    <p class="intro">Los valores de esta propuesta se expresan en salarios mínimos legales mensuales vigentes (SMLMV). El SMLMV para 2026 es de $1.750.905, fijado por el Decreto 1469 de 2025. Cada etapa se factura al cumplirse el hito correspondiente, más el impuesto sobre las ventas a la tarifa que corresponda.</p>
+
+    <div class="tabla-envoltura rev" tabindex="0" role="region" aria-label="Honorarios consolidados en pesos">
+      <table>
+        <thead><tr><th scope="col">Etapa</th><th scope="col">SMLMV</th><th scope="col">Valor 2026</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Reclamación ante la aseguradora</th><td>2</td><td class="der">$3.501.810</td></tr>
+          <tr><th scope="row">Conciliación prejudicial, proceso civil contractual</th><td>2</td><td class="der">$3.501.810</td></tr>
+          <tr><th scope="row">Presentación de la demanda, proceso civil contractual</th><td>3</td><td class="der">$5.252.715</td></tr>
+          <tr><th scope="row">Cada audiencia, proceso civil contractual</th><td>2</td><td class="der">$3.501.810</td></tr>
+          <tr><th scope="row">Conciliación prejudicial, rendición de cuentas</th><td>2</td><td class="der">$3.501.810</td></tr>
+          <tr><th scope="row">Presentación de la demanda, rendición de cuentas</th><td>3</td><td class="der">$5.252.715</td></tr>
+          <tr><th scope="row">Cada audiencia, rendición de cuentas</th><td>2</td><td class="der">$3.501.810</td></tr>
+          <tr><th scope="row">Proceso ejecutivo, rendición de cuentas</th><td>2</td><td class="der">$3.501.810</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px;font-size:13.5px;color:var(--gris)">El número de audiencias de cada proceso depende de su desarrollo procesal y no se puede fijar de antemano; se factura una vez por cada audiencia efectivamente realizada. Ese decreto estuvo bajo suspensión provisional entre febrero y julio de 2026; el Consejo de Estado revocó la suspensión en julio de 2026 y el decreto recobró plena vigencia, sin perjuicio de que la demanda de nulidad de fondo sigue en trámite. Si antes del inicio del servicio se profiere una decisión judicial que modifique el salario mínimo vigente, los honorarios se recalculan sobre el valor que resulte aplicable en esa fecha.</p>
+
+    <h3 style="margin-top:44px">Vigencia y condiciones</h3>
+    <div class="espacio"></div>
+    <p>Esta propuesta es válida por quince días calendario contados desde su fecha de emisión, es decir, hasta el 19 de septiembre de 2026. Vencido ese plazo sin aceptación, los honorarios deben revisarse antes de cualquier confirmación, en particular si para entonces cambió el salario mínimo legal mensual vigente que sirve de base al cálculo.</p>
+    <div class="nota rev"><b>Análisis sujeto a documentación.</b> Los hechos y la calificación jurídica de esta propuesta se elaboraron sobre lo expuesto por el consejo en la reunión del 2 de septiembre de 2026. El análisis definitivo se hace sobre la documentación que el conjunto aporte: los contratos de suministro y de aplicación, las actas del consejo, los certificados del producto y del aplicador, y las pólizas vigentes de la copropiedad.</div>
+  </div>
+</section>
+
+<section class="cierre" id="cierre">
+  <div class="in">
+    <h2>La propuesta se ajusta con la documentación que aporte el conjunto</h2>
+    <div class="regla"></div>
+    <div class="hechos">
+      <div><b>Frente civil.</b> Apolocryl S.A.S., Creando e Innovando CEI S.A.S. y Aseguradora Solidaria de Colombia, con prima de éxito del 20% sobre lo recuperado.</div>
+      <div><b>Vigencia.</b> Esta propuesta es válida hasta el 19 de septiembre de 2026.</div>
+    </div>
+    <div class="acciones" style="justify-content:center">
+      <a class="btn sobre-oscuro" href="mailto:tualiado@bedrock.com.co?subject=Propuesta%20Bedrock%20-%20Mississippi">Confirmar por correo</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="pie">
+    <span class="logo logo-claro" role="img" aria-label="Bedrock Abogados"></span>
+    <div>Derecho para empresas en movimiento · Bogotá · Medellín</div>
+    <div><a href="mailto:tualiado@bedrock.com.co">tualiado@bedrock.com.co</a> · <a href="https://www.bedrock.com.co">www.bedrock.com.co</a></div>
+    <div class="reserva">Ref. BED-MISS-2026-01 · Documento confidencial, de uso exclusivo del Conjunto Residencial Mississippi y de Bedrock.</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  var raiz = document.documentElement;
+  raiz.classList.add("js");
+
+  var barra = document.getElementById("progreso");
+  function progreso(){
+    var max = raiz.scrollHeight - raiz.clientHeight;
+    barra.style.width = (max > 0 ? (raiz.scrollTop / max) * 100 : 0) + "%";
+  }
+  addEventListener("scroll", progreso, {passive:true});
+  progreso();
+
+  var bm = document.getElementById("menu-movil"), nav = document.getElementById("nav");
+  function cerrarMenu(devolverFoco){
+    nav.classList.remove("abierta");
+    bm.setAttribute("aria-expanded","false");
+    if(devolverFoco) bm.focus();
+  }
+  bm.addEventListener("click", function(){
+    var abierta = nav.classList.toggle("abierta");
+    bm.setAttribute("aria-expanded", abierta ? "true" : "false");
+  });
+  nav.addEventListener("click", function(e){ if(e.target.tagName === "A") cerrarMenu(false); });
+  addEventListener("keydown", function(e){
+    if(e.key === "Escape" && nav.classList.contains("abierta")) cerrarMenu(true);
+  });
+
+  var enlaces = Array.prototype.slice.call(nav.querySelectorAll('a[href^="#"]:not(.btn)'));
+  var secciones = enlaces.map(function(a){ return document.querySelector(a.getAttribute("href")); });
+  var obsNav = new IntersectionObserver(function(entradas){
+    entradas.forEach(function(en){
+      if(!en.isIntersecting) return;
+      enlaces.forEach(function(a,i){ a.classList.toggle("activo", secciones[i] === en.target); });
+    });
+  }, {rootMargin:"-45% 0px -50% 0px"});
+  secciones.forEach(function(s){ if(s) obsNav.observe(s); });
+
+  var obsRev = new IntersectionObserver(function(entradas, obs){
+    entradas.forEach(function(en){
+      if(en.isIntersecting){ en.target.classList.add("vis"); obs.unobserve(en.target); }
+    });
+  }, {threshold:.08});
+  document.querySelectorAll(".rev").forEach(function(el){ obsRev.observe(el); });
+})();
+</script>
+</body>
+</html>

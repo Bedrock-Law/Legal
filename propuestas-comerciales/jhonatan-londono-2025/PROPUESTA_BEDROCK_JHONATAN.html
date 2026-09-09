@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta Bedrock - Caso Jhonatan Londoño</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @page {
+            size: A4;
+            margin: 20mm;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #2c3e50;
+            line-height: 1.6;
+            background: white;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);
+            color: white;
+            padding: 40px 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .header .subtitle {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-bottom: 15px;
+        }
+
+        .header .case-info {
+            font-size: 12px;
+            background: rgba(255,255,255,0.1);
+            padding: 10px 15px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        /* Bedrock Logo/Brand */
+        .brand {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 11px;
+            color: #7f8c8d;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            background: #8B4513;
+            color: white;
+            padding: 12px 15px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .section-content {
+            padding: 0 15px;
+        }
+
+        /* Content Blocks */
+        .block {
+            background: #f8f9fa;
+            border-left: 4px solid #A0522D;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+
+        .block h3 {
+            color: #8B4513;
+            font-size: 14px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .block p {
+            font-size: 13px;
+            line-height: 1.7;
+            margin-bottom: 8px;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+            margin: 15px 0;
+        }
+
+        table th {
+            background: #8B4513;
+            color: white;
+            padding: 10px;
+            text-align: left;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        table td {
+            padding: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        table tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        /* Highlights */
+        .highlight {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 12px;
+            margin: 15px 0;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+
+        .highlight strong {
+            color: #856404;
+        }
+
+        .success {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            color: #155724;
+        }
+
+        .danger {
+            background: #f8d7da;
+            border-left: 4px solid #dc3545;
+            color: #721c24;
+        }
+
+        /* Lists */
+        ul, ol {
+            margin-left: 20px;
+            font-size: 13px;
+            line-height: 1.8;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Footer */
+        .footer {
+            border-top: 2px solid #8B4513;
+            margin-top: 40px;
+            padding-top: 20px;
+            text-align: center;
+            font-size: 11px;
+            color: #7f8c8d;
+        }
+
+        .footer .contact {
+            margin: 10px 0;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        /* Key Metrics */
+        .metrics {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .metric-box {
+            background: #fff;
+            border: 2px solid #A0522D;
+            border-radius: 4px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .metric-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #8B4513;
+            margin: 10px 0;
+        }
+
+        .metric-label {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #7f8c8d;
+        }
+
+        /* Page Breaks */
+        .page-break {
+            page-break-after: always;
+            margin: 40px 0;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                margin: 0;
+                max-width: 100%;
+            }
+            .page-break {
+                page-break-after: always;
+            }
+        }
+
+        /* Recommendation Box */
+        .recommendation {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-left: 5px solid #8B4513;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+
+        .recommendation h3 {
+            color: #8B4513;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="brand">Bedrock Abogados</div>
+
+        <div class="header">
+            <h1>Propuesta de Apoyo Legal</h1>
+            <div class="subtitle">Caso Jhonatan Andrey Londoño Restrepo vs Serlogísticos S.A.S.</div>
+            <div class="case-info">
+                Radicado 2025-00023-00 • Juzgado Primero Laboral, Itagüí • Septiembre 2026
+            </div>
+        </div>
+
+        <!-- Section 1: Síntesis del Caso -->
+        <div class="section">
+            <div class="section-title">1. Síntesis del Caso</div>
+            <div class="section-content">
+                <div class="block">
+                    <h3>Hechos Relevantes</h3>
+                    <p><strong>Demandante:</strong> Jhonatan Andrey Londoño Restrepo (trabajador)</p>
+                    <p><strong>Demandado:</strong> Serlogísticos S.A.S. (empresa logística)</p>
+                    <p><strong>Problema:</strong> Dos terminaciones sin justa causa en 4 meses (mayo y septiembre 2023) de trabajador con discapacidad (limitación oftalmológica con trasplante de córnea).</p>
+                    <p><strong>Reclamación:</strong> Reintegro laboral + $64.3M en salarios, indemnización y prestaciones.</p>
+                </div>
+
+                <div class="highlight">
+                    <strong>Eje Central:</strong> Serlogísticos desconoce que existe estabilidad laboral reforzada (Art. 26 Ley 361/1997) para trabajadores con discapacidad, incluso sin autorización previa del Ministerio de Trabajo.
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2: Evaluación Fortalezas/Debilidades -->
+        <div class="section">
+            <div class="section-title">2. Evaluación Realista</div>
+            <div class="section-content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fortalezas de Jhonatan</th>
+                            <th>Debilidades de Jhonatan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>✓ Serlogísticos admite despido sin justa causa (2 veces)</td>
+                            <td>✗ Historia clínica incompleta post-2023</td>
+                        </tr>
+                        <tr>
+                            <td>✓ Concepto médico: "Puede continuar con RESTRICCIÓN"</td>
+                            <td>✗ Sin calificación formal de discapacidad ante ARL</td>
+                        </tr>
+                        <tr>
+                            <td>✓ Patrón de dos terminaciones = discriminación</td>
+                            <td>✗ Documentos dicen "apto" (no "incapacitado")</td>
+                        </tr>
+                        <tr>
+                            <td>✓ SU 049/2017 favorece al trabajador</td>
+                            <td>✗ Retraso de 7+ meses en presentar demanda</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="danger">
+                    <strong>Riesgo Real de Litigio:</strong> 25-35% de probabilidad de perder. Un juez conservador puede seguir jurisprudencia CSJ antigua (2012-2016) que Serlogísticos cita, especialmente por ausencia de historia clínica reciente y calificación formal de discapacidad.
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 3: Escenarios -->
+        <div class="section">
+            <div class="section-title">3. Escenarios: Litigio vs. Negociación</div>
+            <div class="section-content">
+                <div class="metrics">
+                    <div class="metric-box">
+                        <div class="metric-label">Litigio</div>
+                        <div class="metric-value">14-24 meses</div>
+                        <div class="metric-label">Plazo hasta sentencia</div>
+                    </div>
+                    <div class="metric-box">
+                        <div class="metric-label">Negociación</div>
+                        <div class="metric-value">2-4 meses</div>
+                        <div class="metric-label">Plazo a acuerdo</div>
+                    </div>
+                    <div class="metric-box">
+                        <div class="metric-label">Litigio</div>
+                        <div class="metric-value">18-30 SMLMV</div>
+                        <div class="metric-label">Costo total</div>
+                    </div>
+                    <div class="metric-box">
+                        <div class="metric-label">Negociación</div>
+                        <div class="metric-value">5-8 SMLMV</div>
+                        <div class="metric-label">Costo total</div>
+                    </div>
+                </div>
+
+                <h3 style="color: #8B4513; margin-top: 20px; text-transform: uppercase; letter-spacing: 0.5px;">Valor Esperado</h3>
+                <ul>
+                    <li><strong>Litigio:</strong> (45% × $75M) + (55% × $0M) - $24M costo = <strong style="color: #dc3545;">$9.75M ganancia esperada</strong></li>
+                    <li><strong>Negociación:</strong> 100% × $60M - $6M costo = <strong style="color: #28a745;">$54M ganancia esperada</strong></li>
+                </ul>
+
+                <div class="success" style="margin-top: 15px;">
+                    <strong>Conclusión:</strong> Negociación genera 5.5x más valor esperado que litigio y elimina el riesgo de perder.
+                </div>
+            </div>
+        </div>
+
+        <div class="page-break"></div>
+
+        <!-- Section 4: Propuesta de Bedrock -->
+        <div class="section">
+            <div class="section-title">4. Propuesta de Bedrock: Negociación en Centro de Conciliación</div>
+            <div class="section-content">
+                <div class="block">
+                    <h3>Modelo Recomendado</h3>
+                    <p><strong>Fase 1 (Semana 1):</strong> Análisis y propuesta de negociación fundamentada. Definir piso ($55M) y techo ($70M).</p>
+                    <p><strong>Fase 2 (Semanas 2-3):</strong> Contacto pre-negociación. Sondeo de disposición con Serlogísticos.</p>
+                    <p><strong>Fase 3 (Semanas 4-6):</strong> Negociación formal en Centro de Conciliación. Meta: acuerdo $55M-$70M.</p>
+                    <p><strong>Fase 4 (Semanas 7-8):</strong> Redacción de acuerdo y pago. Cierre de caso.</p>
+                </div>
+
+                <div class="block">
+                    <h3>Estructura de Honorarios</h3>
+                    <p><strong>Opción A (Híbrida - RECOMENDADA):</strong></p>
+                    <ul>
+                        <li>$3M fijo (por trabajo de análisis y negociación)</li>
+                        <li>8% de lo logrado arriba de $55M</li>
+                        <li>Ejemplo: Si negocia $60M → $3M + $400K = $3.4M total</li>
+                    </ul>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Escenario</th>
+                            <th>Negociación Lograda</th>
+                            <th>Honorario Bedrock</th>
+                            <th>Cliente Recibe</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Conservador</td>
+                            <td>$55M</td>
+                            <td>$3M</td>
+                            <td>$52M</td>
+                        </tr>
+                        <tr>
+                            <td>Realista</td>
+                            <td>$60M</td>
+                            <td>$3.4M</td>
+                            <td>$56.6M</td>
+                        </tr>
+                        <tr>
+                            <td>Optimista</td>
+                            <td>$65M</td>
+                            <td>$3.8M</td>
+                            <td>$61.2M</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Section 5: Ventajas -->
+        <div class="section">
+            <div class="section-title">5. Ventajas de Esta Propuesta</div>
+            <div class="section-content">
+                <div class="block">
+                    <h3>Para Cliente (Jhonatan)</h3>
+                    <ul>
+                        <li>✓ <strong>Dinero seguro:</strong> 100% de certidumbre (no hay riesgo de perder)</li>
+                        <li>✓ <strong>Dinero rápido:</strong> En 2-4 meses (vs. 18-24 meses de litigio)</li>
+                        <li>✓ <strong>Dinero realista:</strong> $55M-$70M vs. riesgo de $0M en litigio</li>
+                        <li>✓ <strong>Cierre definitivo:</strong> Fin del caso sin años de incertidumbre y estrés</li>
+                    </ul>
+                </div>
+
+                <div class="block">
+                    <h3>Para Bedrock Abogados</h3>
+                    <ul>
+                        <li>✓ <strong>Margen alto:</strong> $3M-$4M en 2-4 meses de trabajo especializado</li>
+                        <li>✓ <strong>Bajo riesgo:</strong> Cliente obtiene dinero; Bedrock obtiene comisión</li>
+                        <li>✓ <strong>Diferenciación:</strong> Posicionamiento como especialista en resolución alternativa</li>
+                        <li>✓ <strong>Eficiencia:</strong> Mayor valor generado con menor costo de operación</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 6: Recomendación Final -->
+        <div class="section">
+            <div class="section-title">6. Recomendación Final</div>
+            <div class="section-content">
+                <div class="recommendation">
+                    <h3>No Litigar. Negociar Ahora.</h3>
+                    <p>La etapa actual (contestación de demanda) es ideal para negociación. Serlogísticos sabe que tiene debilidades jurídicas (admisión de "sin justa causa", jurisprudencia desactualizada). Una propuesta profesional de negociación es bienvenida.</p>
+                    <p style="margin-top: 15px;"><strong>Meta:</strong> Acuerdo de $55M-$70M en Centro de Conciliación en 8 semanas máximo.</p>
+                    <p style="margin-top: 15px;"><strong>Beneficio para cliente:</strong> Dinero 100% seguro en 2-4 meses. Sin riesgo de perder.</p>
+                </div>
+
+                <div class="block">
+                    <h3>Cronograma Inmediato</h3>
+                    <ul>
+                        <li><strong>Hoy:</strong> Decisión y contacto con Bedrock</li>
+                        <li><strong>Semana 1:</strong> Análisis interno y propuesta de negociación</li>
+                        <li><strong>Semanas 2-3:</strong> Pre-negociación con abogado de Serlogísticos</li>
+                        <li><strong>Semanas 4-6:</strong> Negociación en Centro de Conciliación</li>
+                        <li><strong>Semanas 7-8:</strong> Acuerdo firmado y pago recibido</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="contact">Bedrock Abogados</div>
+            <p>Medellín, Antioquia • Colombia</p>
+            <p>Email: tualiado@bedrock.com.co</p>
+            <p style="margin-top: 20px; font-size: 10px; color: #95a5a6;">
+                Información confidencial. Documento preparado bajo privilegio abogado-cliente.
+                <br>Válido por 30 días desde la fecha de emisión.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
