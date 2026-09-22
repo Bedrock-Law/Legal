@@ -1,0 +1,234 @@
+DENUNCIA_PENAL_V6 (1).docx.pdf
+
+Esta denuncia penal formaliza una acusación presentada por el representante legal de una entidad financiera colombiana contra cuatro antiguos cajeros que presuntamente defraudaron a la compañía. El documento detalla un entramado delictivo en el cual los implicados manipularon sistemas informáticos, ignoraron protocolos de seguridad y usaron de forma ilícita sus dispositivos móviles para apropiarse de remesas internacionales pertenecientes a diversos clientes. Mediante la suplantación de identidad y el uso fraudulento de validaciones biométricas, los denunciados entregaron los fondos a terceros o los desviaron en beneficio propio, obligando a la empresa a restituir el dinero y a asumir la posición de víctima material directa por el detrimento patrimonial sufrido. Finalmente, el texto fundamenta jurídicamente los hechos bajo cargos como administración desleal, hurto, falsedad y concierto para delinquir, solicitando a la Fiscalía General de la Nación que investigue las evidencias fílmicas y operativas que respaldan la acusación.
+
+Denuncia penal
+
+Apropiación ilícita recursos
+
+Suplantación de identidad
+
+Fraude en remesas
+
+Manipulación sistemas informáticos
+
+Señores FISCALÍA GENERAL DE LA NACIÓN Unidad de Asignaciones (Reparto) Bogotá D. C
+REF: DENUNCIA PENAL
+[NOMBRE DE REPRESENTANTE LEGAL], mayor de edad, domiciliado y residente en la ciudad de [CIUDAD], identificado con cédula de ciudadanía número [CÉDULA], actuando en mi calidad de representante legal de [RAZÓN SOCIAL DE LA EMPRESA], sociedad de nacionalidad Colombiana legalmente constituida mediante escritura pública No [NÚMERO] del [FECHA DE CONSTITUCIÓN] de la Notaría [NÚMERO] del Círculo de [CIUDAD], con matrícula mercantil número [NÚMERO] de la Cámara de Comercio de [CIUDAD], según certificado de existencia y representación legal, con domicilio principal en la ciudad de [CIUDAD], identificada con el NIT No. [NIT], por medio de este documento y actuando bajo la gravedad de juramento (conforme al artículo 69 de la Ley 906 de 2004), manifestando desde ya que estos hechos no han sido puestos en conocimiento de otro funcionario, presento denuncia de carácter penal en contra de los señores [NOMBRE DENUNCIADO 1] identificado con cédula de ciudadanía número [CÉDULA DENUNCIADO 1]; [NOMBRE DENUNCIADO 2] identificada con cédula de ciudadanía número [CÉDULA DENUNCIADO 2]; [NOMBRE DENUNCIADO 3] identificada con cédula de ciudadanía número [CÉDULA DENUNCIADO 3] y [NOMBRE DENUNCIADO 4] identificada con cédula de ciudadanía número [CÉDULA DENUNCIADO 4]; con base en los siguientes hechos y fundamentos jurídicos:
+1. HECHOS 1.1. [NOMBRE DE LA EMPRESA] es una sociedad de nacionalidad
+colombiana, vigilada por la Superintendencia Financiera de Colombia, cuyo objeto principal consiste, entre otras cosas, en el desarrollo del contrato de comisión para la compra y venta de valores adelantando su licencia como Intermediario del Mercado de Valores, además de contar con licencia de Intermediario del Mercado Cambiario para adelantar operaciones del mercado de divisas.
+1.2. Los señores [DENUNCIADOS] ostentaban para la época de los hechos la calidad de funcionarios de [NOMBRE DE LA EMPRESA].
+1.3. Los señores [DENUNCIADOS] desarrollaban la labor de cajeros en
+sucursales de [NOMBRE DE LA EMPRESA] para la época de los hechos.
+1.4. Los señores [DENUNCIADOS], al parecer en coparticipación entre ellos y terceras personas, desplegaron un entramado a través del cual se apropiaron en provecho propio y de terceros, obteniendo un provecho ilícito
+con perjuicio ajeno, de importantes recursos de clientes de [NOMBRE DE LA EMPRESA].
+1.5. Los recursos apropiados ilícitamente por los denunciados fueron restituidos íntegramente por [NOMBRE DE LA EMPRESA] a los clientes afectados, por lo que [NOMBRE DE LA EMPRESA] asume la calidad de víctima material directa al haber soportado el detrimento patrimonial, de conformidad con el artículo 132 de la Ley 906 de 2004.
+1.6. De la forma como se describe a continuación, fue el actuar indebido de los denunciados:
+1.6.1. FUNCIONARIO [NOMBRE DENUNCIADO 1]
+- El señor [NOMBRE DENUNCIADO 1] ostentaba el cargo de Ejecutivo
+Comercial en la ciudad de [CIUDAD], Oficina [OFICINA] y desarrollaba funciones de cajero.
+- Según los informes presentados por la Coordinación Regional Costa, tras las denuncias de clientes y el análisis de los registros fílmicos y operativos de la oficina del Centro Comercial Metropolitano, se identificaron presuntas irregularidades que comprometieron los protocolos de seguridad y el patrimonio de [NOMBRE DE LA EMPRESA] y permitieron la sustracción irregular de dinero de clientes, así:
+o OPERACIÓN MTCN 4575985450 DEL 10 DE ABRIL DE 2026
+- [NOMBRE DE LA EMPRESA] recibió una orden de pago de una remesa del exterior para la cliente [NOMBRE CLIENTE 1], identificada con cédula de ciudadanía [CÉDULA CLIENTE 1], por valor de DOS MILLONES NOVENTA Y NUEVE MIL DOCIENTOS DIEZ PESOS MONEDA LEGAL COLOMBIANA ($2.099.210 M/L) (Ver Anexo No. 1).
+- El día 11 de abril de 2026 la cliente se comunicó con [NOMBRE DE LA EMPRESA], manifestando que se acercó sobre las 2 de la tarde a la oficina plaza del sol en Soledad, donde le indicaron que el giro MTCN 4575985450 ya se encontraba cobrado.
+- Revisado lo acontecido, se encontró que la remesa fue cobrada el día 10 de abril del 2026, a las 15:50 PM, en la oficina Centro Comercial Metropolitano de la ciudad de Barranquilla (Ver Anexo No 2).
+- Al parecer, el señor [APELLIDO DENUNCIADO 1] obtuvo la información de
+la remesa, dentro de esta el código MTCN, y procedió, omitiendo los procedimientos operativos y de seguridad de [NOMBRE DE LA EMPRESA], a ingresar los datos al sistema informático manipulándolo abusivamente, sin que el cliente hubiera llegado a la sucursal a solicitar el dinero.
+- Hay que aclarar aquí que antes y durante el procedimiento irregular desplegado por el señor [APELLIDO DENUNCIADO 1], éste uso permanentemente su teléfono celular, lo que se encontraba strictly prohibido al interior de [NOMBRE DE LA EMPRESA], precisamente por
+razones de seguridad y para evitar situaciones como la que hoy denunciamos (Ver Anexo No. 3).
+- Posteriormente el señor [APELLIDO DENUNCIADO 1] distrajo la atención
+de una cliente y al atenderla, le solicitó poner su huella del dedo anular derecho, huella que quedó impresa en la transacción irregular.
+- Posteriormente, el señor [APELLIDO DENUNCIADO 1] puso el dinero al
+lado y lo entregó, aproximadamente una hora después, a una mujer que se acercó a la ventanilla para hacer otra operación, quien desapareció con el dinero consumando así el apoderamiento en provecho de un tercero.
+o OPERACIÓN MTCN 4155969931 DEL 10 DE ABRIL DE 2026
+- [NOMBRE DE LA EMPRESA] recibió una orden de pago de una remesa
+del exterior para el cliente [NOMBRE CLIENTE 2], identificado con cédula de ciudadanía número [CÉDULA CLIENTE 2], por valor de TRES MILLONES TRESCIENTOS CUARENTA MIL NOVECIENTOS CINCUENTA Y DOS PESOS MONEDA LEGAL COLOMBIANA ($3.340.952 M/L) (Ver Anexo No. 4).
+- El día 11 de abril de 2026, el cliente se comunicó con [NOMBRE DE LA EMPRESA], indicando que se había acercado a la oficina [NOMBRE DE LA EMPRESA] LA VIRGINIA RISARALDA y le habían dicho que su giro ya había sido cobrado.
+- Revisado lo acontecido, se encontró que la remesa fue cobrada el día 10 de abril del 2026, a las 16:54 PM, en la oficina Centro Comercial Metropolitano de la ciudad de Barranquilla (Ver Anexo No. 5).
+- Al parecer, el señor [APELLIDO DENUNCIADO 1] obtuvo la información de la remesa, dentro de esta el código MTCN, y procedió, omitiendo los procedimientos operativos y de seguridad de [NOMBRE DE LA EMPRESA], a ingresar los datos al sistema informático manipulándolo abusivamente, sin que el cliente hubiera llegado a la sucursal a solicitar el dinero.
+- Hay que aclarar aquí que antes y durante el procedimiento irregular
+desplegado por el señor [APELLIDO DENUNCIADO 1], éste usa permanentemente su teléfono celular, lo que se encontraba estrictamente prohibido al interior de [NOMBRE DE LA EMPRESA], precisamente por razones de seguridad y para evitar situaciones como la que hoy denunciamos (Ver Anexo No. 6).
+- Posteriormente el señor [APELLIDO DENUNCIADO 1] distrajo la atención
+de una cliente y al atenderla, le solicitó poner su huella del dedo anular derecho, huellas que quedó impresa en la transacción irregular.
+- Posteriormente, el señor [APELLIDO DENUNCIADO 1] poso el dinero aparte y lo entregó luego a una mujer que se acercó a su ventanilla, simulando una verificación de identidad, quien desaparecióe con el dinero consumando así la apropiación ilícita en provecho de un tercero.
+1.6.2. FUNCIONARIA [NOMBRE DENUNCIADO 2]
+- La señora [NOMBRE DENUNCIADO 2] ostentaba el cargo de Ejecutivo
+Comercial en la ciudad de [CIUDAD], Oficina [OFICINA] y desarrollaba funciones de cajera.
+- Según los informes presentados por la Coordinación Regional Costa, tras el análisis de los registros fílmicos y operativos de la oficina Olímpica Mercado, se identificaron presuntas irregularidades que comprometieron los protocolos de seguridad y el patrimonio de [NOMBRE DE LA EMPRESA] y permitieron la aprobación ilícita irregular de dinero de clientes, así.
+o OPERACIÓN MTCN 6376432361 DEL 14 DE MARZO DE 2026
+- [NOMBRE DE LA EMPRESA] recibió una orden de pago de una remesa del exterior para el cliente [NOMBRE CLIENTE 3], identificado con cédula de ciudadanía número [CÉDULA CLIENTE 3], por valor de SEISCIENTOS MIL OCHENTA Y DOS PESOS MONEDA LEGAL COLOMBIANA ($600.082 M/L) (Ver Anexo No. 7).
+- La cliente se comunicó con [NOMBRE DE LA EMPRESA], indicando que se había acercado a una oficina de la compañía y le habían dicho que su giro ya había sido cobrado.
+- Revisado lo acontecido, se encontró que la remesa fue cobrada el día 14 de marzo del 2026, a las 11:43 AM, en la oficina Olímpica Mercado de la ciudad de Santa Marta (Ver Anexo No. 8).
+- Al parecer, la señora [APELLIDO DENUNCIADO 2] obtuvo la información de la remesa, dentro de esta el código MTCN, y procedió, omitiendo los procedimientos operativos y de seguridad de [NOMBRE DE LA EMPRESA], a ingresar los datos al sistema, sin que la cliente hubiera llegado a la sucursal a solicitar el dinero.
+- Hay que aclarar aquí que antes y durante el procedimiento irregular
+desplegado por la señora [APELLIDO DENUNCIADO 2], ésta usó permanentemente su teléfono celular, lo que se encontraba strictly prohibido al interior de [NOMBRE DE LA EMPRESA], precisamente por razones de seguridad y para evitar situaciones como la que hoy denunciamos. Más aún, se evidencia en las grabaciones que de su teléfono se extrae la información confidencial a la que hacemos referencia (Ver Anexo No. 9).
+- Posteriormente la señora [APELLIDO DENUNCIADO 2] entregó el dinero a
+una persona, que es físicamente totalmente diferente a la que aparece en la cédula, suplantando de esta forma la autorización legítima del titular, quien desapareció con el dinero, consumando así la apropiación ilícita en provecho de un tercero.
+o OPERACIÓN MTCN 4803419279 DEL 14 DE MARZO DE 2026
+- [NOMBRE DE LA EMPRESA] recibió una orden de pago de una remesa del exterior para la cliente [NOMBRE CLIENTE 4], identificada con cédula de ciudadanía número [CÉDULA CLIENTE 4], por valor de TRES MILLONES NOVECIENTOS SESENTA Y SIETE MIL OCHOCIENTOS CINCUENTA Y NUEVE PESOS CON SEIS CENTAVOS MONEDA LEGAL COLOMBIANA ($3.967.859.06 M/L) (Ver Anexo No. 10).
+- El día 14 de marzo de 2026, la cliente se comunicó con [NOMBRE DE LA EMPRESA], indicando que se había acercado a una oficina de la compañía y le habían dicho que su giro ya había sido cobrado.
+- Revisado lo acontecido, se encontró que la remesa fue cobrada el día 14 de marzo del 2026, a las 12:10 PM, en la oficina Olímpica Mercado de la ciudad de Santa Marta, por la misma persona que cobró la anterior (Ver Anexo No. 11).
+- Al parecer, la señora [APELLIDO DENUNCIADO 2] obtuvo la información de la remesa, dentro de esta el código MTCN, y procedió, omitiendo los procedimientos operativos y de seguridad de [NOMBRE DE LA EMPRESA], a ingresar los datos al sistema, sin que la cliente hubiera llegado a la sucursal a solicitar el dinero.
+- Hay que aclarar aquí que antes y durante el procedimiento irregular
+desplegado por la señora [APELLIDO DENUNCIADO 2], ésta usa permanentemente su teléfono celular, lo que se encontraba strictly prohibido al interior de [NOMBRE DE LA EMPRESA], precisamente por razones de seguridad y para evitar situaciones como la que hoy denunciamos. Más aún, se evidencia en las grabaciones que de su teléfono se extrae la información confidencial a la que hacemos referencia (Ver Anexo No. 12).
+- Posteriormente la señora [APELLIDO DENUNCIADO 2] entregó el dinero a
+una persona, que es físicamente totalmente diferente a la que aparece en la cédula, suplantando de esta forma la autorización legítima de la titular, quien desapareció con el dinero, consumando así la apropiación ilícita en provecho de un tercero.
+o OPERACIÓN MTCN 4279867304 DEL 14 DE MARZO DE 2026
+- [NOMBRE DE LA EMPRESA] recibió una orden de pago de una remesa
+del exterior para el cliente [NOMBRE CLIENTE 5], identificado con cédula de ciudadanía número [CÉDULA CLIENTE 5], por valor de NUEVE MILLONES DOSCIENTOS TREINTA Y CUATRO MIL DOSCIENTOS SETENTA Y DOS PESOS CON OCHENTA Y UN CENTAVOS MONEDA LEGAL COLOMBIANA ($9.234.272.41 M/L) (Ver Anexo No. 13).
+- La cliente se comunicó con [NOMBRE DE LA EMPRESA], indicando que se había acercado a una oficina de la compañía y le habían dicho que su giro ya había sido cobrado.
+- Revisado lo acontecido, se encontró que la remesa fue cobrada el día 14 de marzo de 2026, a las 13:57 PM, en la oficina Olímpica Mercado de la ciudad de Santa Marta (Ver Anexo No. 14).
+- Al parecer, la señora [APELLIDO DENUNCIADO 2] obtuvo la información de la remesa, dentro de esta el código MTCN, y procedió, omitiendo los procedimientos operativos y de seguridad de [NOMBRE DE LA EMPRESA], a ingresar los datos al sistema, sin que la cliente hubiera llegado a la sucursal a solicitar el dinero.
+- Hay que aclarar aquí que antes y durante el procedimiento irregular
+desplegado por la señora [APELLIDO DENUNCIADO 2], ésta usa permanentemente su teléfono celular, lo que se encontraba strictly prohibido al interior de [NOMBRE DE LA EMPRESA], precisamente por razones de seguridad y para evitar situaciones como la que hoy denunciamos. Más aún, se evidencia en las grabaciones que de su teléfono se extrae la información confidencial a la que hacemos referencia (Ver Anexo No. 15).
+- Posteriormente la señora [APELLIDO DENUNCIADO 2] entregó el dinero a
+una persona, que es físicamente totalmente diferente a la que aparece en la cédula, suplantando de esta forma la autorización legítima del titular, quien desapareció con el dinero, consumando así la apropiación ilícita en provecho de un tercero.
+o OPERACIÓN MTCN 3138490957 DEL 22 DE MARZO DE 2026
+- [NOMBRE DE LA EMPRESA] recibió una orden de pago de una remesa
+del exterior para la cliente [NOMBRE CLIENTE 6], identificado con cédula de ciudadanía número [CÉDULA CLIENTE 6], por valor de SEIS MILLONES TRESCIENTOS NUEVE MIL SESENTA PESOS CON SESENTA Y CINCO CENTAVOS MONEDA LEGAL COLOMBIANA ($6.309.060.65 M/L) (Ver Anexo No. 16).
+- La cliente se comunicó con [NOMBRE DE LA EMPRESA], indicando que se había acercado a una oficina de la compañía y le habían dicho que su giro ya había sido cobrado.
+- Revisado lo acontecido, se encontró que la remesa fue cobrada el día 22 de marzo del 2026, a las 10:40 am, en la oficina Éxito Buena Vista de la ciudad de Santa Marta (Ver Anexo No. 17).
+- Al parecer, la señora [APELLIDO DENUNCIADO 2] obtuvo la información de la remesa, dentro de esta el código MTCN, y procedió, omitiendo los procedimientos operativos y de seguridad de [NOMBRE DE LA EMPRESA], a ingresar los datos al sistema, sin que la cliente hubiera llegado a la sucursal a solicitar el dinero.
+- Hay que aclarar aquí que antes y durante el procedimiento irregular
+desplegado por la señora [APELLIDO DENUNCIADO 2], ésta usa permanentemente su teléfono celular, lo que se encontraba strictly prohibido al interior de [NOMBRE DE LA EMPRESA], precisamente por
+razones de seguridad y para evitar situaciones como la que hoy denunciamos. Más aún, se evidencia en las grabaciones que de su teléfono se extrae la información confidencial a la que hacemos referencia (Ver Anexo No. 18).
+- Posteriormente la señora [APELLIDO DENUNCIADO 2] entregó el dinero a
+una persona de sexo masculino, físicamente diferente al titular, suplantando de esta forma la autorización legítima del cliente, quien desapareció con el dinero, consumando así la apropiación ilícita en provecho de un tercero.
+1.6.3. [NOMBRE DENUNCIADO 3]
+- La señora [NOMBRE DENUNCIADO 3] ostentaba el cargo de Ejecutivo Comercial en la ciudad de [CIUDAD], Oficina [OFICINA] y desarrollaba funciones de cajera.
+- Según los informes presentados por el área de Cumplimiento y la Coordinación Regional Costa, tras las denuncias de clientes y el análisis de los registros fílmicos y operativos de la oficina 569 C.C. Metropolitano Recaudo, se identificaron presuntas irregularidades que comprometieron los protocolos de seguridad y el patrimonio de [NOMBRE DE LA EMPRESA] y permitieron la apropiación ilícita de dinero de clientes, así:
+o OPERACIÓN MTCN 3372633017 DEL 20 DE ABRIL DE 2026
+- [NOMBRE DE LA EMPRESA] recibió una orden de pago de una remesa del exterior para la cliente [NOMBRE CLIENTE 7], identificada con cédula de ciudadanía [CÉDULA CLIENTE 7], por valor de DOS MILLONES DOSCIENTOS CINCUENTA Y SIETE MIL CIEN PESOS MONEDA LEGAL COLOMBIANA ($2.257.100 M/L) (Ver Anexo No. 19).
+- La cliente se comunicó con [NOMBRE DE LA EMPRESA], indicando que
+se había acercado a una oficina de la compañía y le habían dicho que su giro ya había sido cobrado.
+- Revisado lo acontecido, se encontró que la remesa fue cobrada el día 20 de
+abril del 2026, a las 16:46 PM, en la oficina Centro Comercial Metropolitano de la ciudad de Barranquilla (Ver Anexo No. 20).
+- Al parecer, la señora [APELLIDO DENUNCIADO 3] obtuvo la información
+de la remesa, dentro de esta el código MTCN, y procedió, omitiendo los procedimientos operativos y de seguridad de [NOMBRE DE LA EMPRESA], a ingresar los datos al sistema, sin que el cliente hubiera llegado a la sucursal a solicitar el dinero.
+- Hay que aclarar aquí que antes y durante el procedimiento irregular desplegado por la señora [APELLIDO DENUNCIADO 3], ésta usó permanentemente su teléfono celular, lo que se encontraba estrictamente prohibido al interior de [NOMBRE DE LA EMPRESA], precisamente por razones de seguridad y para evitar situaciones como la que hoy denunciamos (Ver Anexo No. 21).
+- La señora [APELLIDO DENUNCIADO 3] realizó movimientos debajo del escritorio, donde se encuentra conectado el huellero, con el fin de manipular el sistema, logrando así suplantar fraudulentamente la validación biométrica y autorizar el desembolso de forma fraudulenta.
+- Posteriormente, la señora [APELLIDO DENUNCIADO 3] tomó fotografías de la factura, la cual contenía información confidencial de la titular, directamente desde la pantalla de su computador (Ver Anexo No. 22).
+- La señora [APELLIDO DENUNCIADO 3] separó el dinero y lo dejó sobre su mesa de trabajo, continuando con la atención de otros clientes para disimular la maniobra.
+- Finalmente, se observa que el dinero fue entregado a un tercero no identificado, quien desapareció con el dinero, consumando así la apropiación ilícita en provecho de un tercero.
+o OPERACIÓN MTCN 9376176474 DEL 20 DE ABRIL DE 2026
+- [NOMBRE DE LA EMPRESA] recibió una orden de pago de una remesa del exterior para la cliente [NOMBRE CLIENTE 8], identificada con cédula de ciudadanía número [CÉDULA CLIENTE 8], por valor de DOS MILLONES CIENTO QUINCE MIL CINCUENTA Y NUEVE PESOS MONEDA LEGAL COLOMBIANA ($2.115.059 M/L) (Ver Anexo No. 23).
+- El día 21 de abril de 2026, la cliente se comunicó con [NOMBRE DE LA EMPRESA], indicando que se había acercado a la oficina C.C. Cacique de Bucaramanga a cobrar su giro, donde le indicaron que el giro MTCN 9376176474 ya se encontraba cobrado.
+- Revisado lo acontecido, se encontró que la remesa fue cobrada el día 20 de
+abril del 2026, a las 16:50 PM, en la oficina Centro Comercial Metropolitano de la ciudad de Barranquilla (Ver Anexo No. 24).
+- Adicionalmente, se observó que la remesa fue cobrada con el número de documento [CÉDULA FALSO], el cual no correspondía al número de identificación reportado por la cliente en su reclamación, configurándose presuntamente una suplantación de identidad.
+- Al parecer, la señora [APELLIDO DENUNCIADO 3] obtuvo la información de la remesa, dentro de esta el código MTCN, y procedió, omitiendo los procedimientos operativos y de seguridad de [NOMBRE DE LA EMPRESA], a ingresar los datos al sistema, sin que la cliente hubiera llegado a la sucursal a solicitar el dinero.
+- Hay que aclarar aquí que antes y durante el procedimiento irregular
+desplegado por la señora [APELLIDO DENUNCIADO 3], ésta usa permanentemente su teléfono celular, lo que se encontraba strictly prohibido al interior de [NOMBRE DE LA EMPRESA], precisamente por razones de seguridad y para evitar situaciones como la que hoy denunciamos (Ver Anexo No. 25).
+- Posteriormente, la señora [APELLIDO DENUNCIADO 3] detuvo la atención de un cliente físico de convenios que se acercó a ventanilla, mientras procesaba de manera irregular el pago del giro.
+- La señora [APELLIDO DENUNCIADO 3] realizó movimientos debajo del escritorio, donde se encuentra conectado el huellero, con el fin de manipular el sistema logrando así suplantar fraudulentamente la validación biométrica y autorizar el desembolso de forma fraudulenta.
+- Posteriormente, la señora [APELLIDO DENUNCIADO 3] tomó fotografías de la factura, la cual contenía información confidencial de la titular, directamente desde la pantalla de su computador.
+- La señora [APELLIDO DENUNCIADO 3] separó el dinero y lo dejó sobre su mesa de trabajo, continuando con la atención de otros clientes para disimular la maniobra.
+- Finalmente, se observa que el dinero fue entregado a un tercero no identificado, quien desapareció con el dinero, consumando así la apropiación ilícita en provecho de un tercero.
+1.6.4. [NOMBRE DENUNCIADO 4]
+- La señora [NOMBRE DENUNCIADO 4] ostentaba el cargo de Ejecutivo Comercial en la ciudad de [CIUDAD], Oficina [OFICINA] y desarrollaba funciones de cajera.
+- Según los informes presentados por la Coordinación Regional Costa, tras el análisis de los registros fílmicos y operativos de la oficina Olímpica Mercado, se identificaron presuntas irregularidades que comprometieron los protocolos de seguridad y el patrimonio de [NOMBRE DE LA EMPRESA] y permitieron la apropiación ilícita de dinero de clientes, así:
+o OPERACIÓN MTCN 2771513235 DEL 19 DE MARZO DE 2026
+- [NOMBRE DE LA EMPRESA] recibió una orden de pago de una remesa del exterior para la cliente [NOMBRE CLIENTE 9], identificada con cédula de ciudadanía número [CÉDULA CLIENTE 9], por valor de CUATRO MILLONES CIENTO NOVENTA Y CINCO MIL SETECIENTOS SESENTA Y NUEVE PESOS CON SETENTA Y SEIS CENTAVOS MONEDA LEGAL COLOMBIANA ($4.195.769,76 M/L) (Ver Anexo No. 26).
+- La cliente se comunicó con [NOMBRE DE LA EMPRESA], indicando que se había acercado a una oficina de la compañía y le habían dicho que su giro ya había sido cobrado.
+- Revisado lo acontecido, se encontró que la remesa fue cobrada el día 19 de marzo del 2026, a las 16:06 PM, en la oficina Homecenter Santa Marta de la ciudad de Santa Marta (Ver Anexo No. 27).
+- Al parecer, la señora [APELLIDO DENUNCIADO 4] obtuvo la información de la remesa, dentro de esta el código MTCN, y procedió, omitiendo los procedimientos operativos y de seguridad de [NOMBRE DE LA EMPRESA], a ingresar los datos al sistema informático manipulándolo abusivamente, sin que la cliente hubiera llegado a la sucursal a solicitar el dinero.
+- Hay que aclarar aquí que antes y durante el procedimiento irregular
+desplegado por la señora [APELLIDO DENUNCIADO 4], ésta usó permanentemente su teléfono celular, lo que se encontraba estrictamente prohibido al interior de [NOMBRE DE LA EMPRESA], precisamente por razones de seguridad y para evitar situaciones como la que hoy denunciamos, facilitando así presuntamente el manejo indebido de información confidencial (Ver Anexo No. 28).
+- Finalmente, la operación fue incluida dentro de la relación de transacciones identificadas como presunto fraude vinculadas a la señora [APELLIDO DENUNCIADO 4], consumando así la apropiación ilícita de los recursos.
+o OPERACIÓN MTCN 7755296822 DE 2026
+- [NOMBRE DE LA EMPRESA] recibió una orden de pago de una remesa del exterior para el cliente [NOMBRE CLIENTE 10], identificado con cédula de ciudadanía número [CÉDULA CLIENTE 10], por valor de SIETE MILLONES SETECIENTOS NOVENTA Y OCHO MIL CIENTO SESENTA Y NUEVE PESOS MONEDA LEGAL COLOMBIANA ($7.798.169 M/L) (Ver Anexo No. 29).
+- El cliente se comunicó con [NOMBRE DE LA EMPRESA], indicando que se había acercado a una oficina de la compañía y le habían dicho que su giro ya había sido cobrado.
+- Revisado lo acontecido, se encontró que la remesa fue cobrada en la
+oficina Homecenter Santa Marta de la ciudad de Santa Marta (Ver Anexo No. 30).
+- Al parecer, la señora [APELLIDO DENUNCIADO 4] obtuvo la información
+de la remesa, dentro de esta el código MTCN, y procedió, omitiendo los procedimientos operativos y de seguridad de [NOMBRE DE LA EMPRESA], a ingresar los datos al sistema informático manipulándolo abusivamente, sin que la cliente hubiera llegado a la sucursal a solicitar el dinero.
+- Hay que aclarar aquí que antes y durante el procedimiento irregular
+desplegado por la señora [APELLIDO DENUNCIADO 4], ésta usó permanentemente su teléfono celular, lo que se encontraba strictly prohibido al interior de [NOMBRE DE LA EMPRESA], precisamente por razones de seguridad y para evitar situaciones como la que hoy denunciamos, facilitando así presuntamente el manejo indebido de información confidencial (Ver Anexo No. 31).
+- Posteriormente, se evidenció que la señora [APELLIDO DENUNCIADO 4] habría utilizado sus propias huellas dactilares para suplantar la validación
+biométrica de clientes ausentes y autorizar los desembolsos en el aplicativo, logrando así suplantar fraudulentamente a los usuarios ante los sistemas de autenticación y autorización establecidos (Ver Anexo No. 32).
+- Finalmente, la operación fue incluida dentro de la relación de transacciones identificadas como presunto fraude vinculadas a la señora [APELLIDO DENUNCIADO 4], consumando así la aprobación ilícita de los recursos en provecho propio o de un tercero.
+o OPERACIÓN MTCN 1808716951 DEL 26 DE MARZO DE 2026
+- [NOMBRE DE LA EMPRESA] recibió una orden de pago de una remesa del exterior para la cliente [NOMBRE CLIENTE 11], identificado con cédula de ciudadanía número [CÉDULA CLIENTE 11], por valor de OCHO MILLONES SETECIENTOS TREINTA Y SIETE MIL TREINTA Y DOS PESOS CON SESENTA CENTAVOS MONEDA LEGAL COLOMBIANA ($8.737.072,60 M/L) (Ver Anexo No. 33).
+- La cliente se comunicó con [NOMBRE DE LA EMPRESA], indicando que
+se había acercado a una oficina de la compañía y le habían dicho que su giro ya había sido cobrado.
+- Revisado lo acontecido, se encontró que la remesa fue cobrada el día 26 de marzo del 2026, a las 18:06 PM, en la oficina Homecenter Santa Marta de la ciudad de Santa Marta (Ver Anexo No. 34).
+- Al parecer, la señora [APELLIDO DENUNCIADO 4] obtuvo la información de la remesa, dentro de esta el código MTCN, y procedió, omitiendo los procedimientos operativos y de seguridad de [NOMBRE DE LA EMPRESA], a ingresar los datos al sistema informático manipulándolo abusivamente, sin que la cliente hubiera llegado a la sucursal a solicitar el dinero.
+- Hay que aclarar aquí que antes y durante el procedimiento irregular
+desplegado por la señora [APELLIDO DENUNCIADO 4], ésta usa permanentemente su teléfono celular, lo que se encontraba strictly prohibido al interior de [NOMBRE DE LA EMPRESA], precisamente por razones de seguridad y para evitar situaciones como la que hoy denunciamos, facilitando así presuntamente el manejo indebido de información confidencial (Ver Anexo No. 35).
+- Se evidenció que la señora [APELLIDO DENUNCIADO 4] permitió que un tercero que se encontraba en ventanilla colocara su huella en el lector biométrico para validar una operación que no le correspondía, así suplantar fraudulentamente la validación biométrica.
+- Posteriormente, se procesó el pago a una persona que no correspondía a las características físicas del titular, sin que se exigiera la cédula física original, facilitando procesalmente la suplantación de identidad.
+- Finalmente, la persona que recibió el dinero desapareció con los recursos, consumando así la apropiación ilícita en provecho de un tercero.
+o OPERACIÓN MTCN 3739821306 DEL 26 DE MARZO DE 2026
+- [NOMBRE DE LA EMPRESA] recibió una orden de pago de una remesa del exterior para la cliente [NOMBRE CLIENTE 12], identificado con cédula de ciudadanía número [CÉDULA CLIENTE 12], por valor de UN MILLÓN DE PESOS MONEDA LEGAL COLOMBIANA ($1.000.000,00 M/L) (Ver Anexo No. 36).
+- Revisado lo acontecido, se encontró que la remesa fue cobrada el día 26 de
+marzo del 2026, a las 18:11:43 PM, en la oficina Homecenter Santa Marta de la ciudad de Santa Marta (Ver Anexo No. 37).
+- Al parecer, la señora [APELLIDO DENUNCIADO 4] obtuvo la información
+de la remesa, dentro de esta el código MTCN, y procedió, omitiendo los procedimientos operativos y de seguridad de [NOMBRE DE LA EMPRESA], a ingresar los datos al sistema informático manipulándolo abusivamente, sin que el cliente hubiera llegado a la sucursal a solicitar el dinero.
+- Hay que aclarar aquí que antes y durante el procedimiento irregular
+desplegado por la señora [APELLIDO DENUNCIADO 4] ésta usó permanentemente su teléfono celular, lo que se encontraba estrictamente prohibido al interior de [NOMBRE DE LA EMPRESA], precisamente por razones de seguridad y para evitar situaciones como la que hoy denunciamos, facilitando así presuntamente el manejo indebido de información confidencial (Ver Anexo No. 38).
+- Adicionalmente, se observó que la remesa fue cobrada con el número de
+documento [CÉDULA FALSO], el cual no pertenece a ningún ciudadano registrado, configurándose presuntamente una falsedad y suplantación de identidad.
+- Posteriormente, se evidenció que el pago se realizó sin la presencia de la
+titular en ventanilla.
+- Finalmente, se observó que el dinero fue entregado a un hombre, pese a que la titular de la remesa era una mujer, suplantando de esta forma la autorización legítima de la titular, quien desapareció con el dinero, consumando así la apropiación ilícita en provecho de un tercero.
+o OPERACIÓN MTCN 0730963226 DEL 31 DE MARZO DE 2026
+- [NOMBRE DE LA EMPRESA] recibió una orden de pago de una remesa
+del exterior para la cliente [NOMBRE CLIENTE 13], identificada con cédula de ciudadanía número [CÉDULA CLIENTE 13], por valor de SIETE MILLONES TRESCIENTOS OCHO MIL CUATROCIENTOS CUARENTA Y NUEVE PESOS CON CUATRO CENTAVOS MONEDA LEGAL COLOMBIANA ($7.308.449,04 M/L) (Ver Anexo No. 43).
+- El día 1 de abril de 2026, la cliente se acercó a realizar el cobro del giro en
+la ciudad de Sincelejo, donde le informaron que el giro MTCN 0730963226 ya se encontraba cobrado.
+- Revisado lo acontecido, se encontró que la remesa fue cobrada el día 31 de marzo del 2026, a las 13:58:34 PM, en la oficina Homecenter Santa Marta de la ciudad de Santa Marta (Ver Anexo No. 44).
+- Al parecer, la señora [APELLIDO DENUNCIADO 4] obtuvo la información
+de la remesa, dentro de esta el código MTCN, y procedió, omitiendo los procedimientos operativos y de seguridad de [NOMBRE DE LA EMPRESA], a ingresar los datos al sistema informático manipulándolo abusivamente, sin que el cliente hubiera llegado a la sucursal a solicitar el dinero.
+- Hay que aclarar aquí que antes y durante el procedimiento irregular
+desplegado por la señora [APELLIDO DENUNCIADO 4] ésta usó permanentemente su teléfono celular, lo que se encontraba estrictamente prohibido al interior de [NOMBRE DE LA EMPRESA], precisamente por razones de seguridad y para evitar situaciones como la que hoy denunciamos, facilitando así presuntamente el manejo indebido de información confidencial, (Ver Anexo No. 45).
+- Adicionalmente, se observó que la remesa fue cobrada con el número de
+documento [CÉDULA FALSO], pese a que el documento de identidad de la titular era el número [CÉDULA CLIENTE 13] (Ver Anexo No. 46), configurándose presuntamente una falsedad y suplantación de identidad.
+- Se evidenció que la persona que se presentó a realizar el cobro no
+correspondía físicamente a la titular del documento, pues el dinero fue entregado a un hombre.
+- Posteriormente, se observó que el sujeto en ventanilla le entregó a la
+señora [APELLIDO DENUNCIADO 4] un teléfono celular, desde el cual ésta visualizó un documento de identificación y registró los datos en el aplicativo (Ver Anexo No. 47), logrando así suplantar fraudulentamente a la usuaria ante los sistemas de autenticación y autorización establecidos.
+- Finalmente, se observó que el dinero fue entregado a un tercero no
+autorizado, quien desapareció con el dinero, consumando así la apropiación ilícita en provecho de un tercero.
+o OPERACIÓN MTCN 9311248245 DEL 31 DE MARZO DE 2026
+- [NOMBRE DE LA EMPRESA] recibió una orden de pago de una remesa del exterior para la cliente [NOMBRE CLIENTE 14], identificada con cédula de ciudadanía número [CÉDULA CLIENTE 14], por valor de SEIS MILLONES CIENTO CUARENTA Y CINCO MIL SETECIENTOS TREINTA Y DOS PESOS CON CINCUENTA Y OCHO CENTAVOS MONEDA LEGAL COLOMBIANA ($6.145.732,58 M/L) (Ver Anexo No. 48).
+- El día 4 de abril de 2026, el cliente se acercó a realizar el cobro del giro en
+la ciudad de Sogamoso, donde le informaron que el giro MTCN 9311248245 ya se encontraba cobrado.
+- Revisado lo acontecido, se encontró que la remesa fue cobrada el día 31 de
+marzo del 2026, a las 16:26:35 PM, en la oficina Homecenter Santa Marta de la ciudad de Santa Marta (Ver Anexo No. 49).
+- Al parecer, la señora [APELLIDO DENUNCIADO 4] obtuvo la información
+de la remesa, dentro de esta el código MTCN, y procedió, omitiendo los procedimientos operativos y de seguridad de [NOMBRE DE LA EMPRESA], a ingresar los datos al sistema informático manipulándolo abusivamente, sin que el cliente hubiera llegado a la sucursal a solicitar el dinero.
+- Hay que aclarar aquí que antes y durante el procedimiento irregular
+desplegado por la señora [APELLIDO DENUNCIADO 4] ésta usó permanentemente su teléfono celular, lo que se encontraba strictly prohibido al interior de [NOMBRE DE LA EMPRESA], precisamente por razones de seguridad y para evitar situaciones como la que hoy denunciamos, facilitando así presuntamente el manejo indebido de información confidencial (Ver Anexo No. 50).
+- La señora [APELLIDO DENUNCIADO 4] detuvo la atención de una cliente
+física que se encontraba en ventanilla, haciéndola esperar mientras procesaba de manera irregular el pago del giro.
+- Posteriormente, se evidenció que la señora [APELLIDO DENUNCIADO 4]
+utilizó su propia huella dactilar del dedo anular derecho para suplantar la validación del cliente y autorizar el desembolso del giro en el aplicativo, logrando así suplantar fraudulentamente a los usuarios ante los sistemas de autenticación y autorización establecidos (Ver Anexo No. 51).
+- Finalmente, se observa que el dinero fue entregado de forma irregular, sin
+presencia del titular en ventanilla, consumando así la apropiación ilícita de los recursos en provecho propio o de un tercero.
+o OPERACIÓN MTCN 5297371065 DEL 31 DE MARZO DE 2026
+- [NOMBRE DE LA EMPRESA] recibió una orden de pago de una remesa del exterior para la cliente [NOMBRE CLIENTE 15], identificada con cédula de ciudadanía número [CÉDULA CLIENTE 15], por valor de CUATRO MILLONES OCHOCIENTOS NOVENTA Y CUATRO MIL SEISCIENTOS TREINTA Y SEIS PESOS CON TRECE CENTAVOS MONEDA LEGAL COLOMBIANA ($4.890.636,13 M/L) (Ver Anexo No. 52).
+- El día 1 de abril de 2026, la cliente se acercó a realizar el cobro del giro en
+la ciudad de Pereira, donde le informaron que el giro MTCN 5297371065 ya se encontraba cobrado.
+- Revisado lo acontecido, se encontró que la remesa fue cobrada el día 31 de
+marzo del 2026, a las 16:47:20 PM, en la oficina Homecenter Santa Marta de la ciudad de Santa Marta (Ver Anexo No. 53).
+- Al parecer, la señora [APELLIDO DENUNCIADO 4] obtuvo la información
+de la remesa, dentro de esta el código MTCN, y procedió, omitiendo los procedimientos operativos y de seguridad de [NOMBRE DE LA EMPRESA], a ingresar los datos al sistema informático manipulándolo abusivamente, sin que el cliente hubiera llegado a la sucursal a solicitar el dinero.
+- Hay que aclarar aquí que antes y durante el procedimiento irregular desplegado por la señora [APELLIDO DENUNCIADO 4], ésta usó permanentemente su teléfono celular, lo que se encontraba estrictamente prohibido al interior de [NOMBRE DE LA EMPRESA], precisamente por razones de seguridad y para evitar situaciones como la que hoy denunciamos, facilitando así presuntamente el manejo indebido de información confidencial (Ver Anexo No. 54).
+- La señora [APELLIDO DENUNCIADO 4] detuvo la atención de un cliente
+físico que se encontraba en ventanilla, haciéndolo esperar mientras procesaba de manera irregular el pago del giro.
+- Se evidenció que la señora [APELLIDO DENUNCIADO 4] utilizó su propia
+huella dactilar del dedo meñique derecho para suplantar la validación de la cliente y autorizar el desembolso del giro en el aplicativo, logrando así suplantar fraudulentamente a la usuaria ante los sistemas de autenticación y autorización establecidos (Ver Anexo No. 55).
+- La señora [APELLIDO DENUNCIADO 4] procedió a tomar fotografía de la
+factura, la cual contenía información confidencial de la titular, directamente desde su teléfono celular.
+- Posteriormente, la señora [APELLIDO DENUNCIADO 4] separó el dinero y
+lo guardó en un sobre para entregarlo por fuera de la ventanilla de atención al público.
+- Finalmente, la señora [APELLIDO DENUNCIADO 4] se desplazó hacia la
+puerta de acceso de la oficina y realizó la entrega del efectivo a través del pasatulas o ranura de la puerta exterior, vulnerando los protocolos de seguridad y consumando así la apropiación ilícita de los recursos en provecho de un tercero.
+2. FUNDAMENTOS DE DERECHO
+Las conductas desplegadas en el presente caso tienen la potencialidad de lesionar diversos Bienes Jurídicos tutelados por el Legislador, dentro de los cuales podemos resaltar el Patrimonio Económico, la Fe Pública y el Sistema Financiero, entre otros. En efecto, analizados los hechos que dieron origen a esta denuncia, se puede inferir que el actuar de los Denunciados probablemente se puede encuadrar dentro de los supuestos de hecho y de derecho descritos en los artículos 239 y/o 246 y/o 249 y/o 250B y/o 289 y/o 296 y/o 340 del Código Penal, correspondientes a los delitos de Hurto, Estafa, Abuso de Confianza, Administración Desleal, Falsedad en Documento Privado, Falsedad Personal y Concierto para Delinquir, respectivamente, esto sin perjuicio de que se modifique la calificación del mismo, de acuerdo con lo que el señor Fiscal Delegado considere pertinente y teniendo en cuenta que hoy en día el principal afectado es la sociedad [NOMBRE DE LA EMPRESA]. Cabe señalar que, en cuanto hace a la conducta desplegada por los aquí denunciados, al parecer, éstas no solo se enmarcan dentro de los tipos penales antes mencionados, sino también respecto de algunas circunstancias taxativas de
+agravación y calificación de cada uno de ellos, tales como las contempladas en el Artículo 241 numeral 2 (Aprovechamiento de la confianza depositada por el dueño, poseedor o tenedor) y en el Artículo 269H numerales 3 y 5 (Aprovechando la confianza depositada por el poseedor de la información y obteniendo provecho para sí o para un tercero), situación que solicitamos sea tenida en cuenta por el señor Fiscal Delegado, a la hora de calificar la conducta. Vistos los hechos y la redacción de las normas en comento, todo parece indicar que las conductas desplegadas se adecuan a una cualquiera o a todas las descripciones típicas señaladas, como quiera que, al parecer, los Denunciados, siendo empleados de la compañía, habrían, de forma abusiva y engañosa, dispuesto de los recursos de clientes, posiblemente apropiándose de los mismos o trasladándoselos a terceros, quienes podrían ostentar la calidad de coautores o cómplices, lo que podría configurar delitos como los de Administración Desleal, Hurto y/o Abuso de Confianza, todos estos susceptibles de estar inmersos en causales de agravación, conforme a lo establecido en la normatividad penal vigente. De igual forma, dado que para el logro del posible fin irregular se pudieron haber falsificado firmas y documentos, realizado registros contables no ciertos u omitido alguno de éstos y suplantarse personas, pudo también incurrirse en los delitos de Falsedad en documento Privado y Personal. Finalmente, teniendo en cuenta que de acuerdo con el recuento realizado en precedencia se ve la participación de varias personas presuntamente concertando un proceder encaminado a favorecerse mutuamente en perjuicio de la sociedad en comento, se podría tipificar el delito de Concierto para Delinquir, también tipificado por nuestro estatuto penal.
+3. PRUEBAS De manera respetuosa le solicito se sirva tener como pruebas las que se relacionan a continuación: 3.1. DOCUMENTALES
+- XXXXXXXX 3.2. TESTIMONIALES
+- FUNCIONARIOS NUESTROS
+4. ANEXOS Como anexos se adjuntan a la presente los siguientes documentos: 4.1. Los relacionados en el numeral 3.1 de este documento. 4.2. Certificado de Existencia y Representación de [NOMBRE DE LA EMPRESA], en donde consta que ostento la calidad de representante legal. 4.3. Copia de la Cédula de Ciudadanía del suscrito.
+5. NOTIFICACIONES Recibiré notificaciones en [DIRECCIÓN DE NOTIFICACIÓN]. Quedo atento a cualquier aclaración o inquietud que se pueda suscitar sobre el tema, no sin antes indicarle que estos hechos de carácter penal no han sido puestos en conocimiento de otro funcionario por parte del suscrito. Del Señor Fiscal Delegado con todo respeto, [NOMBRE DE REPRESENTANTE LEGAL] Representante Legal [NOMBRE DE LA EMPRESA] C.C. [CÉDULA] de [CIUDAD].

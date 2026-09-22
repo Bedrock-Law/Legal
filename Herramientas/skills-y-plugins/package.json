@@ -1,0 +1,16 @@
+{
+  "name": "bedrock-sheets-formatter",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Formateador profesional para Google Sheets - Bedrock Finanzas 2026",
+  "main": "format-bedrock-sheets.js",
+  "bin": {
+    "format-bedrock-sheets": "format-bedrock-sheets.js"
+  },
+  "scripts": {
+    "format": "node format-bedrock-sheets.js 1ycVoqMLgFs7gsFYJJsp_oowETT7bP2455-B0r724mQQ"
+  },
+  "dependencies": {
+    "googleapis": "^139.0.0"
+  }
+}

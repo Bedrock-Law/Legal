@@ -1,0 +1,166 @@
+$document-metadata.latex()$
+$passoptions.latex()$
+\documentclass[
+$if(fontsize)$
+  $fontsize$,
+$else$
+  10pt,
+$endif$
+$if(papersize)$
+  $papersize$paper,
+$else$
+  letterpaper,
+$endif$
+$for(classoption)$
+  $classoption$$sep$,
+$endfor$
+]{$if(documentclass)$$documentclass$$else$article$endif$}
+\usepackage{xcolor}
+$if(geometry)$
+\usepackage[$for(geometry)$$geometry$$sep$,$endfor$]{geometry}
+$else$
+\usepackage[letterpaper,top=24mm,bottom=22mm,left=22mm,right=22mm,headsep=9mm,footskip=12mm]{geometry}
+$endif$
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen}
+$fonts.latex()$
+$font-settings.latex()$
+$common.latex()$
+$for(header-includes)$
+$header-includes$
+$endfor$
+$after-header-includes.latex()$
+$hypersetup.latex()$
+
+% ============================================================
+%  Plantilla de documento — Bedrock Abogados
+%  Markdown -> pandoc -> XeLaTeX
+%  Titulos en sans bold; cuerpo en serif clasico; fondo blanco.
+% ============================================================
+
+% ---- Paleta ----
+\definecolor{bkPrimario}{HTML}{1B1D36}
+\definecolor{bkSecundario}{HTML}{224D6E}
+\definecolor{bkAcento}{HTML}{E9CDA5}
+\definecolor{bkTexto}{HTML}{000000}
+\definecolor{bkFondo}{HTML}{FFFFFF}
+\definecolor{bkGris}{HTML}{6B6F7A}
+\definecolor{bkLinea}{HTML}{D8DDE4}
+
+% ---- Tipografia ----
+% Cuerpo: serif clasico (Georgia). Titulos: sans del sistema (Helvetica Neue).
+\usepackage{fontspec}
+\setmainfont{Georgia}[
+  BoldFont = Georgia Bold ,
+  ItalicFont = Georgia Italic ,
+  BoldItalicFont = Georgia Bold Italic ]
+\newfontfamily\bkSans{Helvetica Neue}[
+  UprightFont = Helvetica Neue Medium ,
+  BoldFont = Helvetica Neue Bold ]
+\newfontfamily\bkSansBold{Helvetica Neue Bold}
+\color{bkTexto}
+
+% Cuerpo 14px = 10.5pt
+\usepackage{anyfontsize}
+\fontsize{10.5}{15.2}\selectfont
+
+% ---- Jerarquia de titulos ----
+% H1 = 36px = 27pt (portada) · seccion = 28px = 21pt · subseccion 15pt
+\usepackage[explicit]{titlesec}
+\newcommand{\bkRegla}{{\parskip=0pt\par\nobreak\vspace{3pt}\noindent{\color{bkAcento}\rule{26mm}{2pt}}\par}\nobreak\vspace{-9pt}}
+% Con [explicit], #1 es el texto del titulo: la regla se emite justo despues, sin depender
+% del bloque posterior de titlesec, que no se aplica cuando los titulos van sin numero.
+\titleformat{\section}[block]{\bkSansBold\color{bkPrimario}\fontsize{21}{25}\selectfont}{}{0pt}{#1\bkRegla}
+\titleformat{name=\section,numberless}[block]{\bkSansBold\color{bkPrimario}\fontsize{21}{25}\selectfont}{}{0pt}{#1\bkRegla}
+\titleformat{\subsection}[block]{\bkSansBold\color{bkSecundario}\fontsize{15}{19}\selectfont}{}{0pt}{#1}
+\titleformat{name=\subsection,numberless}[block]{\bkSansBold\color{bkSecundario}\fontsize{15}{19}\selectfont}{}{0pt}{#1}
+\titleformat{\subsubsection}[block]{\bkSansBold\color{bkSecundario}\fontsize{12}{15}\selectfont}{}{0pt}{#1}
+\titleformat{name=\subsubsection,numberless}[block]{\bkSansBold\color{bkSecundario}\fontsize{12}{15}\selectfont}{}{0pt}{#1}
+\titlespacing*{\section}{0pt}{22pt}{4pt}
+\titlespacing*{\subsection}{0pt}{15pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{12pt}{3pt}
+
+% Eyebrow
+\newcommand{\eyebrow}[1]{{\bkSans\fontsize{8.5}{11}\selectfont\addfontfeature{LetterSpace=14.0}\textcolor{bkSecundario}{\MakeUppercase{#1}}\par\vspace{2pt}}}
+
+% ---- Encabezado y pie ----
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{bkLinea}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrule}{\hbox to\headwidth{\color{bkLinea}\leaders\hrule height \footrulewidth\hfill}}
+\fancyhead[L]{\raisebox{-0.35\height}{\includegraphics[height=4.4mm]{$logo$}}}
+\fancyhead[R]{\bkSans\fontsize{8.5}{11}\selectfont\textcolor{bkGris}{\thepage\ / \pageref{LastPage}}}
+\fancyfoot[L]{\bkSans\fontsize{8}{10}\selectfont\textcolor{bkGris}{$if(docname)$$docname$$else$Bedrock S.A.S.$endif$}}
+\fancyfoot[R]{\bkSans\fontsize{8}{10}\selectfont\textcolor{bkGris}{$if(docscope)$$docscope$$endif$}}
+
+% ---- Tablas ----
+\usepackage{booktabs,array,colortbl,longtable}
+\renewcommand{\arraystretch}{1.28}
+\heavyrulewidth=0.9pt
+\lightrulewidth=0.4pt
+\arrayrulecolor{bkLinea}
+
+% ---- Enlaces y codigo ----
+\hypersetup{colorlinks=true, linkcolor=bkSecundario, urlcolor=bkSecundario, citecolor=bkSecundario}
+\usepackage{fvextra}
+\fvset{breaklines=true, breakanywhere=true, fontsize=\scriptsize}
+
+% ---- Caja de acento ----
+\usepackage[most]{tcolorbox}
+\newtcolorbox{callout}[1][]{
+  enhanced, breakable, colback=bkAcento!22, colframe=bkAcento!90,
+  boxrule=0.6pt, arc=2pt, left=9pt, right=9pt, top=8pt, bottom=8pt, #1 }
+
+% ---- Portada ----
+\usepackage{graphicx}
+\newcommand{\bkportada}{%
+  \thispagestyle{empty}%
+  \vspace*{4mm}%
+  \noindent\includegraphics[height=13mm]{$logo$}\par\vspace{2mm}
+  \vfill
+  \noindent{\color{bkSecundario}\rule{44mm}{2.2pt}}{\color{bkAcento}\rule{16mm}{2.2pt}}\par\vspace{7mm}
+  $if(eyebrow)$\eyebrow{$eyebrow$}\vspace{2mm}$endif$
+  {\bkSansBold\color{bkPrimario}\fontsize{27}{31}\selectfont\raggedright\hyphenpenalty=10000\exhyphenpenalty=10000 $title$\par}
+  \vspace{6mm}
+  $if(lede)${\fontsize{12}{17}\selectfont\raggedright\color{bkTexto} $lede$\par}$endif$
+  \vspace{14mm}
+  {\bkSans\fontsize{9}{12}\selectfont
+   \begin{tabular}{@{}p{44mm}p{36mm}p{48mm}@{}}
+     \textcolor{bkGris}{\MakeUppercase{Documento}} & \textcolor{bkGris}{\MakeUppercase{Fecha}} & \textcolor{bkGris}{\MakeUppercase{Alcance}}\\[1mm]
+     \textcolor{bkPrimario}{$if(doctype)$$doctype$$endif$} & \textcolor{bkPrimario}{$if(docdate)$$docdate$$endif$} & \textcolor{bkPrimario}{$if(docscope)$$docscope$$endif$}\\
+   \end{tabular}\par}
+  \vspace*{7mm}
+  \clearpage}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\usepackage{setspace}
+\setstretch{1.10}
+
+\begin{document}
+
+$if(title)$
+\bkportada
+$endif$
+
+$for(include-before)$
+$include-before$
+
+$endfor$
+$if(toc)$
+{
+\setcounter{tocdepth}{$toc-depth$}
+\tableofcontents
+}
+$endif$
+$body$
+
+$for(include-after)$
+$include-after$
+
+$endfor$
+\end{document}

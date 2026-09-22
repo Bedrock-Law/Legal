@@ -1,0 +1,67 @@
+2. julio 25 ALTERACION DE CUANTIA EN COMPROBANTE EGRESO 785 JUNIO 04 CLASE ALPHA.pdf
+Gestión Financiera
+Envigado, junio 10 de 2025
+Señora
+ADRIANA GUEVARA
+Administradora
+REF: ALTERACION DE CUANTIA EN COMPROBANTE EGRESO 785 CLASE ALPHA
+JUNIO 04 DE 2025
+Revisando el comprobante de egreso N.785 de junio 04 de 2025, a nombre de CLASE
+ALPHA por valor de $1.717.250 (un millón setecientos diecisiete mil doscientos cincuenta
+pesos), como anticipo del 50% para la logística de la asamblea extraordinaria a realizarse
+el 08 de junio, evidencié que este valor no correspondía al 50% del valor de la cotización,
+ya que el servicio total costó $2.354.500(dos millones trescientos cincuenta y cuatro mil
+quinientos pesos) lo cual el 50% serían $1.177.250 (un millón ciento setenta y siete mil
+doscientos cincuenta pesos) valor que esta anotado manualmente en la cotización.
+La diferencia entre el valor del egreso $1.717.250 y el valor del anticipo $1.177.250 es de
+$540.000, suma que corresponde al egreso 786 de junio 04 a nombre del señor José
+Martínez (empleado tercerizado de oficio de jardinería), cuyo concepto del egreso es
+bonificación de mayo.
+Es de anotar que me di cuenta que la diferencia de $540.000 correspondía al señor José
+Martínez, cuando al verificar en la plataforma DE PAGOS de la cuenta de AVVILLAS
+observé que este egreso estaba dividido en dos partes:
+ $540.000 a nombre del señor José Martínez con producto destino 00611248067
+(cta bancaria)
+ $1.177.250 a nombre de Clase Alpha con producto destino 988951346 (cta
+bancaria)
+La suma de ambos valores corresponde a $1.717.250, que fue el valor del comprobante
+de egreso de CLASE ALPHA.
+Inmediatamente le hice la observación a la administradora, que había una inconsistencia
+en dicho comprobante de egreso, lo cual me llevó a rechazar ese pago, y al siguiente dia
+05 de junio, lo cargó en la plataforma de AVVillas por el valor de $1.177.250, valor que
+aprobé, pues era el valor correcto del anticipo.
+Ciertamente, el pago a realizar a CLASE ALPHA era por el 50% del servicio, lo cual
+correspondía a $1.177.250, como estaba cargado en el portal de AVVILLAS, pero este
+egreso fue modificado, alterado en su cuantía, adicionándole el valor de $540.000, con la
+intención de engañarme como tesorero y autorizar vía token el pago al señor José
+Martínez, ya que como lo exprese inicialmente, este egreso por $1.717.250 en el portal
+AVVILLAS, iba dirigido para dos personas y no para una sola, como se indica en el
+contenido del comprobante de egreso 785.
+Esta acción de tratar de realizar un pago a otra persona mediante una alteración de un
+documento contable (delito contable), constituye un presunto acto delictivo tipificado en el
+Código Penal dentro de los delitos societarios y puede conllevar penas de prisión y
+multas.
+Las acciones que pueden considerarse como alteración de un documento contable son
+diversas y pueden incluir:
+Tachar, mutilar o enmendar información: Modificar o borrar datos relevantes del
+documento.
+Eliminar o alterar denominaciones y cuantías: Cambiar las descripciones o los
+valores de las partidas.
+Adicionar información falsa: Incluir datos o detalles no verídicos en el
+documento.
+Dado lo anterior, la invito a tener en cuenta las normas y políticas de la copropiedad,
+relacionada con la gestión de la documentación contable y la importancia de mantener la
+integridad y la precisión de la información financiera.
+Adjunto anexos
+Con copia: Revisor fiscal y Consejo de Administración.
+Cordialmente,
+SANTIAGO SANCHEZ CHAVEZ
+CONSEJERO TESORERO
+CONTADOR PUBLICO TP 101963-T
+ANEXOS
+FOTO 1. EGRESO 785 A NOMBRE DE CLASE ALPHA POR $1.717.250
+FOTO 2. COTIZACION POR VALOR DE $2.354.500 Y EL VALOR ANOTADO MANUAL EN LA
+COTIZACION DE $1.177.250
+FOTO 3. EGRESO JOSE MARTINEZ VALOR 540.000 BONIFICACION MAYO
+FOTO 3. PORTAL DE PAGOS AVVILLAS DONDE SE EVIDENCIA QUE SE MONTO EL PAGO PARA DOS
+TERCEROS (CLASE ALPHA ($1.177.250) Y JOSE MARTINEZ ($540.000) TOTAL EGRESO $1.717.250

@@ -1,97 +1,49 @@
-# 🏛️ Bedrock Abogados - Plataforma Tecnológica
+# Bedrock Abogados
 
-**Plataforma integrada de soluciones legales y financieras** para estructuración jurídica, due diligence, compliance y modelado Fintech.
+Repositorio de trabajo de Bedrock: documentos del despacho, herramientas propias de integración con Claude Code (MCP servers de Gmail, Calendar, Docs, Sheets, Drive, Tasks y due diligence) y la configuración del asistente.
 
-## 📊 Visión del Proyecto
-
-Bedrock Abogados digitaliza sus capacidades de consultoría mediante:
-- **MCP Servers**: Integración nativa con Claude para análisis jurídico y financiero
-- **Automatización**: Due diligence, compliance checks y generación de contratos
-- **Análisis Forense**: Herramientas de auditoría profunda y análisis patrimonial
-- **Modelado Fintech**: Viabilización de modelos disruptivos dentro del marco regulatorio
-
-## 🗂️ Estructura del Repositorio
+## Estructura
 
 ```
-bedrock-core/
-├── mcp-servers/             # MCP servers para integración Claude
-│   ├── due-diligence-mcp/   # Análisis de due diligence
-│   ├── compliance-mcp/       # Validación compliance
-│   └── fintech-mcp/          # Modelado Fintech
-├── due-diligence/           # Herramientas de análisis forense
-├── compliance/              # SAGRILAFT, matrices de riesgo
-├── fintech-models/          # Estructuración de modelos Fintech
-├── contract-automation/     # Templating y generación de contratos
-├── shared-libs/             # Librerías compartidas
-├── docs/                    # Documentación técnica y legal
-└── infrastructure/          # DevOps, CI/CD, deployment
+Negocio/
+  estrategia/        conocimiento y posicionamiento de la firma
+  marketing/
+  operaciones/
+  contabilidad/
+  finanzas/
+  talento-humano/
+
+Clientes/
+  <cliente-slug>/
+    propuesta-comercial/
+    facturas/
+    documentos-legales/
+      societario/
+      contratos/
+      compliance-kyc/
+      tributario/
+      poderes-y-representacion/
+      propiedad-intelectual/
+      litigios-y-contingencias/
+    conceptos-juridicos/
+
+Herramientas/
+  skills-y-plugins/    skills de Claude Code instalados por el equipo
+  mcp-servers/         servidores MCP propios de Bedrock
+  documentacion-tecnica/
+  limpiar_marcas.py    depurador de caracteres invisibles
+
+Personal/
+  <nombre>/
 ```
 
-## 🚀 Roadmap
+Las reglas completas de organización, trazabilidad en Linear, redacción y el mecanismo de espejo hacia Google Drive están en `CLAUDE.md`.
 
-### FASE 1: Preparación y Estructura ✅
-- [x] Reorganizar repositorio
-- [x] Crear estructura de directorios
-- [ ] Configurar CI/CD básico
-- [ ] Documentación de arquitectura
+## Cómo se decide dónde va un documento
 
-### FASE 2: MCP Servers (Semana 1)
-- [ ] MCP Due Diligence (análisis forense)
-- [ ] MCP Compliance (SAGRILAFT, validaciones)
-- [ ] MCP Fintech (viabilidad regulatoria)
+1. ¿Es de una persona, no de la empresa? → `Personal/<nombre>/`.
+2. ¿Es un skill, plugin o herramienta del equipo? → `Herramientas/skills-y-plugins/`.
+3. ¿Es sobre un cliente identificable? → `Clientes/<slug>/`, por tipo de documento.
+4. Si no es ninguna de las anteriores, es interno de la empresa → `Negocio/<área>/`.
 
-### FASE 3: Automatización (Semanas 2-4)
-- [ ] Contract automation
-- [ ] Reportes forenses automáticos
-- [ ] Dashboard de monitoreo
-
-## 🛠️ Tecnología Stack
-
-- **Backend**: Node.js / Python (MCP servers)
-- **Claude Integration**: Model Context Protocol (MCP)
-- **Database**: PostgreSQL (compliance, audit logs)
-- **Infrastructure**: Docker, GitHub Actions, AWS
-- **Documentation**: Markdown + AI-generated
-
-## 📝 Convenciones
-
-### Git Commits
-```
-[MÓDULO] Descripción breve
-
-Descripción detallada si es necesario.
-Referencia: #issue (si aplica)
-
-Impacto:
-- Punto 1
-- Punto 2
-```
-
-### Estructura de Ramas
-```
-main            → Producción
-develop         → Integración
-feature/*       → Nuevas funcionalidades
-bugfix/*        → Correcciones
-```
-
-## 👥 Equipo
-
-- **Daniel Alejandro Gómez** - Managing Partner, Especialista Estructuración Financiera
-- **Edison Alejandro Guzman** - Compliance & Risk Management
-- **Juan Manuel Correa** - Chief Legal Officer, Fintech & IA
-
-## 📋 Líneas de Servicio
-
-1. **Private Equity y VC** - Asesoría a fondos y due diligence
-2. **Fintech & Regulación Financiera** - Viabilización de modelos disruptivos
-3. **Corporativo y M&A** - Estructuración de transacciones
-4. **Legal as a Service** - Asesoría mensualizada
-5. **Auditoría Forense** - Análisis profundo y litigio estratégico
-6. **Cumplimiento Normativo** - SAGRILAFT e implementación
-
----
-
-**Repo**: `Bedrock-Law/Legal` → `bedrock-core`  
-**Última actualización**: 2025-08-25  
-**Estado**: 🔨 En construcción
+Ninguna carpeta nueva de primer nivel sin confirmar con el socio responsable.

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caso Ambiente Azul — Volta Housing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/black.min.css">
+    <style>
+        :root {
+            --primary: #1B1D36;
+            --secondary: #224D6E;
+            --accent: #E9CDA5;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1B1D36 0%, #2a2d4a 100%);
+        }
+
+        .reveal {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .reveal h1, .reveal h2, .reveal h3 {
+            color: var(--accent);
+            text-transform: none;
+            font-weight: 700;
+        }
+
+        .reveal h1 {
+            font-size: 3em;
+            color: #FFFFFF;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+
+        .reveal h2 {
+            font-size: 2.2em;
+            color: var(--accent);
+            border-bottom: 3px solid var(--accent);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        .reveal p, .reveal li {
+            color: #FFFFFF;
+            font-size: 1.3em;
+            line-height: 1.6;
+        }
+
+        .reveal li {
+            margin: 15px 0;
+        }
+
+        .portada {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .logo {
+            font-size: 0.9em;
+            color: var(--accent);
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+        }
+
+        .titulo-portada {
+            font-size: 2.8em;
+            color: #FFFFFF;
+            margin: 40px 0;
+            font-weight: 700;
+        }
+
+        .subtitulo-portada {
+            font-size: 1.5em;
+            color: var(--accent);
+            margin: 30px 0;
+        }
+
+        .detalles-portada {
+            font-size: 1em;
+            color: #b0b0b0;
+            margin-top: 60px;
+        }
+
+        .caja-vulnerabilidad {
+            background: rgba(233, 205, 165, 0.1);
+            border-left: 4px solid var(--accent);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 3px;
+        }
+
+        .caja-defensa {
+            background: rgba(34, 77, 110, 0.2);
+            border-left: 4px solid var(--secondary);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 3px;
+        }
+
+        .punto-fuerte {
+            color: #4CAF50;
+            font-weight: 700;
+        }
+
+        .punto-debil {
+            color: #FF6B6B;
+            font-weight: 700;
+        }
+
+        .numero-grande {
+            font-size: 4em;
+            color: var(--accent);
+            font-weight: 700;
+            margin: 20px 0;
+        }
+
+        .texto-centrado {
+            text-align: center;
+        }
+
+        table {
+            margin: 30px auto;
+            font-size: 0.9em;
+        }
+
+        table td {
+            padding: 12px 20px;
+            text-align: left;
+            color: #FFFFFF;
+        }
+
+        table tr:nth-child(odd) {
+            background: rgba(34, 77, 110, 0.2);
+        }
+
+        .verdict {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #FF6B6B;
+            margin: 40px 0;
+        }
+
+        .recomendacion {
+            background: rgba(76, 175, 80, 0.15);
+            border: 2px solid #4CAF50;
+            padding: 30px;
+            border-radius: 5px;
+            margin: 30px 0;
+        }
+
+        .recomendacion h3 {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <section>
+                <div class="portada">
+                    <div class="logo">BEDROCK S.A.S.</div>
+                    <div class="titulo-portada">Caso Ambiente Azul</div>
+                    <div class="subtitulo-portada">Volta Housing</div>
+                    <div style="font-size: 1.1em; color: #b0b0b0; margin-top: 40px;">Llamamiento en Garantía<br>Juzgado Sexto Civil de Oralidad — Medellín</div>
+                    <div class="detalles-portada">
+                        <p style="margin: 20px 0;">Análisis Ejecutivo para CEO</p>
+                        <p style="font-size: 0.9em;">21 de septiembre de 2026</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Hechos que implican a Ambiente Azul</h2>
+                <ul style="text-align: left; max-width: 700px; margin: 50px auto;">
+                    <li>✗ AA sabía exactamente las dimensiones del área</li>
+                    <li>✗ AA contrató suministro e instalación (responsabilidad íntegra)</li>
+                    <li>✗ AA entregó sistema con desnatador insuficiente</li>
+                    <li>✗ Defecto acreditado por autoridad sanitaria</li>
+                    <li>✗ AA no reclamó insuficiencia en 3 años</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Nuestras Defensas</h2>
+                <div class="caja-defensa" style="border-left-color: #4CAF50;">
+                    <p style="color: #4CAF50; font-weight: 700; font-size: 1.4em;">Defensa Principal: Cláusula Compromisoria</p>
+                    <p style="margin-top: 20px;">Contrato 004-20 contiene pacto arbitral</p>
+                    <p style="margin-top: 15px;">→ Tribunal Arbitral del Centro de Arbitraje de Medellín</p>
+                </div>
+                <p style="margin-top: 30px; color: #FFB6C1;">Defensa secundaria si falla: Contestación de fondo (débil)</p>
+            </section>
+
+            <section>
+                <h2>Vulnerabilidades Críticas</h2>
+                <div class="caja-vulnerabilidad">
+                    <p><span class="punto-debil">1. El defecto es real</span> — Acreditado por Secretaría de Salud</p>
+                </div>
+                <div class="caja-vulnerabilidad">
+                    <p><span class="punto-debil">2. Sin cambio de especificaciones</span> — AA conocía dimensiones exactas</p>
+                </div>
+                <div class="caja-vulnerabilidad">
+                    <p><span class="punto-debil">3. Costo está probado</span> — Ubicca/Volta tienen gastos documentados</p>
+                </div>
+                <div class="caja-vulnerabilidad">
+                    <p><span class="punto-debil">4. 3 años de silencio</span> — Defecto evidente, AA no reclamó</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Conclusión</h2>
+                <div class="verdict">PROBABLE DERROTA</div>
+                <p style="margin-top: 40px;">Si va a sentencia en lo ordinario</p>
+                <ul style="text-align: left; max-width: 600px; margin: 30px auto;">
+                    <li>Juez encontrará incumplimiento de AA</li>
+                    <li>Condenará a reparación o pago de costos</li>
+                    <li>No hay defensas de fondo efectivas</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Recomendación</h2>
+                <div class="recomendacion">
+                    <h3>Prioridad 1: Excepción Previa Prospere</h3>
+                    <p>Remisión a arbitraje → mejor control y transacción</p>
+                </div>
+                <div class="recomendacion">
+                    <h3>Prioridad 2: Si Falla Excepción</h3>
+                    <p>Transaccionar antes de sentencia ordinaria</p>
+                </div>
+                <div style="background: rgba(255, 107, 107, 0.15); border: 2px solid #FF6B6B; padding: 20px; margin-top: 20px; border-radius: 5px;">
+                    <p><span class="punto-debil">✗ NO recomendar:</span> Ir a sentencia en lo ordinario</p>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            transition: 'slide',
+            controls: true,
+            progress: true,
+            center: true,
+            keyboard: true
+        });
+    </script>
+</body>
+</html>

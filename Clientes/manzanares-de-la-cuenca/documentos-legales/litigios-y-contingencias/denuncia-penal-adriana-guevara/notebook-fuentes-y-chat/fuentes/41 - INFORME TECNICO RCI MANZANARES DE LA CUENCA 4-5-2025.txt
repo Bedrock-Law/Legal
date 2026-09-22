@@ -1,0 +1,162 @@
+INFORME TECNICO RCI MANZANARES DE LA CUENCA 4-5-2025.pdf
+INFORME TECNICO SISTEMAS DE EXTINCIÓN, DETECCIÓN Y CUARTO DE
+BOMBAS
+Código:
+Versión V1
+Fecha versión:
+06/06/24
+Fecha de servicio:
+03-04/05/2025
+DATOS DEL SERVICIO Cliente: Manzanares de la Cuenca Dirección: Cr 39E #48Fsur-85, Envigado,
+Antioquia
+Técnico: Ferney Gonzalez Fecha: 3-4 /5/2025 .
+Servicios Realizados:
+VISITA DE INSPECCIÓN SISTEMA DE DETECCIÓN DE INCENDIOS
+Estado del sistema al terminar labor:
+Fuera de servicio
+Observaciones técnicas: Se debe contar con toda la información del sistema para agilizar la normalización del sistema
+OBJETIVO En este informe se presenta la descripción técnica de la Múltiples fallos en sistema de detección y de extinción reportados por FG SERVICE CENTER a la administración de Manzanares de la Cuenca en repetidas ocasiones
+GLOSARIO
+Bomba contra incendios (Fire Pump): Una bomba que proporciona flujo líquido y presión dedicados a la protección contra incendios.
+Bomba jockey: bomba encargada de mantener la presión del sistema RCI.
+Tubería enterrada: tubería instalada subterránea.
+Brida: Las bridas son aquellos elementos de la línea de tuberías, destinados a permitir la unión de las partes que conforman esta instalación, ya sean tubería, válvulas, bombas u otro equipo que forme parte de estas instalaciones.
+IPM: inspección prueba y mantenimiento.
+RCI: red contra incendio.
+Válvula de control (válvula de cierre) [Control Valve (Shutoff Valve)]. Una válvula que controla el flujo hacia los sistemas y dispositivos de protección contra incendios a base de agua.
+Válvula cheque: válvula que permite el flujo en un solo sentido.
+Válvula de descarga: válvula de control de flujo de agua en la descarga de la bomba.
+Listado. Equipos, materiales o servicios incluidos en una lista publicada por una organización que es aceptable para la autoridad competente y que está relacionada con la evaluación de productos o servicios, que mantiene inspecciones periódicas de la producción de los equipos o materiales listados, o evaluaciones peri6dicas de los servicios, y que por medio del listado establece que los equipos, materiales o servicios cumplen con normas designadas apropiadas o que han sido ensayados y considerados aptos para un propósito específico.
+Norma (Standard). Una Norma NFPA, cuyo texto principal contiene únicamente disposiciones obligatorias que emplean la palabra "debe" para indicar los requisitos y que está en un formato generalmente adecuado para ser utilizada como referencia obligatoria por otra norma o código o para su adopción como ley. Las disposiciones no obligatorias no se van a considerar parte de los requisitos de una norma y deben estar incluidas en un apéndice, anexo, nota al pie, nota informativa o en otros medios, según lo permitido en los Manuales de estilo de NFPA. Cuando se usa en un sentido genérico, como en la frase "proceso de elaboración de normas" o "actividades de elaboración de normas", el término "normas" incluye a todas las normas NFPA, entre ellas C6digos, Normas, Practicas Recomendadas y Guías.
+Accesorio (Appurtenance). Un elemento complementario o aditamento que permite que las tuberías para servicio privado de incendios desempeñen su función prevista.
+INFORME
+Sistema de Extinción El día 03/05/2025 8:32:00 a. m. se realizó inspección a tablero de control del sistema de extinción en compañía de Andrea la piscinera donde se evidencia los parámetros y presión de agua estable en el tablero tornteck y en el tablero de la bomba jokey. El equipo realizo su prueba automática como se evidencia en el programa las 10:00 am sin ninguna novedad. Después de organizar un circuitico eléctrico de la portería principal de la unidad me retiro dejando todo operativo aceptó el panel de detección que se a reportado en repetidas ocasiones con falla por manipulaciones indebidas de personal ajeno y sin las competencias para l manipulación de equipos de detección. A las 12:30 pm me reporta que el equipo se encendió y estaba votando humo me envían un video y solicito bajo la capacitación que di al rondero que apagara el equipo me dirigí a revisar la falla y evidencie una de las llaves de la refrigeración de la bomba (no motor) cerrada lo que ocasiona que la prensa estopa se calentara y generando humo por ser anillos grafiados, requieren ser refrigeradas por agua (como parámetro una gota cada segundo) lo cual se revisó y quedo con un goteo más frecuente; le esplique al rondero después de realizar pruebas en el sistema donde las presiones se conservaba bien y donde la bomba de respaldo jokey encendía de acuerdo s los parámetros establecidos.165psi de arranque/175 psi de paro. La bomba principal esta cateada a 155psi de arranque y 230psi de paro lo cual ella como se a informado no para por programación Como se evidencia en el envío de fotos a los guardas de seguridad y en el historial el equipo queda operativo y en automático y se envían fotos a la portería de vigilancia de la unidad. Después de revisar un circuito eléctrico en la portería principal me retito de la unidad A las 4:30 de nuevo resido una llamada de la portería donde principal y me envían un video donde se evidencia humo saliendo del cuarto de máquinas de la rci solicite que apagarán de inmediato y estar pendientes de cualquier novedad en las torres ya que no contaban con ninguno de los sistemas de protección contra incendios activo (solo la bomba de respaldo Jokey) En el video enviado por el rondero de turno se evidencian las presiones de agua en el sistema dentro de los rangos. El día 5 de mayo a las 8:30 am realizo la inspección del equipo donde evidencio las siguientes novedades
+1) Sistema apagado desde el controlador central (HOA) del panel tornatech 2) Bomba de apoyo Jockey en automático 3) Presión de gua en el sistema 175psi 4) Válvulas de succión e inyección normalmente abiertas 5) Válvulas de motor de refrigeración por agua abiertas 6) Bypass de refrigeración del motor cerradas. 7) Presión de agua nunca bajo a los 155psi para dar inicio automático al motor 8) No se registran pérdidas de presión ni daños en la red hidráulica
+Afectaciones preliminares en el equipo
+1) Sobrecalentamiento en el motor kalrket 2) Daño en el precalentador 3) Sistema evaporo el líquido refrigerante.
+Se realiza las siguientes acciones ya que la posible falla en el equipo fue operar sin flujo de agua en el sistema de refrigeración.
+Al revisar se observa 1) Los filtros de succión de agua se encuentran limpios evidencia fotográfica. 2) Buen Flujo de agua en el sistema de refrigeración del motor. 3) Válvula solenoide normalmente cerrada cuando el equipo está apagado
+7) En el programa se evidencia off en arranque uno a las 12:02:13
+8) En el programa se evidencia bomba en demanda inactiva a las 12.02.15 9) En programa se evidencia arranque uno off a las 16.29:21 10) Sistema de detección de incendios inactivo que no manda la señal a panel de detección notifier 11) El cuarto de maquinas en repetidas ocasiones se encontró abierto la recomendación que se
+realizaron independizar el cuarto de máquinas RCI del cuarto de máquinas de piscina, mantener el cuarto de máquinas bajo llave e instalar una cámara de seguridad para prevención vigilancia y control.
+Asi como lo anterior en el programa del tablero tornatech se puede evidenciar todos los movimientos relacionados con el equipo y sus parametrizaciones. El equipo motor clarket esta configurado solo para prender de forma automática cuando el sensor de presión del tablero registros una caída de presión por debajo de las 155 libras de presión, en el reporte de l tablero tornstech no se evidencia que la presión del sistema tuviera descenso inferiores al programado para el arenque del motor
+Desde tecni sevise siempre se garantiza que todos los sistemas operados trabajen adecuadamente realizando las pruebas de forma manual y automáticas señaladas por la norma e informando oportunamente los mantenimientos correctivos para garantizar el buen funcionamiento de cada sistema intervenido. Tecni service no asume responsabilidad por daños ocasionados a los sistemas de detección y extinción por la manipulación indebida de terceros. Pendiente diagnóstico general del sistema de detección para determinar que refracciones se deben cotizar y posterior reparación del equipo Sistema inactivo se recomienda mayor vigilancia y control de la unidad para mitigar cualquier conato de incendio Sistema de detección de incendios Se encuentra en la inspección que todas las tarjetas de lazo estaban desactivadas, se activan y se hace auto programación, debido a no tener plano de ubicaciones o etiquetas de dispositivos se decide borrar de configuración los dispositivos que presentaban intermitencia mientras se intervienen, se deja panel con algunos problemas, pero sin dispositivos con falla intermitente. y a continuación presentamos las evidencias y observaciones pertinentes: pendiente envío de oferta comercial para la programación del panel y los dispositivos faltantes conclusiones La mala operación de los dispositivos electrónicos conlleva a la desprogramación y cambio de direcciones generan conflictos en el panel de la red contra incendios del sistema de detección se establece comunicación con la empresa lima quien estalo el sistema, para solicitar la base de datos planimetría quienes refieren no tener en su poder esta información De acuerdo al reporte el sistema sufrió daños de configuración por un tercero quien intervino de forma indebida y con autorización de un guarda de seguridad el panel de emergencia El sistema esta inoperativo se recomienda control visual por cámaras y se envía cotización para configurar punto a punto el panel de detección en sus lazos de comunicación con cada dispositivo (censores de Humo, las nac, módulos de monitoreo y control y otros asociados al sistema El panel contra incendios Notifier los guardas de seguridad lo mantienen apagado por ruido molesto
+Evidencias fotográficas del equipo 03/0572025 9.15 am
+PRIORIDAD:
+Baja
+ESTADO:
+Operativo
+Prueba automática programada los sábados
+a las 10:00 am
+PRIORIDAD:
+Por norma FFPA
+Revisión de equipo 13:00 horas del día sábado después del reporte
+ESTADO:
+En observación por válvula de refrigerante en los anillos grafitados de la bomba
+Estado del controlador informado a seguridad y al rondero después de las pruebas realizadas equipo en automático
+PRIORIDAD:
+Controlador en automático sin fallas registradas
+Estado de pr esi ones y controladores del sistema
+Estado del controlador y la presión en el sistema de extinción de fuego entregado a las 14:47 pm del día sábado después de realizar pruebas.
+ESTADO:
+Operativo
+Reporte de novedad el día sábado 3 a las
+16:36 minutos
+PRIORIDAD:
+Alta afectación por calentamiento del motor
+Evidencia del estado del equipo después de la revisión Afectación al precalentador de camisas
+ESTADO:
+Critico fundido por temperatura
+Estado del sistema de refrigeración del motor por calentamiento excesivo de la carcasa después de la eventualidad presentadas
+PRIORIDAD:
+Alta afectación por calentamiento de carcaza
+ESTADO: Critico se requiere inyectar liquido refrigerante.
+Revisión de l fugas por calentamiento de
+la carcaza
+PRIORIDAD:
+Alta por desfogue de aceite del motor
+ESTADO:
+Motor Inactivo por fallas en el sistema
+Evidencias del programa donde emite las acciones que se realizan en el equipo
+PRIORIDAD:
+Alta no se debe manipular los arrancadores manualmente sin contar con las competencias
+ESTADO:
+Encendido arrancador uno y apagado en un intervalo de 3 segundos
+Evidencia del programa del tablero tórnateck después de ser intervenido en la primera eventualidad reportada
+PRIORIDAD:
+Baja después de las pruebas y la revisión de la primera eventualidad
+ESTADO:
+Operativo, sin fallas y en automático
+Evidencias del registro del panel tornatech segundo evento registros a las 16:29 de la tarde
+PRIORIDAD:
+Alto por encendido y apagado
+del arrancador
+ESTADO:
+Encendido y apagado arrancador uno y apagado en un intervalo de 3 segundos
+Presión en el sistema por encima de los parámetros establecidos en la bomba jokey y el motor clarket
+PRIORIDAD:
+Baja presión estable
+ESTADO:
+Operativo
+Presión del sistema registrada el día 4-5_2025 después de la revisión del reporte por encima de los parámetros establecidos
+PRIORIDAD:
+Baja presión por encima de los parámetros establecidos
+ESTADO:
+En seguimiento por la novedad presentada
+Estado en el que se entrega el equipo en cada mantenimiento
+PRIORIDAD:
+Baja equipo limpio y operativo
+ESTADO:
+Terminado sin fallas en el sistema
+Registro de fotos enviadas a la administración y enviados en el informe de mantenimiento
+PRIORIDAD:
+Baja equipos frunciendo en automático
+ESTADO:
+Operativos sin restricciones
+Presión de agua en el sistema enviado por el rondero después del prime evento
+PRIORIDAD:
+Baja presión estable
+ESTADO:
+Operativo sin novedad en presión establecida
+Controlador activo en prueba automática donde se registra un fallo en el sistema video enviado por el rondero, después de revisar los eventos no se registra falla operativa
+PRIORIDAD:
+Deficiencia Crítica
+ESTADO:
+En seguimiento para definir la falla presentada presentados
+En el sistema hidráulico se presentan fugas de agua que puedan alterar la presión
+PRIORIDAD:
+Baja sin figas de agua
+ESTADO:
+Finalizado
+Válvulas del sistema normalmente abiertas para su correcto funcionamiento
+PRIORIDAD:
+Baja
+ESTADO:
+En seguimiento por no flujo de agua al sistema de refrigeración del motor
+Se realiza revisión de filtro y flujo de agua en el sistema donde se evidencia buen flujo y filtros limpios
+PRIORIDAD:
+Baja con flujo de agua
+ESTADO:
+En seguimiento posible falla en válvula solenoide
+Filtros limpios del sistema de enfriamiento por agua cruda
+PRIORIDAD:
+Baja filtros limpios
+ESTADO:
+Operativo
+La actividad siempre se reportan con
+PRIORIDAD:
+Alta unidad desprotegida
+de personal de la unidad
+ESTADO:
+Inactivo por múltiples fallas en el sistema , en estudio de posibles causas
+CONCLUSIONES - Se debe contar con toda la documentación, planos y configuración para normalizar el sistema de detección de incendio. - En caso de necesitar revisar fallos en sótanos se debe ingresar a los cuartos útiles de los propietarios. - Después de realizar la configuración y resolución de todos los fallos se debe hacer prueba de todos los dispositivos para evidenciar su buen funcionamiento. - Se evidencia múltiples fallas en el sistema de extinción después de presentar el día 4 de mayo un encendido sin determinar la fuente que ocasiono la activación del motor, como se describe en cada ítem las presiones estaban estables, la bomba de apoyo jokey estabilizaba la presión de forma correcta y la prueba automática programada a las 10:00 am se realizo sin novedades
+Posibles causas
+Falla en la válvula celuloide de las motos no se abrió para garantizar el flujo del agua al sistema de refrigeración
+La unidad residencial manzanares de la cuenca se encuentra desprotegida por afectación en los dos sistemas de
+seguridad humana Extinción y detección de fuego
+Se sugiere estar atentos a cualquier novedad o riego que pueda generar un conato de incendio y estar
+inspeccionando los cuartos de basura
+FIRMAS
+NOMBRE DE QUIEN RECIBE: portería:
+Administración:
+COORDINADOR TÉCNICO Y MANTENIMIENTO:

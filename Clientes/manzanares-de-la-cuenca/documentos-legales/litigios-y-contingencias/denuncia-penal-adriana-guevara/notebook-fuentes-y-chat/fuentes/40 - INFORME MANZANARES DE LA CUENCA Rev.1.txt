@@ -1,0 +1,208 @@
+INFORME MANZANARES DE LA CUENCA Rev.1.pdf
+Página 1 de 12
+Documento: INFORME DE INTERVENTORÍA PARA EL CAMBIO Y PUESTA
+EN MARCHA DE LA BOMBA CONTRA INCENDIOS
+Cliente:
+Conjunto residencial Manzanares de la Cuenca PH
+Proyecto:
+Conjunto residencial Manzanares de la Cuenca PH
+Ubicación:
+Envigado, Antioquia
+Versión: 1 Revisión
+ELABORACIÓN, REVISIÓN.
+Actividad Fecha D/M/A Nombre del ejecutor Firma
+Elaboración 14/07/2026 Henry Arango Echavarría
+Revisión 22/07/2026 Andrés Cruz
+Revisión 22/07/2026 Andrés Cruz
+DISTRIBUCIÓN
+Persona a quien se envía Cargo Organización
+Daniel Cartagena Administración Manzanares de la Cuenca PH
+CONTROL DE VERSIONES
+Versión Fecha D/M/A Naturaleza del cambio realizado con respecto a la versión anterior
+Inicial 24/07/2026 Revisión 0
+Revisión 27/07/2026 Revisión 0
+Página 2 de 12
+INFORME DE INTERVENTORÍA PARA EL CAMBIO Y PUESTA EN MARCHA DE LA BOMBA CONTRA INCENDIOS
+Manzanares de la Cuenca – Envigado – Julio de 2026
+1. OBJETO
+Realizar la interventoría técnica para la evaluación, recomendación, acompañamiento y supervisión del
+proceso de sustitución y puesta en marcha del motor Diesel de la bomba del sistema de protección contra
+incendios.
+2. ANTECEDENTES
+El día 07 de mayo de 2026 AFC Professional Fire realizó visita técnica al cuarto de bombas con el fin de
+verificar el estado del conjunto bomba-motor del sistema contra incendios.
+Durante la inspección se efectuaron análisis visuales, revisión de condiciones y evaluación de las diferentes
+alternativas para recuperación del equipo existente. Sin embargo, después de las verificaciones realizadas,
+no fue posible obtener un diagnóstico concluyente que garantizara la confiabilidad y vida útil remanente del
+equipo actualmente instalado.
+Página 3 de 12
+Página 4 de 12
+Considerando la criticidad del sistema contra incendios para la protección de vidas y bienes, y teniendo en
+cuenta las alternativas presentadas por el Consejo de Administración con su costo, afc Professional Fire
+recomienda evaluar la sustitución completa del conjunto bomba-motor como alternativa de menor riesgo
+operacional y mayor confiabilidad a largo plazo.
+Para tal fin fueron recibidas y analizadas propuestas técnicas y económicas de las empresas:
+Good Group.
+Ingsecol.
+Fire Motors.
+Fire & Equipos.
+Safex.
+Man Fire.
+Página 5 de 12
+3. CRITERIOS DE EVALUACIÓN
+Las propuestas fueron analizadas considerando los siguientes aspectos:
+Cumplimiento de requisitos para sistemas contra incendios.
+Alcance del suministro.
+Equipos incluidos.
+Certificaciones UL/FM.
+Garantías ofrecidas.
+Actividades de instalación.
+Pruebas de funcionamiento y rendimiento.
+Soporte técnico.
+Relación costo-beneficio.
+Riesgos asociados a la implementación.
+4. ANÁLISIS TÉCNICO DE PROPUESTAS
+4.1 GOOD GROUP
+Alcance
+Propone suministro motor CLARKE JU6H-UF84, 275 HP, 3000RPM.
+Ventajas
+Solución integral.
+Considera diagnóstico especializado.
+Desventajas
+Costo intermedio-alto frente a otras alternativas.
+El desmontaje y montaje requiere validación de condiciones en sitio.
+4.2 INGSECOL
+Alcance
+Ofrece suministro del motor CLARKE JU6H-UF84 con instalación, ensamble, puesta en marcha y
+validación operacional.
+Página 6 de 12
+Ventajas
+Segundo menor valor económico.
+Incluye instalación y puesta a punto.
+Enfoque de reemplazo directo.
+Representantes de los motores Clarke en Colombia.
+Desventajas
+Alcance limitado frente a soluciones integrales.
+No contempla suministro de bomba principal.
+4.3 FIRE MOTORS
+Alcance
+Suministro de motor CLARKE JU6H-UF84 de 275 HP con eje de transmisión, guarda, baterías, instalación,
+alineación y pruebas de funcionamiento.
+Ventajas
+Equipamiento completo para el conjunto motor.
+Especialización en sistemas de bombeo contra incendios.
+Incluye alineación y puesta en marcha.
+Desventajas
+No incluye cambio integral del conjunto bomba.
+Menor alcance que propuestas completas.
+4.4 FIRE & EQUIPOS
+Alcance
+Propone suministro de bomba principal NM Fire de 750 GPM, 2910 RPM, junto con motor Diesel NMFIRE
+o similar 2900 RPM, 192 HP, 120V y controlador Tornatech UL/FM. Incluye además bomba Jockey, tablero
+de control, baterías, refrigerante, aceites, conexiones, pruebas de eficiencia y actividades de instalación.
+También contempla diagnóstico general del conjunto actual.
+Página 7 de 12
+Ventajas
+Menor costo global del estudio.
+Solución integral.
+Incluye controlador UL/FM.
+Incluye bomba y controlador Jockey.
+Considera diagnóstico especializado.
+Incluye pruebas hidráulicas certificadas.
+Desventajas
+Menor costo global del estudio.
+Solución integral.
+Equipos listados UL/FM.
+Incluye sistema Jockey y medición de flujo.
+El desmontaje y montaje requiere validación de condiciones en sitio.
+Se trata de una marca de reconocido posicionamiento y amplia utilización en sistemas de bombeo
+contra incendios. Como aspecto a considerar, se recomienda validar la disponibilidad local de
+repuestos, soporte técnico especializado y tiempos de atención postventa, dado que estos factores
+pueden influir en los costos y la continuidad operativa del sistema durante su vida útil.
+Se requiere validar compatibilidad con la filosofía actual del sistema.
+4.5 SAFEX
+Alcance
+Suministro de motor CLARKE JU6H-UF84, guarda, eje de transmisión, baterías, desmontaje del equipo
+existente, instalación, puesta en funcionamiento, capacitación y tres mantenimientos mensuales posteriores.
+Ventajas
+Amplio acompañamiento posventa.
+Incluye capacitación.
+Incluye mantenimientos posteriores.
+Alcance técnico robusto.
+Desventajas
+Mayor valor económico de todas las ofertas evaluadas.
+Página 8 de 12
+4.6 MAN FIRE
+Alcance
+Propone suministro de bomba principal NM Fire de 750GPM, 210PSI, 3550 RPM UL/FM, Motor Eléctrico de
+335 HP/ 230 V / 2950 RPM, Incluye tablero de control, Bomba Jockey, controlador bomba Jockey, cabezal
+de pruebas con 3 válvulas y medidor de flujo, además de proponer suministro e instalación de tuberías y
+accesorios para el cuarto de bombas, incluyendo válvulas, soportes y líneas de sensado.
+Ventajas
+Modernización integral del cuarto de bombas.
+Incluye adecuaciones hidráulicas.
+Desventajas
+Alto valor de inversión.
+Alcance podría exceder el requerimiento inmediato del proyecto.
+Proyecta motor eléctrico de 335 HP/ 230 V, puede tratarse de un error. De lo contrario, la inversión
+de la acometida eléctrica puede generar un costo mayor.
+TABLA CON ANÁLISIS TÉCNICO DE PROPUESTAS.
+Ver adjunto Comparativo Suministro e instalación de Bomba.
+5. COMPARATIVO ECONÓMICO
+Empresa Valor Total (COP)
+Fire & Equipos $224.973.000
+Ingsecol $259.900.731
+Fire Motors $278.132.573
+Good Group $302.684.170
+Man Fire $310.326.881
+Safex $341.923.675
+Consolidación económica presentada por los oferentes.
+Página 9 de 12
+6. ANÁLISIS DE COSTO BENEFICIO
+Desde el punto de vista exclusivamente económico, la oferta de Fire & Equipos presenta el menor valor de
+inversión, aproximadamente un 34% inferior a la propuesta de mayor costo.
+No obstante, la selección no debe fundamentarse únicamente en el precio, sino en la compatibilidad técnica
+con el sistema existente, disponibilidad de repuestos, experiencia del proveedor, soporte posventa y
+cumplimiento normativo.
+Las propuestas de Ingsecol, Fire Motor y Safex presentan mayores alcances técnicos e incluyen
+componentes complementarios que podrían generar beneficios operativos y de mantenimiento en el largo
+plazo.
+7. CONCLUSIONES
+1. La visita realizada por AFC Professional Fire el 07 de mayo de 2026 permitió evidenciar que no
+existe certeza técnica suficiente para garantizar la confiabilidad futura del conjunto bomba-motor
+actualmente instalado.
+2. Debido a la importancia del sistema contra incendios para la protección de vidas y activos, la
+alternativa de reparación parcial implica un riesgo operacional significativo.
+3. Después del análisis de las propuestas recibidas, se confirma que existen alternativas técnica y
+económicamente viables para la sustitución completa del conjunto.
+4. Las propuestas analizadas presentan diferencias importantes en alcance, equipos suministrados,
+certificaciones, actividades de instalación y acompañamiento posterior.
+5. Se considera técnicamente más conveniente avanzar con la sustitución integral del conjunto
+bomba-motor en lugar de realizar reparaciones o cambios parciales sobre equipos cuya condición
+futura no puede ser garantizada.
+8. RECOMENDACIÓN DE INTERVENTORÍA
+AFC Professional Fire recomienda proceder con el reemplazo integral del conjunto bomba-motor
+solicitando cotizaciones actualizadas del sistema contra incendios, priorizando la propuesta que ofrezca el
+mejor equilibrio entre:
+Cumplimiento normativo UL/FM.
+Confiabilidad operativa.
+Alcance del suministro.
+Garantías.
+Soporte técnico.
+Costo total del ciclo de vida.
+Página 10 de 12
+Desde la perspectiva de los costos actuales, la propuesta de Fire & Equipos presenta la alternativa
+económica más favorable. Sin embargo, antes de la adjudicación definitiva se recomienda que la decisión
+final del Consejo de Administración considere no solo el valor económico sino también la robustez técnica,
+disponibilidad de servicio posventa y experiencia específica de cada proveedor en sistemas de bombeo
+contra incendios.
+Si se considera solo el cambio del motor, se recomienda:
+Opción 1 Ingsecol
+Opción 2 Fire Motors
+Esta selección se hace, de acuerdo a las propuestas y argumentos técnicos presentados por los oferentes,
+debe revisarse la curva del equipo con Ingsecol, en caso de llegar a un acuerdo con ellos.
+Página 11 de 12
+TABLA COMPARATIVO ECONÓMICO
+Página 12 de 12
+____________________________ Andrés Felipe Cruz Restrepo Ingeniero mecánico Tarjeta profesional AN 230-65970 CEL: 3116456726 andres.cruz@afcprofire.com
+___________________________________ Henry Arango Echavarría Ingeniero mecánico Tarjeta profesional AN230-107431 CEL: 3007832034 henry.arango@afcprofire.com
