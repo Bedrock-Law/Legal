@@ -153,10 +153,37 @@ Reglas que se derivan de eso:
 
 Falta un dato real que no se puede inventar: **el ID de la Unidad Compartida de
 Drive destino** para este repo — nueva, o una carpeta dentro de una
-existente. Con ese ID, el resto es copiar `mono_drive_sync.py`, apuntarlo a
-este repo (`MONO_LEGAL_REPO` → variable equivalente) y a ese ID, confirmar
-que la cuenta de servicio tiene acceso a esa Unidad Compartida, y replicar el
-hook `post-commit` local (no versionado) en esta máquina únicamente.
+existente. Con ese ID, el resto es copiar `bedrock_drive_sync.py`, apuntarlo a
+este repo (`BEDROCK_REPO`) y a ese ID (`BEDROCK_DRIVE_SHARED_DRIVE_ID`),
+confirmar que la cuenta de servicio tiene acceso a esa Unidad Compartida, y
+replicar el hook `post-commit` local (no versionado) en esta máquina
+únicamente. El script vive en `~/.bedrock-tools/bedrock_drive_sync.py`.
+
+### 5.5 Domain-Wide Delegation — alcance ampliado, decisión consciente
+
+**Decisión del 21 de septiembre de 2026:** la cuenta de servicio se configuró
+con Domain-Wide Delegation sobre el Workspace de `bedrock.com.co`, impersonando
+a `tualiado@bedrock.com.co` (variable `BEDROCK_DRIVE_IMPERSONATE`).
+
+Esto cambia el modelo de riesgo respecto al diseño original de la sección 5:
+
+- **Diseño original:** la cuenta de servicio solo veía lo que se compartía
+  explícitamente con ella (la Unidad Compartida del espejo). Un error del
+  script quedaba contenido a esa carpeta.
+- **Con Domain-Wide Delegation activo:** la cuenta de servicio puede actuar
+  como `tualiado@bedrock.com.co` con acceso a **todo su Drive**, no solo a la
+  Unidad Compartida del espejo — incluye documentos de todos los clientes,
+  contabilidad, y cualquier carpeta personal en ese Drive.
+
+Esta ampliación fue una decisión explícita para permitir usos futuros más
+allá del espejo del repo (leer/escribir en cualquier carpeta, crear y
+compartir archivos con terceros, administrar permisos de otras personas),
+aceptando el riesgo de que un error en cualquier script que use esta
+credencial tiene un radio de explosión de "todo el Drive de Juan Manuel", no
+solo una carpeta. Si se revierte esta decisión, hay que desactivar la
+delegación en `admin.google.com` → Seguridad → Controles de API →
+Delegación en todo el dominio, y quitar `BEDROCK_DRIVE_IMPERSONATE` del
+entorno.
 
 ## 6. Herramientas
 
