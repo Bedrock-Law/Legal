@@ -105,7 +105,7 @@ estándar, normalizados a espacio corriente.
 
 ### 5.1 Qué hace
 
-Un script (`mono_drive_sync.py`, fuera del repo, en `~/.mono-tools/`) hace
+Un script (`bedrock_drive_sync.py`, fuera del repo, en `~/.bedrock-tools/`) hace
 espejo exacto y **unidireccional** repo → Drive hacia **una única Unidad
 Compartida**, identificada por su ID fijo. Sube lo nuevo, actualiza lo
 modificado (por md5), detecta movimientos y re-parentea sin romper links
@@ -116,7 +116,7 @@ distribuido con el repo — o manualmente.
 
 ### 5.2 Acceso que tiene
 
-Credencial de cuenta de servicio de Google (`~/.mono-tools/credencial-google.json`,
+Credencial de cuenta de servicio de Google (`~/.bedrock-tools/credencial-google.json`,
 scope `drive` completo), con acceso compartido a la Unidad Compartida
 destino. Es distinta del conector interactivo que un asistente usa dentro de
 una conversación para buscar/leer/compartir archivos puntuales — esa vía es

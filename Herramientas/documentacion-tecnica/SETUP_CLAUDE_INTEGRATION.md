@@ -7,7 +7,7 @@ Guía para conectar todo: MCP Servers → Google Drive → Claude Code Skills
 ### 1. Instalar Dependencias (MCP Servers)
 
 ```bash
-cd mcp-servers/due-diligence-mcp
+cd Herramientas/mcp-servers/due-diligence-mcp
 npm install && npm run build
 
 cd ../drive-mcp
@@ -48,11 +48,11 @@ claude mcp setup --config .claude/bedrock.mcp.config.json
 ```bash
 # Due Diligence MCP
 claude mcp add --transport stdio bedrock-due-diligence \
-  node /Users/juanma/Documents/Bedrock\ IA/mcp-servers/due-diligence-mcp/dist/index.js
+  node /Users/juanma/Documents/Bedrock\ IA/Herramientas/mcp-servers/due-diligence-mcp/dist/index.js
 
 # Drive MCP
 claude mcp add --transport stdio bedrock-drive \
-  node /Users/juanma/Documents/Bedrock\ IA/mcp-servers/drive-mcp/dist/index.js
+  node /Users/juanma/Documents/Bedrock\ IA/Herramientas/mcp-servers/drive-mcp/dist/index.js
 ```
 
 ### 4. Verificar MCP Servers
@@ -113,7 +113,7 @@ Analiza → Crea reporte → Sube a Drive
 
 ```bash
 # Terminal 1: Iniciar servidor
-cd mcp-servers/due-diligence-mcp
+cd Herramientas/mcp-servers/due-diligence-mcp
 npm start
 
 # Terminal 2: Conectar con Claude
@@ -161,7 +161,7 @@ npm install -g @anthropic-ai/sdk
 ### "MCP Server no responde"
 ```bash
 # Verificar que esté buildado
-cd mcp-servers/drive-mcp
+cd Herramientas/mcp-servers/drive-mcp
 npm run build
 npm start
 ```

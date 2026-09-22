@@ -101,7 +101,7 @@ El script tardará 1-2 minutos en completar. Verifica el registro de ejecución 
 ## Solución de problemas
 
 ### "Error: No existe credentials/token.json"
-Ejecuta `npm run authorize` en el directorio `mcp-servers/drive-mcp` para generar el token OAuth.
+Ejecuta `npm run authorize` en el directorio `Herramientas/mcp-servers/drive-mcp` para generar el token OAuth.
 
 ### "Script tardó demasiado"
 Es normal que tarde 1-2 minutos. No cierres la ventana. Verifica el registro de ejecución.

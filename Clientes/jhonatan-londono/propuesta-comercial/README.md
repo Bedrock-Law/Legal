@@ -89,6 +89,22 @@
 
 ---
 
+### Renders y formatos adicionales
+
+Los siguientes archivos son renders (HTML, PDF, Word) de los documentos fuente en Markdown listados arriba. No son documentos independientes.
+
+| Archivo | Render de | Verificación |
+|---|---|---|
+| `ANALISIS_CASO_JHONATAN_LONDONO.pdf` | `ANALISIS_CASO_JHONATAN_LONDONO.md` | Verificado por nombre de archivo |
+| `ANALISIS_CASO_JHONATAN_LONDONO.docx` | `ANALISIS_CASO_JHONATAN_LONDONO.md` | Verificado por nombre de archivo |
+| `ANALISIS_BEDROCK_JHONATAN_LONDONO.html` | `ANALISIS_CASO_JHONATAN_LONDONO.md` | Verificado: título interno del HTML es "Análisis Caso Jhonatan Londoño - Bedrock Abogados" |
+| `ANALISIS_BEDROCK_JHONATAN_LONDONO.pdf` | — | Archivo vacío (0 bytes). No tiene contenido. Pendiente regenerar o eliminar |
+| `PROPUESTA_BEDROCK_JHONATAN.html` | `PROPUESTA_APOYO_BEDROCK_JHONATAN.md` | Verificado: título interno del HTML es "Propuesta Bedrock - Caso Jhonatan Londoño" |
+
+Los archivos de tooling que antes estaban en esta carpeta (`GENERAR_PDFS.sh`, `COMO_IMPRIMIR_A_PDF.txt`, `GENERAR_PDF_PASO_A_PASO.md`, `ESTRUCTURA_ARCHIVOS.txt`) se movieron a `Herramientas/documentacion-tecnica/` por no ser documentos de cliente.
+
+---
+
 ## 🎯 FLUJO DE LECTURA RECOMENDADO
 
 ### **Para Decisión Rápida (30 minutos)**
@@ -190,7 +206,7 @@ Esta carpeta contiene información privilegiada abogado-cliente.
 | Versión | Fecha | Cambios |
 |---------|-------|---------|
 | 1.0 | 2026-09-03 | Creación inicial. 5 documentos + README |
-| — | — | — |
+| 1.1 | 2026-09-21 | Se movió el tooling (`GENERAR_PDFS.sh`, `COMO_IMPRIMIR_A_PDF.txt`, `GENERAR_PDF_PASO_A_PASO.md`, `ESTRUCTURA_ARCHIVOS.txt`) a `Herramientas/documentacion-tecnica/`. Se documentaron los renders HTML/PDF/Word existentes en la carpeta |
 
 ---
 

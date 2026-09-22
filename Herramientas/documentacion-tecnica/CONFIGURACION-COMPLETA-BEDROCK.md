@@ -62,12 +62,12 @@ Documentación paso a paso de la arquitectura tech, identidad visual y sistema d
 
 ### 3.1 Due Diligence MCP Server
 
-**CAPTURA 3A**: Contenido de mcp-servers/due-diligence-mcp/
+**CAPTURA 3A**: Contenido de Herramientas/mcp-servers/due-diligence-mcp/
 - Mostrar: `ls -la` del directorio con archivos package.json, tsconfig.json, src/index.ts, README.md
 - Debe verse: estructura de proyecto TypeScript
 
 **CAPTURA 3B**: Herramientas disponibles en debido-diligence-mcp
-- Mostrar: sección "Herramientas Disponibles" de mcp-servers/due-diligence-mcp/README.md
+- Mostrar: sección "Herramientas Disponibles" de Herramientas/mcp-servers/due-diligence-mcp/README.md
 - Debe verse: analyze_cap_table, verify_antecedents, assess_legal_risk, generate_dd_report
 - Contexto: 4 herramientas principales para análisis legal
 
@@ -79,7 +79,7 @@ Documentación paso a paso de la arquitectura tech, identidad visual y sistema d
 ### 3.2 Google Drive MCP Server
 
 **CAPTURA 3D**: Estructura de bedrock-drive-mcp
-- Mostrar: archivos en mcp-servers/drive-mcp/
+- Mostrar: archivos en Herramientas/mcp-servers/drive-mcp/
 - Debe verse: package.json, src/index.ts, README.md, tsconfig.json
 
 **CAPTURA 3E**: Herramientas de Drive
@@ -89,7 +89,7 @@ Documentación paso a paso de la arquitectura tech, identidad visual y sistema d
 ### 3.3 Document Generator MCP Server
 
 **CAPTURA 3F**: Estructura del document generator
-- Mostrar: mcp-servers/bedrock-document-generator/
+- Mostrar: Herramientas/mcp-servers/bedrock-document-generator/
 - Debe verse: package.json actualizado con dependencias docx, pptxgenjs
 
 **CAPTURA 3G**: Herramientas de generación
@@ -334,9 +334,9 @@ Desde cualquier conversación en Claude Code o claude.ai:
 | Componente | Ruta |
 |-----------|------|
 | Brand Guidelines | `/docs/BRAND_GUIDELINES.md` |
-| Due Diligence MCP | `/mcp-servers/due-diligence-mcp/` |
-| Drive MCP | `/mcp-servers/drive-mcp/` |
-| Document Generator MCP | `/mcp-servers/bedrock-document-generator/` |
+| Due Diligence MCP | `/Herramientas/mcp-servers/due-diligence-mcp/` |
+| Drive MCP | `/Herramientas/mcp-servers/drive-mcp/` |
+| Document Generator MCP | `/Herramientas/mcp-servers/bedrock-document-generator/` |
 | Skills públicos | `~/.claude/skills/bedrock-*.md` |
 | Instrucciones de trabajo | `~/.claude/instrucciones-trabajo.md` |
 

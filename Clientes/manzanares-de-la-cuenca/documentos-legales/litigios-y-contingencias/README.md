@@ -16,7 +16,7 @@ Pretensión penal directa: $104.339.504. Detrimento patrimonial global (vía civ
 
 Punto abierto sin resolver en el chat: si se redacta el capítulo de coautoría/complicidad para Cárdenas y Giraldo.
 
-Adriana María Guevara Velásquez también administró Propiedad Horizontal Misisipi, donde a partir de 2026-09-02 Bedrock evalúa una segunda denuncia por hechos del mismo tipo — falsificación de facturas y de actas de consejo, pagos por trabajos ya ejecutados por otros proveedores. Ver `propuestas-comerciales/ph-misisipi/`. Aporta patrón de conducta en más de una copropiedad, útil para la denuncia penal de este caso.
+Adriana María Guevara Velásquez también administró Propiedad Horizontal Misisipi, donde a partir de 2026-09-02 Bedrock evalúa una segunda denuncia por hechos del mismo tipo — falsificación de facturas y de actas de consejo, pagos por trabajos ya ejecutados por otros proveedores. Ver `Clientes/ph-misisipi/propuesta-comercial/`. Aporta patrón de conducta en más de una copropiedad, útil para la denuncia penal de este caso.
 
 ## Consolidado de control de versiones
 

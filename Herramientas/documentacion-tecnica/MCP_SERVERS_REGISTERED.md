@@ -6,7 +6,7 @@ Estado actual de los MCP servers registrados en Claude Code.
 
 ### 1. bedrock-due-diligence ✓ Connected
 ```
-Comando: node /Users/juanma/Documents/Bedrock IA/mcp-servers/due-diligence-mcp/dist/index.js
+Comando: node /Users/juanma/Documents/Bedrock IA/Herramientas/mcp-servers/due-diligence-mcp/dist/index.js
 Transport: stdio
 Herramientas: 4
 - analyze_cap_table
@@ -17,7 +17,7 @@ Herramientas: 4
 
 ### 2. bedrock-drive ✓ Connected
 ```
-Comando: node /Users/juanma/Documents/Bedrock IA/mcp-servers/drive-mcp/dist/index.js
+Comando: node /Users/juanma/Documents/Bedrock IA/Herramientas/mcp-servers/drive-mcp/dist/index.js
 Transport: stdio
 Herramientas: 5
 - list_drive_files

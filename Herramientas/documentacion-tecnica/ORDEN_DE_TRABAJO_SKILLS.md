@@ -324,7 +324,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor i
 ## Ruta en monoespaciado
 
 ```
-/Users/juanma/Documents/Bedrock IA/mcp-servers/bedrock-document-generator/src/index.ts
+/Users/juanma/Documents/Bedrock IA/Herramientas/mcp-servers/bedrock-document-generator/src/index.ts
 ```
 
 ## Colores corporativos
