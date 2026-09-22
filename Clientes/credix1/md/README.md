@@ -1,8 +1,8 @@
-# EHOLDINGS FLORIDA S.A.S. (CREDIX1) — paquete documental de prueba del skill ai-law
+# EHOLDINGS FLORIDA S.A.S. (CREDIX1) — paquete documental
 
 Cliente: EHOLDINGS FLORIDA S.A.S., sigla CREDIX1 S.A.S. Representante y accionista: Lawrence Soto Borja. Elaborado por Bedrock S.A.S. como asesor externo.
 
-Prueba del skill `ai-law` (2026-09-12). Almacenamiento transitorio en el scratchpad de la sesión, no en la taxonomía definitiva del repo `mono-legal`; sin tarea de Linear asociada; ningún documento de Mono fue editado — todo se redactó nuevo para este cliente.
+**Corrección (22 sep 2026):** este paquete se redactó originalmente como prueba del skill `ai-law` (2026-09-12), pero CREDIX1 es un cliente real — confirmado en auditoría de la organización del repo. La nota anterior de "almacenamiento transitorio, sin tarea de Linear asociada" quedó obsoleta; se conserva el resto del documento tal como se generó.
 
 **v2 (esta versión):** el concepto jurídico y todos los documentos se reescribieron tras un consejo de tres modelos (Opus, Sonnet, Haiku — opiniones independientes, revisión cruzada anónima, síntesis del presidente) que auditó el v1 en busca de brechas regulatorias, errores de cita y riesgos frente al cliente. El consejo corrigió cuatro errores de fondo del v1 (norma derogada de SAGRILAFT, numeración de la Ley 1676/2013, ausencia del régimen de permanencia/caducidad del dato, tasa de usura citada como cifra fija) e identificó 14 brechas adicionales, ya incorporadas. Detalle completo de la deliberación en `_proceso-interno/`.
 
@@ -57,4 +57,4 @@ Los documentos viven en una sola carpeta plana para que un futuro skill de marca
 - Los anexos del contrato marco con Coopcentral (adhesión individual, mecanismo técnico de control dinámico, remuneración, liquidación de cartera) no están desarrollados — dependen de una negociación conjunta con el banco, en particular si acepta subordinar su derecho de compensación (cláusula sexta).
 - Las verificaciones pendientes de la sección 10 del concepto jurídico siguen abiertas: texto exacto del Capítulo IX de la Circular Básica Jurídica de Supersociedades, articulado preciso de la Ley 2445 de 2025, y numeración definitiva de la Ley 1676 de 2013 contra el Diario Oficial.
 - No existe todavía un skill de marca para EHOLDINGS/CREDIX1: los `[MARCA: ...]` quedan como referencia gráfica hasta que se construya uno.
-- Si se convierte en caso real, correspondería crear la tarea de Linear y mover el paquete a `legal/desarrollo-de-negocios/`.
+- Pendiente: crear tarea de Linear para este cliente (no existe todavía, ver nota de corrección al inicio del documento) y evaluar si la estructura de carpetas de CREDIX1 (`diagrams/`, `md/`, `pdf/`) se migra a la taxonomía estándar de `Clientes/<slug>/documentos-legales/` que usan los demás clientes del repo.
