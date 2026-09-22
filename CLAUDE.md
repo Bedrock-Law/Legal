@@ -116,13 +116,26 @@ distribuido con el repo — o manualmente.
 
 ### 5.2 Acceso que tiene
 
-Credencial de cuenta de servicio de Google (`~/.bedrock-tools/credencial-google.json`,
-scope `drive` completo), con acceso compartido a la Unidad Compartida
-destino. Es distinta del conector interactivo que un asistente usa dentro de
-una conversación para buscar/leer/compartir archivos puntuales — esa vía es
-de lectura/escritura selectiva y queda registrada en el chat; la del sync es
-automática, en segundo plano, y actúa sobre el árbol completo del repo cada
-vez que corre.
+**Decisión del 22 de septiembre de 2026 (revierte el diseño de cuenta de
+servicio):** el Workspace de `bedrock.com.co` tiene activada la política de
+organización `iam.disableServiceAccountKeyCreation`, que bloquea por diseño
+la creación de claves JSON para cuentas de servicio — Google lo recomienda
+por seguridad. No se pidió desactivar esa política.
+
+El script se autentica en cambio como el propio usuario
+(`tualiado@bedrock.com.co`) vía OAuth, reutilizando el mismo
+`oauth_client.json`/`token.json` que ya usa `Herramientas/mcp-servers/drive-mcp/`
+del repo (con scope `https://www.googleapis.com/auth/drive` ya autorizado),
+copiados a `~/.bedrock-tools/oauth_client.json` y `~/.bedrock-tools/token.json`.
+No hay cuenta de servicio, no hay clave privada, no hay Domain-Wide Delegation,
+no hay identidad "robot" separada — el script actúa exactamente con los
+mismos permisos que el propio usuario, sobre el mismo Drive que ya usa a
+diario. Esto es distinto del conector interactivo que un asistente usa
+dentro de una conversación para buscar/leer/compartir archivos puntuales
+— esa vía es de lectura/escritura selectiva y queda registrada en el chat;
+la del sync es automática, en segundo plano, y actúa sobre el árbol
+completo del repo cada vez que corre (aunque comparte la misma credencial
+de fondo).
 
 ### 5.3 Por qué es de una sola máquina — regla rígida
 
@@ -149,41 +162,31 @@ Reglas que se derivan de eso:
   opera la máquina debe saber que eso es una condición de riesgo mientras
   dure ese trabajo.
 
-### 5.4 Antes de activarlo en este repo
+### 5.4 Estado de activación en este repo
 
-Falta un dato real que no se puede inventar: **el ID de la Unidad Compartida de
-Drive destino** para este repo — nueva, o una carpeta dentro de una
-existente. Con ese ID, el resto es copiar `bedrock_drive_sync.py`, apuntarlo a
-este repo (`BEDROCK_REPO`) y a ese ID (`BEDROCK_DRIVE_SHARED_DRIVE_ID`),
-confirmar que la cuenta de servicio tiene acceso a esa Unidad Compartida, y
-replicar el hook `post-commit` local (no versionado) en esta máquina
-únicamente. El script vive en `~/.bedrock-tools/bedrock_drive_sync.py`.
+**Ya activo.** El ID de la Unidad Compartida de Drive destino es
+`0AEVROSTy1h7gUk9PVA` (Unidad "Bedrock IA"). El script vive en
+`~/.bedrock-tools/bedrock_drive_sync.py`, las credenciales OAuth en
+`~/.bedrock-tools/oauth_client.json` y `~/.bedrock-tools/token.json` (sección
+5.2). Falta únicamente exportar `BEDROCK_REPO` y `BEDROCK_DRIVE_SHARED_DRIVE_ID`
+en el perfil de shell de esta máquina, y replicar el hook `post-commit` local
+(no versionado) — instrucciones completas al final del propio script.
 
-### 5.5 Domain-Wide Delegation — alcance ampliado, decisión consciente
+### 5.5 Nota histórica — intento de cuenta de servicio con Domain-Wide Delegation
 
-**Decisión del 21 de septiembre de 2026:** la cuenta de servicio se configuró
-con Domain-Wide Delegation sobre el Workspace de `bedrock.com.co`, impersonando
-a `tualiado@bedrock.com.co` (variable `BEDROCK_DRIVE_IMPERSONATE`).
-
-Esto cambia el modelo de riesgo respecto al diseño original de la sección 5:
-
-- **Diseño original:** la cuenta de servicio solo veía lo que se compartía
-  explícitamente con ella (la Unidad Compartida del espejo). Un error del
-  script quedaba contenido a esa carpeta.
-- **Con Domain-Wide Delegation activo:** la cuenta de servicio puede actuar
-  como `tualiado@bedrock.com.co` con acceso a **todo su Drive**, no solo a la
-  Unidad Compartida del espejo — incluye documentos de todos los clientes,
-  contabilidad, y cualquier carpeta personal en ese Drive.
-
-Esta ampliación fue una decisión explícita para permitir usos futuros más
-allá del espejo del repo (leer/escribir en cualquier carpeta, crear y
-compartir archivos con terceros, administrar permisos de otras personas),
-aceptando el riesgo de que un error en cualquier script que use esta
-credencial tiene un radio de explosión de "todo el Drive de Juan Manuel", no
-solo una carpeta. Si se revierte esta decisión, hay que desactivar la
-delegación en `admin.google.com` → Seguridad → Controles de API →
-Delegación en todo el dominio, y quitar `BEDROCK_DRIVE_IMPERSONATE` del
-entorno.
+El 21 de septiembre de 2026 se intentó el diseño alternativo de una cuenta de
+servicio (`robot-claude@bedrock-ia-integrations.iam.gserviceaccount.com`) con
+Domain-Wide Delegation, que habría dado acceso a **todo el Drive** de
+`tualiado@bedrock.com.co` (no solo la Unidad Compartida del espejo) — una
+ampliación de riesgo aceptada conscientemente en su momento. Ese diseño
+quedó descartado el 22 de septiembre al descubrir que la política de
+organización `iam.disableServiceAccountKeyCreation` bloquea la generación de
+la clave JSON que ese mecanismo requería. Se optó por el diseño de la
+sección 5.2 en su lugar, que es de hecho más simple y evita crear una
+identidad separada con alcance ampliado. La Unidad Compartida y la
+delegación ya configuradas en admin.google.com para esa cuenta de servicio
+quedan sin uso — se pueden desactivar si se quiere limpiar, no son
+necesarias para el mecanismo vigente.
 
 ## 6. Herramientas
 
