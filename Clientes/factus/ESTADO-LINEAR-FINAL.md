@@ -74,7 +74,9 @@
 
 ## Resumen de Estado
 
-### ✅ CERRADAS (7 tareas)
+### ✅ CERRADAS (11 tareas totales)
+
+**Tareas de Documentación Entregable (7):**
 - BEDROCK-71: TYC Cliente Final
 - BEDROCK-65: SLA Consolidado
 - BEDROCK-66: Contrato Marco Reseller
@@ -83,10 +85,13 @@
 - BEDROCK-72: Firma Electrónica
 - BEDROCK-73: Matriz Responsabilidades
 
-**Total Cerradas:** 7/7 (100%)
+**Tareas Conceptuales (Cubiertas por Entregables, cerradas 28 sep 2026):**
+- BEDROCK-61: Esquema de ANS (→ Contrato Anexo I + TYC Sección 4.2)
+- BEDROCK-62: Contactar Proveedor - Retracto (→ Contrato Anexo III + TYC Sección 9)
+- BEDROCK-63: Enviar Documento Modelo Negocio (→ Contrato Cláusula I + TYC Sección 2 + INDICE.md)
+- BEDROCK-64: Documentar Canales Soporte (→ Contrato Anexo I + TYC Sección 15)
 
-### ❓ ESTADO DESCONOCIDO EN LINEAR
-Nota: Las tareas mencionadas por el usuario como "Esquema ANS", "Contactar Proveedor - Retracto", "Enviar Documento Modelo Negocio", "Documentar Canales Soporte" pueden ser tareas conceptuales que no tienen ID específico en Linear, o están con nombre diferente. Todas están **CUBIERTAS** por los entregables finales (ver AUDITORIA-LINEAR-ENTREGABLES.md).
+**Total Cerradas:** 11/11 (100%) — Proyecto Factus completamente cerrado.
 
 ---
 
