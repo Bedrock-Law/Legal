@@ -10,14 +10,34 @@ docname: "TYC-Cliente-Final-Factus-v1"
 
 # Resumen Ejecutivo
 
-Estos Términos y Condiciones regulan el acceso y uso de la plataforma de facturación electrónica de **FACTUS S.A.S.** (en adelante, **"FACTUS"** o **"la Plataforma"**) por parte de empresas y personas naturales que deseen emitir documentos electrónicos (Facturas, Notas Débito, Notas Crédito, Documentos Soporte, Nómina Electrónica) ante la Dirección de Impuestos y Aduanas Nacionales (**"DIAN"**).
+Estos Términos y Condiciones ("TyC") constituyen un contrato de adhesión que rige la prestación de servicios tecnológicos de facturación electrónica por parte de **FACTUS S.A.S.**, sociedad anónima simplificada identificada con NIT 901.724.254-1 (en adelante, **"FACTUS"**, **"Prestador"** o **"Plataforma"**), hacia personas naturales o jurídicas con capacidad legal que deseen utilizar la infraestructura, aplicaciones y servicios de FACTUS para emitir, radicar y consultar estados de documentos electrónicos tributarios (Facturas Electrónicas, Notas Débito, Notas Crédito, Documentos Soporte Electrónicos, Nómina Electrónica) ante la Dirección de Impuestos y Aduanas Nacionales ("DIAN").
 
-**Punto crítico:** FACTUS es un canal tecnológico. FACTUS no es contador, no es abogado, no determina si tus documentos cumplen normas tributarias. Tú (Cliente) eres responsable de:
-- Validar que los datos en tus documentos son correctos y legales.
-- Cumplir normas tributarias de la DIAN.
-- Cargue de rangos, solicitud de habilitaciones y trámites ante DIAN (si aplica).
+**Alcance Funcional de FACTUS — Cláusula Delimitadora:**
 
-Si incumples normas tributarias, FACTUS no es responsable. La responsabilidad es tuya y puede resultar en multa, auditoría o sanción de la DIAN.
+FACTUS actúa exclusivamente como **proveedor de infraestructura y servicios tecnológicos**. En su rol, FACTUS:
+
+- Proporciona acceso a plataforma para emisión de documentos bajo estándares técnicos y seguridad informática conforme auditorías DIAN.
+- Radicar documentos ante DIAN conforme protocolos de comunicación vigentes.
+- Genera comprobantes técnicos de transmisión (timestamp, número de radicación, estado DIAN).
+
+FACTUS **no actúa, no posee la calidad de, y expresamente se excluye de**:
+
+- Contador público, asesor tributario, o gestor tributario de contribuyente alguno.
+- Abogado, asesor legal, o intérprete de disposiciones normativas tributarias.
+- Validador, auditor, o certificador de exactitud, legalidad, o conformidad tributaria de documentos.
+- Responsable ante DIAN por datos, cálculos, cumplimiento de obligaciones o actos del Cliente.
+
+**Responsabilidad del Cliente — Cláusula Asignadora:**
+
+El Cliente, en su calidad de **contribuyente responsable ante DIAN**, asume la responsabilidad intransferible de:
+
+- Validación integral de datos: razón social, NIT, datos de terceros, valores, impuestos, cálculos conforme normas DIAN.
+- Cumplimiento de obligaciones tributarias: declaraciones ante DIAN, pago de impuestos, cargas de rangos, solicitud de habilitaciones, procedimientos administrativos.
+- Legalidad de documentos emitidos: exactitud de información, cumplimiento tributario, ausencia de fraude o incumplimiento conforme normas vigentes.
+
+**Consecuencia de Incumplimiento — Cláusula Asunción de Riesgos:**
+
+Incumplimiento de obligaciones tributarias por parte del Cliente resulta en responsabilidad tributaria, administrativa y penal del Cliente ante DIAN y autoridades competentes. FACTUS no asume, no es responsable de, y no indemniza por multas, sanciones, intereses de mora, o consecuencias derivadas de incumplimiento tributario del Cliente.
 
 ---
 
@@ -26,9 +46,8 @@ Si incumples normas tributarias, FACTUS no es responsable. La responsabilidad es
 **Nombre:** FACTUS S.A.S.  
 **NIT:** 901.724.254-1  
 **Domicilio:** San Gil, Santander, Colombia  
-**Sitio web:** www.factus.com.co (o URL del reseller)  
+**Sitio web:** www.factus.com.co  
 **Correo de soporte:** soporte@factus.com.co  
-**Teléfono:** [número vigente]  
 **Horarios de atención:** Lunes a viernes, 8:00 a.m. a 6:00 p.m. (hora Colombia)
 
 FACTUS es un **Facturador Electrónico autorizado por la DIAN** conforme a Resolución 000165 de 2023 y Oficio DIAN 13246 de 2025. Esto implica:
@@ -71,21 +90,46 @@ FACTUS es un **Facturador Electrónico autorizado por la DIAN** conforme a Resol
 
 ---
 
-# 3. Condiciones de Acceso y Aceptación
+# 3. Condiciones de Acceso — Capacidad y Requisitos Habilitantes
 
-3.1 **Aceptación de TyC:** Al hacer clic en "ACEPTO" o usar la plataforma, aceptas completamente estos Términos y Condiciones. Si no aceptas, no puedes usar el servicio.
+3.1 **Consentimiento Informado y Aceptación Vinculante:**
 
-3.2 **Requisitos para Contratar:**
+La aceptación de estos TyC constituye manifestación de voluntad libre, informada y consciente del Cliente de vincularse a los términos, condiciones, obligaciones, limitaciones de responsabilidad, y exclusiones contenidas en este instrumento. La aceptación genera obligaciones exigibles conforme derecho civil colombiano (Código Civil, arts. 1506-1545).
 
-- Ser empresa o persona natural inscrita en el RUT de la DIAN.
-- Tener Número de Identificación Tributaria (NIT) vigente.
-- Tener autorización de rango de numeración ante la DIAN (si aplica).
-- No estar incluido en listas de lavado de activos, financiación del terrorismo, o PEP (Persona Políticamente Expuesta).
-- Cumplir con legislación tributaria vigente.
+**Modalidades de Aceptación:**
 
-3.3 **Verificación Identidad:** FACTUS se reserva derecho de solicitar documentos de verificación (RUT, Certificado de Existencia y Representación Legal, cédula de representante, etc.) conforme obligaciones de prevención de lavado de activos (Ley 1960 de 2019).
+- **(a) Forma Electrónica:** Clic en botón "ACEPTO" tras presentación en pantalla de íntegra de estos TyC, con checkbox de confirmación explícita.
+- **(b) Uso de Plataforma:** Ingreso de credenciales y utilización de servicios postfirma electrónica constituye aceptación tácita.
 
-3.4 **Menores de Edad:** No está permitido a menores de 18 años contratar. Acceso es solo para personas con capacidad legal.
+**Efecto:** Aceptación genera contrato vinculante entre FACTUS y Cliente. Negación posterior de aceptación no es procedente si Cliente ejerció acciones en plataforma (emisiones, consultas, descargas).
+
+3.2 **Requisitos Habilitantes — Capacidad Jurídica:**
+
+Para acceder a servicios de FACTUS, Cliente debe cumplir:
+
+- **Capacidad Legal:** Ser persona natural mayor de dieciocho (18) años, o persona jurídica constituida conforme leyes colombianas, con capacidad legal plena para contratar.
+- **Inscripción Tributaria:** Estar inscrito en el Registro Único Tributario (RUT) ante DIAN con estado de inscripción vigente (no cancelado, suspendido, o incapacitado).
+- **NIT Vigente:** Poseer Número de Identificación Tributaria (NIT) válido, vigente, y en estado de cumplimiento ante DIAN.
+- **Rangos de Numeración Autorizados:** Contar con autorización de rangos de numeración de documentos ante DIAN conforme Resoluciones vigentes (aplica para emisión de facturación electrónica).
+- **Ausencia de Restricciones Legales:** No estar incurso en causal de incapacidad legal conforme Código Civil (demencia, prodigalidad, sordomudez sin instrucción, ausencia).
+- **Cumplimiento de Prevención de Lavado de Activos:** No estar incluido en listas de Personas Políticamente Expuestas (PEP) conforme Unidad de Información Financiera (UIF); no tener antecedentes de vinculación con operaciones de lavado de activos o financiamiento del terrorismo.
+
+3.3 **Diligencia Debida y Verificación de Identidad:**
+
+FACTUS, en cumplimiento de obligaciones de debida diligencia (due diligence) conforme **Ley 1960 de 2019** (Prevención de Lavado de Activos) y regulaciones de la Superintendencia Financiera, se reserva derecho de:
+
+- Solicitar y validar documentos de identificación: Registro Único Tributario (RUT), Certificado de Existencia y Representación Legal (para personas jurídicas), cédula de identidad del representante legal.
+- Realizar consultas en bases de datos de autoridades competentes (UIF, DIAN, Procuraduría, Fiscalía).
+- Suspender acceso de forma temporal o definitiva si información proporcionada es falsa, incompleta, o si Cliente resulta incurso en restricción legal.
+
+3.4 **Exclusión por Incapacidad — Cláusula de Cesación de Acceso:**
+
+FACTUS puede **rechazar, suspender, o terminar acceso** sin necesidad de aviso previo a Cliente que:
+
+- Sea menor de edad o incapaz conforme ley.
+- Esté incurso en causal de inhabilitación legal (antecedentes penales por fraude tributario, tesorería, terrorismo; insolvencia conforme ley de insolvencia; inhabilitación profesional).
+- Presente indicios de vinculación con operaciones de lavado de activos, financiamiento del terrorismo, o incumplimiento de normas de prevención (Ley 1960/2019).
+- Haya proporcionado información falsa en proceso de verificación.
 
 ---
 
@@ -139,14 +183,42 @@ FACTUS es un **Facturador Electrónico autorizado por la DIAN** conforme a Resol
 - Modificar, descompilar o intentar obtener acceso a componentes internos de la plataforma.
 - Cargar documentos o información que sabes son incompletos, incorrectos, o incumplen obligaciones tributarias ante DIAN.
 
-5.3 **Validación Propios Datos:** El Cliente es **único responsable** de validar que:
+5.3 **Validación y Certificación de Datos — Responsabilidad Integral del Cliente:**
 
-- Razón social y NIT son correctos.
-- Datos de clientes/proveedores incluidos en documentos son exactos.
-- Valores, cantidades e impuestos están bien calculados.
-- No hay duplicación de numeración.
+El Cliente es **único responsable y certificador** de exactitud, legalidad y conformidad tributaria de información contenida en documentos antes de radicar ante DIAN. Responsabilidad integral incluye:
 
-FACTUS NO valida nada de esto antes de radicar. Si cargues datos incorrectos y la DIAN rechaza documentos, **es tu responsabilidad**.
+**Datos Identificatorios:**
+- Razón social, NIT, dígito de verificación coincidente con registros DIAN.
+- Dirección fiscal, teléfono, email conforme registro en RUT.
+- Datos de representante legal: nombre, cédula, cargo, autorización.
+
+**Datos de Terceros:**
+- Información de clientes/compradores, proveedores/vendedores: nombres exactos, NIT/cédula válido, dirección.
+- Garantía de que terceros incluidos en documentos autorizaron su inclusión, o que datos son de origen público/tributario.
+- Responsabilidad por reclamaciones de terceros si estos alegan falta de autorización.
+
+**Datos Económicos:**
+- Valores base, impuestos, retenciones calculados conforme normas tributarias (Estatuto Tributario, Resoluciones DIAN, jurisprudencia).
+- Cálculos de IVA, impuesto a las ventas, retención en la fuente, aportes parafiscales.
+- Ausencia de errores aritmético o de clasificación que resulten en incumplimiento tributario.
+
+**Cumplimiento de Normas Procedimentales:**
+- Consecutivo/numeración conforme rango autorizado ante DIAN.
+- Ausencia de duplicación de documentos.
+- Formato técnico conforme estándares DIAN vigentes.
+
+**Garantía Expresa:** Cliente garantiza que información contenida en documentos es exacta, legal, y tributariamente conforme. Cliente acepta responsabilidad integral por consecuencias de información inexacta, ilegal, o tributariamente deficiente.
+
+**Exclusión de Validación por FACTUS:**
+
+FACTUS **no realiza, no asume, y no es responsable de**:
+
+- Validación previa a radicación de exactitud de datos.
+- Auditoría de legalidad tributaria.
+- Verificación de autorización de terceros.
+- Cálculo o verificación de valores, impuestos, retenciones.
+
+FACTUS transmite documentos "tal cual" Cliente los cargue. Si DIAN rechaza documento por error de datos, cálculo o incumplimiento tributario, responsabilidad recae exclusivamente en Cliente. No hay derecho a reembolso por rechazos atribuibles a Cliente.
 
 ---
 
