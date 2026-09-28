@@ -61,14 +61,14 @@ Protecciones principales:
 
 # Cláusula Primera — Objeto del Contrato
 
-1.1 **Objeto y Servicios Incluidos:** El objeto de este Contrato es que FACTUS preste servicios tecnológicos de facturación electrónica, acceso a su plataforma digital segura, y la infraestructura necesaria para que el RESELLER pueda:
+1.1 **Objeto y Servicios Incluidos:** Por este Contrato, FACTUS, en su calidad de Facturador Electrónico autorizado por la DIAN (Resolución 000165/2023, Oficio DIAN 13246/2025), proporciona acceso a su plataforma tecnológica integral para la emisión y radicación de documentos electrónicos ante la DIAN, permitiendo al RESELLER:
 
-- Emitir Facturas Electrónicas, Notas Débito y Notas Crédito en nombre de sus clientes finales.
-- Emitir Documentos Soporte.
-- Emitir Nómina Electrónica (si aplica según paquete contratado).
-- Radicación ante la DIAN a través de los canales electrónicos designados.
-- Consultar reportes técnicos de radicación, estados de documentos y eventos de devolución DIAN.
-- Acceso a entorno sandbox para pruebas antes de puesta en operación de clientes finales.
+- **Emisión de Documentos Tributarios:** Facturas Electrónicas, Notas Débito, Notas Crédito y Documentos Soporte Electrónicos conforme Resolución 000019/2012 DIAN, en nombre de sus clientes finales identificados con certificación digital vigente.
+- **Emisión de Nómina Electrónica:** Conforme Resolución 1796/2014 DIAN, cuando el paquete contratado lo incluya.
+- **Gestión de Eventos Radian:** Consulta, carga y validación de eventos de recepción de facturación ante sistema Radian de la DIAN.
+- **Radicación Electrónica:** Transmisión segura de documentos a través de los canales de comunicación designados por la DIAN, con autenticación por certificado digital de titularidad del cliente final.
+- **Reportes Técnicos de Transacción:** Consulta en tiempo real del estado de documentos (aceptación DIAN, rechazos técnicos, eventos de rechazo), trazabilidad de transmisiones, y descarga de comprobantes de radicación.
+- **Entorno de Validación Previa (Sandbox):** Acceso a ambiente de pruebas con datos de demostración para validación de procesos, integraciones y configuraciones antes de operación en ambiente de producción.
 
 1.2 **Modalidades de Servicio:** El RESELLER elige una de dos modalidades:
 
@@ -196,16 +196,16 @@ Si el certificado se vence por culpa del RESELLER (no renovó a tiempo), FACTUS 
 - No intentar acceder a sistemas, bases de datos o información de otros usuarios.
 - Mantener contraseñas seguras y cambiarlas periódicamente; reportar acceso no autorizado a la mayor brevedad.
 - Ser el único responsable de la relación comercial, técnica y legal con sus clientes finales.
-- Asegurar que sus clientes carguen correctamente la documentación ante DIAN usando la plataforma FACTUS o canales que DIAN designe; si un cliente no lo hace, FACTUS no responde.
+- Verificar que sus clientes finales cumplan con los requisitos previos a la emisión de documentos: certificación digital vigente, rangos de numeración autorizados ante la DIAN, datos tributarios exactos, y calidad de información conforme normas vigentes. El RESELLER es responsable de guiar, capacitar y validar que el cliente final cargue información correcta en la plataforma FACTUS o en canales alternativos que la DIAN designe. FACTUS únicamente procesa y transmite la información recibida; no realiza validación de legalidad, exactitud o cumplimiento tributario de los documentos emitidos.
 - Cumplir con obligaciones tributarias propias (IVA, retención, renta, beneficiarios finales).
 - No revender ni transferir su acceso a terceros sin consentimiento escrito de FACTUS.
 
-6.2 **Prohibiciones Expresas:**
+6.2 **Prohibiciones Expresas:** El RESELLER se abstendrá de:
 
-- No intentar "hackear", acceder indebidamente o modificar el código fuente de la plataforma.
-- No usar la plataforma para fines ilegales (lavado de activos, fraude, etc.).
-- No cargar documentos que sabidamente incumplen normas tributarias.
-- No reproducir, copiar ni distribuir el software de FACTUS.
+- Intentar acceso no autorizado, interferencia o modificación de la infraestructura tecnológica de FACTUS, incluidos servidores, bases de datos, código fuente, aplicaciones, interfaces de programación (API) o cualquier componente del sistema. Se prohiben expresamente técnicas de ingeniería inversa, análisis de vulnerabilidades, ataques de denegación de servicio (DDoS) o pruebas de penetración sin autorización previa por escrito.
+- Utilizar la plataforma para emisión, validación o radicación de documentos que, a su conocimiento o del cliente final, adolezcan de falsedad en datos, incumplan normas tributarias, faciliten operaciones de lavado de activos, financiamiento del terrorismo o fraude, conforme Ley 1960/2019 (prevención de lavado de activos) y Código Penal.
+- Reproducir, adaptar, traducir, modificar, descompilar, crear trabajos derivados, o distribuir bajo ninguna forma (comercial o no) el software, aplicaciones, metodologías, especificaciones o documentación técnica de FACTUS.
+- Usar credenciales de acceso asignadas en nombre de terceros no autorizados, o transferir, ceder, gravar o permitir que terceros accedan a la plataforma sin consentimiento expreso de FACTUS.
 
 ---
 
@@ -237,46 +237,39 @@ Si el certificado se vence por culpa del RESELLER (no renovó a tiempo), FACTUS 
 
 # Cláusula Octava — Responsabilidad de FACTUS (Limitada)
 
-8.1 **Responsabilidad Única de FACTUS:** FACTUS responde exclusivamente por:
+8.1 **Responsabilidad de FACTUS:** FACTUS asume responsabilidad exclusivamente sobre:
 
-- Mantener disponible la plataforma conforme al SLA de la Cláusula Cuarta.
-- No perder ni corromper datos una vez almacenados en su servidor (salvo incidentes de fuerza mayor).
+- **Disponibilidad de la Plataforma:** Mantener operativa la infraestructura tecnológica, servidores, canales de comunicación y servicios conforme a los niveles de servicio (SLA) especificados en la Cláusula Cuarta y Anexo I de este Contrato.
+- **Integridad de Datos Almacenados:** Preservar la información transmitida por el RESELLER durante la vigencia del Contrato, sin pérdida, corrupción o alteración no autorizada, salvo por causas de fuerza mayor (desastres naturales, actos de terrorismo, conflictos armados, epidemias) documentadas y comunicadas oportunamente.
+- **Confidencialidad:** Guardar reserva absoluta sobre datos del RESELLER y del cliente final, cumpliendo Ley 1581/2012 y Decreto 1377/2013 de protección de datos personales.
+- **Autenticación Segura:** Mantener mecanismos de autenticación (certificados digitales, credenciales) que cumplan estándares de seguridad vigentes (Decreto 2364/2012 para firma electrónica).
 
-8.2 **Lo que NO Responde FACTUS:**
+8.2 **Exoneración de Responsabilidad — Actos Fuera del Alcance de FACTUS:**
 
-- **Validación de documentos:** Si un cliente final emite una factura con datos incorrectos, FACTUS no responde. Es responsabilidad del cliente final validar antes de emitir.
-- **Radicación DIAN:** Si un documento es rechazado por la DIAN por error del cliente final (rango no autorizado, NIT incorrecto, datos tributarios falsos), FACTUS no responde. FACTUS solo transmite lo que recibe.
-- **Reportes indebidos:** Si la DIAN rechaza un lote de documentos, la causa generalmente es error del cliente final, no de FACTUS.
-- **Compliance tributario:** Cada cliente final es responsable de cumplir con Resoluciones DIAN, declaraciones de impuestos, cargas de rangos, etc. FACTUS es un canal, no asesor tributario.
-- **Daño emergente o lucro cesante:** Pérdida de ingresos del cliente final por no poder emitir, multas impuestas por la DIAN a su negocio, etc. FACTUS no indemniza eso.
+FACTUS **no responde** por:
 
-8.3 **Límite Cuantitativo de Responsabilidad:** Si FACTUS incurriera en culpa demostrada (indisponibilidad no justificada, pérdida de datos), su responsabilidad se limita al monto de **dos (2) meses** del valor contratado, sin exceder este límite bajo ninguna circunstancia.
+- **Validación de Documentos:** Análisis de exactitud, completitud, veracidad o legalidad de información contenida en documentos electrónicos antes de su transmisión. El cliente final y el RESELLER son titulares exclusivos de la responsabilidad por la conformidad de datos con normas tributarias vigentes (Resolución 000019/2012 DIAN, Resolución 1796/2014, Estatuto Tributario).
+- **Decisiones de Aceptación o Rechazo DIAN:** La aceptación, rechazo, devolución, cambio de estado o cualquier acción de la plataforma DIAN sobre documentos depende de validaciones internas de la DIAN que escapan del control técnico de FACTUS. FACTUS únicamente transmite documentos; no ejerce control sobre criterios de validación DIAN.
+- **Incumplimiento Tributario del Cliente Final:** Obligaciones de declaración de impuestos, pago de impuestos, cumplimiento de resoluciones DIAN, cargas de rangos de numeración, habilitaciones de actividades económicas, y cualquier obligación tributaria sustantiva son responsabilidad exclusiva del contribuyente (cliente final) y el RESELLER ante la autoridad fiscal.
+- **Daño Emergente, Lucro Cesante y Daños Indirectos:** Pérdidas de ingresos, costos de operación no realizados, multas tributarias impuestas por autoridades, sanciones administrativas, reclamaciones de terceros, o cualquier daño consecuencial derivado de la suspensión temporal del servicio, indisponibilidad de la plataforma, o rechazo de documentos por la DIAN.
+- **Terceros Contratistas:** Servicios proporcionados por proveedores terceros de certificación digital, autoridades (DIAN, Superintendencia Financiera), prestadores de servicios de telecomunicaciones, o entidades financieras. FACTUS no responde por su actuación, negligencia o incumplimiento.
 
-8.4 **Indemnidad del RESELLER:** El RESELLER se compromete a defender e indemnizar a FACTUS por:
+8.3 **Límite Cuantitativo de Responsabilidad:** En el evento de incumplimiento demostrado de FACTUS que cause perjuicio material al RESELLER, su obligación de indemnización se limita **estrictamente** a **dos (2) meses del valor mensual contratado**, sin que en ningún caso la indemnidad total pueda exceder esta suma. Esta limitación se aplica a cada evento de incumplimiento y a la suma agregada de todos los eventos durante la vigencia del Contrato.
 
-- Reclamaciones de clientes finales que culpen a FACTUS por errores del cliente final.
-- Incumplimiento tributario del RESELLER ante la DIAN.
-- Uso indebido de la plataforma (intentos de acceso no autorizado, etc.).
-- Cualquier reclamación de terceros basada en documentos emitidos por clientes del RESELLER.
+8.4 **Defensa e Indemnización por Parte del RESELLER:** El RESELLER se obliga a mantener indemne a FACTUS, y a asumir, defender y costear cualquier demanda, reclamación, sanción administrativa o procesal que terceros dirijan contra FACTUS por:
+
+- Errores en datos, falsedad de información o cumplimiento tributario deficiente del cliente final o del RESELLER, aun cuando el tercero reclamante atribuya responsabilidad a FACTUS.
+- Incumplimiento de obligaciones tributarias, laborales, comerciales o civiles del RESELLER ante autoridades o terceros.
+- Uso prohibido, no autorizado o ilícito de la plataforma FACTUS, incluidos intentos de acceso indebido, alteración de información o difusión de malware.
+- Documentos emitidos por clientes finales del RESELLER que contengan información ilegal, fraudulenta o que vulnere derechos de terceros.
 
 ---
 
-# Cláusula Novena — Retracto
+# Cláusula Novena — Derecho de Retracto
 
-9.1 **Derecho de Retracto:** El RESELLER tiene derecho a retractarse de este Contrato dentro de **cinco (5) días hábiles** contados desde la fecha de firma, siempre que:
+**Referencia:** Anexo III — Política de Retracto
 
-- No haya emitido documentos electrónicos en la plataforma.
-- Notifique por escrito a FACTUS indicando su voluntad de retractarse.
-
-9.2 **Efecto del Retracto:**
-
-- FACTUS devuelve el monto pagado, descontando cualquier costo real incurrido (ejemplo: certificado digital ya emitido y no recuperable).
-- Se suspende el acceso a la plataforma inmediatamente.
-- No hay penalización adicional.
-
-9.3 **Retracto por Licencia Individual:** Si el RESELLER adquiere una licencia individual (cliente final), el retracto aplica por esa licencia de forma independiente: 5 días desde que se activa, si el cliente final no ha emitido documentos.
-
-9.4 **No Aplica Retracto Si:** El servicio ya ha sido prestado (documentos emitidos, radicaciones realizadas), no hay retracto. Esta es la naturaleza de un servicio ya consumido.
+El RESELLER reconoce su derecho de retracto conforme Ley 1480/2011 (Estatuto del Consumidor) y Ley 2439/2024 (reforma comercio electrónico), en los términos y condiciones especificados en Anexo III de este Contrato. Los procedimientos, plazos, excepciones y efectos del retracto se desarrollan íntegramente en ese Anexo, el cual forma parte integral de este Contrato.
 
 ---
 
@@ -318,57 +311,80 @@ Si el certificado se vence por culpa del RESELLER (no renovó a tiempo), FACTUS 
 
 ---
 
-# Cláusula Undécima — Garantías y Disclaimer
+# Cláusula Undécima — Garantías y Exenciones de Garantía
 
-11.1 **Garantías Limitadas:** FACTUS garantiza:
+11.1 **Garantías Expresas de FACTUS:**
 
-- Que posee licencia válida de Facturador Electrónico ante la DIAN.
-- Que la plataforma cumple especificaciones técnicas documentadas.
-- Que mantendrá disponibilidad conforme SLA.
+- Posee autorización válida y vigente como Facturador Electrónico ante la DIAN, conforme Resolución 000165/2023 y Oficio 13246/2025, sin restricciones administrativas que afecten la prestación de servicios.
+- La plataforma cumple con especificaciones técnicas documentadas, incluyendo cifrado de datos (TLS 1.2 o superior), autenticación segura conforme Decreto 2364/2012, y arquitectura que garantiza disponibilidad conforme SLA de la Cláusula Cuarta.
+- Mantendrá disponibilidad operativa conforme indicadores de nivel de servicio especificados en Anexo I.
+- Los certificados digitales proporcionados son válidos y emitidos por autoridades de certificación reconocidas por la DIAN.
 
-11.2 **Disclaimer de Garantías:** FACTUS NO garantiza:
+11.2 **Exclusión de Garantías Implícitas:**
 
-- Que todos los documentos emitidos serán aceptados por la DIAN (depende de la calidad de datos del cliente final).
-- Que la plataforma será "perfecta" o libre de errores (pero reporta y corrige defectos conforme al SLA).
-- Que los servicios cumplirán todas las expectativas del RESELLER (eso requiere verificación en ambiente sandbox antes de puesta en operación).
-- Que clientes finales no serán auditados o multados por la DIAN (eso es riesgo tributario del cliente final, no de FACTUS).
+FACTUS **no garantiza:**
 
-11.3 **"Tal Cual":** La plataforma se proporciona en estado operacional "tal cual", con los recursos disponibles. Mejoras futuras son discrecionales de FACTUS.
+- **Aceptación de Documentos por DIAN:** La aceptación, rechazo, cambio de estado o cualquier decisión de la plataforma DIAN sobre un documento depende exclusivamente de validaciones de contenido, formato y cumplimiento tributario que realiza la DIAN. FACTUS transmite documentos conforme especificaciones técnicas; la decisión DIAN es independiente de la calidad técnica de la transmisión.
+- **Ausencia Absoluta de Errores:** La plataforma puede contener defectos, incompatibilidades temporales, o limitaciones operativas. FACTUS se compromete a identificar, documentar y corregir defectos conforme a prioridades SLA (Anexo I), pero no garantiza plataforma libre de errores.
+- **Conformidad con Expectativas del RESELLER:** El RESELLER debe validar, en ambiente sandbox, que la plataforma satisface sus requerimientos operativos, de integración y de datos antes de puesta en operación. FACTUS proporciona documentación técnica y acceso a sandbox; la responsabilidad de validación es del RESELLER.
+- **Cumplimiento Tributario de Clientes Finales:** Uso de la plataforma por un cliente final no implica cumplimiento automático de obligaciones tributarias. FACTUS es un canal tecnológico, no asesor tributario ni auditor interno.
+- **Protección Contra Auditoría o Sanciones DIAN:** Ningún uso correcto de la plataforma exime a un cliente final de auditoría, verificación o sanciones que la DIAN determine pertinentes sobre bases tributarias del contribuyente.
 
----
-
-# Cláusula Duodécima — Política de Retracto (Resumen Ejecutivo)
-
-**Referencia:** Anexo de Política de Retracto (al final de este documento).
-
-El RESELLER puede retractarse de nuevas licencias en los términos de la Cláusula Novena y el Anexo adjunto. Se reconoce que un servicio de acceso a plataforma, una vez prestado, no es retractable si ya se ha consumido (documentos emitidos, radicaciones realizadas).
+11.3 **Entrega "Tal Cual" (As-Is):** La plataforma y servicios se entregan en estado operacional actual ("as-is"), con funcionalidades y limitaciones técnicas existentes al momento de contratación. Mejoras, nuevas funcionalidades, o ampliación de capacidades son iniciativas discrecionales de FACTUS y no constituyen obligación contractual.
 
 ---
 
-# Cláusula Décima Tercera — Solución de Controversias
+# Cláusula Duodécima — Solución de Controversias
 
-13.1 **Intento de Acuerdo Amistoso:** Cualquier controversia será resuelta en primer lugar mediante diálogo entre FACTUS y el RESELLER. Si no se resuelve en 10 días, procede mediación.
+13.1 **Procedimiento Escalonado de Resolución:**
 
-13.2 **Mediación y Arbitraje:** Si el intento amistoso falla, las partes acuerdan:
+- **(a) Gestión Directa:** Cualquier controversia, discrepancia o reclamación será comunicada por escrito a la otra parte en máximo 10 días hábiles desde el evento que la origina. Las partes se comprometen a diálogo directo para resolución expedita durante 10 días calendario subsecuentes.
 
-- Mediación ante el Centro de Conciliación de la Cámara de Comercio de la jurisdicción del RESELLER.
-- Si la mediación no tiene éxito, la controversia se somete a la **jurisdicción ordinaria** (juzgados civiles) del domicilio del RESELLER.
+- **(b) Mediación Conciliatoria:** Si el diálogo directo no produce acuerdo, la parte interesada podrá activar proceso de mediación ante Centro de Conciliación de la Cámara de Comercio competente según domicilio del RESELLER. Las partes desiguen mediador dentro de 5 días hábiles e intentan acuerdo en máximo 20 días hábiles.
 
-13.3 **Ley Aplicable:** Este Contrato se rige por las leyes de la República de Colombia.
+- **(c) Jurisdicción Ordinaria:** Si mediación no produce resultado, las partes consienten en que la controversia sea conocida y resuelta por juzgados civiles del circuito donde domicilia el RESELLER, renunciando a cualquier otra jurisdicción. Se excluye expresamente arbitraje.
+
+13.2 **Ley Aplicable y Normas Interpretativas:** Este Contrato se interpreta, ejecuta y resuelve conforme a las leyes sustantivas y procedimentales de la República de Colombia, en especial:
+
+- Código Civil (obligaciones y contratos)
+- Código de Procedimiento Civil (acciones y recursos)
+- Resoluciones DIAN y normativa tributaria vigente
+- Ley 1480/2011 (Estatuto del Consumidor, en lo aplicable)
+- Ley 1581/2012 y Decreto 1377/2013 (protección datos personales)
+- Ley 1960/2019 (prevención lavado de activos)
+
+13.3 **Cálculo de Términos:** Todos los plazos mencionados en este Contrato se cuentan en días calendario, excepto cuando se especifique "días hábiles" (excluyendo sábados, domingos y festivos colombianos). El término vencido sobre festivo se traslada al siguiente día hábil.
 
 ---
 
-# Cláusula Décima Cuarta — Cláusula Penal
+# Cláusula Décima Tercera — Cláusula Penal Pactada
 
-14.1 **Incumplimiento del RESELLER:** Si el RESELLER incumple el pago por más de 60 días, además de intereses moratorios, FACTUS puede cobrar una penalidad equivalente a un (1) mes del valor contratado, como liquidación anticipada de daños.
+14.1 **Incumplimiento en Pago por Parte del RESELLER:**
 
-14.2 **Incumplimiento Grave de FACTUS:** Si FACTUS incumple obligaciones críticas (SLA, confidencialidad), el RESELLER puede reclamar una penalidad equivalente a un (1) mes del valor contratado, que se deduce del siguiente pago adeudado o se reembolsa si la relación termina.
+Si el RESELLER incumple la obligación de pago de la factura emitida por FACTUS por período superior a sesenta (60) días calendario:
 
-14.3 **Ejecución de Pena:** La cláusula penal es ejecutable sin necesidad de comprobación adicional de daños. Esto no impide reclamación de daños mayores si se prueban en juicio.
+- Genera automáticamente el derecho de FACTUS a exigir intereses moratorios conforme tasa máxima permitida por Decreto 1116/2013 o normativa vigente, desde el día siguiente al vencimiento.
+- Genera, además, penalidad convencional equivalente a **uno (1) mes completo del valor mensual contratado**, como liquidación convencional de perjuicios derivados de la mora (costo de gestión de cobro, costo de oportunidad, detrimento crediticio).
+- La penalidad se cobra junto con el capital adeudado e intereses, sin necesidad de acción judicial previa ni comprobación adicional de daño.
+
+14.2 **Incumplimiento Grave de FACTUS:**
+
+Si FACTUS incumple obligaciones críticas definidas como tal en este Contrato —específicamente: (i) mantener disponibilidad SLA por período superior a 20 días hábiles sin causa justificada; (ii) divulgación no autorizada de información confidencial del RESELLER; o (iii) pérdida o corrupción de datos del RESELLER sin restauración viable—:
+
+- El RESELLER tiene derecho a reclamar penalidad convencional equivalente a **uno (1) mes completo del valor mensual contratado**, como liquidación anticipada de daños.
+- Esta penalidad se compensa contra pagos adeudados por FACTUS o por el RESELLER en siguiente ciclo de facturación, o se reembolsa en efectivo en máximo 10 días hábiles si la relación contractual termina.
+- La reclamación requiere notificación escrita detallando el incumplimiento; FACTUS tiene 5 días hábiles para presentar descargos.
+
+14.3 **Naturaleza y Ejecución de la Cláusula Penal:**
+
+- La cláusula penal tiene carácter de liquidación convencional de perjuicios (cláusula penal resarcitoria), no sancionatoria.
+- Es exigible de pleno derecho sin necesidad de acción judicial previa, reconocimiento de deuda o comprobación adicional de daños efectivos.
+- El incumplidor puede oponerse si prueba que no hubo daño o que fue insignificante; la carga probatoria recae en quien se opone.
+- El cobro de la penalidad convencional no impide reclamación posterior de daños y perjuicios adicionales si se prueban en juicio y exceden la suma de la cláusula.
 
 ---
 
-# Cláusula Décima Quinta — Confidencialidad y Propiedad Intelectual
+# Cláusula Décima Cuarta — Confidencialidad y Propiedad Intelectual
 
 15.1 **Información Confidencial:**
 
