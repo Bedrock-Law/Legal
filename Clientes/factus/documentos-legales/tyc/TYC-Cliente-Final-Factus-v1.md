@@ -31,16 +31,18 @@ Si incumples normas tributarias, FACTUS no es responsable. La responsabilidad es
 **Teléfono:** [número vigente]  
 **Horarios de atención:** Lunes a viernes, 8:00 a.m. a 6:00 p.m. (hora Colombia)
 
-FACTUS es un **Facturador Electrónico autorizado por la DIAN** conforme a la Resolución 000165 de 2023 y al Oficio 13246 de 2025. Esto significa:
-- Plataforma cumple estándares técnicos DIAN.
-- Software es seguro y auditado.
-- Radicaciones ante DIAN se transmiten correctamente.
+FACTUS es un **Facturador Electrónico autorizado por la DIAN** conforme a Resolución 000165 de 2023 y Oficio DIAN 13246 de 2025. Esto implica:
 
-**Lo que FACTUS NO es:**
-- No es contador: No asesora sobre tributación.
-- No es abogado: No da asesoría legal.
-- No es la DIAN: No toma decisiones sobre aceptación/rechazo de documentos.
-- No es auditor: No valida si tus datos son correctos.
+- La plataforma ha sido sometida a auditoría técnica DIAN y cumple especificaciones de seguridad, cifrado (TLS 1.2+), autenticación (Decreto 2364/2012), y disponibilidad requeridas.
+- El software es propiedad intelectual de FACTUS; está bajo licencia de uso no exclusiva para el Cliente.
+- Transmisiones ante DIAN se realizan conforme protocolos de comunicación DIAN vigentes; la aceptación o rechazo es decisión exclusiva de sistemas DIAN.
+
+**FACTUS es únicamente un proveedor de tecnología. FACTUS NO actúa como:**
+
+- **Contador público o asesor tributario:** No valida legalidad tributaria, exactitud de datos, cumplimiento de obligaciones ante la DIAN.
+- **Abogado o asesor legal:** No interpreta normas tributarias, no aconseja sobre obligaciones legales o consecuencias incumplimiento.
+- **Autoridad tributaria:** No toma decisiones sobre aceptación, rechazo, cambio de estado de documentos. Esas decisiones son exclusivas de DIAN.
+- **Auditor o validador de información:** No verifica que datos en documentos sean correctos, completos, o legales.
 
 ---
 
@@ -48,13 +50,11 @@ FACTUS es un **Facturador Electrónico autorizado por la DIAN** conforme a la Re
 
 2.1 **Servicios Incluidos:** Acceso a la plataforma de facturación electrónica que permite:
 
-- Emisión de Facturas Electrónicas.
-- Emisión de Notas Débito y Notas Crédito.
-- Emisión de Documentos Soporte.
-- Emisión de Nómina Electrónica (si paquete contratado lo incluye).
-- Consulta de eventos Radian (recepción, aceptación, rechazo).
-- Reportes técnicos sobre radicación ante DIAN.
-- Acceso a sandbox para pruebas.
+- **Emisión de Documentos Tributarios:** Facturas Electrónicas, Notas Débito, Notas Crédito y Documentos Soporte Electrónicos conforme Resolución 000019/2012 DIAN, con generación de comprobantes de radicación en tiempo real.
+- **Emisión de Nómina Electrónica:** Conforme Resolución 1796/2014 DIAN, cuando paquete contratado lo incluya.
+- **Gestión de Eventos Radian:** Consulta en tiempo real de eventos de recepción, aceptación, rechazo y notificaciones generadas por receptor (cliente del Cliente) a través del sistema Radian DIAN.
+- **Reportes Técnicos de Radicación:** Descarga de comprobantes de radicación, estados de transmisión, detalles técnicos de respuesta DIAN, y trazabilidad completa de documentos emitidos.
+- **Ambiente de Pruebas (Sandbox):** Acceso a entorno separado con datos de demostración para validación de procesos, integraciones y flujos antes de operación en ambiente de producción.
 
 2.2 **Modalidades:**
 
@@ -97,11 +97,11 @@ FACTUS es un **Facturador Electrónico autorizado por la DIAN** conforme a la Re
 - El Cliente es responsable de mantener confidencialidad de credenciales.
 - El Cliente es responsable de cualquier actividad en su cuenta (incluso si no fue él quien actúo).
 
-4.2 **Disponibilidad:**
+4.2 **Disponibilidad y Acuerdo de Nivel de Servicio (SLA):**
 
-- FACTUS se compromete a 99 % de disponibilidad en horario hábil (lunes-viernes, 8:00 a.m. - 6:00 p.m.).
-- Esto NO incluye: fines de semana, festivos, mantenimiento programado (notificado 48 horas antes).
-- Eventos no controlables (caída DIAN, problemas ISP, DDoS) NO son responsabilidad de FACTUS.
+- FACTUS garantiza disponibilidad operativa de **99 % del tiempo** durante horario hábil de prestación (lunes a viernes, 8:00 a.m. a 6:00 p.m. hora Colombia). Esto corresponde a máximo 2.1 horas de indisponibilidad mensual en ese horario.
+- **Indisponibilidad = plataforma no accesible para emisión, consulta o descarga de documentos.**
+- **Exclusiones del SLA (no computan como incumplimiento):** (i) fines de semana, festivos colombianos y días no hábiles; (ii) mantenimiento preventivo notificado con 48 horas de anticipación (máximo 4 horas mensuales); (iii) eventos de fuerza mayor (desastres naturales, conflictos armados, epidemias); (iv) indisponibilidad de servicios terceros (caída plataforma DIAN, cortes de ISP del Cliente, ataques DDoS dirigidos a infraestructura DIAN).
 
 4.3 **Certificados Digitales:**
 
@@ -131,13 +131,13 @@ FACTUS es un **Facturador Electrónico autorizado por la DIAN** conforme a la Re
 - Notificar a FACTUS inmediatamente si detecta acceso no autorizado a su cuenta.
 - Cumplir con leyes y regulaciones vigentes.
 
-5.2 **Prohibiciones Expresas:**
+5.2 **Prohibiciones Expresas:** El Cliente se abstendrá de:
 
-- No intentar acceder a sistemas, bases de datos o información de otros usuarios.
-- No usar la plataforma para fraude tributario, falsificación de documentos, o fines ilícitos.
-- No reproducir, copiar, distribuir, o revender el software de FACTUS.
-- No intentar "hackear", modificar o sabotear la plataforma.
-- No cargar documentos que sabes incumplen normas tributarias.
+- Intentar acceso no autorizado a infraestructura, servidores, bases de datos, aplicaciones o información de otros usuarios, incluyendo técnicas de ingeniería inversa, análisis de vulnerabilidades, inyección de código o ataques de denegación de servicio (DDoS).
+- Utilizar la plataforma para emisión de documentos que, a su conocimiento o razonablemente debería conocer, contienen falsedad en datos, incumplen normas tributarias vigentes, facilitan operaciones de lavado de activos, financiamiento del terrorismo o fraude conforme Ley 1960/2019 (prevención de lavado de activos) y Código Penal Colombiano.
+- Reproducir, adaptar, traducir, crear trabajos derivados, o distribuir bajo ninguna forma (comercial o no comercial) el código fuente, aplicaciones, interfaces, metodologías, especificaciones técnicas o documentación de FACTUS.
+- Modificar, descompilar o intentar obtener acceso a componentes internos de la plataforma.
+- Cargar documentos o información que sabes son incompletos, incorrectos, o incumplen obligaciones tributarias ante DIAN.
 
 5.3 **Validación Propios Datos:** El Cliente es **único responsable** de validar que:
 
@@ -152,27 +152,27 @@ FACTUS NO valida nada de esto antes de radicar. Si cargues datos incorrectos y l
 
 # 6. Responsabilidad de FACTUS (Limitada)
 
-6.1 **Lo que SÍ Responde FACTUS:**
+6.1 **Responsabilidades Asumidas por FACTUS:**
 
-- Mantener plataforma disponible conforme al SLA (99 % horario hábil).
-- Guardar tus datos seguros en servidor de FACTUS.
-- Transmitir correctamente documentos a DIAN (si datos están bien cargados).
-- Reportar estado de radicación en tiempo real.
-- Gestionar certificados según tiempos comerciales.
+- **Disponibilidad de Infraestructura:** Mantener operativa la plataforma, servidores, canales de comunicación y servicios conforme SLA (99 % en horario hábil) especificado en sección 4.2.
+- **Integridad de Datos Almacenados:** Preservar sin pérdida, corrupción o alteración no autorizada los documentos y datos transmitidos por el Cliente, durante período de retención obligatorio (mínimo 5 años conforme ley DIAN).
+- **Transmisión Técnica a DIAN:** Radicar documentos ante DIAN conforme protocolos de comunicación vigentes, con autenticación por certificado digital, independientemente de si DIAN los acepta o rechaza.
+- **Generación de Comprobantes:** Emitir comprobante de radicación con timestamp, número de radicación DIAN, y estado de recepción en tiempo real.
+- **Cumplimiento Normativo Técnico:** Mantener plataforma bajo estándares de seguridad (cifrado TLS 1.2+, autenticación Decreto 2364/2012), conforme auditorías DIAN periódicas.
 
-6.2 **Lo que NO Responde FACTUS:**
+6.2 **Exoneraciones Expresas — Lo que NO Responde FACTUS:**
 
-- **Validación de documentos:** Si cargaste datos incorrectos, FACTUS no responde.
-- **Aceptación DIAN:** Si DIAN rechaza tu documento, no es culpa de FACTUS (a menos que FACTUS tuvo falla técnica comprobada).
-- **Reportes indebidos:** Si emitiste factura en nombre de tercero sin autorización, FACTUS no responde.
-- **Cumplimiento tributario:** Si no pagaste impuestos, no cargaste rangos, o la DIAN te multa, no es culpa de FACTUS.
-- **Cambios normativos:** Si DIAN cambia formatos o requisitos después de que usaste plataforma, FACTUS no es responsable.
-- **Ataques externos:** Si sufres DDoS, malware o acceso no autorizado a tu cuenta, FACTUS no es responsable (pero ayuda a investigar).
-- **Daño emergente o lucro cesante:** Pérdida de ingresos, clientes, o negocios — no indemniza FACTUS.
+- **Validación de Contenido de Documentos:** Exactitud, completitud, veracidad, legalidad o conformidad tributaria de datos cargados en documentos. Cliente es único responsable de validar: razón social, NIT, datos de terceros, valores, impuestos, cálculos y cumplimiento de normas DIAN antes de emitir.
+- **Decisiones de Aceptación/Rechazo DIAN:** La aceptación, rechazo, cambio de estado, devolución o cualquier acción de plataforma DIAN sobre un documento depende exclusivamente de validaciones internas DIAN ajenas a FACTUS. Transmisión técnica correcta no garantiza aceptación DIAN.
+- **Cumplimiento Tributario del Cliente:** Obligaciones de declaración de impuestos (IVA, renta, retención, contribuciones), cargas de rangos de numeración, solicitudes de habilitación de actividades económicas, y procedimientos ante DIAN son responsabilidad exclusiva del Cliente.
+- **Cambios Normativos:** Modificaciones a formatos, requisitos técnicos, o políticas DIAN posteriores a la contratación. FACTUS adapta la plataforma a nuevas normas, pero retrasos en adaptación no son incumplimiento si se comunican oportunamente.
+- **Terceros Externos:** Actuación, negligencia o incumplimiento de autoridades (DIAN, Superintendencia Financiera), proveedores de certificación digital, operadores de telecomunicaciones, entidades financieras, o plataformas DIAN.
+- **Eventos de Fuerza Mayor:** Desastres naturales, conflictos armados, epidemias, ataques terroristas, cortes de energía o telecomunicaciones en zona geográfica que no sea responsabilidad de FACTUS.
+- **Daño Emergente, Lucro Cesante y Daños Indirectos:** Bajo ninguna circunstancia FACTUS indemniza pérdidas de ingresos, clientes, oportunidades comerciales, multas tributarias impuestas por DIAN, sanciones administrativas, intereses de mora, o reclamaciones de terceros derivadas de incumplimiento tributario del Cliente.
 
-6.3 **Límite Cuantitativo:** Si FACTUS incurriera en falla técnica comprobada, máximo reembolso es el valor de **uno (1) mes** del servicio contratado.
+6.3 **Límite Cuantitativo de Responsabilidad:** En el evento de incumplimiento demostrado de FACTUS que cause daño material verificable al Cliente, la obligación de indemnización se limita **estrictamente** a **un (1) mes del valor del servicio contratado**, sin que en caso alguno la suma total de indemnidades pueda exceder este monto durante la vigencia del Contrato.
 
-6.4 **"Tal Cual":** Plataforma se proporciona en estado operacional "como está". FACTUS no garantiza que será "perfecta", pero la mantiene segura y funcional.
+6.4 **Entrega "Tal Cual" (As-Is):** La plataforma se proporciona en estado operacional actual ("as-is"), con capacidades y limitaciones técnicas presentes al momento de contratación. FACTUS no garantiza plataforma libre de errores, pero se compromete a identificar y corregir defectos conforme prioridades SLA (sección 4.2). Mejoras y nuevas funcionalidades son iniciativas discrecionales de FACTUS, no obligaciones contractuales.
 
 ---
 
@@ -285,35 +285,49 @@ FACTUS NO valida nada de esto antes de radicar. Si cargues datos incorrectos y l
 
 # 11. Limitación de Responsabilidad y Exoneración
 
-11.1 **Exclusión de Daños Consecuenciales:**
+11.1 **Exclusión de Daños Consecuenciales y Perjuicios Indirectos:**
 
-Bajo ninguna circunstancia FACTUS es responsable por:
-- Pérdida de beneficios, ganancia o lucro cesante.
-- Pérdida de datos (a menos que falla técnica de FACTUS comprobada).
-- Interrupción de negocios.
-- Daño reputacional.
-- Multas de la DIAN (eso es responsabilidad tributaria tuya).
+**FACTUS no es responsable bajo ninguna circunstancia por:**
 
-11.2 **Responsabilidad por Información Tuya:**
+- Pérdida de beneficios, ingresos no obtenidos, o lucro cesante, independientemente de su causa.
+- Pérdida, corrupción o inaccessibilidad de datos (excepto si incumplimiento comprobado del SLA de FACTUS persiste por período superior a 20 días hábiles y Cliente notificó por escrito).
+- Interrupciones, suspensión o terminación de operaciones comerciales del Cliente.
+- Daño reputacional o lesión de imagen comercial.
+- Multas, sanciones, intereses de mora o costos de gestión de cobro impuestos por autoridades tributarias (DIAN) a causa de incumplimiento del Cliente.
+- Reclamos, demandas o acciones de terceros (clientes, proveedores, competidores del Cliente) basadas en contenido de documentos emitidos.
 
-FACTUS no es responsable por:
-- Exactitud de información que cargaste en documentos.
-- Ilegalidad de documentos que emitiste.
-- Falta de cumplimiento tributario tuyo.
+11.2 **Responsabilidad Exclusiva del Cliente por Contenido e Información:**
 
-Si la DIAN rechaza documentos por error tuyo, no es culpa de FACTUS.
+**El Cliente asume responsabilidad total por:**
 
-11.3 **Responsabilidad por Terceros:**
+- Exactitud, completitud y veracidad de información contenida en documentos emitidos (razón social, NIT, datos de terceros, valores, impuestos).
+- Ilegalidad, falsedad, fraude, o incumplimiento tributario de documentos emitidos.
+- Cumplimiento de todas las obligaciones tributarias ante DIAN: declaraciones, pagos, cargas de rangos, solicitudes de habilitación.
+- Autorización previa y consentimiento informado para incluir datos de terceros en documentos.
 
-FACTUS no es responsable por:
-- Acciones de tus clientes/proveedores (si los incluiste sin autorización en documentos).
-- Reclamaciones de terceros contra ti por documentos que emitiste.
-- Acciones de reseller (si contrataste a través de reseller, reclama al reseller; es intermediario).
+Si la DIAN rechaza, devuelve, o modifica estado de documentos por causas atribuibles al Cliente (error en datos, falta de rangos, incumplimiento tributario), **FACTUS no es responsable**. La responsabilidad por validación y corrección recae exclusivamente en el Cliente.
+
+11.3 **Responsabilidad por Terceros — Resellers e Intermediarios:**
+
+Si Cliente contrató acceso a través de una empresa reseller o intermediaria:
+
+- FACTUS no es responsable por actuaciones, negligencia, incumplimiento comercial o técnico de reseller.
+- Reclamaciones sobre soporte, términos comerciales, precios o calidad de atención deben dirigirse al reseller.
+- FACTUS solo responde por fallas técnicas comprobadas de su plataforma; el reseller responde por su relación comercial con el Cliente.
+
+Reclamos de Cliente contra terceros (clientes, proveedores, competidores) por contenido de documentos son responsabilidad exclusiva del Cliente; FACTUS no interviene ni es responsable.
 
 11.4 **Fuerza Mayor:**
 
-- Ataques DDoS, caídas de DIAN, cortes de internet, desastres naturales: FACTUS no responde.
-- Mantenimiento de emergencia: Se notifica lo antes posible, no es incumplimiento SLA.
+**Eventos de fuerza mayor exoneran a FACTUS de responsabilidad:**
+
+- Ataques de denegación de servicio (DDoS) dirigidos a infraestructura DIAN o proveedores terceros.
+- Caída, indisponibilidad o cambios en plataforma DIAN fuera del control de FACTUS.
+- Cortes de electricidad, telecomunicaciones o internet en zonas donde se ubican servidores de FACTUS.
+- Desastres naturales (terremotos, inundaciones, huracanes), conflictos armados, epidemias, o actos de terrorismo.
+- Cambios normativos drásticos o prohibiciones legales de operación emitidas por autoridades competentes.
+
+FACTUS notificará lo antes posible cualquier evento de fuerza mayor y trabajará en restauración; la notificación tardía no implica culpa, pero se comunicará con la brevedad viable.
 
 ---
 
@@ -336,38 +350,63 @@ Si después de notificación sigues usando plataforma, aceptas nuevos TyC.
 
 # 13. Ley Aplicable y Solución de Controversias
 
-13.1 **Ley Aplicable:** Estos TyC se rigen por leyes de la República de Colombia.
+13.1 **Ley Aplicable:**
 
-13.2 **Intento Amistoso:** Cualquier controversia se resuelve primero entre Cliente y FACTUS mediante diálogo.
+Estos TyC se rigen, interpretan y ejecutan conforme a las leyes sustantivas y procedimentales de la República de Colombia, en especial:
 
-13.3 **Mediación:** Si diálogo falla, mediación ante Centro de Conciliación de Cámara de Comercio (ciudad del Cliente).
+- **Código Civil Colombiano** (obligaciones, contratos, responsabilidad civil).
+- **Código de Procedimiento Civil** (acciones, recursos procesales, términos).
+- **Estatuto Tributario y Resoluciones DIAN** (obligaciones tributarias, procedimientos ante autoridad fiscal).
+- **Ley 1480/2011** (Estatuto del Consumidor, derechos del consumidor, garantías limitadas, retracto).
+- **Ley 2439/2024** (reforma de comercio electrónico, derechos en compra de servicios digitales).
+- **Ley 1581/2012 y Decreto 1377/2013** (protección de datos personales).
+- **Ley 1960/2019** (prevención de lavado de activos).
+- **Ley 527/1999 y Decreto 2364/2012** (firma electrónica, validez legal de transacciones electrónicas).
 
-13.4 **Arbitraje/Jurisdicción:** Si mediación falla, controversia se resuelve en juzgados civiles de jurisdicción del domicilio del Cliente.
+13.2 **Procedimiento Escalonado de Resolución:**
+
+- **(a) Gestión Directa:** Cualquier controversia, reclamo o disputa será comunicada por escrito a FACTUS en máximo 10 días calendario desde el evento que la origina. Las partes dialogarán directamente para resolución expedita durante 10 días calendario subsecuentes.
+
+- **(b) Mediación Conciliatoria:** Si diálogo no produce acuerdo, Cliente podrá activar proceso de mediación ante Centro de Conciliación de la Cámara de Comercio competente según domicilio del Cliente. Las partes designan mediador dentro de 5 días hábiles e intentan acuerdo en máximo 20 días hábiles.
+
+- **(c) Jurisdicción Ordinaria:** Si gestión directa y mediación no producen resultado, Cliente puede ejercer acciones ante juzgados civiles del circuito de su domicilio. Se excluye expresamente arbitraje. Cualquiera de las partes puede ejercer acciones de cobro, nulidad, responsabilidad civil o reparación conforme procesos ordinarios civiles.
+
+13.3 **Cálculo de Términos:** Todos los plazos mencionados en estos TyC se cuentan en días calendario, excepto cuando se especifique expresamente "días hábiles" (excluyendo sábados, domingos y festivos colombianos). Si vencimiento cae en festivo o día no hábil, se traslada al siguiente día hábil.
 
 ---
 
-# 14. Seguridad y Responsabilidad del Cliente
+# 14. Seguridad de Cuenta y Responsabilidad del Cliente
 
-14.1 **Uso Responsable:**
+14.1 **Obligaciones de Seguridad del Cliente:**
 
-- Cambiar contraseña regularmente.
-- No compartir credenciales.
-- Reportar acceso sospechoso inmediatamente.
-- No usar conexiones públicas sin VPN para acceder.
+El Cliente se obliga a:
 
-14.2 **Responsabilidad por Cuenta:**
+- **Contraseña Segura:** Establecer contraseña que cumpla requisitos de complejidad (mínimo 8 caracteres, combinación de mayúsculas, minúsculas, números, caracteres especiales) y cambiarla periódicamente (mínimo cada 90 días).
+- **Confidencialidad de Credenciales:** No compartir, revelar, o permitir acceso a terceros de usuario, contraseña, códigos de autenticación de dos factores, o cualquier mecanismo de acceso a la cuenta.
+- **Reporte Inmediato de Acceso Sospechoso:** Notificar a FACTUS dentro de 24 horas si detecta acceso no autorizado, cambios no solicitados en configuración, o actividad inusual en su cuenta.
+- **Conexiones Seguras:** No acceder a la plataforma desde redes públicas o no seguras sin uso de VPN (Red Privada Virtual) que cifre transmisión de datos.
+- **Protección de Dispositivos:** Mantener dispositivos de acceso (computador, teléfono, tablet) protegidos con antivirus, firewall, y software de seguridad actualizado.
 
-Todo lo que ocurra en tu cuenta es responsabilidad tuya, incluso si "alguien más" lo hizo.
+14.2 **Responsabilidad por Actividad en Cuenta:**
 
-14.3 **Cumplimiento Tributario:**
+**El Cliente es responsable de toda actividad en su cuenta**, incluyendo emisiones, consultas, descargas y cambios, independientemente de quién físicamente ejecutó la acción. Esto incluye:
 
-Eres responsable de:
-- Pago de impuestos (IVA, renta, retención).
-- Cargas de rangos ante DIAN.
-- Solicitudes de habilitación.
-- Cumplimiento de normas DIAN.
+- Actividades realizadas por empleados, contratistas, terceros autorizados, o personas que accedieron a credenciales del Cliente.
+- Cambios no autorizados realizados por atacantes si Cliente no implementó medidas de seguridad razonables (contraseña débil, credenciales compartidas, falta de reporte de acceso sospechoso).
 
-FACTUS no es asesor tributario. Si tienes dudas, consulta contador.
+FACTUS no es responsable por actividades no autorizadas; la responsabilidad por seguridad de credenciales es **exclusivamente del Cliente**.
+
+14.3 **Cumplimiento Tributario y Obligaciones del Cliente:**
+
+**El Cliente asume responsabilidad total de:**
+
+- Cumplimiento de todas las obligaciones tributarias ante DIAN: declaración de impuestos, pago de IVA, impuesto sobre la renta, retenciones, contribuciones y aportes parafiscales.
+- Cargas de rangos de numeración ante DIAN conforme Resoluciones vigentes.
+- Solicitudes de habilitación de actividades económicas.
+- Cumplimiento de normas técnicas DIAN para formato de documentos, campos obligatorios, y procedimientos de radicación.
+- Cálculos correctos de valores, impuestos y retenciones en documentos emitidos.
+
+**FACTUS no actúa como asesor tributario, contador, auditor ni abogado.** Si Cliente tiene dudas sobre obligaciones tributarias, debe consultar con contador público, revisor fiscal o asesor fiscal autorizado. La plataforma es un **canal tecnológico únicamente**; interpretación de normas tributarias es responsabilidad del Cliente.
 
 ---
 
@@ -415,21 +454,51 @@ Al hacer clic en "ACEPTO" o usar la plataforma después de ver estos TyC, acepta
 
 # Anexo I: Procedimiento de Aceptación por Firma Electrónica
 
-Cliente acepta estos TyC mediante firma electrónica (Ley 527 de 1999, Decreto 2364 de 2012):
+El Cliente acepta estos Términos y Condiciones mediante firma electrónica conforme **Ley 527 de 1999** (marco legal para mensajes de datos) y **Decreto 2364 de 2012** (firma electrónica digital).
 
-1. Cliente ingresa credenciales en plataforma.
-2. Sistema presenta checkbox: "Acepto Términos y Condiciones de Factus."
-3. Cliente marca checkbox.
-4. Cliente hace clic en "Aceptar."
-5. Sistema registra:
-   - Fecha y hora de aceptación.
-   - IP del Cliente.
-   - Hash de documento.
-   - Confirmación de aceptación.
+## Procedimiento Técnico de Aceptación
 
-6. Cliente recibe confirmación por email con link a documento aceptado.
+1. **Autenticación Inicial:** Cliente ingresa credenciales (usuario y contraseña) en plataforma FACTUS.
 
-Esta firma electrónica tiene efecto legal equivalente a firma manuscrita conforme leyes vigentes.
+2. **Presentación de TyC:** Sistema presenta íntegramente estos Términos y Condiciones en formato legible, con campo checkbox marcado: "✓ Acepto Términos y Condiciones de Factus S.A.S., confirmando que he leído y entiendo mis obligaciones, limitaciones de responsabilidad de FACTUS, y mi responsabilidad por contenido de documentos emitidos."
+
+3. **Acción de Aceptación:** Cliente marca checkbox de aceptación explícita.
+
+4. **Confirmación Final:** Cliente ejecuta clic en botón "Aceptar y Acceder a Plataforma."
+
+5. **Registro de Aceptación — Elementos Probatorios:** Sistema registra automáticamente:
+   - **Fecha y Hora Exacta:** Timestamp de UTC (Hora Universal Coordinada) de la aceptación.
+   - **Identificación Cliente:** Usuario y NIT (o número de identificación) asociado a cuenta.
+   - **Dirección IP:** Dirección de internet desde la cual se envió la aceptación.
+   - **Hash Criptográfico:** Resumen criptográfico (SHA-256 o superior) del documento de TyC aceptado, que permite verificar integridad y evitar alteración posterior.
+   - **Descripción de Transacción:** Registro en bitácora de auditoría indicando "Aceptación de TyC" con todos los datos anteriores.
+
+6. **Confirmación por Correo Electrónico:** FACTUS envía al Cliente dentro de 24 horas:
+   - Copia completa del documento de TyC aceptado (en formato PDF descargable).
+   - Enlace hacia registro de aceptación en plataforma (accesible por 5 años).
+   - Fecha, hora, IP y hash criptográfico de la aceptación.
+
+## Efecto Legal de la Firma Electrónica
+
+Esta firma electrónica tiene **efecto legal equivalente a firma manuscrita** conforme leyes vigentes en Colombia:
+
+- Constituye prueba de que Cliente conocía, entendía y aceptaba voluntariamente estos Términos y Condiciones.
+- Es oponible a cualquier reclamación posterior del Cliente que alegue desconocimiento o falta de consentimiento.
+- Registros técnicos (fecha, hora, IP, hash) son admitidos como prueba en procedimientos judiciales o administrativos, conforme Ley 527/1999 y jurisprudencia colombiana.
+- Cliente es único responsable por aceptación realizada desde su cuenta; no hay anulabilidad por posterior desconocimiento si no reportó acceso no autorizado dentro de 24 horas (conforme sección 14.1).
+
+## No Repudio
+
+El Cliente **no puede posteriormente negar** la aceptación alegando:
+- "No leí los TyC." (Responsabilidad del Cliente de leer antes de aceptar)
+- "Fue otra persona." (Responsabilidad del Cliente de proteger credenciales, conforme sección 14.1)
+- "El sistema estaba mal." (FACTUS proporciona ambiente seguro y auditado; Cliente debe reportar fallas técnicas inmediatamente)
+
+## Copia y Acceso Permanente
+
+El Cliente puede descargar, imprimir o guardar copia de:
+- Estos Términos y Condiciones aceptados (disponible permanentemente en su cuenta).
+- Confirmación de aceptación con detalles técnicos de la transacción (disponible por 5 años en plataforma).
 
 ---
 
