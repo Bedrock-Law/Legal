@@ -1,172 +1,165 @@
-# Factus S.A.S. — Documentación Legal y Procesos
+# Factus S.A.S. — documentación legal
 
-**NIT:** 901.724.254-1  
-**Representante Legal:** Yolher Camilo Albeiro Hernández Reyes  
-**Ubicación:** San Gil, Santander  
-**Fecha de Inicio:** 21 de septiembre de 2026
+**NIT:** 901.724.254-1
+**Representante legal:** Yolher Camilo Albeiro Hernández Reyes
+**Domicilio:** San Gil, Santander
+**Inicio del encargo:** 21 de septiembre de 2026
 
 ---
 
-## Estructura de Carpetas
+## Estructura de carpetas
 
 ```
 Clientes/factus/
 ├── INDICE.md (este archivo)
 ├── documentos-legales/
-│   ├── README.md (validación y próximos pasos)
 │   ├── contratos/
-│   │   ├── Contrato-Prestacion-Servicios-Resellers-Factus-v1.md ← EDITAR
-│   │   └── Contrato-Prestacion-Servicios-Resellers-Factus-v1.docx
+│   │   ├── Contrato-Prestacion-Servicios-Tecnologicos-Factus.md   ← fuente
+│   │   ├── Contrato-Prestacion-Servicios-Tecnologicos-Factus.docx ← entregable
+│   │   └── versiones-anteriores/
 │   └── tyc/
-│       ├── TYC-Cliente-Final-Factus-v1.md ← EDITAR
-│       └── TYC-Cliente-Final-Factus-v1.docx
-└── [próximas carpetas según se necesite]
+│       ├── Terminos-y-Condiciones-Factus.md   ← fuente
+│       ├── Terminos-y-Condiciones-Factus.docx ← entregable
+│       └── versiones-anteriores/
+└── proceso/
+    ├── LOOP-VERIFICACION-DOCUMENTOS.md  (control normativo)
+    ├── LOOP-VERIFICACION-REDACCION.md   (control de estilo)
+    ├── verificar-documentos.sh
+    ├── verificar-redaccion.sh
+    └── (auditorías y planes de Linear)
 ```
 
----
-
-## Documentos Disponibles (v1.0)
-
-### 1. Contrato de Prestación de Servicios (Resellers)
-
-**Archivo:** `documentos-legales/contratos/Contrato-Prestacion-Servicios-Resellers-Factus-v1.md`
-
-**Propósito:** Documento marco entre Factus y resellers que compran paquetes para revender.
-
-**Estructura:**
-- Portada + Resumen Ejecutivo
-- Bloque A (datos institucionales Factus)
-- Bloque B (campos editables por reseller: nombre, NIT, precio, fecha)
-- 15 cláusulas numeradas
-- 3 Anexos: SLA Detallado, Catálogo de Servicios, Política de Retracto
-- Página de firmas
-
-**Campos Editables (Bloque B):**
-- Nombre comercial reseller
-- NIT y representante legal
-- Correo y teléfono
-- Paquete adquirido (Individual / Bolsa Multifacturador)
-- Precio mensual/anual
-- Fecha de implementación
-- Número de licencias iniciales
-
-**Cláusulas Clave:**
-- Responsabilidad ÚNICA Factus: disponibilidad plataforma conforme SLA
-- NO responsable de: DIAN, reportes indebidos, cargue documentos cliente
-- Retracto: 5 días desde firma (Ley 1480/2011 + Ley 2439/2024)
-- SLA: 99% disponibilidad, tiempos por criticidad, penalizaciones
-
-**Estado:** ✏️ Listo para correcciones
+El entregable no lleva sufijo de versión. La trazabilidad está en la tabla de
+control de versiones al final de cada documento y en `versiones-anteriores/`.
 
 ---
 
-### 2. Términos y Condiciones (Cliente Final)
+## Entregables
 
-**Archivo:** `documentos-legales/tyc/TYC-Cliente-Final-Factus-v1.md`
+### Contrato de prestación de servicios tecnológicos
 
-**Propósito:** TYC marco para clientes finales que usan Factus directamente o a través de reseller.
+Relación entre Factus y los resellers que compran paquetes para revender.
+Veintiún cláusulas con numeración anidada, cuatro anexos (definiciones, nivel de
+servicio, catálogo de servicios y política de retracto) y bloque de firmas.
 
-**Estructura:**
-- Portada + Resumen Ejecutivo
-- 16 secciones temáticas
-- Anexo I: Procedimiento de aceptación por firma electrónica
-- Sin campos editables (documento cerrado)
+Los datos del reseller van en el bloque de datos generales como campos por
+diligenciar. El precio se fija por paquete contratado.
 
-**Secciones Clave:**
-1. Identidad Factus (NIT, contacto, horarios)
-2. Objeto y alcance (servicios incluidos)
-3. Condiciones de acceso (requisitos para contratar)
-4. Prestación de servicio (disponibilidad, certificados)
-5. Obligaciones del Cliente (validación datos, tributación, cargues DIAN)
-6. Responsabilidad Factus (limitada a disponibilidad SLA)
-7. Protección de datos personales (Ley 1581/2012)
-8. Confidencialidad (2 años post-terminación)
-9. **Retracto: 5 días desde firma, NO aplica si documentos emitidos**
-10. Terminación del servicio
-11. Limitación de responsabilidad (exoneración por DIAN, reportes, cambios normativos)
-12. Cambios en TyC (30 días notificación cambios mayores)
-13. Ley aplicable: Colombia
-14. Seguridad y responsabilidad del cliente
-15. Contacto y soporte
-16. Aceptación final (firma electrónica Ley 527/1999)
+### Términos y condiciones de servicio
 
-**Estado:** ✏️ Listo para correcciones
+Contrato de adhesión para el cliente final, conforme al artículo 5 numeral 4 de
+la Ley 1480 de 2011. Treinta y una cláusulas, con revisión completa contra el
+listado de cláusulas abusivas del artículo 43. Sirve también para que el reseller
+lo entregue a sus propios clientes finales, y por eso define la figura del
+reseller.
+
+Distingue entre el cliente que tiene la calidad de consumidor y el que no la
+tiene. La mayoría de los clientes de Factus no la tienen, porque contratan el
+servicio para su actividad económica.
 
 ---
 
-## Base Normativa Aplicada
+## Delimitación de responsabilidad
 
-| Norma | Artículos | Aplicación |
-|-------|-----------|-----------|
-| **Ley 1480/2011** | Art. 47-53 | Retracto 5 días en servicios |
-| **Ley 2439/2024** | — | Reforma comercio electrónico (retracto servicios digitales) |
-| **Ley 527/1999** | — | Mensajes de datos y firma electrónica |
-| **Decreto 2364/2012** | — | Firma electrónica válida |
-| **Ley 1581/2012** | — | Protección de datos personales |
-| **Decreto 1377/2013** | — | Tratamiento datos personales |
-| **Resolución DIAN 000165/2023** | — | Autorización software facturación |
-| **Oficio DIAN 13246/2025** | — | Resellers exentos de re-autorización |
-| **Ley 1960/2019** | — | Prevención lavado de activos |
+Factus responde por la disponibilidad de la plataforma y por la transmisión
+técnica de los documentos a la DIAN. La disponibilidad es obligación de medio;
+la transmisión es obligación de resultado.
 
----
-
-## Próximos Pasos (Operativos)
-
-### Inmediato (Antes de Usar)
-1. **Revisar .md** — Tú haces correcciones
-2. **Confirmar datos Factus** — Camilo valida números de contacto, horarios
-3. **Instalar tipografías** — Montserrat + Tinos desde `/Users/juanma/.claude/skills/estilo-bedrock-docs/assets/fonts/`
-4. **Prueba en sandbox** — Diligenciar Bloque B (reseller de prueba), firmar
-
-### Antes de Publicar
-5. **Revisión jurídica** — Camilo o abogado revisa
-6. **Ajustes finales** — Cambios mínimos en .md, regenerar .docx
-7. **Publicación** — Factus sube a web o portal resellers
-
-### Futuro (Versión 2.0)
-8. **Retroalimentación operativa** — Cambios de resellers/clientes reales
-9. **Ajuste SLA** — Confirmar tiempos se cumplen
-10. **Procedimientos adicionales** — Integración API, capacitación, escalonamiento
+Factus no asume la calidad de contador público, revisor fiscal, abogado ni
+auditor. No responde por el contenido de los documentos, que transmite tal como
+el cliente los carga y sin verificar su veracidad; ni por las decisiones de
+aceptación, rechazo o cambio de estado que adopte la DIAN; ni por el
+cumplimiento tributario del cliente; ni por la conservación documental, que la
+norma tributaria radica en el obligado a facturar.
 
 ---
 
-## Control de Versiones
+## Base normativa
 
-| Versión | Fecha | Cambios | Responsable | Estado |
-|---------|-------|---------|-------------|--------|
-| 1.0 | 27 sep 2026 | Inicial: Contrato Marco + TYC | Juan Manuel (Bedrock) | ✏️ En revisión |
-| 1.1 | [fecha] | Correcciones usuario | [responsable] | ⏳ Pendiente |
-| 2.0 | [fecha] | Mejoras operativas | [responsable] | ⏳ Pendiente |
+| Norma | Alcance |
+|---|---|
+| Ley 1480 de 2011, art. 5 num. 4 | Definición de contrato de adhesión |
+| Ley 1480 de 2011, arts. 37 a 44 | Condiciones negociales generales y cláusulas abusivas |
+| Ley 1480 de 2011, art. 47 | Derecho de retracto: cinco días hábiles |
+| Ley 2439 de 2024, art. 3 | Modifica el art. 47: devolución en quince días calendario, sin descuentos |
+| Ley 527 de 1999 | Mensajes de datos y firma digital |
+| Decreto 2364 de 2012 | Firma electrónica, reglamentario del art. 7 de la Ley 527 |
+| Ley 1581 de 2012 y Decreto 1377 de 2013 | Protección de datos personales |
+| Ley 599 de 2000, arts. 323 y 345 | Lavado de activos y financiación del terrorismo |
+| Ley 1564 de 2012 | Código General del Proceso |
+| Código de Comercio, art. 884 | Intereses moratorios |
+| Resolución DIAN 000165 de 2023 | Sistema de facturación electrónica |
+| Resolución DIAN 000013 de 2021 | Documento soporte de pago de nómina electrónica |
 
----
+### Citas retiradas por verificación
 
-## Archivos por Tipo
-
-| Documento | Tipo | Ubicación | Formato | Uso |
-|-----------|------|-----------|---------|-----|
-| Contrato Reseller | MD | `contratos/` | .md + .docx | Editar .md, regenerar .docx |
-| TYC Cliente Final | MD | `tyc/` | .md + .docx | Editar .md, regenerar .docx |
-| Validación | Documento | `documentos-legales/README.md` | .md | Referencia |
-
----
-
-## Contactos Clave
-
-- **Factus (Camilo Hernández):** camilo@halltec.co
-- **Bedrock (Juan Manuel):** tualiado@bedrock.com.co
-- **Abogado revisor:** [nombre, email]
-
----
-
-## Notas Técnicas
-
-- **Markdown como fuente de verdad:** Los `.md` son editables, los `.docx` son renders
-- **Cambios futuros:** Edita `.md`, luego regenera `.docx` con `estilo-bedrock-docs`
-- **Depuración de caracteres invisibles:** Script `Herramientas/limpiar_marcas.py` (si está instalado)
-- **Control de cambios:** Mantén versionado en git, comments en Linear
+| Cita | Por qué se retiró |
+|---|---|
+| Ley 1960 de 2019 | Regula carrera administrativa y empleo público, no lavado de activos |
+| Ley 1266 de 2008 | Regula bancos de datos de contenido crediticio; Factus no es fuente ni operador |
+| Resolución DIAN 000019 de 2012 | No corresponde al régimen vigente de facturación |
+| Resolución DIAN 1796 de 2014 | No corresponde al régimen de nómina electrónica |
+| Decreto 1116 de 2013 | No es la norma de intereses moratorios |
+| Concepto DIAN 13246 de 2025 | Trata los requisitos del software; no sostiene que los resellers estén exentos de re-autorización |
+| Código de Procedimiento Civil | Derogado desde el 1 de enero de 2014 |
+| Superintendencia Financiera | Factus no es entidad vigilada por esa superintendencia |
 
 ---
 
-**Preparado por:** Bedrock Abogados S.A.S.  
-**Clasificación:** Confidencial — Factus  
-**Fecha:** 27 de septiembre de 2026
+## Estado y próximos pasos
+
+Los dos documentos están en revisión por Factus, con cierre el viernes 9 de
+octubre de 2026 y reunión de seguimiento ese mismo día.
+
+Abierto por parte de Factus:
+
+- Los dos o tres escenarios de conflicto que se le presentan con mayor
+  frecuencia con sus clientes, para regularlos expresamente (BEDROCK-78).
+- El alcance completo de las operaciones de la API que deben quedar
+  enunciadas una a una.
+- Confirmación de que puede cumplir los niveles de servicio comprometidos.
+- Correo de soporte, correo comercial, WhatsApp y teléfono.
+- Si mantiene el descuento del certificado digital en el retracto, que frente a
+  un consumidor es ineficaz de pleno derecho.
+- La política de tratamiento de datos vigente, para tomarla como base.
+
+Siguiente entregable de Bedrock: política de tratamiento de datos personales
+(BEDROCK-67).
+
+---
+
+## Contactos
+
+| Quién | Rol | Correo |
+|---|---|---|
+| Camilo Hernández Reyes | Factus, contraparte principal | camilo@halltec.co |
+| Iván Aparicio | Factus, técnico | — |
+| Óscar Aguillón Silva | Factus | — |
+| Juan Manuel Correa Muñoz | Bedrock, responsable del encargo | tualiado@bedrock.com.co |
+
+---
+
+## Notas técnicas
+
+El Markdown es la fuente de verdad y es lo que se edita. El `.docx` se regenera
+con el skill `estilo-bedrock-docs`.
+
+Los documentos en Word no deben abrirse con el editor de Google Docs: la
+conversión destruye la plantilla, infla el archivo y el documento pierde la
+composición de portada. Hay que descargarlos y abrirlos en Word.
+
+Antes de entregar una versión se corren los dos controles de `proceso/`: uno
+verifica exactitud normativa y cobertura, el otro verifica que la redacción no
+reproduzca señales de escritura de máquina.
+
+---
+
+## Control de versiones
+
+| Versión | Fecha | Cambios | Estado |
+|---|---|---|---|
+| 1.0 | 27 de septiembre de 2026 | Índice inicial | Superada |
+| 2.0 | 28 de septiembre de 2026 | Estructura reorganizada con carpeta de proceso y versiones archivadas. Base normativa corregida tras la verificación de citas. Incorporación de los acuerdos de la reunión del 28 de septiembre. | Vigente |
+
+**Preparado por:** Bedrock Abogados S.A.S.
+**Clasificación:** Confidencial — Factus S.A.S.
