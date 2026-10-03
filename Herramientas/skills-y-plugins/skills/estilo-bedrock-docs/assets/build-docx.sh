@@ -67,6 +67,43 @@ if campo("title"):    bloque("PortadaTitulo", campo("title"))
 bloque("LineaAcento", "&nbsp;")
 if campo("lede"):     bloque("Lede", campo("lede"))
 
+# Tabla Documento / Fecha / Alcance, igual que la portada del PDF.
+doctype, docdate, docscope = campo("doctype"), campo("docdate"), campo("docscope")
+if doctype or docdate or docscope:
+    def esc(s):
+        return (s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
+    def celda(etiqueta, valor):
+        return (
+            '<w:tc><w:tcPr><w:tcW w:w="3000" w:type="dxa"/><w:tcMar>'
+            '<w:right w:w="200" w:type="dxa"/></w:tcMar></w:tcPr>'
+            '<w:p><w:pPr><w:spacing w:before="0" w:after="20"/></w:pPr>'
+            '<w:r><w:rPr><w:rFonts w:asciiTheme="majorHAnsi" w:hAnsiTheme="majorHAnsi"/>'
+            '<w:b/><w:caps/><w:color w:val="6B6F7A"/><w:spacing w:val="20"/><w:sz w:val="15"/></w:rPr>'
+            '<w:t xml:space="preserve">%s</w:t></w:r></w:p>'
+            '<w:p><w:r><w:rPr><w:color w:val="1B1D36"/><w:sz w:val="20"/></w:rPr>'
+            '<w:t xml:space="preserve">%s</w:t></w:r></w:p></w:tc>'
+        ) % (esc(etiqueta), esc(valor))
+    tabla = (
+        '<w:tbl><w:tblPr><w:tblW w:w="0" w:type="auto"/><w:tblBorders>'
+        '<w:top w:val="none" w:sz="0" w:space="0" w:color="auto"/>'
+        '<w:left w:val="none" w:sz="0" w:space="0" w:color="auto"/>'
+        '<w:bottom w:val="none" w:sz="0" w:space="0" w:color="auto"/>'
+        '<w:right w:val="none" w:sz="0" w:space="0" w:color="auto"/>'
+        '<w:insideH w:val="none" w:sz="0" w:space="0" w:color="auto"/>'
+        '<w:insideV w:val="none" w:sz="0" w:space="0" w:color="auto"/></w:tblBorders>'
+        '<w:tblLook w:val="0000"/></w:tblPr>'
+        '<w:tblGrid><w:gridCol w:w="3000"/><w:gridCol w:w="3000"/><w:gridCol w:w="3000"/></w:tblGrid>'
+        '<w:tr>%s%s%s</w:tr></w:tbl>'
+    ) % (
+        celda("Documento", doctype),
+        celda("Fecha", docdate),
+        celda("Alcance", docscope),
+    )
+    partes.append('```{=openxml}')
+    partes.append(tabla)
+    partes.append('```')
+    partes.append("")
+
 items = lista("resumen")
 if items:
     bloque("ResumenTitulo", campo("resumentitulo") or "Resumen del documento")

@@ -68,10 +68,14 @@ doctype: "Propuesta de servicios"
 docdate: "27 de agosto de 2026"
 docscope: "Confidencial · Nombre del destinatario"
 docname: "Nombre-corto-para-el-pie"
+resumen:
+  - "**Plazo.** Ocho semanas contadas desde la reunión de inicio."
+  - "**Honorarios.** Cincuenta millones de pesos, más el impuesto sobre las ventas."
+fineprint: "Documento confidencial. Su contenido es de uso exclusivo del destinatario."
 ---
 ```
 
-`title` es el único obligatorio: sin él no se compone la portada. `docscope` va corto, porque en la portada tiene ancho fijo y se parte.
+`title` es el único obligatorio: sin él no se compone la portada. `docscope` va corto, porque en la portada tiene ancho fijo y se parte. `resumen` (con `resumentitulo` opcional para cambiar el rótulo) arma un recuadro con filete lateral bajo la tabla de portada, y `fineprint` una línea en cursiva debajo; los dos son opcionales y se leen igual en `estilo-bedrock-docs`.
 
 ## Jerarquía de títulos
 

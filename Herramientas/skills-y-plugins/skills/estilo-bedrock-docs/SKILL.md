@@ -74,7 +74,7 @@ fineprint: "Documento confidencial. Su contenido es de uso exclusivo del destina
 ---
 ```
 
-`title` es el único obligatorio. `resumen` y `fineprint` son propios de este pipeline: si el mismo Markdown se usa también para el PDF con `estilo-bedrock-pdf`, esa plantilla los ignora sin error.
+`title` es el único obligatorio. `resumen` (con `resumentitulo` opcional) y `fineprint` arman el recuadro de resumen y la letra pequeña de la portada; `estilo-bedrock-pdf` los renderiza igual, así que el mismo Markdown sirve para las dos salidas.
 
 ## Jerarquía de títulos
 

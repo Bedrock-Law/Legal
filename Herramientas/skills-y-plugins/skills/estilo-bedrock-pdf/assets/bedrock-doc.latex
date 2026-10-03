@@ -122,6 +122,11 @@ $hypersetup.latex()$
   enhanced, breakable, colback=bkAcento!22, colframe=bkAcento!90,
   boxrule=0.6pt, arc=2pt, left=9pt, right=9pt, top=8pt, bottom=8pt, #1 }
 
+% Resumen de portada: filete lateral, igual que ResumenItem en el .docx
+\newtcolorbox{resumenbox}{
+  enhanced, breakable, colback=white, colframe=bkSecundario,
+  boxrule=0pt, leftrule=1.4pt, arc=0pt, left=6mm, right=0pt, top=1pt, bottom=1pt }
+
 % ---- Portada ----
 \usepackage{graphicx}
 \newcommand{\bkportada}{%
@@ -140,6 +145,21 @@ $hypersetup.latex()$
      \textcolor{bkGris}{\MakeUppercase{Documento}} & \textcolor{bkGris}{\MakeUppercase{Fecha}} & \textcolor{bkGris}{\MakeUppercase{Alcance}}\\[1mm]
      \textcolor{bkPrimario}{$if(doctype)$$doctype$$endif$} & \textcolor{bkPrimario}{$if(docdate)$$docdate$$endif$} & \textcolor{bkPrimario}{$if(docscope)$$docscope$$endif$}\\
    \end{tabular}\par}
+  $if(resumen)$
+  \vspace{8mm}
+  \begin{resumenbox}
+  {\bkSansBold\color{bkGris}\fontsize{9}{12}\selectfont\addfontfeature{LetterSpace=8.0}\MakeUppercase{$if(resumentitulo)$$resumentitulo$$else$Resumen del documento$endif$}\par}
+  \vspace{2mm}
+  $for(resumen)$
+  {\fontsize{10}{14}\selectfont\color{bkTexto} $resumen$\par}
+  \vspace{2mm}
+  $endfor$
+  \end{resumenbox}
+  $endif$
+  $if(fineprint)$
+  \vspace{4mm}
+  {\fontsize{8.5}{11}\selectfont\itshape\color{bkGris} $fineprint$\par}
+  $endif$
   \vspace*{7mm}
   \clearpage}
 
