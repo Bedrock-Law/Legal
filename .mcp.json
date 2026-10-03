@@ -1,0 +1,60 @@
+{
+  "mcpServers": {
+    "bedrock-gmail": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "${BEDROCK_REPO:-/Users/juanma/Documents/Bedrock IA}/Herramientas/mcp-servers/gmail-mcp/dist/index.js"
+      ]
+    },
+    "bedrock-calendar": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "${BEDROCK_REPO:-/Users/juanma/Documents/Bedrock IA}/Herramientas/mcp-servers/calendar-mcp/dist/index.js"
+      ]
+    },
+    "bedrock-docs": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "${BEDROCK_REPO:-/Users/juanma/Documents/Bedrock IA}/Herramientas/mcp-servers/docs-mcp/dist/index.js"
+      ]
+    },
+    "bedrock-sheets": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "${BEDROCK_REPO:-/Users/juanma/Documents/Bedrock IA}/Herramientas/mcp-servers/sheets-mcp/dist/index.js"
+      ]
+    },
+    "bedrock-tasks": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "${BEDROCK_REPO:-/Users/juanma/Documents/Bedrock IA}/Herramientas/mcp-servers/tasks-mcp/dist/index.js"
+      ]
+    },
+    "bedrock-drive": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "${BEDROCK_REPO:-/Users/juanma/Documents/Bedrock IA}/Herramientas/mcp-servers/drive-mcp/dist/index.js"
+      ]
+    },
+    "bedrock-documents": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "${BEDROCK_REPO:-/Users/juanma/Documents/Bedrock IA}/Herramientas/mcp-servers/bedrock-document-generator/dist/index.js"
+      ]
+    },
+    "bedrock-due-diligence": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "${BEDROCK_REPO:-/Users/juanma/Documents/Bedrock IA}/Herramientas/mcp-servers/due-diligence-mcp/dist/index.js"
+      ]
+    }
+  }
+}

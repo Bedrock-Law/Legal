@@ -1,62 +1,54 @@
-# 🤖 MCP Servers - Integración Claude
+# Servidores MCP de Bedrock
 
-Servidores MCP (Model Context Protocol) que exponen las capacidades de Bedrock Abogados directamente en Claude.
+Ocho servidores propios que dan a Claude Code acceso a Google Workspace y a las
+herramientas de documentos de la firma. Se registran en el `.mcp.json` de la raíz
+del repositorio y se cargan solos al abrir una sesión en el repo.
 
-## Servidores Activos
+| Servidor | Carpeta | Herramientas |
+|---|---|---|
+| `bedrock-gmail` | `gmail-mcp/` | `list_emails`, `read_email`, `search_emails`, `send_email` |
+| `bedrock-calendar` | `calendar-mcp/` | `list_events`, `get_event`, `create_event`, `delete_event` |
+| `bedrock-docs` | `docs-mcp/` | `create_doc`, `read_doc`, `append_to_doc`, `replace_text_in_doc` |
+| `bedrock-sheets` | `sheets-mcp/` | `create_spreadsheet`, `create_sheet`, `read_sheet`, `write_sheet`, `append_sheet`, `format_sheet` |
+| `bedrock-tasks` | `tasks-mcp/` | `list_task_lists`, `list_tasks`, `create_task`, `complete_task` |
+| `bedrock-drive` | `drive-mcp/` | `list_drive_files`, `search_drive`, `read_drive_file`, `create_drive_folder`, `upload_to_drive` |
+| `bedrock-documents` | `bedrock-document-generator/` | `generate_proposal`, `generate_contract`, `generate_report`, `generate_presentation`, `apply_bedrock_style` |
+| `bedrock-due-diligence` | `due-diligence-mcp/` | `analyze_cap_table`, `verify_antecedents`, `assess_legal_risk`, `generate_dd_report` |
 
-### due-diligence-mcp
-Análisis automatizado de due diligence, verificación de antecedentes y análisis de riesgo.
+## Credenciales
 
-**Herramientas:**
-- `analyze_cap_table` - Análisis de estructura accionaria
-- `verify_antecedents` - Validación de antecedentes legales
-- `assess_legal_risk` - Evaluación de riesgo legal
-- `generate_dd_report` - Generación de reportes de due diligence
+Los servidores de Google leen `credentials/oauth_client.json` y
+`credentials/token.json` dentro de esta carpeta. Están excluidos de git por
+`.gitignore` y no deben salir de la máquina. `send_email` envía correo real desde
+la cuenta autenticada.
 
-### compliance-mcp
-Validación de cumplimiento normativo y SAGRILAFT.
+## Rutas
 
-**Herramientas:**
-- `check_sagrilaft` - Verificación SAGRILAFT
-- `validate_pep_status` - Validación PEP (Personas Expuestas Públicamente)
-- `assess_aml_risk` - Evaluación AML/CFT
-- `generate_compliance_matrix` - Matriz de compliance
+El `.mcp.json` usa `${BEDROCK_REPO:-/Users/juanma/Documents/Bedrock IA}`. Si el
+repo está en otra carpeta en otra máquina, se define `BEDROCK_REPO` con esa ruta
+en el perfil de shell; si no se define, se usa la ruta por defecto.
 
-### fintech-mcp
-Análisis de viabilidad regulatoria para modelos Fintech disruptivos.
+## Poner a andar los servidores en otra máquina
 
-**Herramientas:**
-- `analyze_fintech_model` - Análisis del modelo de negocio
-- `map_regulatory_gaps` - Identificación de brechas regulatorias
-- `propose_legal_structure` - Propuesta de estructura legal
-- `generate_regulatory_roadmap` - Hoja de ruta regulatoria
+El código compilado (`dist/`) y las dependencias (`node_modules/`) no están en
+git, así que hay que generarlos una vez:
 
-## 📦 Desarrollo
+1. Clonar el repo y entrar en esta carpeta:
+   `cd "<ruta del repo>/Herramientas/mcp-servers"`
+2. Compilar los ocho:
+   `for d in */; do [ -f "$d/package.json" ] && (cd "$d" && npm install && npm run build); done`
+   Si funcionó, cada carpeta tiene ahora un `dist/index.js`.
+3. Copiar `oauth_client.json` y `token.json` a `credentials/` por un canal seguro,
+   nunca por correo ni por chat.
+4. Si el repo no está en `/Users/juanma/Documents/Bedrock IA`, añadir al perfil
+   de shell: `export BEDROCK_REPO="<ruta del repo>"`.
+5. Abrir Claude Code en la raíz del repo. La primera vez pide aprobar los ocho
+   servidores del `.mcp.json`.
+6. Verificar: `claude mcp list` debe mostrar los ocho con `✔ Connected`.
 
-Cada servidor está en su propia carpeta con su propio `package.json` o `pyproject.toml`.
+## Linear
 
-**Stack:**
-- TypeScript/Node.js (preferido)
-- Python (opcional)
-- MCP SDK oficial
-
-**Testing:**
-```bash
-npm test
-```
-
-**Deploy:**
-- Local: `npm run dev`
-- Remote: Docker + AWS Lambda / Cloudflare Workers
-
-## 🔗 Integración
-
-Agregue el servidor a Claude:
-```bash
-claude mcp add --transport http <nombre> <url>
-```
-
----
-
-**Estado**: 🔨 En desarrollo  
-**Última actualización**: 2025-08-25
+El acceso a Linear desde Claude Code no es un servidor propio: es el plugin
+oficial `linear@claude-plugins-official`, instalado a nivel de usuario. La primera
+vez se autentica desde una sesión con `/mcp`. El trabajo diario con issues sigue
+yendo por `orca linear`.

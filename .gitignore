@@ -47,3 +47,6 @@ credentials/
 client_secret*.json
 token.json
 oauth_client.json
+
+# Configuración local de Claude Code (aprobaciones de servidores MCP, preferencias)
+.claude/settings.local.json
