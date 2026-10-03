@@ -32,8 +32,14 @@ Si el skill quedó instalado en otra ruta, usa la ruta absoluta del `council-wor
 
 ## Configuración del consejo
 Editable en `council-workflow.js`:
-- `COUNCIL` — los "asientos" del consejo (modelos Claude: opus, sonnet, fable, haiku). Diversidad por nivel de modelo.
+- `COUNCIL` — los "asientos" del consejo. Tres son modelos Claude (opus, sonnet, haiku). El asiento **C (fable)** es un **relay real hacia Gemini**: el subagente que lo ocupa no opina como Claude — ejecuta el CLI de `gemini` instalado en esta máquina y transcribe literalmente la respuesta de Gemini, sin parafrasear ni opinar por su cuenta.
 - `CHAIRMAN` — modelo que sintetiza (por defecto `opus`).
 
+### Requisitos del asiento Gemini
+- CLI `gemini` instalado (`npm install -g @google/gemini-cli`).
+- Clave en `~/.config/gemini-api-key` (permisos 600).
+- `timeout` de GNU en el PATH (macOS no lo trae de fábrica; requiere `coreutils` de Homebrew).
+- **Degradación grácil:** si el CLI no está disponible o la llamada falla, ese asiento responde `GEMINI_NO_DISPONIBLE` o `GEMINI_ERROR: ...` en vez de opinión, el consejo sigue con los otros tres miembros, y el workflow deja un `log()` explícito avisando la degradación — no falla en silencio.
+
 ## Diferencia con el original y opción de la app real
-El `llm-council` original usa **múltiples proveedores** (OpenAI, Google, Anthropic, xAI) vía **OpenRouter** y una **UI web** local (backend uv/Flask + frontend React). Esta adaptación es un **consejo de modelos Claude**, ejecutado en línea dentro de Claude Code, sin costo de OpenRouter. Si se quiere la app original multi-proveedor en el navegador, requiere: clonar el repo, `uv sync`, `npm install`, una **OPENROUTER_API_KEY** (de pago) y correr el servidor — es un montaje aparte que se usa fuera de este chat.
+El `llm-council` original usa **múltiples proveedores** (OpenAI, Google, Anthropic, xAI) vía **OpenRouter** y una **UI web** local (backend uv/Flask + frontend React). Esta adaptación corre en línea dentro de Claude Code: tres asientos son modelos Claude y el asiento C es Gemini real (vía CLI local, sin OpenRouter ni costo adicional de intermediario). Si se quiere la app original multi-proveedor completa (con más vendors y UI en el navegador), requiere: clonar el repo, `uv sync`, `npm install`, una **OPENROUTER_API_KEY** (de pago) y correr el servidor — es un montaje aparte que se usa fuera de este chat.

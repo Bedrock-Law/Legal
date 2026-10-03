@@ -9,7 +9,7 @@ clase de revelado por scroll.
 """
 from pathlib import Path
 
-PLANTILLA = Path("/Users/juanma/Documents/Bedrock IA/estilo-bedrock-html/assets/plantilla-web.html")
+PLANTILLA = Path("/Users/juanma/Documents/Bedrock IA/Herramientas/skills-y-plugins/skills/estilo-bedrock-html/assets/plantilla-web.html")
 SALIDA = Path("/private/tmp/claude-501/-Users-juanma-Documents-Bedrock-IA/"
               "0f586fb6-3aad-4848-9b68-76c1717a8495/scratchpad/propuesta-asovelenos.fuente.html")
 
