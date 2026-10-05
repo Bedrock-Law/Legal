@@ -1,5 +1,8 @@
 # Configuración completa del Claude personal
 
+> **Actualización del 5 de octubre de 2026.** La instalación de skills que describe esta guía está superada: se hace con `bash Herramientas/instalar-skills.sh` desde la raíz del repo. `bedrock-docs` se retiró y lo reemplazan `estilo-bedrock-pdf`, `estilo-bedrock-docs` y `estilo-bedrock-html`. El resto de la guía (programas del sistema, credenciales) sigue vigente.
+
+
 Guía para dejar montado, en una máquina nueva, el asistente con la identidad de Bedrock y la capacidad de generar PDF, Word y páginas web con esa identidad.
 
 Al final está el **prompt definitivo** para pegárselo al asistente y que lo haga él.
