@@ -82,16 +82,13 @@ Estos documentos son condición para que el Banco de la República apruebe la so
 | **Mensual** | Reconciliación CENIT vs. libros de TUYA, matriz de riesgo contraparte | Día 5 mes siguiente |
 | **Anual** | Auditoría externa (ISO 20022), certificación Plan de Continuidad de Negocio | Antes 31 de marzo |
 
-### Prevención del lavado de activos y de la financiación del terrorismo (SARLAFT)
-
-Fundamento: Estatuto Orgánico del Sistema Financiero (Decreto 663 de 1993), artículos 96 y 102 a 104; Ley 526 de 1999; y Circular Básica Jurídica de la Superintendencia Financiera, Parte I, Título IV, Capítulo IV, en el texto de la Circular Externa 006 de 2025.
+### Cumplimiento LA/FT (Ley 1960/2019)
 
 TUYA debe:
-
 - Mantener programa de cumplimiento vigente
 - Realizar debida diligencia reforzada en operaciones de alto riesgo (divisas elevan sospecha automáticamente)
-- Reportar de forma inmediata a la UIAF (Unidad de Información y Análisis Financiero) las operaciones sospechosas, como exige el literal d) del numeral 2 del artículo 102 del Estatuto Orgánico del Sistema Financiero
-- Conservar la documentación de respaldo por no menos de cinco años (artículo 96 del Estatuto Orgánico del Sistema Financiero)
+- Reportar a UIAF (Unidad de Información Financiera) operaciones sospechosas dentro de 10 días hábiles
+- Conservar documentación de respaldo 5 años mínimo
 
 ## VI. Riesgos y Controles
 
@@ -130,12 +127,4 @@ La iniciativa es viable. Los riesgos son controlables. El plazo es realista si s
 **Fecha:** 22 de septiembre de 2026  
 **Clasificación:** Confidencial
 
-*Fuentes: Decreto 2555/2010, Resolución Externa 1/2018 (BR), Circular DCIP-83 Cap. 8 (BR, sept 2023), Circular Básica Jurídica C.E. 006/25 (SF, 2025), Estatuto Orgánico del Sistema Financiero (arts. 96 y 102 a 104), Ley 526 de 1999.*
-
-# Control de versiones
-
-| Versión | Fecha | Cambios | Estado |
-|---|---|---|---|
-| v1 | 22 de septiembre de 2026 | Versión inicial entregada | Superada |
-| v2 | 5 de octubre de 2026 | Corrige el fundamento de prevención de lavado de activos: la Ley 1960 de 2019, que regula carrera administrativa, se sustituye por el Estatuto Orgánico del Sistema Financiero, la Ley 526 de 1999 y la Circular Básica Jurídica. El reporte de operaciones sospechosas pasa a ser inmediato, como exige la ley, y se corrige el nombre de la UIAF | Vigente |
-
+*Fuentes: Decreto 2555/2010, Resolución Externa 1/2018 (BR), Circular DCIP-83 Cap. 8 (BR, sept 2023), Circular Básica Jurídica C.E. 006/25 (SF, 2025), Ley 1960/2019.*

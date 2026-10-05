@@ -8,6 +8,8 @@ docscope: "Confidencial · TUYA"
 docname: "DEEP3-Operacion-Divisas"
 ---
 
+> **Advertencia (5 de octubre de 2026).** Este documento cita la Ley 1960 de 2019 como norma de prevención de lavado de activos. Es un error: esa ley regula carrera administrativa. El fundamento correcto para TUYA es el Estatuto Orgánico del Sistema Financiero (Decreto 663 de 1993), artículos 96 y 102 a 104; la Ley 526 de 1999; y la Circular Básica Jurídica de la Superintendencia Financiera, Parte I, Título IV, Capítulo IV (Circular Externa 006 de 2025). El reporte de operaciones sospechosas a la UIAF es inmediato (artículo 102, numeral 2, literal d). Los umbrales, plazos y niveles de diligencia que aquí se atribuyen a la Ley 1960 no están verificados contra ninguna norma y no deben trasladarse a un documento sin esa verificación. Los conceptos vigentes en `conceptos-juridicos/` ya están corregidos.
+
 # Operación de Divisas — Régimen Cambiario para IMC
 
 ## Resumen Ejecutivo
@@ -139,8 +141,8 @@ Hay dos estructuras:
 |-----------|--------|-------------|
 | Cambio simple (COP ↔ USD) | ✓ Permitida | Canalizada por SIEX |
 | Cambio cruzado (EUR ↔ USD) | ✓ Permitida | Si ambas divisas están en cuenta de compensación |
-| Forward de cambio | ⚠️ Restringida | Solo si la Junta lo autoriza como derivado. Requiere registro especial |
-| Opciones de cambio | ⚠️ Restringida | Más restrictiva aún. Requiere revisión previa de SFC |
+| Forward de cambio | ⚠ Restringida | Solo si la Junta lo autoriza como derivado. Requiere registro especial |
+| Opciones de cambio | ⚠ Restringida | Más restrictiva aún. Requiere revisión previa de SFC |
 | Cambio en frontera (informal) | ✗ Prohibida | Debe ser canalizado por intermediario autorizado |
 | Cambio con terceros no autorizados | ✗ Prohibida | Solo con intermediarios autorizados o bancos |
 
@@ -265,8 +267,8 @@ Adicional a reporte de cada operación:
 | Cambio USD → COP | ✓ Sí | DD según monto, reporte SIEX | Decreto 2555, Ley 1960 |
 | Cambio cruzado EUR ↔ USD | ✓ Sí | Si ambas en cuenta compensación, DD | Decreto 2555 |
 | Tenencia de posición neta (USD +500k) | ✓ Sí | Reporteable semanalmente a BR | Circular DCIP-83 |
-| Forward cambio (USD a 30 días) | ⚠️ Condicionado | Requiere aprobación Junta como derivado | Decreto 2555 Capítulo II.2 |
-| Opciones de cambio | ⚠️ Condicionado | Muy restrictivo. Casi no operan en Colombia | Decreto 2555 Capítulo II.2 |
+| Forward cambio (USD a 30 días) | ⚠ Condicionado | Requiere aprobación Junta como derivado | Decreto 2555 Capítulo II.2 |
+| Opciones de cambio | ⚠ Condicionado | Muy restrictivo. Casi no operan en Colombia | Decreto 2555 Capítulo II.2 |
 | Cambio con cliente PEP | ✓ Sí, pero... | DD Extrema obligatoria, reporte a UIAF si sospecha | Ley 1960, Circular SFC |
 | Cambio con cliente en OFAC | ✗ Prohibida | Rechazar inmediatamente | OFAC, Decreto 2555 |
 | Cambio sin cliente (operación propia) | ✓ Sí | TUYA puede tener posición propia, reporteable | Decreto 2555 |

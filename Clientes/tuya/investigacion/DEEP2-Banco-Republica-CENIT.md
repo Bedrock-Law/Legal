@@ -363,7 +363,7 @@ Casos de cierre de cuentas (muy infrecuentes, <3 en 5 años):
 
 ✅ **Procedimiento:** Bien definido en Resolución Externa 1/2018 y Circular DCIP-83.
 
-⚠️ **Requisitos críticos:**
+⚠ **Requisitos críticos:**
 1. Manual de Operaciones específico (no genérico)
 2. Integración técnica con CENIT (ISO 20022, encriptación TLS 1.2+)
 3. Auditoría externa de seguridad

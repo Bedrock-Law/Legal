@@ -8,6 +8,8 @@ docscope: "Confidencial · TUYA"
 docname: "DEEP4-Prevencion-Lavado-Activos"
 ---
 
+> **Advertencia (5 de octubre de 2026).** Este documento cita la Ley 1960 de 2019 como norma de prevención de lavado de activos. Es un error: esa ley regula carrera administrativa. El fundamento correcto para TUYA es el Estatuto Orgánico del Sistema Financiero (Decreto 663 de 1993), artículos 96 y 102 a 104; la Ley 526 de 1999; y la Circular Básica Jurídica de la Superintendencia Financiera, Parte I, Título IV, Capítulo IV (Circular Externa 006 de 2025). El reporte de operaciones sospechosas a la UIAF es inmediato (artículo 102, numeral 2, literal d). Los umbrales, plazos y niveles de diligencia que aquí se atribuyen a la Ley 1960 no están verificados contra ninguna norma y no deben trasladarse a un documento sin esa verificación. Los conceptos vigentes en `conceptos-juridicos/` ya están corregidos.
+
 # Prevención de Lavado de Activos — Marco LA/FT para Operación de Divisas
 
 ## Resumen Ejecutivo

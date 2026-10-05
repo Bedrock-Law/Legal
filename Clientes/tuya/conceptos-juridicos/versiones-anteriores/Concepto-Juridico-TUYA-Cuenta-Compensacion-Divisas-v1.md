@@ -27,7 +27,7 @@ resumen:
 **Condiciones:** La operación es legal condicionada a:
 - Cumplimiento de trámite formal ante Banco de la República (60-90 días)
 - Integración técnica con sistema CENIT del Banco de la República (4-6 semanas)
-- Implementación de reportería mensual y del sistema de administración del riesgo de lavado de activos y de la financiación del terrorismo (SARLAFT)
+- Implementación de reportería mensual y cumplimiento de Ley 1960/2019 (prevención lavado de activos)
 - Constitución de manual de operaciones y matriz de riesgos de contraparte
 
 **Plazo operativo:** 90-120 días hábiles desde presentación de solicitud al Banco de la República hasta que la cuenta esté operativa en producción.
@@ -49,7 +49,6 @@ El Decreto 2555 de 2010 autoriza explícitamente a los Intermediarios del Mercad
 ### B. Cuentas de compensación
 
 Las cuentas de compensación están reguladas por el Banco de la República bajo:
-
 - **Resolución Externa 1 de 2018 (artículo 37):** Procedimientos de apertura y operación de cuentas de compensación ordinarias
 - **Circular DCIP-83, Capítulo 8 (sept 2023):** Régimen cambiario, procedimientos, obligaciones de reporte
 
@@ -67,7 +66,7 @@ Antes de solicitar al Banco de la República, TUYA debe tener internamente:
 | Política de Riesgo de Contraparte | Comité de Riesgo | Semana 1-2 | Pendiente |
 | Plan de Integración Técnica CENIT | Área TI | Semana 2-4 | Pendiente |
 | Acuerdo de Junta autorizando cuenta | Secretaría Junta | Semana 1 | Pendiente |
-| Certificado de licencia IMC vigente | (ya existe) | N/A | Disponible |
+| Certificado de licencia IMC vigente | (ya existe) | N/A | ✓ Disponible |
 
 ---
 
@@ -87,7 +86,6 @@ TUYA presenta al Banco de la República:
 ### Fase 2: Validación y Reunión Técnica (Semana 3-4)
 
 Banco de la República:
-
 - Valida completitud de solicitud (3-5 días)
 - Revisa documentación regulatoria (5-10 días)
 - Cita reunión técnica para presentar CENIT
@@ -95,7 +93,6 @@ Banco de la República:
 ### Fase 3: Integración Técnica y Certificación (Semana 4-8)
 
 TUYA:
-
 - Integra sistemas con CENIT (protocolo ISO 20022)
 - Realiza pruebas en ambiente mock del Banco
 - Obtiene certificación ISO 20022
@@ -104,7 +101,6 @@ TUYA:
 ### Fase 4: Aprobación y Operación (Semana 9-12)
 
 Banco de la República emite aprobación formal. TUYA:
-
 - Acredita operadores (mínimo 2, máximo 5)
 - Inicia operación piloto
 - Implementa reportería mensual
@@ -121,17 +117,14 @@ Banco de la República emite aprobación formal. TUYA:
 | **Mensual** | Reconciliación CENIT vs. libros de TUYA, matriz riesgo contraparte | Día 5 del mes siguiente |
 | **Anual** | Auditoría externa (ISO 20022), certificación BCP | Antes 31 de marzo |
 
-### B. Prevención del lavado de activos y de la financiación del terrorismo (SARLAFT)
-
-Fundamento: Estatuto Orgánico del Sistema Financiero (Decreto 663 de 1993), artículos 96 y 102 a 104; Ley 526 de 1999; y Circular Básica Jurídica de la Superintendencia Financiera, Parte I, Título IV, Capítulo IV, en el texto de la Circular Externa 006 de 2025.
+### B. Cumplimiento Ley 1960/2019 (Prevención Lavado de Activos)
 
 TUYA debe:
-
-- Mantener programa de cumplimiento (compliance)
-- Realizar debida diligencia reforzada en operaciones de alto riesgo
-- Reportar de forma inmediata a la UIAF (Unidad de Información y Análisis Financiero) las operaciones sospechosas, como exige el literal d) del numeral 2 del artículo 102 del Estatuto Orgánico del Sistema Financiero
-- Conservar la documentación de respaldo por no menos de cinco años (artículo 96 del Estatuto Orgánico del Sistema Financiero)
-- Capacitar operadores en detección de lavado
+- ✅ Mantener programa de cumplimiento (compliance)
+- ✅ Realizar debida diligencia reforzada en operaciones de alto riesgo
+- ✅ Reportar a UIAF (Unidad de Información Financiera) operaciones sospechosas
+- ✅ Conservar documentación de respaldo 5 años
+- ✅ Capacitar operadores en detección de lavado
 
 ---
 
@@ -219,12 +212,4 @@ Semana 13+ (4 dic)    ↓ OPERATIVA — Reportería mensual comienza
 **Fecha:** 22 de septiembre de 2026  
 **Clasificación:** Confidencial
 
-*Este concepto se basa en investigación de: Decreto 2555/2010, Resolución Externa 1/2018 (Banco de la República), Circular DCIP-83 Cap. 8 (Banco de la República, sept 2023), Circular Básica Jurídica C.E. 006/25 (Superintendencia Financiera, 2025), Estatuto Orgánico del Sistema Financiero (arts. 96 y 102 a 104), Ley 526 de 1999 (prevención de lavado de activos).*
-
-# Control de versiones
-
-| Versión | Fecha | Cambios | Estado |
-|---|---|---|---|
-| v1 | 22 de septiembre de 2026 | Versión inicial entregada | Superada |
-| v2 | 5 de octubre de 2026 | Corrige el fundamento de prevención de lavado de activos: la Ley 1960 de 2019, que regula carrera administrativa, se sustituye por el Estatuto Orgánico del Sistema Financiero, la Ley 526 de 1999 y la Circular Básica Jurídica. El reporte de operaciones sospechosas pasa a ser inmediato, como exige la ley, y se corrige el nombre de la UIAF | Vigente |
-
+*Este concepto se basa en investigación de: Decreto 2555/2010, Resolución Externa 1/2018 (Banco de la República), Circular DCIP-83 Cap. 8 (Banco de la República, sept 2023), Circular Básica Jurídica C.E. 006/25 (Superintendencia Financiera, 2025), Ley 1960/2019 (Prevención de Lavado de Activos).*
