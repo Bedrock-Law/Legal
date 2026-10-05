@@ -4,6 +4,7 @@
 Uso:
   python3 Herramientas/verificar-cruces-clientes.py            revisa todo Clientes/
   python3 Herramientas/verificar-cruces-clientes.py <archivo>  revisa un archivo antes de enviarlo
+  --incluir-anteriores   en la revisión completa, revisa también versiones-anteriores/
 
 Dos controles:
   1. Proporción: el documento nombra más a otro cliente que al de su carpeta.
@@ -32,7 +33,7 @@ TERMINOS = {
  r"ambiente\s+azul": "ambiente-azul",
  r"serp[eé]lvica|be.?pelvic": "be-pelvic-serpelvica",
  r"btg\s+pactual|BED-BTG": "btg-pactual",
- r"jhonatan|londo[nñ]o": "jhonatan-londono",
+ r"jhonatan": "jhonatan-londono",  # el apellido solo es común: da falsos positivos
  r"finup": "finup",
  r"\bminca\b": "minca",
  r"\btuya\b|asobele|asovele": None,  # se resuelve abajo
@@ -73,13 +74,16 @@ def texto(ruta):
 
 EXT = (".md", ".txt", ".html", ".htm", ".pdf", ".docx")
 filas, revisados = [], 0
-OBJETIVO = os.path.abspath(sys.argv[1]) if len(sys.argv) > 1 else None
+ARGS = [a for a in sys.argv[1:] if not a.startswith("--")]
+INCLUIR_ANTERIORES = "--incluir-anteriores" in sys.argv
+OBJETIVO = os.path.abspath(ARGS[0]) if ARGS else None
 for dp, dn, fn in os.walk(RAIZ):
     dn[:] = [d for d in dn if d not in ("node_modules", ".git")]
     for f in fn:
         if not f.lower().endswith(EXT): continue
         ruta = os.path.join(dp, f)
         if OBJETIVO and os.path.abspath(ruta) != OBJETIVO: continue
+        if not OBJETIVO and not INCLUIR_ANTERIORES and "versiones-anteriores" in ruta.split(os.sep): continue
         rel = os.path.relpath(ruta, RAIZ)
         carpeta = rel.split(os.sep)[0]
         t = texto(ruta)
