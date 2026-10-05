@@ -54,3 +54,19 @@ Antes de crear una carpeta de cliente nueva, buscar si ya existe con otra grafí
 
 Si un documento no encaja en `Negocio/`, `Clientes/`, `Herramientas/` o
 `Personal/`, se pregunta antes de inventar una quinta rama.
+
+## Versiones
+
+Una sola convención en todo el repo, adoptada el 5 de octubre de 2026:
+
+- El documento vigente lleva el nombre sin sufijo de versión.
+- Las versiones anteriores van en una carpeta `versiones-anteriores/` junto al
+  documento, con sufijo `-v1`, `-v2`, en orden cronológico.
+- Un documento en revisión con una contraparte lleva una subcarpeta por versión.
+- Nada se sobrescribe: antes de reemplazar el vigente, el anterior pasa a
+  `versiones-anteriores/`.
+- Un archivo que se llame «final» no significa nada; se decide por fecha y por
+  contenido, nunca por el nombre.
+
+Antes de entregar o publicar un documento de cliente se corre
+`python3 Herramientas/verificar-cruces-clientes.py <archivo>`.

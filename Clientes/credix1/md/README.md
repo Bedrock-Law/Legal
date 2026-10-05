@@ -11,33 +11,33 @@ Los documentos viven en una sola carpeta plana para que un futuro skill de marca
 ## Documentos finales
 
 **Viabilidad jurídica**
-- [Concepto jurídico — tarjeta de crédito rotativa garantizada (v1, revisado)](Concepto-Juridico_CREDIX1-Tarjeta-Garantizada-Historial-Crediticio_v1.md) — análisis de viabilidad legal, concluye **procede**, con 14 tesis de conformidad normativa.
+- [Concepto jurídico — tarjeta de crédito rotativa garantizada (v1, revisado)](Concepto-Juridico_CREDIX1-Tarjeta-Garantizada-Historial-Crediticio.md) — análisis de viabilidad legal, concluye **procede**, con 14 tesis de conformidad normativa.
 
 **Documentos operativos de reporte y cumplimiento**
-- [Manual de reporte a centrales de riesgo (v1, procedimientos operativos)](Manual-Reporte-Centrales-Riesgo_CREDIX1_v1.md) — periodicidad, condiciones de reporte, actualización simultánea, permanencia y caducidad conforme Ley 1266 de 2008.
-- [Manual de prevención LA/FT/FP (nuevo)](Manual-Prevencion-LAFT-FP_CREDIX1_v1.md)
-- [Procedimiento de debida diligencia de cliente + checklist de afiliación como fuente de información (v1, ampliado)](Procedimiento-DD-Cliente_y_Checklist-Afiliacion-Fuente-Informacion_CREDIX1_v1.md)
+- [Manual de reporte a centrales de riesgo (v1, procedimientos operativos)](Manual-Reporte-Centrales-Riesgo_CREDIX1.md) — periodicidad, condiciones de reporte, actualización simultánea, permanencia y caducidad conforme Ley 1266 de 2008.
+- [Manual de prevención LA/FT/FP (nuevo)](Manual-Prevencion-LAFT-FP_CREDIX1.md)
+- [Procedimiento de debida diligencia de cliente + checklist de afiliación como fuente de información (v1, ampliado)](Procedimiento-DD-Cliente_y_Checklist-Afiliacion-Fuente-Informacion_CREDIX1.md)
 
 **Flujo operativo**
-- [Flujograma operativo (v1, con salvaguardas nuevas)](Flujograma_CREDIX1_v1.md)
+- [Flujograma operativo (v1, con salvaguardas nuevas)](Flujograma_CREDIX1.md)
 
 **De cara al cliente**
-- [Términos y condiciones del servicio CREDIX1 (v1, ampliado)](Terminos-y-Condiciones_CREDIX1_v1.md)
-- [Política de tratamiento de datos personales (v1, ampliada)](Politica-Tratamiento-Datos-Personales_EHOLDINGS-CREDIX1_v1.md)
-- [Disclaimers por fase — publicidad, onboarding, uso, cierre (v1, ampliado)](Disclaimers-por-Fase_CREDIX1_v1.md)
-- [Checkboxes de aceptación con fundamento jurídico (v1, de 5 a 10 casillas)](Checkboxes-Aceptacion-Fundamento-Juridico_CREDIX1_v1.md)
+- [Términos y condiciones del servicio CREDIX1 (v1, ampliado)](versiones-anteriores/consolidado-en-contrato-marco/Terminos-y-Condiciones_CREDIX1.md) — consolidado en el contrato marco
+- [Política de tratamiento de datos personales (v1, ampliada)](Politica-Tratamiento-Datos-Personales_EHOLDINGS-CREDIX1.md)
+- [Disclaimers por fase — publicidad, onboarding, uso, cierre (v1, ampliado)](Disclaimers-por-Fase_CREDIX1.md)
+- [Checkboxes de aceptación con fundamento jurídico (v1, de 5 a 10 casillas)](Checkboxes-Aceptacion-Fundamento-Juridico_CREDIX1.md)
 
 **Contractuales**
-- [**Contrato Marco CREDIX1 (v1, consolidado)**](Contrato-Marco-CREDIX1_v1.md) — único documento que integra: términos y condiciones, contrato de línea de crédito rotativa, pagaré y carta de instrucciones, contrato DACA con adhesión individual del cliente. Cliente diligencia sus datos una sola vez (página 2) y el resto es referencia a esos datos.
-- [Contrato de emisión, patrocinio de BIN y procesamiento (nuevo)](Contrato-Emision-Patrocinio-BIN-Procesamiento_CREDIX1_v1.md)
+- [**Contrato Marco CREDIX1 (v1, consolidado)**](Contrato-Marco-CREDIX1.md) — único documento que integra: términos y condiciones, contrato de línea de crédito rotativa, pagaré y carta de instrucciones, contrato DACA con adhesión individual del cliente. Cliente diligencia sus datos una sola vez (página 2) y el resto es referencia a esos datos.
+- [Contrato de emisión, patrocinio de BIN y procesamiento (nuevo)](Contrato-Emision-Patrocinio-BIN-Procesamiento_CREDIX1.md)
 
 **Documentos anteriores archivados**
 - Los cuatro documentos que se consolidaron en el Contrato Marco (Términos y Condiciones, Contrato de Línea de Crédito, Pagaré y Carta de Instrucciones, DACA) están archivados en `md/_archivo-consolidado-en-contrato-marco/` con sus correspondientes PDF en `pdf/_archivo-consolidado-en-contrato-marco/` — conservados como referencia, no activos en la entrega.
 
 **Costo, cobranza y publicidad**
-- [Anexo de costo total del crédito + manual interno de metodología de tasa (nuevo)](Anexo-Costo-Total_y_Manual-Metodologia-Tasa_CREDIX1_v1.md)
-- [Política de cobranza (nueva, Ley 2300 de 2023)](Politica-Cobranza_CREDIX1_v1.md)
-- [Política de publicidad y protocolo de aprobación de piezas (nueva)](Politica-Publicidad_CREDIX1_v1.md)
+- [Anexo de costo total del crédito + manual interno de metodología de tasa (nuevo)](Anexo-Costo-Total_y_Manual-Metodologia-Tasa_CREDIX1.md)
+- [Política de cobranza (nueva, Ley 2300 de 2023)](Politica-Cobranza_CREDIX1.md)
+- [Política de publicidad y protocolo de aprobación de piezas (nueva)](Politica-Publicidad_CREDIX1.md)
 
 ## Pendiente de redactar (identificado por el consejo, no crítico para el lanzamiento)
 
