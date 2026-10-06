@@ -1,0 +1,23 @@
+flowchart TD
+  subgraph F5["Fase 5. Incumplimiento"]
+    N["Evento de incumplimiento según el Bloque A"] --> N2["Notificación de incumplimiento con plazo de subsanación y comunicación previa del art. 12 de la Ley 1266"]
+    N2 --> O{"¿Subsana?"}
+    O -- Sí --> OK["Vuelve al uso, sin reporte negativo"]
+    O -- No --> O2{"¿Insolvencia?"}
+    O2 -- Sí --> O3["Se suspende el pago directo, Ley 2445 de 2025"]
+    O2 -- No --> P["Liquidación detallada y plazo de objeción"]
+    O3 -. Insolvencia resuelta .-> P
+    P --> R["Doble verificación e instrucción a Coopcentral con soportes"]
+    R --> R1["Coopcentral paga solo el monto liquidado"]
+    R1 --> R2["Remanente al mismo titular y a la misma cuenta"]
+    R2 --> R3["Actualización ante los operadores el mismo día"]
+    N2 -. A los 20 días calendario .-> Q{"¿Sigue en mora?"}
+    Q -- Sí --> Q2["Doble verificación y reporte negativo"]
+    Q -- No --> Q3["No hay reporte negativo"]
+  end
+  subgraph F6["Cierre"]
+    T["Cliente pide cierre sin saldo"] --> S["Cierre de la línea"]
+    S --> U["Instrucción de liberación a Coopcentral en el plazo del Bloque A"]
+    U --> V["Reporte final al operador y cierre del expediente"]
+  end
+  R3 --> S

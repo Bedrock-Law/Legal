@@ -1,0 +1,15 @@
+flowchart TD
+  INICIO["Solicitud del cliente"] --> P1["Paso 1. Identidad: documento válido y biometría si el cliente la autorizó; si no, medio alterno"]
+  P1 --> P2["Paso 2. Titularidad: la cuenta de Coopcentral es del cliente, nunca de un tercero"]
+  P2 --> P3["Paso 3. Declaraciones de origen lícito y naturaleza de los recursos: casillas 5 y 7"]
+  P3 --> P4["Paso 4. Beneficiario final y listas restrictivas"]
+  P4 --> L{"¿En listas?"}
+  L -- Sí --> OC["Escalamiento al oficial de cumplimiento"]
+  L -- No --> P5{"Paso 5. ¿PEP o alerta?"}
+  P5 -- Sí --> DDI["Debida diligencia intensificada"]
+  DDI --> OC
+  OC --> OC2{"¿Aprueba?"}
+  OC2 -- No --> NV["No se vincula; el oficial evalúa el reporte a la UIAF"]
+  OC2 -- Sí --> P6
+  P5 -- No --> P6["Paso 6. Registro en el expediente: fecha y responsable"]
+  P6 --> AP["Aprobado: pasa a firma y activación"]
