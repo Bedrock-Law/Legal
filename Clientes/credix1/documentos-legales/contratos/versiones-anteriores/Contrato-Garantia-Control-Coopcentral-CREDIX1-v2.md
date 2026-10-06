@@ -3,7 +3,7 @@ title: "Contrato marco de garantía mobiliaria de control"
 eyebrow: "CREDIX1 · Contrato con aliado · Banco Cooperativo Coopcentral y EHOLDINGS FLORIDA S.A.S."
 lede: "Contrato entre Coopcentral y EHOLDINGS que regula la constitución, la operación y la ejecución de las garantías mobiliarias de control sobre las cuentas de ahorros de los clientes de CREDIX1. Se firma una vez; cada cliente se adhiere después."
 doctype: "Contrato"
-docdate: "6 de octubre de 2026"
+docdate: "5 de octubre de 2026"
 docscope: "Confidencial · Coopcentral y EHOLDINGS"
 docname: "Contrato-Garantia-Control-Coopcentral"
 resumen:
@@ -27,9 +27,9 @@ header-includes: |
 | Campo | Coopcentral | EHOLDINGS |
 |------------|---------------------------|---------------------|
 | Razón social | Banco Cooperativo Coopcentral | EHOLDINGS FLORIDA S.A.S., sigla CREDIX1 S.A.S. |
-| NIT | 890203088-9 | [•] |
+| NIT | [•] | [•] |
 | Representante legal | [•] | [•] |
-| Domicilio | Bogotá D.C. | Envigado, Antioquia |
+| Domicilio | [•] | Envigado, Antioquia |
 | Calidad | Entidad depositaria, vigilada por la Superintendencia Financiera de Colombia | Acreedor garantizado |
 
 | Parámetro operativo | Valor |
@@ -190,5 +190,4 @@ El formato de adhesión individual es el incluido en el contrato del cliente CRE
 | Versión | Fecha | Cambios | Estado |
 |-----------|------------|--------------------------------------------------|---------------|
 | 1.0 | 14 de septiembre de 2026 | Sección IV del Contrato Marco CREDIX1, sin firma de Coopcentral | Reemplazada |
-| 2.0 | 5 de octubre de 2026 | Contrato autónomo con identificación y firma de ambas partes. Tabla de parámetros con los plazos de inscripción, verificación, ejecución, liberación y denuncia. Soportes de la instrucción de pago directo (cláusula quinta). Constancia de recibo de cada adhesión por Coopcentral (cláusula séptima). Anexos A, B y C identificados como pendientes de negociación | Reemplazada |
-| 2.1 | 6 de octubre de 2026 | NIT y domicilio de Coopcentral, tomados de su certificado expedido por la Superintendencia Financiera | Vigente |
+| 2.0 | 5 de octubre de 2026 | Contrato autónomo con identificación y firma de ambas partes. Tabla de parámetros con los plazos de inscripción, verificación, ejecución, liberación y denuncia. Soportes de la instrucción de pago directo (cláusula quinta). Constancia de recibo de cada adhesión por Coopcentral (cláusula séptima). Anexos A, B y C identificados como pendientes de negociación | Vigente |

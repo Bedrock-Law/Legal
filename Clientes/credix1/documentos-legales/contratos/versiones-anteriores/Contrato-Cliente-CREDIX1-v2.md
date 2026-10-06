@@ -3,7 +3,7 @@ title: "Contrato del cliente CREDIX1"
 eyebrow: "CREDIX1 · Contrato de vinculación del cliente · EHOLDINGS FLORIDA S.A.S."
 lede: "Lo que el cliente firma o acepta para vincularse a CREDIX1: el resumen en lenguaje claro, el contrato de línea de crédito rotativa, el pagaré con su carta de instrucciones, la adhesión a la garantía mobiliaria de control y los anexos de costos, autorizaciones y canales."
 doctype: "Contrato"
-docdate: "6 de octubre de 2026"
+docdate: "5 de octubre de 2026"
 docscope: "Confidencial · EHOLDINGS FLORIDA S.A.S."
 docname: "Contrato-Cliente-CREDIX1"
 resumen:
@@ -401,12 +401,10 @@ En la vinculación digital, el texto de las casillas 6, 7, 9 y 10 se muestra com
 | Asunto | Ante quién | Datos de contacto |
 |--------------------------|---------------|-------------------|
 | Consultas y reclamos sobre el crédito, la garantía, el reporte a centrales y los datos personales; disputas de transacciones | EHOLDINGS FLORIDA S.A.S. | [CORREO ELECTRÓNICO] · [TELÉFONO] · [DIRECCIÓN] · [HORARIO] |
-| Quejas contra EHOLDINGS por el crédito, la publicidad, el reporte a centrales o la cobranza | Superintendencia de Industria y Comercio | Calle 24 No. 7-43, Bogotá D.C. · Línea de atención +57 601 592 0400 · Línea gratuita nacional 01 8000 910165 · www.sic.gov.co · Lunes a viernes, 8:00 a. m. a 4:30 p. m. |
-| Quejas sobre la cuenta de ahorros | Banco Cooperativo Coopcentral | Avenida Calle 116 No. 23-06/28, piso 6, Bogotá D.C. · PBX +57 601 743 1088 · Línea nacional 01 8000 181088 · sac@coopcentral.com.co · www.coopcentral.com.co |
-| Quejas sobre la cuenta de ahorros | Defensor del Consumidor Financiero de Coopcentral | Defensoría del Cliente Laguado Giraldo S.A.S. · Calle 70A No. 11-83, Bogotá D.C. · (601) 597 0412, (601) 373 6697 y 320 398 1187 · www.defensorialg.com.co · Lunes a viernes, 9:00 a. m. a 4:00 p. m. |
-| Quejas sobre la cuenta de ahorros | Superintendencia Financiera de Colombia | Calle 7 No. 4-49, Bogotá D.C. · Conmutador +57 601 594 0200 · Línea gratuita nacional 01 8000 120 100 · Centro de contacto +57 601 307 8042 · www.superfinanciera.gov.co |
-
-Los datos de las autoridades, de Coopcentral y de su Defensor se tomaron de sus sitios oficiales el 6 de octubre de 2026. EHOLDINGS los revisa antes de cada publicación de este contrato.
+| Quejas contra EHOLDINGS por el crédito, la publicidad, el reporte a centrales o la cobranza | Superintendencia de Industria y Comercio | [DATOS DE CONTACTO VIGENTES DE LA SIC] |
+| Quejas sobre la cuenta de ahorros | Banco Cooperativo Coopcentral | [DATOS DE CONTACTO DE COOPCENTRAL] |
+| Quejas sobre la cuenta de ahorros | Defensor del Consumidor Financiero de Coopcentral | [DATOS DEL DEFENSOR] |
+| Quejas sobre la cuenta de ahorros | Superintendencia Financiera de Colombia | [DATOS DE CONTACTO VIGENTES DE LA SUPERINTENDENCIA FINANCIERA] |
 
 ## Causales objetivas de terminación por parte de EHOLDINGS
 
@@ -424,5 +422,4 @@ En todos los casos, la terminación sigue el orden de la cláusula séptima para
 | Versión | Fecha | Cambios | Estado |
 |-----------|------------|----------------------------------------------------|---------------|
 | 1.0 | 14 de septiembre de 2026 | Contrato Marco CREDIX1: términos y condiciones, contrato de línea de crédito, pagaré y contrato marco con Coopcentral en un solo documento | Reemplazada |
-| 2.0 | 5 de octubre de 2026 | Los términos y condiciones pasan a resumen en lenguaje claro con remisiones. El contrato marco con Coopcentral sale a documento aparte; el cliente conserva la adhesión, con constancia de recibo de Coopcentral. Se incorporan como anexos la tabla de costos (sin porcentajes de usura) y las autorizaciones (once casillas, la undécima voluntaria para datos biométricos, conforme al artículo 6 del Decreto 1377 de 2013). Nueva cláusula vigésima primera de cobranza conforme a los artículos 2, 3, 4, 6 y 7 de la Ley 2300 de 2023. Pagaré con espacios en blanco llenados según la carta de instrucciones (artículo 622 del Código de Comercio). Campos nuevos en el Bloque A para los plazos que no tenían campo. Anexo 3 con canales y causales objetivas de terminación. Modalidad de crédito de consumo y ordinario | Reemplazada |
-| 2.1 | 6 de octubre de 2026 | Anexo 3: datos de contacto de la Superintendencia de Industria y Comercio, la Superintendencia Financiera, Coopcentral y su Defensor del Consumidor Financiero, tomados de sus sitios oficiales | Vigente |
+| 2.0 | 5 de octubre de 2026 | Los términos y condiciones pasan a resumen en lenguaje claro con remisiones. El contrato marco con Coopcentral sale a documento aparte; el cliente conserva la adhesión, con constancia de recibo de Coopcentral. Se incorporan como anexos la tabla de costos (sin porcentajes de usura) y las autorizaciones (once casillas, la undécima voluntaria para datos biométricos, conforme al artículo 6 del Decreto 1377 de 2013). Nueva cláusula vigésima primera de cobranza conforme a los artículos 2, 3, 4, 6 y 7 de la Ley 2300 de 2023. Pagaré con espacios en blanco llenados según la carta de instrucciones (artículo 622 del Código de Comercio). Campos nuevos en el Bloque A para los plazos que no tenían campo. Anexo 3 con canales y causales objetivas de terminación. Modalidad de crédito de consumo y ordinario | Vigente |

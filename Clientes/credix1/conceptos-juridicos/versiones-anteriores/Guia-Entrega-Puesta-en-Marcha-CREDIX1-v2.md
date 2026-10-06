@@ -3,7 +3,7 @@ title: "Guía de entrega y puesta en marcha CREDIX1"
 eyebrow: "CREDIX1 · Guía de entrega · EHOLDINGS FLORIDA S.A.S."
 lede: "El documento que se abre primero: qué contiene el paquete, qué hay que hacer para lanzar y en qué orden, qué datos faltan y quién los aporta, y qué quedó pendiente."
 doctype: "Guía"
-docdate: "6 de octubre de 2026"
+docdate: "5 de octubre de 2026"
 docscope: "Confidencial · EHOLDINGS FLORIDA S.A.S."
 docname: "Guia-Entrega-CREDIX1"
 resumen:
@@ -22,7 +22,7 @@ header-includes: |
 
 # 1. Destinatarios y uso
 
-Esta guía está dirigida a Lawrence Soto Borja y a Juan Camilo Sepúlveda Tabares, socios de EHOLDINGS FLORIDA S.A.S., sigla CREDIX1 S.A.S.
+Esta guía está dirigida a Lawrence Soto Borja y a Camilo [APELLIDO], socios de EHOLDINGS FLORIDA S.A.S., sigla CREDIX1 S.A.S.
 
 Reemplaza el informe de entrega del 14 de septiembre de 2026 y reúne en un solo lugar los pasos a seguir, los campos por diligenciar y los pendientes que antes estaban repartidos en quince documentos.
 
@@ -64,7 +64,7 @@ Los campos del Bloque B del contrato del cliente se llenan en cada vinculación 
 | Campo | Documento y sección | Quién lo llena |
 |-------------------------------|-------------------|-------------|
 | NIT de EHOLDINGS | Contrato del cliente, Bloque A; política de datos, sección 1; contratos con aliados, identificación | EHOLDINGS |
-| Representante legal de EHOLDINGS, según el certificado de existencia y representación vigente | Contrato del cliente, Bloque A y firmas; contratos con aliados | EHOLDINGS |
+| Representante legal de EHOLDINGS | Contrato del cliente, Bloque A y firmas; contratos con aliados | EHOLDINGS |
 | Emisor autorizado, franquicia y administrador del sistema de pago | Contrato del cliente, Bloque A y casilla 10; contrato de emisión, identificación | EHOLDINGS, al contratar al emisor |
 | Colchón del control dinámico | Contrato del cliente, Bloque A | EHOLDINGS, de acuerdo con Coopcentral |
 | Días para configurar el incumplimiento; plazos de subsanación, objeción, devolución del remanente, liberación por mínimo vital y liberación al cancelar | Contrato del cliente, Bloque A | EHOLDINGS |
@@ -72,13 +72,15 @@ Los campos del Bloque B del contrato del cliente se llenan en cada vinculación 
 | Operadores con convenio vigente | Contrato del cliente, Bloque A y casilla 2; manual, sección 6.3 | EHOLDINGS, al firmar cada convenio |
 | Tasa efectiva anual, cuota de manejo, cargo por garantía, seguro, sistema de liquidación, cuota mínima | Contrato del cliente, Anexo 1 y casilla 3 | EHOLDINGS, con la metodología del manual, capítulo 7 |
 | Datos del canal de atención de EHOLDINGS | Contrato del cliente, Anexo 3; política de datos, sección 12 | EHOLDINGS |
-| Representante legal de Coopcentral; plazos de la tabla de parámetros; cláusula sexta; ciudad y fecha de firma | Contrato con Coopcentral | EHOLDINGS y Coopcentral |
+| Datos de contacto de la Superintendencia de Industria y Comercio, de Coopcentral, de su Defensor del Consumidor Financiero y de la Superintendencia Financiera | Contrato del cliente, Anexo 3 | EHOLDINGS, verificados en la fuente oficial al momento de publicar |
+| NIT, representante legal y domicilio de Coopcentral; plazos de la tabla de parámetros; cláusula sexta; ciudad y fecha de firma | Contrato con Coopcentral | EHOLDINGS y Coopcentral |
 | NIT, representante legal y domicilio del emisor; vigencia y preaviso; ciudad y fecha de firma | Contrato de emisión | EHOLDINGS y el emisor |
 | Resultado de la evaluación del Registro Nacional de Bases de Datos | Política de datos, sección 3 | EHOLDINGS, con su contador |
 | Medio alterno de verificación de identidad | Política de datos, sección 6 | EHOLDINGS |
 | Tabla de encargados del tratamiento | Política de datos, sección 7 | EHOLDINGS |
 | Fecha de publicación de la política | Política de datos, sección 15 | EHOLDINGS |
 | Evaluación de sujeción al Capítulo IX y nombre del oficial de cumplimiento | Manual, secciones 3.1 y 3.2 | EHOLDINGS |
+| Apellido del segundo socio | Esta guía, sección 1 | Bedrock S.A.S. |
 
 # 5. Pendientes
 
@@ -129,5 +131,4 @@ La presentación comercial va aparte y no se modificó. Contiene afirmaciones qu
 | Versión | Fecha | Cambios | Estado |
 |-----------|------------|----------------------------------------|---------------|
 | 1.0 | 14 de septiembre de 2026 | Informe de entrega del paquete de quince documentos | Reemplazada |
-| 2.0 | 5 de octubre de 2026 | Guía de entrega del paquete consolidado en seis documentos, con pasos, campos, pendientes y correcciones de fondo | Reemplazada |
-| 2.1 | 6 de octubre de 2026 | Nombre completo de los destinatarios. Salen de la tabla de campos los datos de contacto de autoridades, Coopcentral y su Defensor, y el NIT y domicilio de Coopcentral, ya incorporados | Vigente |
+| 2.0 | 5 de octubre de 2026 | Guía de entrega del paquete consolidado en seis documentos, con pasos, campos, pendientes y correcciones de fondo | Vigente |

@@ -1,6 +1,6 @@
 # EHOLDINGS FLORIDA S.A.S. (CREDIX1): índice interno
 
-Cliente: EHOLDINGS FLORIDA S.A.S., sigla CREDIX1 S.A.S. Socios: Lawrence Soto Borja (representante y accionista) y Camilo [apellido por confirmar]. Tarea en Linear: BEDROCK-45.
+Cliente: EHOLDINGS FLORIDA S.A.S., sigla CREDIX1 S.A.S. Socios: Lawrence Soto Borja y Juan Camilo Sepúlveda Tabares. Tarea en Linear: BEDROCK-45.
 
 ## Paquete vigente (versión 2.0, 5 de octubre de 2026)
 
